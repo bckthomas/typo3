@@ -1,0 +1,31 @@
+{
+  "name": "tbeck/theme_package",
+  "type": "typo3-cms-extension",
+  "description": "Standard configuration for all websites",
+  "license": [
+     "GPL-2.0+"
+  ],
+  "authors": [
+     {
+        "name": "Thomas Beck",
+        "role": "Developer",
+        "homepage": "https://www.thomas-beck.fr"
+     }
+  ],
+  "autoload": {
+     "psr-4": {
+        "Thbck\\ThemePackage\\": "Classes/"
+     }
+  },
+  "require": {
+     "typo3/cms-core": "^11.0.0"
+  },
+  "replace": {
+     "typo3-ter/theme_package": "self.version"
+  },
+  "extra": {
+     "typo3/cms": {
+        "extension-key": "theme_package"
+     }
+  }
+}

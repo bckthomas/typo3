@@ -1,0 +1,27 @@
+config {
+	absRefPrefix = auto
+	additionalHeaders {
+		10.header = X-Frame-Options: SAMEORIGIN
+		20.header = Cache-Control: max-age=3600, must-revalidate
+	}
+	admPanel = {$config.admPanel}
+	// cache_period = 86400
+	// contentObjectExceptionHandler = 0
+	// debug = 0
+	disablePrefixComment = 1
+	doctype = html5
+	extTarget = _blank
+	headerComment = {$config.headerComment}
+	// htmlTag_setParams = lang="fr" itemscope itemtype="http://schema.org/WebPage"
+	index_enable = 1
+	index_externals = 1
+	// inlineStyle2TempFile = 1
+	// intTarget =
+	moveJsFromHeaderToFooter = {$config.moveJsFromHeaderToFooter}
+	no_cache = {$config.no_cache}
+	// removeDefaultJS = external
+	// sendCacheHeaders = 1
+	spamProtectEmailAddresses = ascii
+	// spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
+	// tx_extbase.mvc.callDefaultActionIfActionCantBeResolved = 1
+}

@@ -1,0 +1,76 @@
+# IDE generated files
+# ===================
+
+# VS Code
+.vscode
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# PhpStorm
+.idea
+
+
+# OS generated files
+# ==================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+
+# Packages
+# ========
+
+*.gz
+*.tgz
+*.zip
+*.7z
+*.tar
+*.rar
+
+
+# Always-ignore extensions
+# ========================
+
+*.orig
+*.rej
+*.diff
+*.err
+*.log
+*.bak
+*.tmp
+*.sw[a-p]
+*~
+
+
+# Application
+# ===========
+vendor
+node_modules
+.ddev
+
+public/fileadmin
+public/typo3
+public/typo3temp
+public/index.php
+public/typo3conf/l10n
+public/typo3conf/deprecation*
+public/typo3conf/ENABLE_INSTALL_TOOL
+public/typo3conf/FaisToiPlaiz.php
+var
+
+# ignore all extensions
+public/typo3conf/ext/*
+# ...except our own extensions!
+!public/typo3conf/ext/theme_*
