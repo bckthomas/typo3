@@ -69,8 +69,4 @@ public/typo3conf/deprecation*
 public/typo3conf/ENABLE_INSTALL_TOOL
 public/typo3conf/FaisToiPlaiz.php
 var
-
-# ignore all extensions
 public/typo3conf/ext/*
-# ...except our own extensions!
-!public/typo3conf/ext/theme_*

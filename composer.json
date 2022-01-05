@@ -14,6 +14,8 @@
 	},
 	"require": {
 		"helhum/typo3-console": "^7.0.2",
+		"thbck/theme-package": "@dev",
+		"thbck/theme-thomasbeck": "@dev",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",
@@ -47,10 +49,10 @@
 			"@typo3-cms-scripts"
 		]
 	},
-	"autoload": {
-		"psr-4": {
-			"Thbck\\ThemeThomasbeck\\": "public/typo3conf/ext/theme_thomasbeck/Classes/",
-			"Thbck\\ThemePackage\\": "public/typo3conf/ext/theme_package/Classes/"
+	"repositories": [
+		{
+			"type": "path",
+			"url": "./packages/*"
 		}
-	}
+	]
 }

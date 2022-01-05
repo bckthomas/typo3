@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e38d3aed3f17f9ee095a3ffe43711bd",
+    "content-hash": "ff50c0b8382061ac2462fa5b29f1ee34",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -4973,6 +4973,80 @@
             "time": "2021-12-16T21:58:21+00:00"
         },
         {
+            "name": "thbck/theme-package",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme_package",
+                "reference": "fb04e2055d54fafd227d449ee9eb617966aef31a"
+            },
+            "require": {
+                "typo3/cms-core": "^11.0.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme_package"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Thbck\\ThemePackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Beck",
+                    "role": "Developer",
+                    "homepage": "https://www.thomas-beck.fr"
+                }
+            ],
+            "description": "TYPO3 theme package",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "thbck/theme-thomasbeck",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme_thomasbeck",
+                "reference": "da6ee8aa01aa6b48a03de67dda5a20fa05490b0e"
+            },
+            "require": {
+                "typo3/cms-core": "^11.0.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme_thomasbeck"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Thbck\\ThemeThomasbeck\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Beck",
+                    "role": "Developer",
+                    "homepage": "https://www.thomas-beck.fr"
+                }
+            ],
+            "description": "TYPO3 theme for thomas-beck website",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "typo3/class-alias-loader",
             "version": "v1.1.3",
             "source": {
@@ -6953,7 +7027,10 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "thbck/theme-package": 20,
+        "thbck/theme-thomasbeck": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

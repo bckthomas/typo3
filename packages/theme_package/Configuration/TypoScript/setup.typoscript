@@ -1,0 +1,3 @@
+# @import 'EXT:theme_package/Configuration/TypoScript/extensions/'
+@import 'EXT:theme_package/Configuration/TypoScript/general/'
+

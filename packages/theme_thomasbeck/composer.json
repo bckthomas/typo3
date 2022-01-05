@@ -1,0 +1,26 @@
+{
+   "name": "thbck/theme-thomasbeck",
+   "type": "typo3-cms-extension",
+   "description": "TYPO3 theme for thomas-beck website",
+   "license": "GPL-2.0-or-later",
+   "authors": [
+      {
+         "name": "Thomas Beck",
+         "role": "Developer",
+         "homepage": "https://www.thomas-beck.fr"
+      }
+   ],
+   "autoload": {
+      "psr-4": {
+         "Thbck\\ThemeThomasbeck\\": "Classes/"
+      }
+   },
+   "require": {
+      "typo3/cms-core": "^11.0.0"
+   },
+   "extra": {
+      "typo3/cms": {
+         "extension-key": "theme_thomasbeck"
+      }
+   }
+}
