@@ -1,7 +1,0 @@
-lib.titrePage = TEXT
-lib.titrePage{
-    data= page:title
-    brTag = <br />
-    stdWrap.htmlSpecialChars = 1
-    wrap = <h1>|</h1>
-}

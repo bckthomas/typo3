@@ -1,5 +1,6 @@
 theme {
 	privateFolder = EXT:theme_thomasbeck/Resources/Private
+	publicFolder = EXT:theme_thomasbeck/Resources/Public
 	// extFolder = EXT:theme_thomasbeck/Resources/Extensions
 	// containerFolder = EXT:theme_thomasbeck/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public

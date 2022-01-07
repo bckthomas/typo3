@@ -1,0 +1,63 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order",
+    "stylelint-no-browser-hacks/lib",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "comment-empty-line-before": null,
+    "declaration-block-no-duplicate-properties": true,
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        "ignoreMediaFeatureNames": [
+          "prefers-reduced-motion",
+          "min--moz-device-pixel-ratio"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "no-unknown-animations": null,
+    "number-leading-zero": "always",
+    "plugin/no-browser-hacks": [
+      true,
+      {
+        "browsers": [
+          "ie >= 9",
+          "edge >= 13",
+          "firefox >= 5",
+          "opera >= 12",
+          "safari >= 5",
+          "chrome >= 56"
+        ]
+      }
+    ],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": true
+    }],
+    "shorthand-property-no-redundant-values": true,
+    "unit-allowed-list": [
+      "deg",
+      "em",
+      "ex",
+      "ms",
+      "rem",
+      "%",
+      "s",
+      "px",
+      "vw",
+      "vh",
+      "fr"
+    ]
+  },
+  "ignoreFiles": [
+    "assets/vendor/**/*.css",
+    "tests/Drupal/Tests/Core/Asset/css_test_files/**/*.css"
+  ]
+}
