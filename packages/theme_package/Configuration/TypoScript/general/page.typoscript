@@ -4,12 +4,22 @@ page {
   shortcutIcon = {$page.shortcutIcon}
   10 = FLUIDTEMPLATE
   10 {
-    partialRootPaths.0 = {$theme.dossierPrivate}/Partials/
-    layoutRootPaths.0 = {$theme.dossierPrivate}/Layouts/
-    templateRootPaths.0 = {$theme.dossierPrivate}/Templates/
+    templateName = TEXT
+		templateName.stdWrap.cObject = CASE
+		templateName.stdWrap.cObject {
+			key.data = pagelayout
+			default = TEXT
+			default.value = Default
+			1 = TEXT
+			1.value = Default
+			2 = TEXT
+			2.value = Accueil
+			0 < .default
+		}
+    partialRootPaths.0 = {$theme.privateFolder}/Partials/
+    layoutRootPaths.0 = {$theme.privateFolder}/Layouts/
+    templateRootPaths.0 = {$theme.privateFolder}/Templates/
     variables {
-      publicFolder = TEXT
-      publicFolder.value = {$theme.publicFolder}
       homePageUid = TEXT
       homePageUid.value = {$theme.homePageUid}
     }
