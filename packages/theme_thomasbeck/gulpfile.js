@@ -70,9 +70,14 @@ function buildCss() {
     .pipe(gulp.dest(paths.dist.css)); // output minified file in dist/ folder
 }
 
+function watch() {
+  gulp.watch(paths.scss + '/**/*.scss', { interval: 100, usePolling: true }, gulp.series('buildCss'));
+}
+
 const build = gulp.series(clean, gulp.parallel(buildCss));
 
 exports.clean = clean;
 exports.buildCss = buildCss;
+exports.watch = watch;
 
 exports.default = build;
