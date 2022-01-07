@@ -1,0 +1,28 @@
+lib.dynamicContent < styles.content.get
+lib.dynamicContent {
+	select.where {
+		field = colPos
+		wrap = colPos = |
+	}
+}
+lib.countContent = CONTENT
+lib.countContent{
+  table = tt_content
+  select {
+    selectFields = uid
+    andWhere = (deleted = 0 AND hidden = 0)
+    max = 1
+    where.field = colPos
+    where.wrap = colPos = |
+  }
+  renderObj = TEXT
+  renderObj {
+    field = uid
+  }
+}
+
+styles.content.getLeft < styles.content.get
+styles.content.getLeft.select.where = colPos = 1
+
+lib.colonneContenu < styles.content.get
+lib.colonneSlider < styles.content.getLeft

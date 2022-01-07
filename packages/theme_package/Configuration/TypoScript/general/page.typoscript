@@ -1,0 +1,54 @@
+page = PAGE
+page {
+  typeNum = 0
+  shortcutIcon = {$page.shortcutIcon}
+  10 = FLUIDTEMPLATE
+  10 {
+    partialRootPaths.0 = {$theme.dossierPrivate}/Partials/
+    layoutRootPaths.0 = {$theme.dossierPrivate}/Layouts/
+    templateRootPaths.0 = {$theme.dossierPrivate}/Templates/
+    variables {
+      publicFolder = TEXT
+      publicFolder.value = {$theme.publicFolder}
+      homePageUid = TEXT
+      homePageUid.value = {$theme.homePageUid}
+    }
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+        special = directory
+        special.value = {$theme.homePageUid}
+        levels = {$theme.menuPrincipal.levels}
+        expandAll = 1
+        includeSpacer = 1
+        as = mainnavigation
+      }
+      20 < .10
+      20 {
+        special = directory
+        special.value = {$theme.menuFooterPid}
+        levels = 1
+        as = footernavigation
+      }
+    }
+  }
+  meta {
+    description = {$page.meta.description}
+    description.override.field = abstract
+    author = {$page.meta.author}
+    author.override.field = author
+    keywords = {$page.meta.keywords}
+    keywords.override.field = keywords
+    robots = index,follow
+    robots {
+      override.if.isTrue.field = no_search
+      override = noindex,follow
+    }
+    viewport = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1
+  }
+}
+
+[globalVar = TSFE:id = {$theme.homePageUid}]
+    page.headerData.10.field >
+    page.headerData.10.stdWrap.noTrimWrap = |<title>{$theme.siteTitle}</title>|
+[global]

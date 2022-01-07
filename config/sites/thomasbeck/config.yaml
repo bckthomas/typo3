@@ -1,0 +1,17 @@
+base: 'https://kwible.ddev.site:8443'
+languages:
+  -
+    title: Frensh
+    enabled: true
+    languageId: 0
+    base: /
+    typo3Language: fr
+    locale: fr_FR
+    iso-639-1: fr
+    navigationTitle: Frensh
+    hreflang: fr-fr
+    direction: ltr
+    flag: fr
+    websiteTitle: ''
+rootPageId: 1
+websiteTitle: 'Thomas Beck - Développeur front-end'

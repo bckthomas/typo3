@@ -6,22 +6,27 @@ config {
 	}
 	admPanel = {$config.admPanel}
 	// cache_period = 86400
-	// contentObjectExceptionHandler = 0
+	contentObjectExceptionHandler = 0
 	// debug = 0
 	disablePrefixComment = 1
 	doctype = html5
 	extTarget = _blank
-	headerComment = {$config.headerComment}
+  headerComment (
++------------------------------------------------------------------------+
+| A website based on the TYPO3 template by Thomas Beck | thomas-beck.fr  |
++------------------------------------------------------------------------+
+  )
 	// htmlTag_setParams = lang="fr" itemscope itemtype="http://schema.org/WebPage"
 	index_enable = 1
 	index_externals = 1
 	// inlineStyle2TempFile = 1
 	// intTarget =
-	moveJsFromHeaderToFooter = {$config.moveJsFromHeaderToFooter}
+	moveJsFromHeaderToFooter = 1
 	no_cache = {$config.no_cache}
+	noPageTitle = 2
 	// removeDefaultJS = external
 	// sendCacheHeaders = 1
 	spamProtectEmailAddresses = ascii
 	// spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
-	// tx_extbase.mvc.callDefaultActionIfActionCantBeResolved = 1
+	tx_extbase.mvc.callDefaultActionIfActionCantBeResolved = 1
 }
