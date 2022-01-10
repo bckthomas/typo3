@@ -13,7 +13,7 @@ page {
 			1 = TEXT
 			1.value = Default
 			2 = TEXT
-			2.value = Accueil
+			2.value = Home
 			0 < .default
 		}
     partialRootPaths.0 = {$theme.privateFolder}/Partials/

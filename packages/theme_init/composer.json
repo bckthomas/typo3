@@ -1,7 +1,7 @@
 {
   "name": "thbck/theme-init",
   "type": "typo3-cms-extension",
-  "description": "White theme",
+  "description": "Initial theme",
   "license": "GPL-2.0-or-later",
   "authors": [
      {
