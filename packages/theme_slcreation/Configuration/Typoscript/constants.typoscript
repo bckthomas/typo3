@@ -1,0 +1,30 @@
+theme {
+	privateFolder = EXT:theme_slcreation/Resources/Private
+	publicFolder = EXT:theme_slcreation/Resources/Public
+	// extFolder = EXT:theme_slcreation/Resources/Extensions
+	// containerFolder = EXT:theme_slcreation/Resources/Container
+	// packagePublicFolder =  EXT:theme_package/Resources/Public
+	# cat=Configuration du site; type=string; label= Titre du site pour la balise <title> et pour le nom de l'expéditeur des mails
+	siteTitle = SL Création
+	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
+	homePage = 1
+	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
+	sender.email = noreply@site.fr
+	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu pied de page
+	menuFooter = 72
+	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le pied de page
+	infoFooter = 77
+	menuPrincipal {
+		# cat=Configuration du site; type=int+; label= Profondeur du niveau principal
+		levels = 3
+		# cat=Configuration du site; type=int+; label= Id de la page contenant le menu principal
+		pid = 2
+	}
+}
+
+#Meta
+page.meta {
+	description =
+	author = Thomas Beck
+	keywords = 
+}

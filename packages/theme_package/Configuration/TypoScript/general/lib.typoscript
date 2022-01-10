@@ -1,3 +1,11 @@
+lib.pageTitle = TEXT
+lib.pageTitle{
+    data= page:title
+    brTag = <br />
+    stdWrap.htmlSpecialChars = 1
+    wrap = <h1>|</h1>
+}
+
 lib.dynamicContent < styles.content.get
 lib.dynamicContent {
 	select.where {

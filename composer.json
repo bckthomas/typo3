@@ -15,6 +15,7 @@
 	"require": {
 		"helhum/typo3-console": "^7.0.2",
 		"thbck/theme-package": "@dev",
+		"thbck/theme-slcreation": "@dev",
 		"thbck/theme-thomasbeck": "@dev",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff50c0b8382061ac2462fa5b29f1ee34",
+    "content-hash": "90cbb1f68ac351dff8f1be16797b5b82",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5010,6 +5010,43 @@
             }
         },
         {
+            "name": "thbck/theme-slcreation",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/theme_slcreation",
+                "reference": "204bc7d7c433ccb699d450c02abb21dfc2a6c6fb"
+            },
+            "require": {
+                "typo3/cms-core": "^11.0.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "theme_slcreation"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Thbck\\Slcreation\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Beck",
+                    "role": "Developer",
+                    "homepage": "https://www.thomas-beck.fr"
+                }
+            ],
+            "description": "Theme for sl creation website",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "thbck/theme-thomasbeck",
             "version": "dev-master",
             "dist": {
@@ -7029,6 +7066,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "thbck/theme-package": 20,
+        "thbck/theme-slcreation": 20,
         "thbck/theme-thomasbeck": 20
     },
     "prefer-stable": false,
