@@ -4,7 +4,7 @@
 defined('TYPO3') or die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-    'theme_blanc',
+    'theme_init',
     'Configuration/PageTSconfig/config.tsconfig',
-    'EXT:theme_blanc Tsconfig'
+    'EXT:theme_init Tsconfig'
 );

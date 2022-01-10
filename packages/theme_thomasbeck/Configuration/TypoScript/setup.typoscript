@@ -2,5 +2,5 @@
 // <INCLUDE_TYPOSCRIPT: source="DIR: EXT:theme_thomasbeck/Configuration/TypoScript/general/">
 
 page.includeCSS {
-	styles = {$theme.publicFolder}/Css/layout.min.css
+	styles = {$theme.publicFolder}/Css/Layout.min.css
 }

@@ -1,5 +1,5 @@
 {
-  "name": "thbck/theme-blanc",
+  "name": "thbck/theme-init",
   "type": "typo3-cms-extension",
   "description": "White theme",
   "license": "GPL-2.0-or-later",
@@ -12,7 +12,7 @@
   ],
   "autoload": {
      "psr-4": {
-        "Thbck\\Themeblanc\\": "Classes/"
+        "Thbck\\Themeinit\\": "Classes/"
      }
   },
   "require": {
@@ -20,7 +20,7 @@
   },
   "extra": {
      "typo3/cms": {
-        "extension-key": "theme_blanc"
+        "extension-key": "theme_init"
      }
   }
 }

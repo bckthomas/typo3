@@ -1,8 +1,8 @@
 theme {
-	privateFolder = EXT:theme_blanc/Resources/Private
-	publicFolder = EXT:theme_blanc/Resources/Public
-	// extFolder = EXT:theme_blanc/Resources/Extensions
-	// containerFolder = EXT:theme_blanc/Resources/Container
+	privateFolder = EXT:theme_init/Resources/Private
+	publicFolder = EXT:theme_init/Resources/Public
+	// extFolder = EXT:theme_init/Resources/Extensions
+	// containerFolder = EXT:theme_init/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public
 	# cat=Configuration du site; type=string; label= Titre du site pour la balise <title> et pour le nom de l'expéditeur des mails
 	siteTitle = Thomas Beck Développeur front-end
