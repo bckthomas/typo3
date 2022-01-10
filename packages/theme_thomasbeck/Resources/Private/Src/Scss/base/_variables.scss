@@ -1,0 +1,18 @@
+$secondary: #df3601;
+$form-color: #a29898;
+$background-body: #212529;
+$border-radius: 0.75rem;
+$border-width: 1px;
+$progress-bar-bg: $secondary;
+$background-button: $secondary;
+$border-input: $form-color;
+$label-color: $form-color;
+$button-padding: 15px 20px;
+$nav-background: $secondary;
+$transition-base: all 0.4s ease-in-out;
+
+// Bootstrap
+
+:root {
+  --bs-body-bg: #212529;
+}

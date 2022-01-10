@@ -1,12 +1,12 @@
-const gulp = require('gulp'),
-      sourcemaps = require('gulp-sourcemaps'),
-      gulpStylelint = require('gulp-stylelint'),
-      sass = require('gulp-sass')(require('sass')),
-      autoprefixer = require('gulp-autoprefixer'),
-      rename = require('gulp-rename'),
+const autoprefixer = require('gulp-autoprefixer'),
       cleancss = require('gulp-clean-css'),
+      del = require('del'),
+      gulp = require('gulp'),
+      gulpStylelint = require('gulp-stylelint'),
       notify = require('gulp-notify'),
-      del = require('del')
+      rename = require('gulp-rename'),
+      sass = require('gulp-sass')(require('sass')),
+      sourcemaps = require('gulp-sourcemaps')
 ;
 
 const privatePath = './Resources/Private/Src';

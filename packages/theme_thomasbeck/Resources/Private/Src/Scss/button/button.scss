@@ -1,0 +1,12 @@
+@import "../base/base";
+
+.button-style {
+  position: relative;
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid $secondary;
+  border-radius: 3px;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  background-color: $secondary;
+}

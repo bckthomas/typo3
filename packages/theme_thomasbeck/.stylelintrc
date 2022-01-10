@@ -6,7 +6,6 @@
   "plugins": [
     "stylelint-scss",
     "stylelint-order",
-    "stylelint-no-browser-hacks/lib",
     "stylelint-config-rational-order/plugin"
   ],
   "rules": {
@@ -25,19 +24,6 @@
     "no-descending-specificity": null,
     "no-unknown-animations": null,
     "number-leading-zero": "always",
-    "plugin/no-browser-hacks": [
-      true,
-      {
-        "browsers": [
-          "ie >= 9",
-          "edge >= 13",
-          "firefox >= 5",
-          "opera >= 12",
-          "safari >= 5",
-          "chrome >= 56"
-        ]
-      }
-    ],
     "plugin/rational-order": [true, {
       "border-in-box-model": true
     }],
