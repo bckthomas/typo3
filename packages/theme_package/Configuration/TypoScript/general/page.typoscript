@@ -28,10 +28,10 @@ page {
       10 {
         special = directory
         special.value = {$theme.homePageUid}
-        levels = {$theme.menuPrincipal.levels}
+        levels = {$theme.mainNavigation.levels}
         expandAll = 1
         includeSpacer = 1
-        as = mainnavigation
+        as = mainNavigation
       }
       20 < .10
       20 {

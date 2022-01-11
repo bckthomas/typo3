@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Sl creation theme',
-    'description' => 'Sl cretation theme',
+    'title' => 'SL creation theme',
+    'description' => 'SL cretation theme',
     'category' => 'templates',
     'author' => 'Thomas Beck',
     'author_email' => 'contact@thomas-beck.fr',

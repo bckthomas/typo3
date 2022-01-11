@@ -7,7 +7,9 @@ theme {
 	# cat=Configuration du site; type=string; label= Titre du site pour la balise <title> et pour le nom de l'expéditeur des mails
 	siteTitle = Thomas Beck Développeur front-end
 	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
-	homePage = 1
+	homePageUid = 1
+	# cat=Mise en page; type=int+; label= Niveau du menu
+	mainNavigation.levels = 2
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@site.fr
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu pied de page

@@ -1,0 +1,18 @@
+.skiptocontent {
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  color: white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 8px;
+  background: #BF1722;
+  transition: $transition-base;
+  z-index: 100;
+
+  &:focus,
+  &:active {
+    top: 0px;
+    outline-color: transparent;
+  }
+}

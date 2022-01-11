@@ -3,6 +3,7 @@ TCAdefaults.sys_file_reference.showinpreview = 1
 TCEMAIN {
     table{
         pages.disablePrependAtCopy = 1
+        pages.disableHideAtCopy = 1
         tt_content.disablePrependAtCopy = 1
     }
 }

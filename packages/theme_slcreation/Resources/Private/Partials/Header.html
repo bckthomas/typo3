@@ -1,0 +1,13 @@
+<a href="#mainContent" class="skiptocontent">Aller au contenu</a>
+
+<f:for each="{mainNavigation}" as="mainNavigationItem">
+  <li class="nav-item {f:if(condition: mainNavigationItem.active, then: 'active')}">
+     <a class="nav-link"
+        href="{mainNavigationItem.link}"
+        target="{mainNavigationItem.target}"
+        title="{mainNavigationItem.title}"
+        >
+        {mainNavigationItem.title}
+     </a>
+  </li>
+</f:for>

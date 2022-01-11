@@ -1,0 +1,14 @@
+lib.contentElement {
+	templateRootPaths {
+		10 = EXT:theme_package/Resources/Private/FluidStyledContent/Templates/
+		20 = {$theme.extFolder}/FluidStyledContent/Templates/
+	}
+	partialRootPaths {
+		10 = EXT:theme_package/Resources/Private/FluidStyledContent/Partials/
+		20 = {$theme.extFolder}/FluidStyledContent/Partials/
+	}
+	layoutRootPaths {
+		10 = EXT:theme_package/Resources/Private/FluidStyledContent/Layouts/
+		20 = {$theme.extFolder}/FluidStyledContent/Layouts/
+	}
+}

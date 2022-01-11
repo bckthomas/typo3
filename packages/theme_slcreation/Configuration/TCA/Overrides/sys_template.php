@@ -10,6 +10,6 @@ $extensionKey = 'theme_slcreation';
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Configuration/TypoScript',
-    'Sl creation theme configuration'
+    'SL creation theme configuration'
   );
 });
