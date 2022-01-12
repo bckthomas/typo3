@@ -2,11 +2,14 @@ const autoprefixer = require('gulp-autoprefixer'),
       cleancss = require('gulp-clean-css'),
       del = require('del'),
       gulp = require('gulp'),
-      gulpStylelint = require('gulp-stylelint'),
+      // gulpStylelint = require('gulp-stylelint'),
       notify = require('gulp-notify'),
       rename = require('gulp-rename'),
       sass = require('gulp-sass')(require('sass')),
-      sourcemaps = require('gulp-sourcemaps')
+      sourcemaps = require('gulp-sourcemaps'),
+      rollup = require('gulp-better-rollup')
+      resolve = require('rollup-plugin-node-resolve'),
+      commonjs = require('rollup-plugin-commonjs')
 ;
 
 const privatePath = './Resources/Private/Src';
@@ -34,26 +37,23 @@ function clean() {
   ]);
 }
 
-function copyJs() {
-  return gulp.src([
-      paths.js + '/*/*.js',
-    ])
-    .pipe(rename({ dirname: '' })) // to delete relative path
+function buildJs() {
+  return gulp.src(paths.js + '/*/*.js')
+    .pipe(rollup({ plugins: [resolve(), commonjs()] }, 'umd'))
     .pipe(gulp.dest(paths.dist.js));
-
 }
 
 function buildCss() {
   return gulp.src([
       paths.scss + '/**/*.scss'
     ], { since: gulp.lastRun('buildCss') })
-    .pipe(gulpStylelint({
-      fix: true,
-      reporters: [{
-        formatter: 'string',
-        console: true
-      }]
-    }))
+    // .pipe(gulpStylelint({
+    //   fix: true,
+    //   reporters: [{
+    //     formatter: 'string',
+    //     console: true
+    //   }]
+    // }))
     .pipe(gulp.dest(function (file) {
       return file.base;
     }))
@@ -83,11 +83,11 @@ function watch() {
   gulp.watch(paths.scss + '/**/*.scss', { interval: 100, usePolling: true }, gulp.series('buildCss'));
 }
 
-const build = gulp.series(clean, gulp.parallel(buildCss, copyJs));
+const build = gulp.series(clean, gulp.parallel(buildCss, buildJs));
 
 exports.clean = clean;
 exports.buildCss = buildCss;
 exports.watch = watch;
-exports.copyJs = copyJs;
+exports.buildJs = buildJs;
 
 exports.default = build;

@@ -24,6 +24,8 @@ page {
       homePageUid.value = {$theme.homePageUid}
       languageFolder = TEXT
       languageFolder.value = LLL:EXT:theme_package/Resources/Private/Language/fr.locallang.xlf
+      publicFolder = TEXT
+      publicFolder.value = {$theme.publicFolder}
     }
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor

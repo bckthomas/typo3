@@ -37,17 +37,10 @@ function clean() {
   ]);
 }
 
-// function copyJs() {
-//   return gulp.src([
-//       paths.js + '/*/*.js',
-//     ])
-//     .pipe(rename({ dirname: '' })) // to delete relative path
-//     .pipe(gulp.dest(paths.dist.js));
-// }
-
 function buildJs() {
   return gulp.src(paths.js + '/*/*.js')
     .pipe(rollup({ plugins: [resolve(), commonjs()] }, 'umd'))
+    .pipe(rename({ dirname: '' })) // to delete relative path
     .pipe(gulp.dest(paths.dist.js));
 }
 
