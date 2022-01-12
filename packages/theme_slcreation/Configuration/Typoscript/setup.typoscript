@@ -1,3 +1,6 @@
-page.includeCSS {
-	styles = {$theme.publicFolder}/Css/Layout.min.css
+page {
+	headerData.60.value = <link href='http://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap' rel='stylesheet' type='text/css'>
+	includeCSS {
+		styles = {$theme.publicFolder}/Css/Layout.min.css
+	}
 }

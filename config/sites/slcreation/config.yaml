@@ -1,14 +1,14 @@
 base: 'https://kwible.ddev.site:8443'
 languages:
   -
-    title: Frensh
+    title: French
     enabled: true
     languageId: 0
     base: /
     typo3Language: fr
     locale: fr_FR
     iso-639-1: fr
-    navigationTitle: Frensh
+    navigationTitle: French
     hreflang: fr-fr
     direction: ltr
     flag: fr

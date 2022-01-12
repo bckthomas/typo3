@@ -1,1 +1,12 @@
 $transition-base: all 0.4s ease-in-out;
+
+:root {
+  --bs-body-font-family: 'Sora', sans-serif;
+}
+
+$primary: $cyan;
+
+// Navbar
+$navbar-light-active-color: $cyan-700;
+$navbar-padding-y: $spacer * 2;
+$navbar-nav-link-padding-x: $spacer;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2022-01-11T09:37:34Z" product-name="theme_package">
+        <header/>
+        <body>
+            <trans-unit id="skipToContent" xml:space="preserve" approved="yes">
+                <source>Go to content</source>
+                <target>Aller au contenu</target>
+            </trans-unit>
+            <trans-unit id="toogleMenu" xml:space="preserve" approved="yes">
+                <source>Toogle menu</source>
+                <target>Basculer le menu</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
