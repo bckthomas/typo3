@@ -16,12 +16,6 @@ theme {
 	menuFooter = 72
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le pied de page
 	infoFooter = 77
-	menuPrincipal {
-		# cat=Configuration du site; type=int+; label= Profondeur du niveau principal
-		levels = 3
-		# cat=Configuration du site; type=int+; label= Id de la page contenant le menu principal
-		pid = 1
-	}
 }
 
 #Meta

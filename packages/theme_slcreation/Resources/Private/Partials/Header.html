@@ -6,7 +6,22 @@
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">$$LOGO$$</a>
+		<f:if condition="{homePageUid} == {data.uid}">
+			<f:then>
+				<h1 class="navbar-brand">
+          $$LOGO$$
+					<!-- <svg>
+						<title>Thomas Beck Développeur front-end</title>
+						<use xlink:href="{dossierPublic}/Images/sprite.svg#logo"></use>
+					</svg>						 -->
+				</h1>
+			</f:then>
+			<f:else>
+				<f:link.page pageUid="{homePageUid}" class="navbar-brand">
+          $$LOGO$$
+				</f:link.page>
+			</f:else>
+		</f:if>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="{f:translate(key: '{languageFolder}:toogleMenu')}">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,7 +65,6 @@
 			<li>
 				<a  href="{page.link}"
             class="dropdown-item navbar-submenu_link {f:if(condition: mainNavigationItem.active, then: 'active')}"
-            title="{f:if(condition: page.current, then: '{page.title} - Page active')}"
             >
 					{page.title}
 				</a>

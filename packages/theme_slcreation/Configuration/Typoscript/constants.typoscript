@@ -16,12 +16,9 @@ theme {
 	menuFooter = 72
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le pied de page
 	infoFooter = 77
-	menuPrincipal {
-		# cat=Configuration du site; type=int+; label= Profondeur du niveau principal
-		levels = 3
-		# cat=Configuration du site; type=int+; label= Id de la page contenant le menu principal
-		pid = 2
-	}
+	# cat=Configuration du site; type=string; label= URL google font
+	googleFont = https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap
+
 }
 
 #Meta
