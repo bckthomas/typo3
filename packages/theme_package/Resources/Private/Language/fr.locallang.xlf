@@ -11,6 +11,11 @@
                 <source>Toogle menu</source>
                 <target>Basculer le menu</target>
             </trans-unit>
+            <trans-unit id="newTab" xml:space="preserve" approved="yes">
+                <source>Open in a new tab</source>
+                <target>Ouverture dans un nouvel onglet</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
+

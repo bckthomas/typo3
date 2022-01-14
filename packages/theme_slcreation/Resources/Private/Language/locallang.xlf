@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2022-01-11T09:37:34Z" product-name="theme_package">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.image_shadow" xml:space="preserve" approved="yes">
+                <source>Image shadow</source>
+            </trans-unit>
+            <trans-unit id="tt_content.image_rounded" xml:space="preserve" approved="yes">
+                <source>Rounded image</source>
+            </trans-unit>
+            <trans-unit id="tt_content.animations" xml:space="preserve" approved="yes">
+                <source>Animations</source>
+            </trans-unit>
+            <trans-unit id="tt_content.no-animation" xml:space="preserve" approved="yes">
+                <source>No animation</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fade-animations" xml:space="preserve" approved="yes">
+                <source>Fade animations</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fade-in" xml:space="preserve" approved="yes">
+                <source>Fade in</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fade-in-bottom" xml:space="preserve" approved="yes">
+                <source>Fade in bottom</source>
+            </trans-unit>
+            <trans-unit id="tt_content.slide-animations" xml:space="preserve" approved="yes">
+                <source>Slide animations</source>
+            </trans-unit>
+            <trans-unit id="tt_content.slide-in-left" xml:space="preserve" approved="yes">
+                <source>Slide in left</source>
+            </trans-unit>
+            <trans-unit id="tt_content.slide-in-right" xml:space="preserve" approved="yes">
+                <source>Slide in right</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+
+
+
+
+
+
+
+

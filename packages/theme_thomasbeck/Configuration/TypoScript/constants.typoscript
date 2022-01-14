@@ -11,7 +11,7 @@ theme {
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@site.fr
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu pied de page
-	menuFooter = 72
+	footerMenuPid = 72
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le pied de page
 	infoFooter = 77
 }

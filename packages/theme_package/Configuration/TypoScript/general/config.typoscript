@@ -16,7 +16,7 @@ config {
 | A website based on the TYPO3 template by Thomas Beck | thomas-beck.fr  |
 +------------------------------------------------------------------------+
   )
-	// htmlTag_setParams = lang="fr" itemscope itemtype="http://schema.org/WebPage"
+	htmlTag_setParams = {$theme.htmlTag_setParams}
 	index_enable = 1
 	index_externals = 1
 	// inlineStyle2TempFile = 1

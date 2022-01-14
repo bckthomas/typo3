@@ -40,9 +40,9 @@ page {
       20 < .10
       20 {
         special = directory
-        special.value = {$theme.menuFooterPid}
+        special.value = {$theme.footerMenuPid}
         levels = 1
-        as = footernavigation
+        as = footerNavigation
       }
     }
   }
@@ -67,6 +67,7 @@ page {
 	includeCSS {
 		styles = {$theme.publicFolder}/Css/Layout.min.css
 	}
+  bodyTag = {$theme.bodyTag}
 }
 
 [globalVar = TSFE:id = {$theme.homePageUid}]

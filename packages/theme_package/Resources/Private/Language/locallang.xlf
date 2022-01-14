@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2022-01-11T09:37:34Z" product-name="theme_package">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.title_size" xml:space="preserve" approved="yes">
+                <source>Title size</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_size1" xml:space="preserve" approved="yes">
+                <source>H1</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_size2" xml:space="preserve" approved="yes">
+                <source>H2</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_size3" xml:space="preserve" approved="yes">
+                <source>H3</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_size4" xml:space="preserve" approved="yes">
+                <source>H4</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_size5" xml:space="preserve" approved="yes">
+                <source>H5</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_size6" xml:space="preserve" approved="yes">
+                <source>H6</source>
+            </trans-unit>
+            <trans-unit id="tt_content.title_hidden" xml:space="preserve" approved="yes">
+                <source>Hidden title</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

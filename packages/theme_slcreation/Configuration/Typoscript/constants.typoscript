@@ -12,13 +12,16 @@ theme {
 	mainNavigation.levels = 2
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@site.fr
-	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu pied de page
-	menuFooter = 72
-	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le pied de page
-	infoFooter = 77
+	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
+	footerMenuPid = 11
+	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
+	infoFooter = 
 	# cat=Configuration du site; type=string; label= URL google font
 	googleFont = https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap
-
+	# cat=Configuration du thème; type=string; label= Body class
+	bodyTag = <body class="d-flex flex-column h-100">
+	# cat=Configuration du thème; type=string; label= Html tag class
+	htmlTag_setParams = class="h-100"
 }
 
 #Meta
