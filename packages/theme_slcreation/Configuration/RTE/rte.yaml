@@ -1,0 +1,8 @@
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" }
+  - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
+
+editor:
+  config:
+    # RTE default config removes image plugin - restore it:
+    removePlugins: null
