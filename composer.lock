@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0b549cdafce4097fea709e5856261c6",
+    "content-hash": "b944085fd1ebacb0cb6c913a3b65a574",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -58,6 +58,171 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
             },
             "time": "2021-06-18T13:26:35+00:00"
+        },
+        {
+            "name": "causal/extractor",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xperseguers/t3ext-extractor.git",
+                "reference": "9b45c3e2437829e99e1f7a31127a7b5c2e0e711a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xperseguers/t3ext-extractor/zipball/9b45c3e2437829e99e1f7a31127a7b5c2e0e711a",
+                "reference": "9b45c3e2437829e99e1f7a31127a7b5c2e0e711a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-exif": "*",
+                "ext-json": "*",
+                "ext-zip": "*",
+                "james-heinrich/getid3": "^1.9",
+                "php": ">= 7.2.0, <= 7.4.99",
+                "typo3/cms-core": "^8.7 || ^9.5 || ^10 || ^11"
+            },
+            "replace": {
+                "typo3-ter/extractor": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "extractor",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Causal\\Extractor\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Xavier Perseguers",
+                    "email": "xavier@causal.ch",
+                    "homepage": "https://www.causal.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This extension detects and extracts metadata (EXIF / IPTC / XMP / ...) from potentially thousand different file types (such as MS Word/Powerpoint/Excel documents, PDF and images) and bring them automatically and natively to TYPO3 when uploading assets. Works with built-in PHP functions but takes advantage of Apache Tika and other external tools for enhanced metadata extraction.",
+            "homepage": "https://github.com/xperseguers/t3ext-extractor",
+            "keywords": [
+                "Content Analysis",
+                "IPTC",
+                "TYPO3 CMS",
+                "exif",
+                "fal",
+                "id3",
+                "metadata",
+                "tika",
+                "xmp"
+            ],
+            "support": {
+                "issues": "https://github.com/xperseguers/t3ext-extractor/issues",
+                "source": "https://github.com/xperseguers/t3ext-extractor/tree/2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/xperseguers/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/xperseguers",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-22T07:31:39+00:00"
+        },
+        {
+            "name": "causal/image_autoresize",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xperseguers/t3ext-image_autoresize.git",
+                "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xperseguers/t3ext-image_autoresize/zipball/a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77",
+                "reference": "a7dfde49ac5dfaee0cacd14cef37c5cc2807ff77",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-json": "*",
+                "php": ">= 7.2.0, <= 7.4.99",
+                "typo3/cms-core": "^8.7 || ^9.5 || ^10 || ^11"
+            },
+            "replace": {
+                "typo3-ter/image-autoresize": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "image_autoresize",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Causal\\ImageAutoresize\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later",
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Xavier Perseguers",
+                    "email": "xavier@causal.ch",
+                    "homepage": "https://www.causal.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simplify the way your editors may upload their images: no complex local procedure needed, let TYPO3 automatically resize down their huge images/pictures on-the-fly during upload (or using a scheduler task for batch processing) and according to your own business rules (directory/groups). This will highly reduce the footprint on your server and speed-up response time if lots of images are rendered (e.g., in a gallery). Features an EXIF/IPTC extractor to ensure metadata may be used by the FAL indexer even if not preserved upon resizing.",
+            "homepage": "https://github.com/xperseguers/t3ext-image_autoresize",
+            "keywords": [
+                "IPTC",
+                "TYPO3 CMS",
+                "auto-resize",
+                "autoresize",
+                "batch",
+                "exif",
+                "fal",
+                "footprint",
+                "image",
+                "performance",
+                "picture",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/xperseguers/t3ext-image_autoresize/issues",
+                "source": "https://github.com/xperseguers/t3ext-image_autoresize/tree/2.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/xperseguers/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/xperseguers",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-05-22T08:08:01+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -1330,6 +1495,73 @@
                 }
             ],
             "time": "2021-12-02T15:26:47+00:00"
+        },
+        {
+            "name": "james-heinrich/getid3",
+            "version": "v1.9.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JamesHeinrich/getID3.git",
+                "reference": "36f5dabb1325415a4b07a401113f8db2eb81eca1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JamesHeinrich/getID3/zipball/36f5dabb1325415a4b07a401113f8db2eb81eca1",
+                "reference": "36f5dabb1325415a4b07a401113f8db2eb81eca1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.0"
+            },
+            "suggest": {
+                "ext-SimpleXML": "SimpleXML extension is required to analyze RIFF/WAV/BWF audio files (also requires `ext-libxml`).",
+                "ext-com_dotnet": "COM extension is required when loading files larger than 2GB on Windows.",
+                "ext-ctype": "ctype extension is required when loading files larger than 2GB on 32-bit PHP (also on 64-bit PHP on Windows) or executing `getid3_lib::CopyTagsToComments`.",
+                "ext-dba": "DBA extension is required to use the DBA database as a cache storage.",
+                "ext-exif": "EXIF extension is required for graphic modules.",
+                "ext-iconv": "iconv extension is required to work with different character sets (when `ext-mbstring` is not available).",
+                "ext-json": "JSON extension is required to analyze Apple Quicktime videos.",
+                "ext-libxml": "libxml extension is required to analyze RIFF/WAV/BWF audio files.",
+                "ext-mbstring": "mbstring extension is required to work with different character sets.",
+                "ext-mysql": "MySQL extension is required to use the MySQL database as a cache storage (deprecated in PHP 5.5, removed in PHP >= 7.0, use `ext-mysqli` instead).",
+                "ext-mysqli": "MySQLi extension is required to use the MySQL database as a cache storage.",
+                "ext-rar": "RAR extension is required for RAR archive module.",
+                "ext-sqlite3": "SQLite3 extension is required to use the SQLite3 database as a cache storage.",
+                "ext-xml": "XML extension is required for graphic modules to analyze the XML metadata.",
+                "ext-zlib": "Zlib extension is required for archive modules and compressed metadata."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "getid3/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-1.0-or-later",
+                "LGPL-3.0-only",
+                "MPL-2.0"
+            ],
+            "description": "PHP script that extracts useful information from popular multimedia file formats",
+            "homepage": "https://www.getid3.org/",
+            "keywords": [
+                "codecs",
+                "php",
+                "tags"
+            ],
+            "support": {
+                "issues": "https://github.com/JamesHeinrich/getID3/issues",
+                "source": "https://github.com/JamesHeinrich/getID3/tree/v1.9.21"
+            },
+            "time": "2021-09-22T16:34:51+00:00"
         },
         {
             "name": "lolli42/finediff",

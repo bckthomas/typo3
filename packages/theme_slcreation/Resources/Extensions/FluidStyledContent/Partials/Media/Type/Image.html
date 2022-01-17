@@ -1,3 +1,8 @@
+<f:if condition="{data.image_zoom}">
+    <f:asset.css identifier="FancyboxCSS" href="EXT:theme_slcreation/Resources/Public/Css/fancybox.min.css" />
+    <f:asset.script identifier="FancyboxJS" src="EXT:theme_slcreation/Resources/Public/JavaScript/fancybox.js" />
+</f:if>
+
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
 <figure class="image">
     <f:if condition="{file.link}">
@@ -9,9 +14,9 @@
         <f:else>
             <f:if condition="{data.image_zoom}">
                 <f:then>
-                    <ce:link.clickEnlarge image="{file}" configuration="{settings.media.popup}">
+                    <a data-fancybox="gallery" href="{file.publicUrl}">
                         <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings, shadow: data.image_shadow, rounded: data.image_rounded}" />
-                    </ce:link.clickEnlarge>
+                    </a>
                 </f:then>
                 <f:else>
                     <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings, shadow: data.image_shadow, rounded: data.image_rounded}" />

@@ -31,6 +31,31 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'extractor' => [
+            'enable_php' => '1',
+            'enable_tika' => '0',
+            'enable_tools_exiftool' => '0',
+            'enable_tools_pdfinfo' => '0',
+            'mapping_base_directory' => 'EXT:extractor/Configuration/Services/',
+            'mapping_configuration' => '',
+            'tika_jar_path' => '',
+            'tika_mode' => 'jar',
+            'tika_server_host' => '',
+            'tika_server_port' => '9998',
+            'tools_exiftool' => '',
+            'tools_pdfinfo' => '',
+        ],
+        'fs_media_gallery' => [
+            'allowedActionsInFlexforms' => 'nestedList,flatList,showAlbumByParam,showAlbumByConfig,randomAsset',
+            'asset' => [
+                'orderOptions' => 'name,crdate,title,content_creation_date,content_modification_date',
+            ],
+            'clearCacheAfterFileChange' => '',
+            'enableAutoCreateFileCollection' => '1',
+            'list' => [
+                'orderOptions' => 'datetime,crdate,sorting',
+            ],
+        ],
     ],
     'FE' => [
         'debug' => false,
