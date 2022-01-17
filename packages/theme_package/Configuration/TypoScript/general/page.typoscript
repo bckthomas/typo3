@@ -64,9 +64,7 @@ page {
     googleFont = {$theme.googleFont}
     googleFont.external = 1
   }
-	includeCSS {
-		styles = {$theme.publicFolder}/Css/Layout.min.css
-	}
+	includeCSS.layout = {$theme.publicFolder}/Css/layout.min.css
   bodyTag = {$theme.bodyTag}
 }
 

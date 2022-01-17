@@ -1,3 +1,0 @@
-page.includeCSS {
-	styles = {$theme.publicFolder}/Css/Layout.min.css
-}

@@ -1,1 +1,9 @@
 plugin.tx_fsmediagallery.persistence.storagePid = 12
+
+plugin.tx_form {
+ settings {
+   yamlConfigurations {
+    100 = fileadmin/form_definitions/BaseSLCreationSetup.yaml
+  }
+ }
+}
