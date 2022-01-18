@@ -27,6 +27,36 @@
             <trans-unit id="tt_content.title_hidden" xml:space="preserve" approved="yes">
                 <source>Hidden title</source>
             </trans-unit>
+            <trans-unit id="container.5050.label" xml:space="preserve" approved="yes">
+                <source>2 columns</source>
+            </trans-unit>
+            <trans-unit id="container.5050.description" xml:space="preserve" approved="yes">
+                <source>Dividing the content area into two equal columns</source>
+            </trans-unit>
+            <trans-unit id="container.333333.label" xml:space="preserve" approved="yes">
+                <source>3 columns</source>
+            </trans-unit>
+            <trans-unit id="container.333333.description" xml:space="preserve" approved="yes">
+                <source>Dividing the content area into three equal columns</source>
+            </trans-unit>
+            <trans-unit id="container.25252525.label" xml:space="preserve" approved="yes">
+                <source>4 columns</source>
+            </trans-unit>
+            <trans-unit id="container.25252525.description" xml:space="preserve" approved="yes">
+                <source>Dividing the content area into four equal columns</source>
+            </trans-unit>
+            <trans-unit id="container.2575.label" xml:space="preserve" approved="yes">
+                <source>2 columns 25% - 75%</source>
+            </trans-unit>
+            <trans-unit id="container.2575.description" xml:space="preserve" approved="yes">
+                <source>Dividing the content area into two columns (25% - 75%)</source>
+            </trans-unit>
+            <trans-unit id="container.7525.label" xml:space="preserve" approved="yes">
+                <source>2 columns 75% - 25%</source>
+            </trans-unit>
+            <trans-unit id="container.7525.description" xml:space="preserve" approved="yes">
+                <source>Dividing the content area into two columns (75% - 25%)</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

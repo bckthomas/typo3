@@ -4,8 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a3409a7fd5606e9ae04d9dbe5f1e5e6",
+    "content-hash": "abb84d96242a0297b01eff5fd919a700",
     "packages": [
+        {
+            "name": "b13/container",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/b13/container.git",
+                "reference": "44d83b89fb32528d862b54629018d24dd26057e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/b13/container/zipball/44d83b89fb32528d862b54629018d24dd26057e8",
+                "reference": "44d83b89fb32528d862b54629018d24dd26057e8",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-backend": "^9.5 || ^10.4 || ^11.5"
+            },
+            "replace": {
+                "typo3-ter/container": "self.version"
+            },
+            "require-dev": {
+                "b13/container-example": "dev-master",
+                "codeception/codeception": "^4.1",
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-webdriver": "^1.0",
+                "ichhabrecht/content-defender": "^3.2",
+                "phpstan/phpstan": "^0.12.11",
+                "phpunit/phpunit": "^8.4",
+                "typo3/cms-fluid-styled-content": "^10.4",
+                "typo3/cms-info": "^10.4",
+                "typo3/cms-install": "^10.4",
+                "typo3/cms-workspaces": "^10.4",
+                "typo3/coding-standards": "^0.2.0",
+                "typo3/testing-framework": "^6"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "container"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "B13\\Container\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Create Custom Container Content Elements for TYPO3",
+            "homepage": "https://b13.com",
+            "support": {
+                "issues": "https://github.com/b13/container/issues",
+                "source": "https://github.com/b13/container/tree/1.4.2"
+            },
+            "time": "2021-11-17T06:36:39+00:00"
+        },
         {
             "name": "bacon/bacon-qr-code",
             "version": "2.0.4",
@@ -6796,6 +6857,61 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org/c/typo3/cms-rte-ckeditor/11.5/en-us",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2022-01-11T09:07:49+00:00"
+        },
+        {
+            "name": "typo3/cms-scheduler",
+            "version": "v11.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/scheduler.git",
+                "reference": "f64c2e07229a5fd02f90a315c13a896526725f74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/scheduler/zipball/f64c2e07229a5fd02f90a315c13a896526725f74",
+                "reference": "f64c2e07229a5fd02f90a315c13a896526725f74",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "11.5.5"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.5.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "scheduler"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Scheduler\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The TYPO3 Scheduler lets you register tasks to happen at a specific time",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-scheduler/11.5/en-us",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },

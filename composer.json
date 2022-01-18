@@ -13,6 +13,7 @@
 		}
 	},
 	"require": {
+		"b13/container": "^1.4",
 		"causal/extractor": "^2.1",
 		"causal/image_autoresize": "^2.1",
 		"helhum/typo3-console": "^7.0.2",
@@ -39,6 +40,7 @@
 		"typo3/cms-lowlevel": "^11.5",
 		"typo3/cms-recordlist": "^11.5.0",
 		"typo3/cms-rte-ckeditor": "^11.5.0",
+		"typo3/cms-scheduler": "^11.5",
 		"typo3/cms-seo": "^11.5.0",
 		"typo3/cms-setup": "^11.5.0",
 		"typo3/cms-sys-note": "^11.5.0",

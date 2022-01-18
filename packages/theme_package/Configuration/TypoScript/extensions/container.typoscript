@@ -1,0 +1,24 @@
+tt_content.container-5050 < lib.contentElement
+tt_content.container-5050 {
+  templateName = 5050
+  templateRootPaths.10 = EXT:theme_package/Resources/Private/Container
+  dataProcessing {
+    200 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
+tt_content.container-333333 < tt_content.container-5050
+tt_content.container-333333.templateName = 333333
+
+tt_content.container-25252525 < tt_content.container-5050
+tt_content.container-25252525.templateName = 25252525
+
+tt_content.container-2575 < tt_content.container-5050
+tt_content.container-2575.templateName = 2575
+
+tt_content.container-7525 < tt_content.container-5050
+tt_content.container-7525.templateName = 7525
+
+
+
+
