@@ -10,5 +10,7 @@ lib.contentElement {
 	variables {
       publicFolder = TEXT
       publicFolder.value = {$theme.publicFolder}
+			packageComponentsFolder = TEXT
+			packageComponentsFolder.value = EXT:theme_package/Resources/Public
 	}
 }

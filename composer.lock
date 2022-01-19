@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abb84d96242a0297b01eff5fd919a700",
+    "content-hash": "f74c18ac618a84ef2ff5120e6e818a26",
     "packages": [
         {
             "name": "b13/container",
@@ -1757,6 +1757,69 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.7.5"
             },
             "time": "2021-07-01T14:25:37+00:00"
+        },
+        {
+            "name": "minifranske/fs-media-gallery",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/franssaris/fs_media_gallery.git",
+                "reference": "35a8d3c23e9391ba92c3a7e069a61fcb20f02d11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/franssaris/fs_media_gallery/get/35a8d3c23e9391ba92c3a7e069a61fcb20f02d11.zip",
+                "reference": "35a8d3c23e9391ba92c3a7e069a61fcb20f02d11",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^11.4"
+            },
+            "replace": {
+                "typo3-ter/fs-media-gallery": "self.version"
+            },
+            "suggest": {
+                "georgringer/numbered-pagination": "^1.0.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "fs_media_gallery"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MiniFranske\\FsMediaGallery\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Frans Saris",
+                    "homepage": "http://minifranske.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A FAL based media gallery for TYPO3. Show your assets from your local or remote storage as a gallery of albums.",
+            "homepage": "https://bitbucket.org/franssaris/fs_media_gallery",
+            "keywords": [
+                "extension",
+                "gallery",
+                "images",
+                "media",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://bitbucket.org/franssaris/fs_media_gallery/issues",
+                "source": "https://bitbucket.org/franssaris/fs_media_gallery/src/35a8d3c23e9391ba92c3a7e069a61fcb20f02d11/?at=3.0.1"
+            },
+            "time": "2022-01-16T18:03:11+00:00"
         },
         {
             "name": "netresearch/rte-ckeditor-image",
@@ -6796,6 +6859,64 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2022-01-11T09:07:49+00:00"
+        },
+        {
+            "name": "typo3/cms-recycler",
+            "version": "v11.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/recycler.git",
+                "reference": "a0d2e2b53bb164c31c2a8ae2f5549c9c3c90eb54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/recycler/zipball/a0d2e2b53bb164c31c2a8ae2f5549c9c3c90eb54",
+                "reference": "a0d2e2b53bb164c31c2a8ae2f5549c9c3c90eb54",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "11.5.5"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-scheduler": "Remove deleted records after given time"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "11.5.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "recycler"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Recycler\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The recycler offers the possibility to restore deleted records or remove them from the database permanently. These actions can be applied to a single record, multiple records, and recursively to child records (ex. restoring a page can restore all content elements on that page). Filtering by page and by table provides a quick overview of deleted records before taking action on them.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-recycler/11.5/en-us/",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },

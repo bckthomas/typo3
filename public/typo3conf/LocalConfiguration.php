@@ -45,6 +45,17 @@ return [
             'tools_exiftool' => '',
             'tools_pdfinfo' => '',
         ],
+        'fs_media_gallery' => [
+            'allowedActionsInFlexforms' => 'nestedList,flatList,showAlbumByParam,showAlbumByConfig,randomAsset',
+            'asset' => [
+                'orderOptions' => 'name,crdate,title,content_creation_date,content_modification_date',
+            ],
+            'clearCacheAfterFileChange' => '',
+            'enableAutoCreateFileCollection' => '1',
+            'list' => [
+                'orderOptions' => 'datetime,crdate,sorting',
+            ],
+        ],
         'scheduler' => [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',

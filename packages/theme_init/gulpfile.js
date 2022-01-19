@@ -16,8 +16,8 @@ const privatePath = './Resources/Private/Src';
 const publicPath = './Resources/Public';
 
 const paths = {
-  scss: privatePath + '/Composants',
-  js: privatePath + '/Composants',
+  scss: privatePath + '/Components',
+  js: privatePath + '/Components',
   sprites: privatePath + '/Icons',
   fonts: privatePath + '/Fonts',
   dist: {

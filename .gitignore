@@ -70,3 +70,6 @@ public/typo3conf/ENABLE_INSTALL_TOOL
 public/typo3conf/FaisToiPlaiz.php
 var
 public/typo3conf/ext/*
+
+packages/theme_package/Resources/Public/Css
+packages/theme_package/Resources/Public/JavaScript
