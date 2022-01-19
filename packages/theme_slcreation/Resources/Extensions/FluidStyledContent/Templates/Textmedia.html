@@ -1,0 +1,100 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Header">
+
+    <f:if condition="{gallery.position.noWrap} != 1">
+        <f:render partial="Header/All" arguments="{_all}" />
+    </f:if>
+
+</f:section>
+<f:section name="Main">
+
+<f:if condition="{gallery.position.horizontal} == 'left' && {gallery.position.vertical} == 'intext'">
+    <div class="row d-flex align-items-center">
+        <div class="col-auto m-auto mb-4 mb-lg-0">
+            <f:render partial="Media/Gallery" arguments="{_all}" />
+        </div>
+        <div class="col text-center text-lg-start">
+            <f:if condition="{data.bodytext}">
+                <f:render section="bodyText" arguments="{_all}" />
+            </f:if>
+        </div>
+    </div>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'right' && {gallery.position.vertical} == 'intext'">
+    <div class="row d-flex align-items-center">
+        <div class="col text-center text-lg-start">
+            <f:if condition="{data.bodytext}">
+                <f:render section="bodyText" arguments="{_all}" />
+            </f:if>
+        </div>
+        <div class="col-auto m-auto mb-4 mb-lg-0">
+            <f:render partial="Media/Gallery" arguments="{_all}" />
+        </div>
+    </div>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'right' && {gallery.position.vertical} == 'above'">
+    <div class="d-flex justify-content-end">
+        <f:render partial="Media/Gallery" arguments="{_all}" />
+    </div>
+    <f:if condition="{data.bodytext}">
+        <f:render section="bodyText" arguments="{_all}" />
+    </f:if>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'left' && {gallery.position.vertical} == 'above'">
+    <div class="d-flex justify-content-start">
+        <f:render partial="Media/Gallery" arguments="{_all}" />
+    </div>
+    <f:if condition="{data.bodytext}">
+        <f:render section="bodyText" arguments="{_all}" />
+    </f:if>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'center' && {gallery.position.vertical} == 'above'">
+    <div class="d-flex justify-content-center">
+        <f:render partial="Media/Gallery" arguments="{_all}" />
+    </div>
+    <f:if condition="{data.bodytext}">
+        <f:render section="bodyText" arguments="{_all}" />
+    </f:if>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'center' && {gallery.position.vertical} == 'below'">
+    <f:if condition="{data.bodytext}">
+        <f:render section="bodyText" arguments="{_all}" />
+    </f:if>
+    <div class="d-flex justify-content-center">
+        <f:render partial="Media/Gallery" arguments="{_all}" />
+    </div>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'right' && {gallery.position.vertical} == 'below'">
+    <f:if condition="{data.bodytext}">
+        <f:render section="bodyText" arguments="{_all}" />
+    </f:if>
+    <div class="d-flex justify-content-end">
+        <f:render partial="Media/Gallery" arguments="{_all}" />
+    </div>
+</f:if>
+
+<f:if condition="{gallery.position.horizontal} == 'left' && {gallery.position.vertical} == 'below'">
+    <f:if condition="{data.bodytext}">
+        <f:render section="bodyText" arguments="{_all}" />
+    </f:if>
+    <div class="d-flex justify-content-start">
+        <f:render partial="Media/Gallery" arguments="{_all}" />
+    </div>
+</f:if>
+
+</f:section>
+
+<f:section name="bodyText">
+    <f:if condition="{gallery.position.noWrap}">
+        <f:render partial="Header/All" arguments="{_all}" />
+    </f:if>
+    <f:format.html>{data.bodytext}</f:format.html>
+</f:section>
+</html>
