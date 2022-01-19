@@ -2,8 +2,50 @@ TCAdefaults.sys_file_reference.showinpreview = 1
 
 TCEMAIN {
     table{
-        pages.disablePrependAtCopy = 1
-        pages.disableHideAtCopy = 1
-        tt_content.disablePrependAtCopy = 1
+        pages {
+            disablePrependAtCopy = 1
+            disableHideAtCopy = 1
+        }
+        tt_content {
+            disablePrependAtCopy = 1
+            disableHideAtCopy = 1
+        }
+    }
+}
+
+TCEFORM {
+    tt_content{
+        layout.removeItems = 1,2,3
+        space_before_class {
+            removeItems = extra-small, small, medium, large, extra-large
+            addItems.mt-0 = Marge 0
+            addItems.mt-1 = Marge .25
+            addItems.mt-2 = Marge .5
+            addItems.mt-3 = Marge par défaut
+            addItems.mt-4 = Marge 1.25
+            addItems.mt-5 = Marge 1.5
+        }
+        space_after_class {
+            removeItems = extra-small, small, medium, large, extra-large
+            addItems.mb-0 = Marge 0
+            addItems.mb-1 = Marge .25
+            addItems.mb-2 = Marge .5
+            addItems.mb-3 = Marge par défaut
+            addItems.mb-4 = Marge 1.25
+            addItems.mb-5 = Marge 1.5
+        }
+        header_position {
+            removeItems = center, right, left
+            addItems.text-center = Center
+            addItems.text-start = Left
+            addItems.text-end = Right
+        }
+        CType.removeItems = bullets,table,text,textpic,image,menu_related_pages,menu_recently_updated,menu_categorized_content,menu_categorized_pages,menu_sitemap_pages,divider
+        header_layout.removeItems = 1
+    }
+    pages{
+        layout {
+            removeItems = 1,2,3
+        }
     }
 }
