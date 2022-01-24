@@ -1,5 +1,4 @@
-plugin.tx_fsmediagallery.persistence.storagePid = 12
-
+// Form
 plugin.tx_form {
  settings {
    yamlConfigurations {
@@ -7,3 +6,4 @@ plugin.tx_form {
   }
  }
 }
+

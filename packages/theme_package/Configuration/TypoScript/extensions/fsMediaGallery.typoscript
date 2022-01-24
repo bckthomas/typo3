@@ -1,0 +1,21 @@
+[{$theme.extension.fs_media_gallery} == "1"]
+  plugin.tx_fsmediagallery {
+    persistence.storagePid = {$theme.extension.fs_media_gallery.storagePid}
+    settings {
+      album {
+        lightbox.enable = 0
+        fancybox.enable = 1
+        thumb {
+          width = {$theme.extension.fs_media_gallery.album.thumb.width}
+          height = {$theme.extension.fs_media_gallery.album.thumb.height}
+        }
+      }
+    }
+    view {
+      templateRootPaths.100 = {$theme.extFolder}/FsMediaGallery/Templates/
+      partialRootPaths.100 = {$theme.extFolder}/FsMediaGallery/Partials/
+      layoutRootPaths.100 = {$theme.extFolder}/FsMediaGallery/Layouts/
+    }
+  }
+  page.includeCSS.tx-fs-media-gallery >
+[END]

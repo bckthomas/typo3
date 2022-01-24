@@ -18,6 +18,13 @@ theme {
 	infoFooter = 77
 	# cat=Configuration du thème; type=string; label= Body class
 	bodyTag = 
+
+	extension {
+		# cat=Configuration du thème; type=boolean; label= Gallery
+		fs_media_gallery = 0
+		# cat=Configuration du thème; type=boolean; label= Gallery storage PID
+		fs_media_gallery.storagePid = 
+	}
 }
 
 #Meta

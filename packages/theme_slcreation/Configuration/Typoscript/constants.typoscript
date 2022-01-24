@@ -22,6 +22,18 @@ theme {
 	bodyTag = <body class="d-flex flex-column h-100">
 	# cat=Configuration du thème; type=string; label= Html tag class
 	htmlTag_setParams = class="h-100"
+
+	extension {
+		# cat=Configuration du thème; type=boolean; label= Gallery
+		fs_media_gallery = 1
+		fs_media_gallery {
+			storagePid = 12
+			album.thumb {
+				width = 300
+				height = 197
+			}
+		}
+	}
 }
 
 #Meta
