@@ -1,20 +1,22 @@
-<f:if condition="{data.header}">
-  <h{data.header_layout}>{data.header}</h{data.header_layout}>
-</f:if>
-
-<div class="row">
-  <f:if condition="{children_101}">
-      <div class="col-12 col-md-4">
-          <f:for each="{children_101}" as="child">
-              <f:format.raw>{child.renderedContent}</f:format.raw>
-          </f:for>
-      </div>
-  </f:if>
-  <f:if condition="{children_102}">
-      <div class="col-12 col-md-8">
-          <f:for each="{children_102}" as="child">
-              <f:format.raw>{child.renderedContent}</f:format.raw>
-          </f:for>
-      </div>
-  </f:if>
+<div class="container">
+    <f:if condition="{data.header}">
+      <h{data.header_layout}>{data.header}</h{data.header_layout}>
+    </f:if>
+    
+    <div class="row">
+      <f:if condition="{children_101}">
+          <div class="col-12 col-md-4">
+              <f:for each="{children_101}" as="child">
+                  <f:format.raw>{child.renderedContent}</f:format.raw>
+              </f:for>
+          </div>
+      </f:if>
+      <f:if condition="{children_102}">
+          <div class="col-12 col-md-8">
+              <f:for each="{children_102}" as="child">
+                  <f:format.raw>{child.renderedContent}</f:format.raw>
+              </f:for>
+          </div>
+      </f:if>
+    </div>
 </div>

@@ -1,0 +1,6 @@
+styles.content.textmedia {
+  # maximum width of generated images
+  maxW = 1920
+  # maximum width of generated images (beside text)
+  maxWInText = 1920
+}

@@ -1,4 +1,9 @@
-TCAdefaults.sys_file_reference.showinpreview = 1
+TCAdefaults {
+    sys_file_reference.showinpreview = 1
+    tt_content {
+        space_after_class = mb-3
+    }
+}
 
 TCEMAIN {
     table{
@@ -15,7 +20,10 @@ TCEMAIN {
 
 TCEFORM {
     tt_content{
-        layout.removeItems = 1,2,3
+        layout {
+            removeItems = 1,2,3
+            addItems.10 = Full width
+        }
         space_before_class {
             removeItems = extra-small, small, medium, large, extra-large
             addItems.mt-0 = Marge 0
@@ -34,6 +42,7 @@ TCEFORM {
             addItems.mb-4 = Marge 1.25
             addItems.mb-5 = Marge 1.5
         }
+
         header_position {
             removeItems = center, right, left
             addItems.text-center = Center
@@ -42,6 +51,10 @@ TCEFORM {
         }
         CType.removeItems = bullets,table,text,textpic,image,menu_related_pages,menu_recently_updated,menu_categorized_content,menu_categorized_pages,menu_sitemap_pages,divider
         header_layout.removeItems = 1
+
+        imageorient.addItems {
+            69 = Background image
+            69.icon = EXT:theme_package/Resources/Public/Icons/background-image.svg
     }
     pages{
         layout {

@@ -102,6 +102,71 @@ $GLOBALS['TCA']['tt_content']['types']['container-25252525']['showitem'] = $GLOB
 $GLOBALS['TCA']['tt_content']['types']['container-2575']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'];
 $GLOBALS['TCA']['tt_content']['types']['container-7525']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'];
 
+// Add some fields to tt_content table to show TCA fields definitions
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content',
+   [
+      'image_shadow' => [
+         'exclude' => 0,
+         'label' => 'LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.image_shadow',
+         'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => '0',
+            'items' => [
+               [
+                  0 => '',
+                  1 => ''
+               ]
+            ],
+         ],
+      ],
+      'image_rounded' => [
+         'exclude' => 0,
+         'label' => 'LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.image_rounded',
+         'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+               [
+                  0 => '',
+                  1 => ''
+               ]
+            ],
+         ],
+      ],
+      'tx_content_animation' => [
+         'exclude' => true,
+         'label' => 'LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.animations',
+         'config' => [
+             'items' => [
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.no-animation', ''],
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.fade-animations', '--div--'],
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.fade-in', 'fade-in'],
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.fade-in-bottom', 'fade-in-bottom'],
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.slide-animations', '--div--'],
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.slide-in-left', 'slide-in-left'],
+                 ['LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.slide-in-right', 'slide-in-right'],
+             ],
+             'renderType' => 'selectSingle',
+             'type' => 'select',
+             'size' => 1,
+         ],
+     ],
+   ],
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+   'tt_content',
+   'image_shadow, image_rounded',
+   '',
+   'after:image_zoom'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+  'tt_content',
+  'tx_content_animation',
+  '',
+  'after:layout'
+);
+
 
 $GLOBALS['TCA']['tt_content']['columns']['header_layout']['label'] = 'LLL:EXT:theme_package/Resources/Private/Language/locallang.xlf:tt_content.title_size';
 $GLOBALS['TCA']['tt_content']['columns']['header_layout']['config']['items']['1'] = array('LLL:EXT:theme_package/Resources/Private/Language/locallang.xlf:tt_content.title_size1','1');
