@@ -4,7 +4,6 @@ config {
 		10.header = X-Frame-Options: SAMEORIGIN
 		20.header = Cache-Control: max-age=3600, must-revalidate
 	}
-	admPanel = {$config.admPanel}
 	// cache_period = 86400
 	contentObjectExceptionHandler = 0
 	// debug = 0
@@ -22,7 +21,6 @@ config {
 	// inlineStyle2TempFile = 1
 	// intTarget =
 	moveJsFromHeaderToFooter = 1
-	no_cache = {$config.no_cache}
 	noPageTitle = 2
 	// removeDefaultJS = external
 	// sendCacheHeaders = 1

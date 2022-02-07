@@ -1,6 +1,7 @@
 <?php
 return [
     'BE' => [
+        'compressionLevel' => '5',
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$Q3dPLjFMTFAxeUkxaWZGRg$Tnf81QRAwHSCLVUdxxd6rsVEH+sSgAOhRb3fyStMBQc',
@@ -14,6 +15,7 @@ return [
             'Default' => [
                 'charset' => 'utf8',
                 'driver' => 'mysqli',
+                'port' => '3306',
             ],
         ],
     ],
@@ -62,6 +64,7 @@ return [
         ],
     ],
     'FE' => [
+        'compressionLevel' => 5,
         'debug' => false,
         'disableNoCacheParameter' => true,
         'passwordHashing' => [
@@ -70,6 +73,7 @@ return [
         ],
     ],
     'GFX' => [
+        'jpg_quality' => 90,
         'processor' => 'ImageMagick',
         'processor_allowTemporaryMasksAsPng' => false,
         'processor_colorspace' => 'sRGB',
@@ -95,7 +99,7 @@ return [
     ],
     'MAIL' => [
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailhog sendmail test@example.org --smtp-addr 127.0.0.1:1025',
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
@@ -141,7 +145,7 @@ return [
             'unifiedPageTranslationHandling' => true,
             'yamlImportsFollowDeclarationOrder' => true,
         ],
-        'sitename' => 'New TYPO3 Console site',
+        'sitename' => 'TYPO3 Projects',
         'systemMaintainers' => [
             1,
         ],

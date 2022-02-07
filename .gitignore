@@ -67,9 +67,9 @@ public/index.php
 public/typo3conf/l10n
 public/typo3conf/deprecation*
 public/typo3conf/ENABLE_INSTALL_TOOL
-public/typo3conf/FaisToiPlaiz.php
 var
 public/typo3conf/ext/*
 
 packages/theme_package/Resources/Public/Css
 packages/theme_package/Resources/Public/JavaScript
+public/typo3conf/productionDatabase.php
