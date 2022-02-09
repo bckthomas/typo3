@@ -39,7 +39,7 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
 
     $GLOBALS['TYPO3_CONF_VARS']['LOG']['TYPO3']['CMS']['deprecations']['writerConfiguration']['notice']['TYPO3\CMS\Core\Log\Writer\FileWriter']['disabled'] = true;
 
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = 0;
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = '0';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = '12290';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = '0';
