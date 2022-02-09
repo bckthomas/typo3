@@ -17,6 +17,7 @@
 		"causal/extractor": "^2.1",
 		"causal/image_autoresize": "^2.1",
 		"helhum/typo3-console": "^7.0.2",
+		"lochmueller/staticfilecache": "^12.4",
 		"minifranske/fs-media-gallery": "^3.0",
 		"netresearch/rte-ckeditor-image": "^11.0",
 		"thbck/theme-package": "@dev",

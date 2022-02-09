@@ -73,3 +73,4 @@ public/typo3conf/ext/*
 packages/theme_package/Resources/Public/Css
 packages/theme_package/Resources/Public/JavaScript
 public/typo3conf/productionDatabase.php
+composer.lock
