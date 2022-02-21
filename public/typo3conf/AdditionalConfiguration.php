@@ -54,12 +54,14 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
     break;
 }
 
-switch ($_SERVER['HTTP_HOST']) {
-  case 'kwible.fr':
-    $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
-      'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
-      // 'loginLogo' => 'EXT:extension_key/Resources/Public/path/to/file/filename.extension',
-      'loginHighlightColor' => '#0dcaf0',
-    ];
-    break;
+if(isset($_SERVER['HTTP_HOST'])) {
+  switch ($_SERVER['HTTP_HOST']) {
+    case 'kwible.fr':
+      $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
+        'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
+        // 'loginLogo' => 'EXT:extension_key/Resources/Public/path/to/file/filename.extension',
+        'loginHighlightColor' => '#0dcaf0',
+      ];
+      break;
+  }
 }
