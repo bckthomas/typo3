@@ -32,29 +32,29 @@
         <f:for each="{mainNavigation}" as="mainNavigationItem">
           <f:if condition="{mainNavigationItem.children}">
             <f:then>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle {f:if(condition: mainNavigationItem.active, then: 'active')}"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle {f:if(condition: mainNavigationItem.active, then: 'active')}"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >
+                  {mainNavigationItem.title}
+                </a>
+                <f:render section="menuNextLevel" arguments="{menu: mainNavigationItem.children}" />
+              </li>
+            </f:then>
+            <f:else>
+              <li class="nav-item">
+                <a class="nav-link {f:if(condition: mainNavigationItem.active, then: 'active')}"
+                    href="{mainNavigationItem.link}"
                     >
                     {mainNavigationItem.title}
-                  </a>
-                <f:render section="menuNextLevel" arguments="{menu: mainNavigationItem.children}" />
-                </li>
-              </f:then>
-              <f:else>
-                <li class="nav-item">
-                  <a class="nav-link {f:if(condition: mainNavigationItem.active, then: 'active')}"
-                      href="{mainNavigationItem.link}"
-                      >
-                      {mainNavigationItem.title}
-                  </a>
-               </f:else>
-						</f:if>
-          </li>
+                </a>
+              </li>
+            </f:else>
+          </f:if>
         </f:for>
       </ul>
     </div>
