@@ -17,7 +17,11 @@ theme {
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le pied de page
 	infoFooter = 77
 	# cat=Configuration du thème; type=string; label= Body class
-	bodyTag = 
+	#bodyTag = 
+	# cat=Configuration du thème; type=string; label= Html tag class
+	#htmlTag_setParams = 
+	# cat=Configuration du site; type=int+; label= Id Matomo
+	matomoSiteId = 1
 
 	extension {
 		# cat=Configuration du thème; type=boolean; label= Gallery

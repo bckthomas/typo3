@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cad81432f41196caf9dfa709ba444ecc",
+    "content-hash": "5087c61c1ecb9c4740b7999666a33b1e",
     "packages": [
         {
             "name": "b13/container",
@@ -120,6 +120,83 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.6"
             },
             "time": "2022-02-04T20:16:05+00:00"
+        },
+        {
+            "name": "brotkrueml/typo3-matomo-widgets",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brotkrueml/typo3-matomo-widgets.git",
+                "reference": "023fd0f0d8781df83cfc3cd3e47d78d80bce6e8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brotkrueml/typo3-matomo-widgets/zipball/023fd0f0d8781df83cfc3cd3e47d78d80bce6e8d",
+                "reference": "023fd0f0d8781df83cfc3cd3e47d78d80bce6e8d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2",
+                "symfony/finder": "^4.4 || ^5.0",
+                "symfony/polyfill-php80": "^1.17",
+                "typo3/cms-core": "^10.4.15 || ^11.5",
+                "typo3/cms-dashboard": "^10.4.15 || ^11.5",
+                "typo3/cms-install": "^10.4.15 || ^11.5"
+            },
+            "require-dev": {
+                "brotkrueml/coding-standards": "~1.1.0",
+                "brotkrueml/typo3-matomo-integration": "^1.0",
+                "donatj/mock-webserver": "^2.2",
+                "ergebnis/composer-normalize": "^2.15",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^8.5 || ^9.5",
+                "symfony/yaml": "^5.3",
+                "vimeo/psalm": "^4.7"
+            },
+            "suggest": {
+                "brotkrueml/typo3-matomo-integration": "Matomo integration for TYPO3"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "extension-key": "matomo_widgets",
+                    "web-dir": ".Build/web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Brotkrueml\\MatomoWidgets\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Müller",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 Dashboard widgets with Matomo reports",
+            "keywords": [
+                "TYPO3 CMS",
+                "TYPO3 Extension",
+                "dashboard",
+                "matomo",
+                "widgets"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/brotkrueml/typo3-matomo-widgets/master/en-us/",
+                "issues": "https://github.com/brotkrueml/typo3-matomo-widgets/issues",
+                "source": "https://github.com/brotkrueml/typo3-matomo-widgets"
+            },
+            "time": "2021-10-20T15:07:22+00:00"
         },
         {
             "name": "causal/extractor",
