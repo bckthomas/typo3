@@ -11,16 +11,12 @@
 		<f:if condition="{homePageUid} == {data.uid}">
 			<f:then>
 				<h1 class="navbar-brand">
-          $$LOGO$$
-					<!-- <svg>
-						<title>Thomas Beck Développeur front-end</title>
-						<use xlink:href="{dossierPublic}/Images/sprite.svg#logo"></use>
-					</svg>						 -->
+          <f:image src="{publicFolder}/Images/logo.png" alt="" width="150c"/>
 				</h1>
 			</f:then>
 			<f:else>
-				<f:link.page pageUid="{homePageUid}" class="navbar-brand">
-          $$LOGO$$
+				<f:link.page pageUid="{homePageUid}" class="navbar-brand"> 
+          <f:image src="{publicFolder}/Images/logo.png" alt="Retour à l'accueil" width="150c"/>
 				</f:link.page>
 			</f:else>
 		</f:if>

@@ -101,6 +101,15 @@
                     <f:render partial="Media/Gallery" arguments="{_all}" />
                 </div>
             </f:if>
+
+            <f:if condition="{gallery.position.horizontal} == 'center' && {gallery.position.vertical} == 'above'">
+                <div class="d-flex justify-content-center">
+                    <f:render partial="Media/Gallery" arguments="{_all}" />
+                </div>
+                <f:if condition="{data.bodytext}">
+                    <f:render section="bodyText" arguments="{_all}" />
+                </f:if>
+            </f:if>
         </f:case>
     </f:switch>
 

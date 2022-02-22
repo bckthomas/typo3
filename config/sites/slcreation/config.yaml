@@ -3,6 +3,7 @@ baseVariants:
   -
     base: 'https://kwible.ddev.site:8443'
     condition: 'getenv("IS_DDEV_PROJECT") == "true"'
+disableStaticFileCache: false
 errorHandling:
   -
     errorCode: 404
@@ -22,5 +23,15 @@ languages:
     direction: ltr
     flag: fr
     websiteTitle: 'SL Création'
+matomoWidgetsActiveWidgets: ''
+matomoWidgetsIdSite: 0
+matomoWidgetsTitle: ''
+matomoWidgetsTokenAuth: ''
+matomoWidgetsUrl: ''
 rootPageId: 2
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: *\r\nDisallow:"
 websiteTitle: 'SL Création'

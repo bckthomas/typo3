@@ -2,3 +2,8 @@
 
 @import "../../../../../../theme_package/node_modules/bootstrap/scss/forms";
 @import "../../../../../../theme_package/node_modules/bootstrap/scss/buttons";
+
+.required {
+  color: $cyan-700;
+  font-size: .8rem;
+}

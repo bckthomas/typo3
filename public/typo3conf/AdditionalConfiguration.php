@@ -59,8 +59,8 @@ if(isset($_SERVER['HTTP_HOST'])) {
     case 'kwible.fr':
       $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
         'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
-        // 'loginLogo' => 'EXT:extension_key/Resources/Public/path/to/file/filename.extension',
-        'loginHighlightColor' => '#0dcaf0',
+        'loginLogo' => 'EXT:theme_slcreation/Resources/Public/Images/logo.png',
+        'loginHighlightColor' => '#66c6de',
       ];
       break;
   }

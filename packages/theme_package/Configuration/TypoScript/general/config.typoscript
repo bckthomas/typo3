@@ -12,7 +12,7 @@ config {
 	extTarget = _blank
   headerComment (
 +------------------------------------------------------------------------+
-| A website based on the TYPO3 template by Thomas Beck | thomas-beck.fr  |
+| A website based on the TYPO3 CMS by Thomas Beck | thomas-beck.fr  |
 +------------------------------------------------------------------------+
   )
 	htmlTag_setParams = {$theme.htmlTag_setParams}
@@ -21,7 +21,6 @@ config {
 	// inlineStyle2TempFile = 1
 	// intTarget =
 	moveJsFromHeaderToFooter = 1
-	noPageTitle = 2
 	// removeDefaultJS = external
 	// sendCacheHeaders = 1
 	spamProtectEmailAddresses = ascii
