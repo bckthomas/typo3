@@ -1,1 +1,2 @@
-Resources/Public
+Resources/Public/*
+!Resources/Public/Images

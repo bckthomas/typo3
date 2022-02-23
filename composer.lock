@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e453a16df3a05684e48809980fc02e9e",
+    "content-hash": "e48720144e578c4c9ba2f191e1e4f189",
     "packages": [
         {
             "name": "b13/container",
@@ -7799,6 +7799,90 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
+        },
+        {
+            "name": "yoast-seo-for-typo3/yoast_seo",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/Yoast-SEO-for-TYPO3.git",
+                "reference": "198ae5bfe9dcdf811aff7cd230efb39aa5581260"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/Yoast-SEO-for-TYPO3/zipball/198ae5bfe9dcdf811aff7cd230efb39aa5581260",
+                "reference": "198ae5bfe9dcdf811aff7cd230efb39aa5581260",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0",
+                "typo3/cms-backend": "^9.5|^10.4|^11.0",
+                "typo3/cms-core": "^9.5|^10.4|^11.0",
+                "typo3/cms-extbase": "^9.5|^10.4|^11.0",
+                "typo3/cms-fluid": "^9.5|^10.4|^11.0",
+                "typo3/cms-frontend": "^9.5|^10.4|^11.0",
+                "typo3/cms-install": "^9.5|^10.4|^11.0",
+                "typo3/cms-seo": "^9.5|^10.4|^11.0"
+            },
+            "replace": {
+                "typo3-ter/yoast-seo": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "overtrue/phplint": "^2.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^0.12",
+                "saschaegerer/phpstan-typo3": "^0.13",
+                "slam/phpstan-extensions": "^5.0",
+                "typo3/tailor": "^1.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": "public",
+                    "extension-key": "yoast_seo"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "YoastSeoForTypo3\\YoastSeo\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                },
+                {
+                    "name": "Team MaxServ",
+                    "email": "support@maxserv.com",
+                    "homepage": "https://maxserv.com"
+                }
+            ],
+            "description": "Yoast SEO for TYPO3",
+            "homepage": "https://yoast.com",
+            "keywords": [
+                "MaxServ",
+                "TYPO3 CMS",
+                "seo",
+                "yoast"
+            ],
+            "support": {
+                "issues": "https://github.com/Yoast/Yoast-SEO-for-TYPO3/issues",
+                "source": "https://github.com/Yoast/Yoast-SEO-for-TYPO3/tree/8.1.0"
+            },
+            "time": "2021-11-24T12:46:40+00:00"
         }
     ],
     "packages-dev": [],

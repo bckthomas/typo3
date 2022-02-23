@@ -26,4 +26,7 @@ config {
 	spamProtectEmailAddresses = ascii
 	// spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
 	tx_extbase.mvc.callDefaultActionIfActionCantBeResolved = 1
+	
+	pageTitleSeparator = -
+	pageTitleSeparator.noTrimWrap = | | |
 }

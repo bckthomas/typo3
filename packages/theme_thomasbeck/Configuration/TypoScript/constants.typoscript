@@ -4,8 +4,6 @@ theme {
 	// extFolder = EXT:theme_thomasbeck/Resources/Extensions
 	// containerFolder = EXT:theme_thomasbeck/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public
-	# cat=Configuration du site; type=string; label= Titre du site pour la balise <title> et pour le nom de l'expéditeur des mails
-	siteTitle = Thomas Beck Développeur front-end
 	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
 	homePage = 1
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi

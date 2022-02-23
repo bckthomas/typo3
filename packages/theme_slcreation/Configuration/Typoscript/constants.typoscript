@@ -4,8 +4,6 @@ theme {
 	extFolder = EXT:theme_slcreation/Resources/Extensions
 	// containerFolder = EXT:theme_slcreation/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public
-	# cat=Configuration du site; type=string; label= Titre du site pour la balise <title> et pour le nom de l'expéditeur des mails
-	siteTitle = SL Création
 	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
 	homePageUid = 2
 	# cat=Mise en page; type=int+; label= Niveau du menu
