@@ -22,7 +22,6 @@ languages:
     hreflang: fr-fr
     direction: ltr
     flag: fr
-    websiteTitle: 'SL Création'
 matomoWidgetsActiveWidgets: ''
 matomoWidgetsIdSite: 0
 matomoWidgetsTitle: ''
@@ -34,4 +33,4 @@ routes:
     route: robots.txt
     type: staticText
     content: "User-agent: *\r\nDisallow:"
-websiteTitle: 'SL Création'
+websiteTitle: 'SL Créations'

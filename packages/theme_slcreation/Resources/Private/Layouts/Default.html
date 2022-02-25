@@ -1,11 +1,13 @@
-<header>
+<header role="banner">
 	<f:render partial="Header" arguments="{_all}" />
 </header>
 
-<main id="mainContent" class="flex-shrink-0">
-	<f:render section="Main" />
+<main id="mainContent" class="flex-shrink-0" role="main">
+	<article>
+		<f:render section="Main" />
+	</article>
 </main>
 
-<footer class="footer mt-auto py-3 d-flex flex-wrap justify-content-between align-items-center">
+<footer role="contentinfo" class="footer mt-auto py-3 d-flex flex-wrap justify-content-between align-items-center">
 	<f:render partial="Footer" arguments="{_all}" />
 </footer>
