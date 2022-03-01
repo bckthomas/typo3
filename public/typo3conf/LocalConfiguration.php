@@ -30,10 +30,10 @@ return [
         'backend' => [
             'backendFavicon' => '',
             'backendLogo' => '',
-            'loginBackgroundImage' => '',
+            'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
             'loginFootnote' => '',
-            'loginHighlightColor' => '',
-            'loginLogo' => '',
+            'loginHighlightColor' => '#66c6de',
+            'loginLogo' => 'EXT:theme_slcreation/Resources/Public/Images/logo.png',
             'loginLogoAlt' => '',
         ],
         'extensionmanager' => [

@@ -25,9 +25,7 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
 
     $GLOBALS['TYPO3_CONF_VARS']['LOG']['TYPO3']['CMS']['deprecations']['writerConfiguration']['notice']['TYPO3\CMS\Core\Log\Writer\FileWriter']['disabled'] = false;
 
-    if(file_exists(dirname(__FILE__).'/productionDatabase.php')){
-      require_once(dirname(__FILE__).'/productionDatabase.php');
-    }
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = '109.234.162.14';
 
     break;
 
@@ -48,9 +46,8 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '0';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['no_pconnect'] = '1';
 
-    if(file_exists(dirname(__FILE__).'/productionDatabase.php')){
-        require_once(dirname(__FILE__).'/productionDatabase.php');
-    }
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = 'localhost';
+
     break;
 }
 
@@ -65,3 +62,7 @@ if(isset($_SERVER['HTTP_HOST'])) {
       break;
   }
 }
+
+$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = getenv('TYPO3_DB_NAME');
+$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['dbname'] = getenv('TYPO3_DB_USER');
+$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['password'] = getenv('TYPO3_DB_PASSWORD');
