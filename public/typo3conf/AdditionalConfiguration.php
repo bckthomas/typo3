@@ -25,7 +25,8 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
 
     $GLOBALS['TYPO3_CONF_VARS']['LOG']['TYPO3']['CMS']['deprecations']['writerConfiguration']['notice']['TYPO3\CMS\Core\Log\Writer\FileWriter']['disabled'] = false;
 
-    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = '109.234.162.14';
+    // To connect to prod database. To delete after MEP
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = getenv('TYPO3_DB_REMOTE_HOST');
 
     break;
 
@@ -46,7 +47,7 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '0';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['no_pconnect'] = '1';
 
-    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = 'localhost';
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = getenv('TYPO3_DB_HOST');
 
     break;
 }
