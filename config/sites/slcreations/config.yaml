@@ -23,10 +23,10 @@ languages:
     direction: ltr
     flag: fr
 matomoWidgetsActiveWidgets: ''
-matomoWidgetsIdSite: 0
+matomoWidgetsIdSite: 1
 matomoWidgetsTitle: ''
-matomoWidgetsTokenAuth: ''
-matomoWidgetsUrl: ''
+matomoWidgetsTokenAuth: '%env(MATOMO_TOKEN)%'
+matomoWidgetsUrl: '%env(MATOMO_URL)%'
 rootPageId: 2
 routes:
   -
