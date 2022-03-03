@@ -24,6 +24,7 @@ languages:
     flag: fr
 matomoWidgetsActiveWidgets: ''
 matomoWidgetsIdSite: 1
+matomoWidgetsPagesNotFoundTemplate: '404/URL = {path}/From = {referrer}'
 matomoWidgetsTitle: ''
 matomoWidgetsTokenAuth: '%env(MATOMO_TOKEN)%'
 matomoWidgetsUrl: '%env(MATOMO_URL)%'
@@ -34,3 +35,9 @@ routes:
     type: staticText
     content: "User-agent: *\r\nDisallow:"
 websiteTitle: 'SL Créations'
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      /: 0
+      sitemap.xml: 1533906435
