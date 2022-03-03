@@ -35,9 +35,6 @@ routes:
     type: staticText
     content: "User-agent: *\r\nDisallow:"
 websiteTitle: 'SL Créations'
-routeEnhancers:
-  PageTypeSuffix:
-    type: PageType
-    map:
-      /: 0
-      sitemap.xml: 1533906435
+imports:
+  -
+    resource: EXT:theme_package/Configuration/Route/routeEnhancers.yaml
