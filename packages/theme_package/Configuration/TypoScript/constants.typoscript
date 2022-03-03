@@ -4,3 +4,5 @@ styles.content.textmedia {
   # maximum width of generated images (beside text)
   maxWInText = 1920
 }
+
+sourceopt.removeGenerator = 0
