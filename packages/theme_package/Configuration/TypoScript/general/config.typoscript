@@ -10,12 +10,9 @@ config {
 	disablePrefixComment = 1
 	doctype = html5
 	extTarget = _blank
-  headerComment (
-+------------------------------------------------------------------------+
-| A website based on the TYPO3 CMS by Thomas Beck | thomas-beck.fr  |
-+------------------------------------------------------------------------+
+  headerComment = A website based on the TYPO3 CMS by Thomas Beck | thomas-beck.fr
   )
-	htmlTag_setParams = {$theme.htmlTag_setParams}
+	htmlTag.attributes.class = {$theme.htmlTag_class}
 	index_enable = 1
 	index_externals = 1
 	// inlineStyle2TempFile = 1

@@ -1,19 +1,23 @@
-<div class="container d-flex justify-content-between">
+<div class="container d-flex justify-content-between align-items-center">
 
   <div>
     <f:link.page pageUid="{homePageUid}" class="navbar-brand">
       <f:image src="{publicFolder}/Images/logo.png" alt="" width="100c"/>
     </f:link.page>
     <span class="text-muted">© {f:format.date(date: 'now', format: 'Y')} SL Creations - Villefranche-sur-Saône</span>
+  </div>
+  
+  <div>
     <f:for each="{footerNavigation}" as="footerNavigationItem">
-      <a class="nav-link {f:if(condition: footerNavigationItem.active, then: 'active')}"
+      <a class="{f:if(condition: footerNavigationItem.active, then: 'active')}"
       href="{footerNavigationItem.link}"
       >
         {footerNavigationItem.title}
       </a>
+      |
     </f:for>
   </div>
-  
+
   <div>
       <a target="_blank" title="{f:translate(key: '{languageFolder}:newTab')}" href="https://www.facebook.com/SASSLCreation/">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">

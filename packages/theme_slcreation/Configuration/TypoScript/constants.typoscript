@@ -19,7 +19,7 @@ theme {
 	# cat=Configuration du thème; type=string; label= Body class
 	bodyTag = <body class="d-flex flex-column h-100">
 	# cat=Configuration du thème; type=string; label= Html tag class
-	htmlTag_setParams = class="h-100"
+	htmlTag_class = h-100
 	# cat=Configuration du site; type=int+; label= Id Matomo
 	matomoSiteId = 1
 
