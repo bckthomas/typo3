@@ -1,13 +1,19 @@
-<header>
+<f:asset.css identifier="DropdownCSS" href="{packageComponentsFolder}/Css/dropdown.min.css" />
+<f:asset.css identifier="Collapse" href="{packageComponentsFolder}/Css/collapse.min.css" />
+<f:asset.css identifier="Navbar" href="{publicFolder}/Css/navbar.min.css" />
+<f:asset.script identifier="DropdownJS" src="{packageComponentsFolder}/JavaScript/dropdown.js" />
+<f:asset.script identifier="CollapseJS" src="{packageComponentsFolder}/JavaScript/collapse.js" />
+
+<header role="banner">
 	<f:render partial="Header" arguments="{_all}" />
 </header>
 
-<main id="mainContent" class="flex-shrink-0">
+<main id="mainContent" class="flex-shrink-0" role="main">
 	<article>
 		<f:render section="Main" />
 	</article>
 </main>
 
-<footer class="footer mt-auto py-3">
+<footer class="footer mt-auto py-3" role="contentinfo">
 	<f:render partial="Footer" arguments="{_all}" />
 </footer>

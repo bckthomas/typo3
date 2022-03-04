@@ -17,7 +17,7 @@ theme {
 	# cat=Configuration du thème; type=string; label= Body class
 	#bodyTag = 
 	# cat=Configuration du thème; type=string; label= Html tag class
-	#htmlTag_setParams = 
+	# htmlTag_class =
 	# cat=Configuration du site; type=int+; label= Id Matomo
 	matomoSiteId = 1
 

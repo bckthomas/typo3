@@ -1,12 +1,6 @@
-<f:asset.css identifier="DropdownCSS" href="{packageComponentsFolder}/Css/dropdown.min.css" />
-<f:asset.css identifier="Collapse" href="{packageComponentsFolder}/Css/collapse.min.css" />
-<f:asset.css identifier="Navbar" href="{publicFolder}/Css/navbar.min.css" />
-<f:asset.script identifier="DropdownJS" src="{packageComponentsFolder}/JavaScript/dropdown.js" />
-<f:asset.script identifier="CollapseJS" src="{packageComponentsFolder}/JavaScript/collapse.js" />
-
 <a href="#mainContent" class="skiptocontent">{f:translate(key: '{languageFolder}:skipToContent')}</a>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation">
   <div class="container">
 		<f:if condition="{homePageUid} == {data.uid}">
 			<f:then>
