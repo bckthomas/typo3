@@ -8,14 +8,17 @@
   </div>
   
   <div>
-    <f:for each="{footerNavigation}" as="footerNavigationItem">
-      <a class="{f:if(condition: footerNavigationItem.active, then: 'active')}"
-      href="{footerNavigationItem.link}"
-      >
-        {footerNavigationItem.title}
-      </a>
-      |
-    </f:for>
+    <ul class="list-unstyled list-inline mb-0">
+      <f:for each="{footerNavigation}" as="footerNavigationItem">
+        <li class="list-inline-item">
+          <a class="{f:if(condition: footerNavigationItem.active, then: 'active')}"
+          href="{footerNavigationItem.link}"
+          >
+            {footerNavigationItem.title}
+          </a>
+        </li>
+      </f:for>
+    </ul>
   </div>
 
   <div>
