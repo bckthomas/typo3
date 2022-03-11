@@ -62,10 +62,6 @@ page {
     }
     viewport = width=device-width, initial-scale=1.0, user-scalable=1
   }
-	includeCSSLibs {
-    googleFont = {$theme.googleFont}
-    googleFont.external = 1
-  }
 	includeCSS.layout = {$theme.publicFolder}/Css/layout.min.css
   bodyTag = {$theme.bodyTag}
 }

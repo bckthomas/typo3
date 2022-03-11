@@ -6,3 +6,7 @@
 // Custom
 @import "variables";
 @import "mixin";
+
+@include font-face(Sora, "../../Fonts/Sora-Light", 300, normal);
+@include font-face(Sora, "../../Fonts/Sora-Regular", 400, normal);
+@include font-face(Sora, "../../Fonts/Sora-SemiBold", 600, normal);

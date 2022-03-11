@@ -9,7 +9,8 @@ const autoprefixer = require('gulp-autoprefixer'),
       sourcemaps = require('gulp-sourcemaps'),
       rollup = require('gulp-better-rollup')
       resolve = require('rollup-plugin-node-resolve'),
-      commonjs = require('rollup-plugin-commonjs')
+      commonjs = require('rollup-plugin-commonjs'),
+      replace = require('gulp-replace')
 ;
 
 const privatePath = './Resources/Private/Src';
@@ -70,8 +71,7 @@ function buildCss() {
       console.error(err);
       this.emit('end');
     })
-    // .pipe(replace('../../assets/images/', '../images/'))
-    // .pipe(replace('../assets/fonts/', '../fonts/'))
+    .pipe(replace('../../Fonts', '../../Public/Fonts/'))
     .pipe(autoprefixer()) // autoprefix (browserlist is defined in package.json
     .pipe(cleancss()) // minify autoprefixed CSS with gulp-clean-css. See https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-api for options
     .pipe(rename({ extname: '.min.css' })) // rename it with suffix .min.css
@@ -80,14 +80,20 @@ function buildCss() {
     .pipe(gulp.dest(paths.dist.css)); // output minified file in dist/ folder
 }
 
+function copyFonts () {
+  return gulp.src(paths.fonts+ '/**/*')
+    .pipe(gulp.dest(paths.dist.fonts));
+}
+
 function watch() {
   gulp.watch(paths.scss + '/**/*.scss', { interval: 100, usePolling: true }, gulp.series('buildCss'));
 }
 
-const build = gulp.series(clean, gulp.parallel(buildCss, buildJs));
+const build = gulp.series(clean, gulp.parallel(buildCss, buildJs, copyFonts));
 
 exports.clean = clean;
 exports.buildCss = buildCss;
+exports.copyFonts = copyFonts;
 exports.watch = watch;
 exports.buildJs = buildJs;
 
