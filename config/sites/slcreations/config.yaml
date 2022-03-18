@@ -22,10 +22,10 @@ languages:
     hreflang: fr-fr
     direction: ltr
     flag: fr
-matomoWidgetsActiveWidgets: ''
+matomoWidgetsActiveWidgets: 'actionsPerDay,actionsPerMonth,annotations,createAnnotation,bounceRate,browserPlugins,browsers,campaigns,contentNames,contentPieces,countries,javaScriptErrors,linkMatomo,osFamilies,pagesNotFound,siteSearchKeywords,siteSearchNoResultKeywords,visitsPerDay,visitsPerMonth'
 matomoWidgetsIdSite: 1
 matomoWidgetsPagesNotFoundTemplate: '404/URL = {path}/From = {referrer}'
-matomoWidgetsTitle: ''
+matomoWidgetsTitle: 'SL Créations'
 matomoWidgetsTokenAuth: '%env(MATOMO_TOKEN)%'
 matomoWidgetsUrl: '%env(MATOMO_URL)%'
 rootPageId: 2
@@ -37,4 +37,4 @@ routes:
 websiteTitle: 'SL Créations'
 imports:
   -
-    resource: EXT:theme_package/Configuration/Route/routeEnhancers.yaml
+    resource: 'EXT:theme_package/Configuration/Route/routeEnhancers.yaml'
