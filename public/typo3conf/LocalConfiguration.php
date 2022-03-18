@@ -4,7 +4,6 @@ return [
         'compressionLevel' => '5',
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => getenv('TYPO3_BE_INSTALLTOOLPASSWORD'),
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],

@@ -1,5 +1,10 @@
 <?php
 
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable(TYPO3\CMS\Core\Core\Environment::getProjectPath());
+$dotenv->load();
+
+$GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'] = getenv('TYPO3_BE_INSTALLTOOLPASSWORD');
+
 switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
   case 'Development':
     $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = 'db';
@@ -26,7 +31,7 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
     $GLOBALS['TYPO3_CONF_VARS']['LOG']['TYPO3']['CMS']['deprecations']['writerConfiguration']['notice']['TYPO3\CMS\Core\Log\Writer\FileWriter']['disabled'] = false;
 
     // To connect to prod database. To delete after MEP
-    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = getenv('TYPO3_DB_REMOTE_HOST');
+    // $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = getenv('TYPO3_DB_REMOTE_HOST');
 
     break;
 
@@ -48,6 +53,9 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['no_pconnect'] = '1';
 
     $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = getenv('TYPO3_DB_HOST');
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = getenv('TYPO3_DB_NAME');
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['dbname'] = getenv('TYPO3_DB_USER');
+    $GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['password'] = getenv('TYPO3_DB_PASSWORD');
 
     break;
 }
@@ -64,6 +72,4 @@ if(isset($_SERVER['HTTP_HOST'])) {
   }
 }
 
-$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = getenv('TYPO3_DB_NAME');
-$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['dbname'] = getenv('TYPO3_DB_USER');
-$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['password'] = getenv('TYPO3_DB_PASSWORD');
+
