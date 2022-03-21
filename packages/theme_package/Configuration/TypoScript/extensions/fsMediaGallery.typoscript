@@ -2,6 +2,7 @@
   plugin.tx_fsmediagallery {
     persistence.storagePid = {$theme.extension.fs_media_gallery.storagePid}
     settings {
+      media.lazyLoading = lazy
       album {
         lightbox.enable = 0
         fancybox.enable = 1

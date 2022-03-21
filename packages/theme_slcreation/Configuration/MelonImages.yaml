@@ -1,0 +1,41 @@
+breakpoints:
+  sm:
+    to: 575
+
+  md:
+    from: 576
+    to: 767
+
+  md:
+    from: 768
+    to: 991
+
+  lg:
+    from: 992
+    to: 1199
+
+  xl:
+    from: 1200
+    to: 1399
+
+  xl:
+    from: 1400
+
+pixelDensities: [ 1, 2 ]
+
+croppingConfiguration:
+  tt_content:
+    _all:
+      fal_media:
+        variants:
+          default:
+            sizes:
+              # The small and big size both allow free ratio and will therefore automatically be grouped in the backend with the name "Free"
+              big:
+                breakpoints:  [ md ]
+                width: 943
+                ratio: free
+              small:
+                breakpoints: [ sm ]
+                width: 320
+                ratio: free
