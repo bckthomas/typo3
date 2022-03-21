@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4de132c4d0a6bdebdad53829e548c83e",
+    "content-hash": "4a35dbb2fd18b9000069dd1dbd06a164",
     "packages": [
         {
             "name": "b13/container",
@@ -3034,49 +3034,6 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "smichaelsen/melon-images",
-            "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/smichaelsen/melon-images.git",
-                "reference": "ad76d2628e48a32eeea4f50dd24298b0ef1e0fbb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/smichaelsen/melon-images/zipball/ad76d2628e48a32eeea4f50dd24298b0ef1e0fbb",
-                "reference": "ad76d2628e48a32eeea4f50dd24298b0ef1e0fbb",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4.0",
-                "typo3/cms-core": "^10.4.12 || ^11.5"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.12"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "melon_images"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Smichaelsen\\MelonImages\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "description": "Responsive Images Management",
-            "support": {
-                "issues": "https://github.com/smichaelsen/melon-images/issues",
-                "source": "https://github.com/smichaelsen/melon-images/tree/3.0.4"
-            },
-            "time": "2022-03-08T15:47:31+00:00"
         },
         {
             "name": "symfony/cache",
