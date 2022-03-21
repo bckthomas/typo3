@@ -24,6 +24,15 @@
     position: relative;
     z-index: 3;
     color: $white;
+    h2 {
+      font-size: 2.8rem;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    p {
+      font-weight: 300;
+    }
   }
 }
 .figure-caption {
