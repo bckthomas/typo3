@@ -1,8 +1,8 @@
 breakpoints:
-  sm:
+  xs:
     to: 575
 
-  md:
+  sm:
     from: 576
     to: 767
 
@@ -18,7 +18,7 @@ breakpoints:
     from: 1200
     to: 1399
 
-  xl:
+  xxl:
     from: 1400
 
 pixelDensities: [ 1, 2 ]
