@@ -473,6 +473,10 @@ RewriteCond %{HTTP_COOKIE} !staticfilecache [NC]
 RewriteCond %{REQUEST_METHOD} GET
 
 # Rewrite the request to the static file.
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{ENV:SFC_ROOT}/%{ENV:SFC_FULLPATH} -f
+RewriteCond %{HTTP_COOKIE} !staticfilecache [NC]
+RewriteCond %{REQUEST_METHOD} GET
 RewriteRule .* %{ENV:SFC_ROOT}/%{ENV:SFC_FULLPATH} [L]
 
 # Do not allow direct call the cache entries
