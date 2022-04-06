@@ -62,7 +62,7 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
 
 if(isset($_SERVER['HTTP_HOST'])) {
   switch ($_SERVER['HTTP_HOST']) {
-    case 'slcreations.kwible.fr':
+    case 'sl-creations.net':
       $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
         'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
         'loginLogo' => 'EXT:theme_slcreation/Resources/Public/Images/logo.png',

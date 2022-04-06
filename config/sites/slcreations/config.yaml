@@ -3,6 +3,9 @@ baseVariants:
   -
     base: 'https://kwible.ddev.site:8443'
     condition: 'getenv("IS_DDEV_PROJECT") == "true"'
+  -
+    base: 'https://www.sl-creations.net'
+    condition: 'applicationContext == "Production"'
 disableStaticFileCache: false
 errorHandling:
   -
