@@ -564,3 +564,5 @@ RewriteRule ^.*\.sfc$ %{ENV:CWD}index.php?eID=sfc_manifest [QSA,L]
 </IfModule>
 
 ### End: StaticFileCache ###
+RewriteCond %{HTTP_HOST} ^sl-creations\.net$
+RewriteRule ^(.*)$ https://www.sl-creations.net/$1 [L,R=301]
