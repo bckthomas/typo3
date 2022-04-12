@@ -24,7 +24,7 @@
 		"lochmueller/staticfilecache": "^12.4",
 		"minifranske/fs-media-gallery": "^3.0",
 		"netresearch/rte-ckeditor-image": "^11.0",
-		"smichaelsen/melon-images": "^3.1",
+		"thbck/theme-educcanine": "@dev",
 		"thbck/theme-package": "@dev",
 		"thbck/theme-slcreation": "@dev",
 		"thbck/theme-thomasbeck": "@dev",

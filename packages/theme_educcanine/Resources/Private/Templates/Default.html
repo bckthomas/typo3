@@ -1,0 +1,25 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+	<f:alias map="{rightContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'2\'})}', leftContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'1\'})}', col0: '{colPos: \'0\'}', col1: '{colPos: \'1\'}', col2: '{colPos: \'2\'}', col3: '{colPos: \'3\'}'}">
+		<div class="container">
+				<div class="row">
+					<f:if condition="{leftContent} > 1">
+						<div class="col-md-3">
+							<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col1}" />
+						</div>
+					</f:if>
+					<div class="col">
+						<f:cObject typoscriptObjectPath="lib.pageTitle" />
+						<!--TYPO3SEARCH_begin-->
+						<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col0}" />
+						<!--TYPO3SEARCH_end-->
+					</div>
+					<f:if condition="{rightContent} > 1">
+						<div class="col-md-3">
+							<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col2}" />
+						</div>
+					</f:if>
+				</div>
+		</div>
+	</f:alias>
+</f:section>
