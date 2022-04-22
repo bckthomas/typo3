@@ -15,6 +15,7 @@
 	},
 	"require": {
 		"b13/container": "^1.4",
+		"b13/picture": "^1.1",
 		"brotkrueml/typo3-matomo-widgets": "^1.2",
 		"causal/extractor": "^2.1",
 		"causal/image_autoresize": "^2.1",
