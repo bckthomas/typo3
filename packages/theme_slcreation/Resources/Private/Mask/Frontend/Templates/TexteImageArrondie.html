@@ -1,0 +1,14 @@
+<f:comment>
+  <f:link.typolink parameter="{data.tx_mask_link}"></f:link.typolink>
+</f:comment>
+<div class="mb-3 {f:if(condition: data.tx_content_animation, then: 'js-animation-scroll animation-scroll {data.tx_content_animation}')}">
+  <div class="row d-flex align-items-center">
+    <div class="col-12 col-lg-6 mx-auto mb-4 mb-lg-0">
+      <f:image image="{data.tx_mask_image.0}" width="300" height="300" class="mx-auto d-block img-fluid shadow rounded-circle" />
+    </div>
+    <div class="col-12 col-lg-6 text-center text-lg-start">
+      <h2>{data.tx_mask_title -> f:format.raw()}</h2>
+      {data.tx_mask_texte -> f:format.raw()}
+       </div>
+     </div>
+   </div>
