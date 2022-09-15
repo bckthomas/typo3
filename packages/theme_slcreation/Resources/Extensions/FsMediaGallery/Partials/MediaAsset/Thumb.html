@@ -9,7 +9,7 @@ xmlns:mf="http://typo3.org/ns/MiniFranske/FsMediaGallery/ViewHelpers">
 		<f:then>
 				<f:asset.css identifier="FancyboxCSS" href="EXT:theme_package/Resources/Public/Css/fancybox.min.css" />
 				<f:asset.script identifier="FancyboxJS" src="EXT:theme_package/Resources/Public/JavaScript/fancybox.js" />
-				<a href="{f:uri.image(image:mediaAsset, width:'{settings.album.lightbox.asset.width}{settings.album.lightbox.asset.resizeMode}', height:'{settings.album.lightbox.asset.height}{settings.album.lightbox.asset.resizeMode}')}" rel="{settings.album.lightbox.relPrefix}{mediaAlbum.uid}" data-fancybox="gallery-{mediaAlbum.uid}" title="{mf:fileTitle(file:mediaAsset)} - {mediaAlbum.title}" class="gallery__link">
+				<a href="{f:uri.image(image:mediaAsset, width:'{settings.album.lightbox.asset.width}{settings.album.lightbox.asset.resizeMode}', height:'{settings.album.lightbox.asset.height}{settings.album.lightbox.asset.resizeMode}' )}" rel="{settings.album.lightbox.relPrefix}{mediaAlbum.uid}" data-fancybox="gallery-{mediaAlbum.uid}" title="{mf:fileTitle(file:mediaAsset)} - {mediaAlbum.title}" class="gallery__link">
 					<f:render partial="MediaAsset/Detail" section="Detail" arguments="{alt:mediaAsset.alternative,title:mediaAsset.title,mediaAsset:mediaAsset,width:settings.album.thumb.width,height:settings.album.thumb.height,resizeMode:settings.album.thumb.resizeMode}" />
 				</a>
 			</f:then>
