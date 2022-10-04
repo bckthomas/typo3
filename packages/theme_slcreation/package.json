@@ -1,11 +1,13 @@
 {
   "name": "theme_slcreation",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Thème for slcreation website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "eslint": "eslint",
+    "prettier": "prettier"
   },
   "preinstall": "npx npm-force-resolutions",
   "resolutions": {
@@ -39,5 +41,10 @@
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
 }

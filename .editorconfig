@@ -15,6 +15,7 @@ trim_trailing_whitespace = true
 # JS-Files
 [*.{js}]
 indent_size = 2
+indent_style = space
 
 # JSON-Files
 [*.json]
@@ -22,24 +23,29 @@ indent_style = tab
 
 # ReST-Files
 [*.rst]
-indent_size = 4
+indent_size = 2
+indent_style = space
 max_line_length = 80
 
 # YAML-Files
 [*.{yaml,yml}]
 indent_size = 2
+indent_style = space
 
 # package.json
 [package.json]
 indent_size = 2
+indent_style = space
 
 # TypoScript
 [*.{typoscript,tsconfig}]
 indent_size = 2
+indent_style = space
 
 # XLF-Files
 [*.xlf]
 indent_style = tab
+indent_style = space
 
 # .htaccess
 [{_.htaccess,.htaccess}]
@@ -47,6 +53,8 @@ indent_style = tab
 
 [*.{htm,html}]
 indent_size = 2
+indent_style = space
 
 [{*.scss}]
 indent_size = 2
+indent_style = space
