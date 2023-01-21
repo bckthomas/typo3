@@ -74,3 +74,4 @@ packages/theme_package/Resources/Public/Css
 packages/theme_package/Resources/Public/JavaScript
 .env
 composer.lock
+.cache/

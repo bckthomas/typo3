@@ -1,4 +1,4 @@
-const scrollElements = document.querySelectorAll(".js-animation-scroll");
+const scrollElements = document.querySelectorAll('.js-animation-scroll');
 
 const elementInView = (el, dividend = 1) => {
   const elementTop = el.getBoundingClientRect().top;
@@ -18,11 +18,11 @@ const elementOutofView = (el) => {
 };
 
 const displayScrollElement = (element) => {
-  element.classList.add("animation-scroll--scrolled");
+  element.classList.add('animation-scroll--scrolled');
 };
 
 const hideScrollElement = (element) => {
-  element.classList.remove("animation-scroll--scrolled");
+  element.classList.remove('animation-scroll--scrolled');
 };
 
 const handleScrollAnimation = () => {
@@ -30,12 +30,12 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.15)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      hideScrollElement(el);
     }
-  })
-}
+  });
+};
 
-window.addEventListener("scroll", () => { 
+window.addEventListener('scroll', () => { 
   handleScrollAnimation();
 });
 
