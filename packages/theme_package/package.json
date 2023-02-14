@@ -11,7 +11,8 @@
     "eslint": "eslint -c config/.eslintrc --cache --cache-location .cache/.eslintcache --fix \"Resources/Private/Src/**/*.js\"",
     "uglify": "multi-uglifyjs Resources/Private/Src/**/*.js --source-map -o Resources/Public/JavaScript --suffix=.min",
     "build:css": "npm run clean && npm run stylelint && npm run sass && npm run postcss",
-    "build:js": "npm run eslint && npm run uglify"
+    "build:js": "npm run eslint && npm run uglify",
+    "build": "npm run build:css && npm run build:js"
   },
   "author": "Thomas Beck",
   "license": "ISC",

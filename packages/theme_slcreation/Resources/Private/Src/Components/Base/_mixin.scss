@@ -1,22 +1,12 @@
-@mixin text-contrast($n) {
-  $color-brightness: round((red($n) * 299) + (green($n) * 587) + (calc(calc(blue($n) * 114) / 1000)));
-  $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (calc(calc(blue(#ffffff) * 114) / 1000)));
-  
-  @if abs($color-brightness) < (calc($light-color / 2)){
-    color: $white;
-  }
-
-  @else {
-    color: $dark;
-  }
-}
+@use "sass:string";
 
 @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
   @font-face {
-    font-family: quote($font-name);
-    src: url($path+".woff") format("woff"),
-        url($path+".woff2") format("woff2");
     font-weight: $weight;
+    font-family: string.quote($font-name);
     font-style: $style;
+    src:
+      url($path + ".woff") format("woff"),
+      url($path + ".woff2") format("woff2");
   }
 }

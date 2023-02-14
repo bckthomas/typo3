@@ -11,11 +11,9 @@
 @import "../../../../../../theme_package/node_modules/bootstrap/scss/grid";
 @import "../../../../../../theme_package/node_modules/bootstrap/scss/images";
 @import "../../../../../../theme_package/node_modules/bootstrap/scss/type";
-
 @import "skiptocontent";
 @import "title";
 @import "image";
-
 @include font-face(Sora, "../../Fonts/Sora-Light", 300, normal);
 @include font-face(Sora, "../../Fonts/Sora-Regular", 400, normal);
 @include font-face(Sora, "../../Fonts/Sora-SemiBold", 600, normal);

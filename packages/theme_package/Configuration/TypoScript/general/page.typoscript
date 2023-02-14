@@ -62,8 +62,13 @@ page {
     }
     viewport = width=device-width, initial-scale=1.0, user-scalable=1
   }
-	includeCSS.layout = {$theme.publicFolder}/Css/layout.min.css
+	includeCSS.layout = {$theme.publicFolder}/Css/Components/Layout/layout.css
   bodyTag = {$theme.bodyTag}
+  includeJSFooterlibs {
+    popper = EXT:theme_package/node_modules/@popperjs/core/dist/umd/popper.min.js
+    bootstrap = EXT:theme_package/node_modules/bootstrap/dist/js/bootstrap.min.js
+  }
+
 }
 
 [{$theme.matomoSiteId} > 0 && applicationContext == 'Production']
