@@ -15,7 +15,6 @@
 	},
 	"require": {
 		"b13/container": "^1.4",
-		"b13/picture": "^1.1",
 		"brotkrueml/typo3-matomo-widgets": "^1.2",
 		"causal/extractor": "^2.1",
 		"causal/image_autoresize": "^2.1",
@@ -27,10 +26,8 @@
 		"mask/mask": "^7.2",
 		"minifranske/fs-media-gallery": "^3.0",
 		"netresearch/rte-ckeditor-image": "^11.0",
-		"thbck/theme-educcanine": "@dev",
 		"thbck/theme-package": "@dev",
 		"thbck/theme-slcreation": "@dev",
-		"thbck/theme-thomasbeck": "@dev",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",

@@ -1,14 +1,13 @@
 .skiptocontent {
-  padding: .6rem;
   position: absolute;
   top: -4rem;
-  border-right: .1rem solid white;
-  border-bottom: .1rem solid white;
-  border-bottom-right-radius: .8rem;
+  z-index: 1050;
+  padding: 0.6rem;
+  border-right: 0.1rem solid white;
+  border-bottom: 0.1rem solid white;
+  border-bottom-right-radius: 0.8rem;
   background: $primary;
   transition: $transition-base;
-  z-index: 1050;
-  @include text-contrast($primary);
 
   &:focus,
   &:active {

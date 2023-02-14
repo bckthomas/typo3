@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "clean": "del-cli ./Resources/Public/",
+    "stylelint": "stylelint --config config/.stylelintrc --cache --cache-location .cache/.stylelintcache --fix \"Resources/Private/Src/**/*.scss\"",
+    "sass": "sass --update --style=compressed Resources/Private/Src:./Resources/Public/Css",
+    "postcss": "postcss ./Resources/Public/Css/**/*.css --base ./Resources/Public/Css --config config/postcss.config.js -d ./Resources/Public/Css",
+    "eslint": "eslint -c config/.eslintrc --cache --cache-location .cache/.eslintcache --fix \"Resources/Private/Src/**/*.js\"",
+    "uglify": "multi-uglifyjs Resources/Private/Src/**/*.js --source-map -o Resources/Public/JavaScript --suffix=.min",
+    "build:css": "npm run clean && npm run stylelint && npm run sass && npm run postcss",
+    "build:js": "npm run eslint && npm run uglify",
+    "build": "npm run build:css && npm run build:js"
   },
   "author": "Thomas Beck",
   "license": "ISC",
@@ -16,16 +23,19 @@
     "bootstrap-icons": "^1.7.2"
   },
   "devDependencies": {
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-better-rollup": "^4.0.1",
-    "gulp-notify": "^4.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "rollup": "^1.32.1",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "sass": "^1.49.0"
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.23.1",
+    "multi-uglify-js": "^0.1.1",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^10.0.0",
+    "postcss-scss": "^4.0.5",
+    "sass": "^1.54.9",
+    "stylelint": "^14.11.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
