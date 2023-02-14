@@ -34,7 +34,6 @@
     "cssnano": "^5.1.14",
     "del-cli": "^5.0.0",
     "eslint": "^8.23.1",
-    "eslint-config-drupal": "^5.0.2",
     "imagemin-cli": "^7.0.0",
     "imagemin-mozjpeg": "^10.0.0",
     "multi-uglify-js": "^0.1.1",
