@@ -27,6 +27,8 @@
 		"minifranske/fs-media-gallery": "^3.0",
 		"netresearch/rte-ckeditor-image": "^11.0",
 		"thbck/theme-package": "@dev",
+		"thbck/theme-pimp": "@dev",
+		"thbck/theme-prsanitaire": "@dev",
 		"thbck/theme-slcreation": "@dev",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",

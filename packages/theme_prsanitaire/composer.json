@@ -1,7 +1,7 @@
 {
-  "name": "thbck/theme-init",
+  "name": "thbck/theme-prsanitaire",
   "type": "typo3-cms-extension",
-  "description": "Initial theme",
+  "description": "Theme for PR Sanitaire website",
   "license": "GPL-2.0-or-later",
   "authors": [
      {
@@ -12,7 +12,7 @@
   ],
   "autoload": {
      "psr-4": {
-        "Thbck\\Themeinit\\": "Classes/"
+        "Thbck\\Prsanitaire\\": "Classes/"
      }
   },
   "require": {
@@ -20,7 +20,7 @@
   },
   "extra": {
      "typo3/cms": {
-        "extension-key": "theme_init"
+        "extension-key": "theme_prsanitaire"
      }
   }
 }

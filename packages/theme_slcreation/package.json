@@ -22,7 +22,7 @@
     "watch:img": "onchange 'src/assets/**' -- npm run build:img",
     "watch:fonts": "onchange 'Resources/Private/Src/Fonts/**' -- npm run build:fonts",
     "watch": "npm-run-all --parallel watch:*",
-    "build": "npm run build:css && npm run build:js && npm run build:img && npm run build:fonts"
+    "build": "npm run clean && npm run build:css && npm run build:js && npm run build:img && npm run build:fonts"
   },
   "preinstall": "npx npm-force-resolutions",
 
