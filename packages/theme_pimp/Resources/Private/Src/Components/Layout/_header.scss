@@ -1,0 +1,30 @@
+.header {
+  &__logo {
+    display: block;
+    width: 9rem;
+    height: 15rem;
+  }
+}
+
+.navbar > .container {
+  align-items: start;
+}
+
+.main-navigation {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  list-style: none;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 1.5rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

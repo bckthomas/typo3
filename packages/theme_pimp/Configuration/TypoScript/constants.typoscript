@@ -1,0 +1,42 @@
+theme {
+	privateFolder = EXT:theme_pimp/Resources/Private
+	publicFolder = typo3conf/ext/theme_pimp/Resources/Public
+	extFolder = EXT:theme_pimp/Resources/Extensions
+	// containerFolder = EXT:theme_pimp/Resources/Container
+	// packagePublicFolder =  EXT:theme_package/Resources/Public
+	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
+	homePageUid = 1
+	# cat=Mise en page; type=int+; label= Niveau du menu
+	mainNavigation.levels = 1
+	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
+	sender.email = noreply@site.fr
+	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
+	footerMenuPid = 16
+	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
+	infoFooter =
+	# cat=Configuration du thème; type=string; label= Body class
+	bodyTag = <body class="d-flex flex-column h-100">
+	# cat=Configuration du thème; type=string; label= Html tag class
+	htmlTag_class = h-100
+	# cat=Configuration du site; type=int+; label= Id Matomo
+	matomoSiteId = 2
+
+	extension {
+		# cat=Configuration du thème; type=boolean; label= Gallery
+		fs_media_gallery = 1
+		fs_media_gallery {
+			storagePid = 12
+			album.thumb {
+				width = 300
+				height = 197
+			}
+		}
+	}
+}
+
+#Meta
+page.meta {
+	description =
+	author = Thomas Beck
+	keywords =
+}

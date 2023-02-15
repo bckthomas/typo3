@@ -1,0 +1,13 @@
+{
+  "dest": "theme_pimp/Resources/Public/Svg",
+  "svg": {
+    "doctypeDeclaration": false
+  },
+  "mode": {
+    "symbol": {
+      "dest": ".",
+      "sprite": "icon-sprite.svg",
+      "example": true
+    }
+  }
+}

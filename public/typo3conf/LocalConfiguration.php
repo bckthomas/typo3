@@ -78,6 +78,9 @@ return [
             'partials_backend' => 'EXT:theme_slcreation/Resources/Private/Mask/Backend/Partials',
             'preview' => 'EXT:theme_slcreation/Resources/Public/Mask/',
         ],
+        'rte_ckeditor_image' => [
+            'fetchExternalImages' => '1',
+        ],
         'scheduler' => [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',
