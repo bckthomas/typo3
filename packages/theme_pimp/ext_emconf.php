@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'White theme',
-    'description' => 'White theme for website',
+    'title' => 'Pimp theme',
+    'description' => 'Pimp theme',
     'category' => 'templates',
     'author' => 'Thomas Beck',
     'author_email' => 'contact@thomas-beck.fr',
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'Thbck\\ThemeWhite\\' => 'Classes'
+            'Thbck\\ThemePimp\\' => 'Classes'
         ]
     ],
 ];
