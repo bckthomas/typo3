@@ -26,6 +26,7 @@
 		"mask/mask": "^7.2",
 		"minifranske/fs-media-gallery": "^3.0",
 		"netresearch/rte-ckeditor-image": "^11.0",
+		"pimpmaskexport/pimp-mask-export": "@dev",
 		"thbck/theme-package": "@dev",
 		"thbck/theme-pimp": "@dev",
 		"thbck/theme-prsanitaire": "@dev",

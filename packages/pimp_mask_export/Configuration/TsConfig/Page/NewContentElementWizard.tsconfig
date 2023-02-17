@@ -1,0 +1,21 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+            accueil__image_plein_cran {
+                iconIdentifier = tx_pimpmaskexport_accueil__image_plein_cran
+                title = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.accueil__image_plein_cran_title
+                description = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.accueil__image_plein_cran_description
+                tt_content_defValues {
+                    CType = pimpmaskexport_accueil__image_plein_cran
+                }
+            }
+            mes_ralisations {
+                iconIdentifier = tx_pimpmaskexport_mes_ralisations
+                title = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.mes_ralisations_title
+                description = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.mes_ralisations_description
+                tt_content_defValues {
+                    CType = pimpmaskexport_mes_ralisations
+                }
+            }
+    }
+    show := addToList(accueil__image_plein_cran, mes_ralisations)
+}

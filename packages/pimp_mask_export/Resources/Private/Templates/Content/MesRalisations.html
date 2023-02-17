@@ -1,0 +1,25 @@
+<f:if condition="{data_tx_pimpmaskexport_category}">
+    <ul>
+        <f:for each="{data_tx_pimpmaskexport_category}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data_tx_pimpmaskexport_image}">
+    <f:for each="{data_item.data_tx_pimpmaskexport_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data.tx_pimpmaskexport_titre}">
+    {data_item.data.tx_pimpmaskexport_titre}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_pimpmaskexport_color}">
+    {data_item.data.tx_pimpmaskexport_color}<br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

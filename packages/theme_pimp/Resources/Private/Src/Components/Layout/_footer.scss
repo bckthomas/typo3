@@ -41,24 +41,6 @@
     height: 9rem;
   }
 
-  &__rs__link {
-    display: inline-block;
-    transition: $transition-base;
-
-    &:nth-child(2) {
-      margin-left: 2rem;
-    }
-
-    &:hover {
-      transform: scale(1.1) rotate(4deg);
-    }
-
-    &__icon {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
-
   &__copyright {
     margin: 1rem 0 0;
     font-size: 1.5rem;

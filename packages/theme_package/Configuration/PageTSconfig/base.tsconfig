@@ -1,8 +1,5 @@
 TCAdefaults {
     sys_file_reference.showinpreview = 1
-    tt_content {
-        space_after_class = mb-3
-    }
 }
 
 TCEMAIN {

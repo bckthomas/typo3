@@ -1,0 +1,26 @@
+{
+    "name": "pimpmaskexport/pimp-mask-export",
+    "description": "",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-backend": "^11.5",
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-extbase": "^11.5",
+        "typo3/cms-fluid": "^11.5",
+        "typo3/cms-frontend": "^11.5"
+    },
+    "replace": {
+        "typo3-ter/pimp-mask-export": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "PimpMaskExport\\PimpMaskExport\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "pimp_mask_export"
+        }
+    }
+}

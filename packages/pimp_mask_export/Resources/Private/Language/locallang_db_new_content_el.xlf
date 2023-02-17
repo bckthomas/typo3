@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-17T13:26:23+00:00" product-name="pimp_mask_export">
+    <header/>
+    <body>
+      <trans-unit id="wizards.newContentElement.accueil__image_plein_cran_title">
+        <source>Accueil : image plein écran</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.accueil__image_plein_cran_description">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.mes_ralisations_title">
+        <source>Mes réalisations</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.mes_ralisations_description">
+        <source></source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,13 +1,31 @@
 .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  transition: top 500ms ease-in-out;
+
   &__logo {
     display: block;
     width: 9rem;
     height: 15rem;
   }
-}
 
-.navbar > .container {
-  align-items: start;
+  &--scroll-up,
+  :focus-within {
+    top: 0;
+  }
+
+  &--scroll-down {
+    top: -100%;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .main-navigation {
