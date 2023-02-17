@@ -46,30 +46,8 @@ tt_content.pimpmaskexport_ma_dmarche {
     templateRootPaths.0 = EXT:pimp_mask_export/Resources/Private/Templates/Content/
     templateRootPaths.10 = {$plugin.tx_pimpmaskexport.view.templateRootPath}
     templateName = MaDmarche
-    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     dataProcessing.10 {
-        if.isTrue.field = tx_pimpmaskexport_demarche
-        table = tx_pimpmaskexport_demarche
-        pidInList.field = pid
-        where = parentid=###uid### AND deleted=0 AND hidden=0
-        orderBy = sorting
-        markers.uid.field = uid
-        as = data_tx_pimpmaskexport_demarche
-    }
-dataProcessing.10 {
-        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    dataProcessing.10 {
-        if.isTrue.field = tx_pimpmaskexport_icon
-        references {
-            fieldName = tx_pimpmaskexport_icon
-            table = tx_pimpmaskexport_demarche
-        }
-        as = data_tx_pimpmaskexport_icon
-    }
-
-}
-    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    dataProcessing.20 {
         if.isTrue.field = tx_pimpmaskexport_image
         references {
             fieldName = tx_pimpmaskexport_image
@@ -77,6 +55,37 @@ dataProcessing.10 {
         }
         as = data_tx_pimpmaskexport_image
     }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.20 {
+        if.isTrue.field = tx_pimpmaskexport_image_background
+        references {
+            fieldName = tx_pimpmaskexport_image_background
+            table = tt_content
+        }
+        as = data_tx_pimpmaskexport_image_background
+    }
+    dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.30 {
+        if.isTrue.field = tx_pimpmaskexport_icontext
+        table = tx_pimpmaskexport_icontext
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_pimpmaskexport_icontext
+    }
+dataProcessing.30 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_pimpmaskexport_icon
+        references {
+            fieldName = tx_pimpmaskexport_icon
+            table = tx_pimpmaskexport_icontext
+        }
+        as = data_tx_pimpmaskexport_icon
+    }
+
+}
 }
 tt_content.pimpmaskexport_map = FLUIDTEMPLATE
 tt_content.pimpmaskexport_map {

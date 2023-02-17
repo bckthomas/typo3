@@ -1,36 +1,54 @@
-<f:if condition="{data.header}">
-    {data.header}<br />
-</f:if>
+<f:asset.css identifier="component" href="EXT:theme_pimp/Resources/Public/Css/Components/Component/component.css" />
+<f:asset.css identifier="title2" href="EXT:theme_pimp/Resources/Public/Css/Components/Title2/title2.css" />
+<f:asset.css identifier="demarche" href="EXT:theme_pimp/Resources/Public/Css/Components/Demarches/demarche.css" />
 
-<f:if condition="{data.bodytext}">
-    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html><br />
-</f:if>
+<div class="demarches component component--background-image component--dark component--padding">
+  <f:if condition="{data_tx_pimpmaskexport_image_background}">
+    <div class="component--background-image__img">
+      <f:for each="{data_tx_pimpmaskexport_image_background}" as="file">
+        <f:image image="{file}" alt="" class="img-fluid full-image__img" />
+      </f:for>
+    </div>
+  </f:if>
 
-<f:if condition="{data_tx_pimpmaskexport_demarche}">
-    <ul>
-        <f:for each="{data_tx_pimpmaskexport_demarche}" as="data_item">
-            <li>
+  <div class="container component__above-image">
+    <div class="row">
+      <div class="col-md-5 offset-1 demarche__container js-animation-scroll animation-scroll slide-in-left">
+        <f:if condition="{data.header}">
+          <h2>{data.header}</h2>
+        </f:if>
+        <f:if condition="{data.bodytext}">
+            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+        </f:if>
+
+        <f:if condition="{data_tx_pimpmaskexport_icontext}">
+          <div class="mt-auto">
+            <f:for each="{data_tx_pimpmaskexport_icontext}" as="data_item">
+              <div class="demarche__item">
                 <f:if condition="{data_item.data_tx_pimpmaskexport_icon}">
-    <f:for each="{data_item.data_tx_pimpmaskexport_icon}" as="file">
-        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-        {file.description} / {file.identifier}<br />
-    </f:for>
-</f:if>
+                  <f:for each="{data_item.data_tx_pimpmaskexport_icon}" as="file">
+                    <f:image image="{file}" alt="" width="30c" class="demarche__item__icon" />
+                  </f:for>
+                </f:if>
 
-<f:if condition="{data_item.data.tx_pimpmaskexport_demarche_text}">
-    <f:format.nl2br>{data_item.data.tx_pimpmaskexport_demarche_text}</f:format.nl2br><br />
-</f:if>
+                <f:if condition="{data_item.data.tx_pimpmaskexport_demachetext}">
+                  <p>
+                    <f:format.nl2br>{data_item.data.tx_pimpmaskexport_demachetext}</f:format.nl2br>
+                  </p>
+                </f:if>
+              </div>
+            </f:for>
+          </div>
+        </f:if>
 
-
-            </li>
-        </f:for>
-    </ul>
-</f:if>
-
-<f:if condition="{data_tx_pimpmaskexport_image}">
-    <f:for each="{data_tx_pimpmaskexport_image}" as="file">
-        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-        {file.description} / {file.identifier}<br />
-    </f:for>
-</f:if>
-
+      </div>
+      <div class="col-md-5 offset-1 js-animation-scroll animation-scroll slide-in-right">
+        <f:if condition="{data_tx_pimpmaskexport_image}">
+          <f:for each="{data_tx_pimpmaskexport_image}" as="file">
+            <f:image image="{file}" alt="" class="img-fluid demarche__image"/>
+          </f:for>
+        </f:if>
+      </div>
+    </div>
+  </div>
+</div>

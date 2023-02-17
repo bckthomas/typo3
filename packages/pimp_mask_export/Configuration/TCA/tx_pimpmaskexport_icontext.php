@@ -19,11 +19,11 @@ return [
             'endtime' => 'endtime',
             'fe_group' => 'fe_group',
         ],
-        'title' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_demarche',
+        'title' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_icontext',
         'label' => 'tx_pimpmaskexport_icon',
         'iconfile' => 'EXT:pimp_mask_export/Resources/Public/Icons/Extension.svg',
         'hideTable' => true,
-        'searchFields' => 'tx_pimpmaskexport_demarche_text',
+        'searchFields' => 'tx_pimpmaskexport_demachetext',
     ],
     'palettes' => [
         'language' => [
@@ -81,8 +81,8 @@ return [
                     ],
                 ],
                 'default' => 0,
-                'foreign_table' => 'tx_pimpmaskexport_demarche',
-                'foreign_table_where' => 'AND tx_pimpmaskexport_demarche.pid=###CURRENT_PID### AND tx_pimpmaskexport_demarche.sys_language_uid IN (-1, 0)',
+                'foreign_table' => 'tx_pimpmaskexport_icontext',
+                'foreign_table_where' => 'AND tx_pimpmaskexport_icontext.pid=###CURRENT_PID### AND tx_pimpmaskexport_icontext.sys_language_uid IN (-1, 0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -268,7 +268,7 @@ return [
             ],
             'exclude' => 1,
         ],
-        'tx_pimpmaskexport_demarche_text' => [
+        'tx_pimpmaskexport_demachetext' => [
             'config' => [
                 'type' => 'text',
                 'wrap' => 'virtual',
@@ -290,7 +290,7 @@ return [
     ],
     'types' => [
         1 => [
-            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_pimpmaskexport_icon,tx_pimpmaskexport_demarche_text,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
+            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_pimpmaskexport_icon,tx_pimpmaskexport_demachetext,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
         ],
     ],
 ];

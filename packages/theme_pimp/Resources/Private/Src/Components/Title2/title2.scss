@@ -1,4 +1,8 @@
+@import "../Base/base";
+
 h2 {
+  @include font-size(4rem);
+
   margin-bottom: 2rem;
-  font-size: 4rem;
+  font-family: Bebas, sans-serif;
 }

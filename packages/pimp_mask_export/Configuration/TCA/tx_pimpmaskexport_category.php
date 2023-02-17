@@ -274,6 +274,13 @@ return [
             ],
             'exclude' => 1,
         ],
+        'tx_pimpmaskexport_link' => [
+            'config' => [
+                'renderType' => 'inputLink',
+                'type' => 'input',
+            ],
+            'exclude' => 1,
+        ],
         'tx_pimpmaskexport_color' => [
             'config' => [
                 'renderType' => 'colorpicker',
@@ -297,7 +304,7 @@ return [
     ],
     'types' => [
         1 => [
-            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_pimpmaskexport_image,tx_pimpmaskexport_titre,tx_pimpmaskexport_color,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
+            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_pimpmaskexport_image,tx_pimpmaskexport_titre,tx_pimpmaskexport_link,tx_pimpmaskexport_color,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
         ],
     ],
 ];

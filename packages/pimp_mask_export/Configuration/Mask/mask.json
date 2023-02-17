@@ -28,7 +28,7 @@
                 "color": "#000000",
                 "colorOverlay": "#000000",
                 "columns": [
-                    "tx_mask_title",
+                    "header",
                     "tx_mask_quote"
                 ],
                 "description": "",
@@ -41,7 +41,7 @@
                 "key": "citation",
                 "label": "Citation",
                 "labels": [
-                    "Titre",
+                    "",
                     ""
                 ],
                 "shortLabel": "",
@@ -53,11 +53,13 @@
                 "columns": [
                     "header",
                     "bodytext",
-                    "tx_mask_demarche",
-                    "tx_mask_image"
+                    "tx_mask_image",
+                    "tx_mask_image_background",
+                    "tx_mask_icontext"
                 ],
                 "description": "",
                 "descriptions": [
+                    "",
                     "",
                     "",
                     "",
@@ -68,6 +70,7 @@
                 "key": "ma_dmarche",
                 "label": "Ma d\u00e9marche",
                 "labels": [
+                    "",
                     "",
                     "",
                     "",
@@ -134,14 +137,24 @@
                     "tx_mask_category": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             },
-            "tx_mask_demarche": {
+            "tx_mask_icontext": {
                 "tt_content": {
-                    "tx_mask_demarche": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    "tx_mask_icontext": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             },
             "tx_mask_image": {
                 "tt_content": {
                     "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_image_background": {
+                "tt_content": {
+                    "tx_mask_image_background": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_link": {
+                "tt_content": {
+                    "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
                 }
             },
             "tx_mask_quote": {
@@ -152,11 +165,6 @@
             "tx_mask_texts": {
                 "tt_content": {
                     "tx_mask_texts": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_title": {
-                "tt_content": {
-                    "tx_mask_title": "mediumtext"
                 }
             }
         },
@@ -220,7 +228,7 @@
                 "key": "category",
                 "type": "inline"
             },
-            "tx_mask_demarche": {
+            "tx_mask_icontext": {
                 "config": {
                     "appearance": {
                         "enabledControls": {
@@ -242,10 +250,11 @@
                     "foreign_sortby": "sorting",
                     "foreign_table": "--inlinetable--",
                     "foreign_table_field": "parenttable",
+                    "maxitems": "2",
                     "type": "inline"
                 },
-                "fullKey": "tx_mask_demarche",
-                "key": "demarche",
+                "fullKey": "tx_mask_icontext",
+                "key": "icontext",
                 "type": "inline"
             },
             "tx_mask_image": {
@@ -271,6 +280,38 @@
                 "imageoverlayPalette": 1,
                 "key": "image",
                 "type": "file"
+            },
+            "tx_mask_image_background": {
+                "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
+                    "foreign_table": "sys_file_reference",
+                    "type": "inline"
+                },
+                "fullKey": "tx_mask_image_background",
+                "imageoverlayPalette": 1,
+                "key": "image_background",
+                "type": "file"
+            },
+            "tx_mask_link": {
+                "config": {
+                    "renderType": "inputLink",
+                    "type": "input"
+                },
+                "fullKey": "tx_mask_link",
+                "key": "link",
+                "type": "link"
             },
             "tx_mask_quote": {
                 "config": {
@@ -309,15 +350,6 @@
                 "fullKey": "tx_mask_texts",
                 "key": "texts",
                 "type": "inline"
-            },
-            "tx_mask_title": {
-                "config": {
-                    "type": "text",
-                    "wrap": "virtual"
-                },
-                "fullKey": "tx_mask_title",
-                "key": "title",
-                "type": "text"
             }
         }
     },
@@ -331,6 +363,11 @@
             "tx_mask_image": {
                 "tx_mask_category": {
                     "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_link": {
+                "tx_mask_category": {
+                    "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
                 }
             },
             "tx_mask_titre": {
@@ -349,7 +386,7 @@
                 "fullKey": "tx_mask_color",
                 "inlineParent": "tx_mask_category",
                 "key": "color",
-                "order": 3,
+                "order": 4,
                 "type": "colorpicker"
             },
             "tx_mask_image": {
@@ -377,6 +414,17 @@
                 "order": 1,
                 "type": "file"
             },
+            "tx_mask_link": {
+                "config": {
+                    "renderType": "inputLink",
+                    "type": "input"
+                },
+                "fullKey": "tx_mask_link",
+                "inlineParent": "tx_mask_category",
+                "key": "link",
+                "order": 3,
+                "type": "link"
+            },
             "tx_mask_titre": {
                 "config": {
                     "type": "input"
@@ -389,28 +437,28 @@
             }
         }
     },
-    "tx_mask_demarche": {
+    "tx_mask_icontext": {
         "sql": {
-            "tx_mask_demarche_text": {
-                "tx_mask_demarche": {
-                    "tx_mask_demarche_text": "mediumtext"
+            "tx_mask_demachetext": {
+                "tx_mask_icontext": {
+                    "tx_mask_demachetext": "mediumtext"
                 }
             },
             "tx_mask_icon": {
-                "tx_mask_demarche": {
+                "tx_mask_icontext": {
                     "tx_mask_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
         "tca": {
-            "tx_mask_demarche_text": {
+            "tx_mask_demachetext": {
                 "config": {
                     "type": "text",
                     "wrap": "virtual"
                 },
-                "fullKey": "tx_mask_demarche_text",
-                "inlineParent": "tx_mask_demarche",
-                "key": "demarche_text",
+                "fullKey": "tx_mask_demachetext",
+                "inlineParent": "tx_mask_icontext",
+                "key": "demachetext",
                 "order": 2,
                 "type": "text"
             },
@@ -434,7 +482,7 @@
                 },
                 "fullKey": "tx_mask_icon",
                 "imageoverlayPalette": 1,
-                "inlineParent": "tx_mask_demarche",
+                "inlineParent": "tx_mask_icontext",
                 "key": "icon",
                 "order": 1,
                 "type": "file"

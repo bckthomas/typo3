@@ -2,6 +2,7 @@
 
 .realisation {
   position: relative;
+  font-family: Bebas, sans-serif;
 
   &:nth-child(2) {
     animation-delay: 0.3s;
@@ -16,7 +17,10 @@
   }
 
   &__item {
+    $root: &;
+
     position: relative;
+    overflow: hidden;
 
     @include media-breakpoint-down(lg) {
       margin-bottom: 1.5rem;
@@ -33,7 +37,17 @@
         height: 100%;
         background-color: $white;
         opacity: 0.4;
+        transition: $transition-base;
         content: "";
+      }
+
+      &:hover {
+        &::after {
+          opacity: 0;
+        }
+        #{$root}__title {
+          left: -100%;
+        }
       }
     }
 
@@ -46,6 +60,7 @@
       overflow: hidden;
       color: $white;
       box-shadow: 0 0 1.5rem -0.3rem rgb(0 0 0 / 58%);
+      transition: $transition-base;
 
       &::before {
         display: block;
@@ -54,6 +69,8 @@
       }
 
       &__content {
+        @include font-size(3.5rem);
+
         position: absolute;
         top: 0;
         right: 0;
@@ -62,7 +79,6 @@
         display: flex;
         align-items: flex-end;
         padding: 1rem;
-        font-size: 3.5rem;
       }
     }
   }
