@@ -1,0 +1,8 @@
+<f:if condition="{processedRow.header}">
+    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
+    {processedRow.header} (raw={row.header})<br>
+</f:if>
+<f:if condition="{processedRow.tx_pimpmaskexport_adress}">
+    <strong><f:translate key="LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_pimpmaskexport_adress" /></strong>
+    {processedRow.tx_pimpmaskexport_adress} (raw={row.tx_pimpmaskexport_adress})<br>
+</f:if>
