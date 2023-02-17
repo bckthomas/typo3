@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-17T13:26:23+00:00" product-name="pimp_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-17T13:50:19+00:00" product-name="pimp_mask_export">
     <header/>
     <body>
       <trans-unit id="tx_pimpmaskexport_category">
         <source>tx_pimpmaskexport_category</source>
+      </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_demarche">
+        <source>tx_pimpmaskexport_demarche</source>
       </trans-unit>
       <trans-unit id="tx_pimpmaskexport_texts">
         <source>tx_pimpmaskexport_texts</source>
@@ -12,20 +15,41 @@
       <trans-unit id="tx_pimpmaskexport_texts.tx_pimpmaskexport_text">
         <source>Texte</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_adress">
+        <source>Adresse</source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_category">
         <source></source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_demarche">
+        <source></source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_image">
-        <source>tx_pimpmaskexport_image</source>
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_quote">
+        <source></source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_texts">
         <source>Textes</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_title">
+        <source>Titre</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.div._pimpmaskexport_">
         <source>pimp_mask_export</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.pimpmaskexport_accueil__image_plein_cran">
-        <source>Accueil : image plein écran</source>
+        <source>Image plein écran</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.pimpmaskexport_citation">
+        <source>Citation</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.pimpmaskexport_ma_dmarche">
+        <source>Ma démarche</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.pimpmaskexport_map">
+        <source>Map</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.pimpmaskexport_mes_ralisations">
         <source>Mes réalisations</source>

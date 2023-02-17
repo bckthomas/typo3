@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "pimp_mask_export".
  *
- * Auto generated 17-02-2023 13:26
+ * Auto generated 17-02-2023 13:50
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next

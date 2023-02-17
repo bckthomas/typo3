@@ -16,6 +16,9 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
      */
     protected $supportedContentTypes = [
     'pimpmaskexport_accueil__image_plein_cran' => 'AccueilImagePleinCran',
+    'pimpmaskexport_citation' => 'Citation',
+    'pimpmaskexport_ma_dmarche' => 'MaDmarche',
+    'pimpmaskexport_map' => 'Map',
     'pimpmaskexport_mes_ralisations' => 'MesRalisations',
 ];
 

@@ -1,0 +1,69 @@
+@import "../Base/base";
+
+.realisation {
+  position: relative;
+
+  &:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+
+  &__item {
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 1.5rem;
+    }
+
+    &__link {
+      display: block;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        opacity: 0.4;
+        content: "";
+      }
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      z-index: 2;
+      width: 15rem;
+      overflow: hidden;
+      color: $white;
+      box-shadow: 0 0 1.5rem -0.3rem rgb(0 0 0 / 58%);
+
+      &::before {
+        display: block;
+        padding-top: 100%;
+        content: "";
+      }
+
+      &__content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: flex-end;
+        padding: 1rem;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

@@ -1,25 +1,34 @@
-<f:if condition="{data_tx_pimpmaskexport_category}">
-    <ul>
-        <f:for each="{data_tx_pimpmaskexport_category}" as="data_item">
-            <li>
-                <f:if condition="{data_item.data_tx_pimpmaskexport_image}">
-    <f:for each="{data_item.data_tx_pimpmaskexport_image}" as="file">
-        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-        {file.description} / {file.identifier}<br />
-    </f:for>
-</f:if>
+<f:asset.css identifier="component" href="EXT:theme_pimp/Resources/Public/Css/Components/Component/component.css" />
+<f:asset.css identifier="realisations" href="EXT:theme_pimp/Resources/Public/Css/Components/Realisations/realisations.css" />
+<f:asset.css identifier="title2" href="EXT:theme_pimp/Resources/Public/Css/Components/Title2/title2.css" />
 
-<f:if condition="{data_item.data.tx_pimpmaskexport_titre}">
-    {data_item.data.tx_pimpmaskexport_titre}<br />
-</f:if>
+<div class="realisations component--dark component--padding">
+  <div class="container">
+    <f:if condition="{data.header}">
+      <h2>{data.header}</h2>
+    </f:if>
+    <div class="row">
+      <f:for each="{data_tx_pimpmaskexport_category}" as="data_item" iteration="fooIterator">
+        <f:asset.css identifier="categoryColor-{fooIterator.index}">
+          .realisation__color-{fooIterator.index} { background-color: {data_item.data.tx_pimpmaskexport_color}; }
+        </f:asset.css>
+        <div class="col-md-6 col-lg-3 realisation js-animation-scroll animation-scroll fade-in-bottom">
+          <div class="realisation__item">
+            <a href="#" class="realisation__item__link">
+                <f:for each="{data_item.data_tx_pimpmaskexport_image}" as="file">
+                  <f:image image="{file}" alt="" class="img-fluid" width="360c" height="640c" />
+                </f:for>
+                <div class="realisation__item__title realisation__color-{fooIterator.index}">
+                  <div class="realisation__item__title__content">
+                    {data_item.data.tx_pimpmaskexport_titre}
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+      </f:for>
+    </div>
+  </div>
+</div>
 
-<f:if condition="{data_item.data.tx_pimpmaskexport_color}">
-    {data_item.data.tx_pimpmaskexport_color}<br />
-</f:if>
-
-
-            </li>
-        </f:for>
-    </ul>
-</f:if>
 

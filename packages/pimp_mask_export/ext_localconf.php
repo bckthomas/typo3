@@ -13,6 +13,27 @@ $iconRegistry->registerIcon(
     ]
 );
 $iconRegistry->registerIcon(
+    'tx_pimpmaskexport_citation',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    [
+        'source' => 'EXT:pimp_mask_export/Resources/Public/Icons/Content/citation.svg',
+    ]
+);
+$iconRegistry->registerIcon(
+    'tx_pimpmaskexport_ma_dmarche',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    [
+        'source' => 'EXT:pimp_mask_export/Resources/Public/Icons/Content/ma_dmarche.svg',
+    ]
+);
+$iconRegistry->registerIcon(
+    'tx_pimpmaskexport_map',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    [
+        'source' => 'EXT:pimp_mask_export/Resources/Public/Icons/Content/map.svg',
+    ]
+);
+$iconRegistry->registerIcon(
     'tx_pimpmaskexport_mes_ralisations',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
     [

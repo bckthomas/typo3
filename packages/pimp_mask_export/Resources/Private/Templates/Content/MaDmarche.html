@@ -1,0 +1,36 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data.bodytext}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html><br />
+</f:if>
+
+<f:if condition="{data_tx_pimpmaskexport_demarche}">
+    <ul>
+        <f:for each="{data_tx_pimpmaskexport_demarche}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data_tx_pimpmaskexport_icon}">
+    <f:for each="{data_item.data_tx_pimpmaskexport_icon}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data.tx_pimpmaskexport_demarche_text}">
+    <f:format.nl2br>{data_item.data.tx_pimpmaskexport_demarche_text}</f:format.nl2br><br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:if condition="{data_tx_pimpmaskexport_image}">
+    <f:for each="{data_tx_pimpmaskexport_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+

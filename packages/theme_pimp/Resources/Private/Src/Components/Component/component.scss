@@ -1,0 +1,19 @@
+@import "../Base/base";
+
+.component {
+  position: relative;
+
+  &--dark {
+    color: $white;
+    background-color: $primary-brown;
+  }
+
+  &--h100 {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &--padding {
+    padding: 5rem 0;
+  }
+}
