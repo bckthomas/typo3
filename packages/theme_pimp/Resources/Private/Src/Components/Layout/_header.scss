@@ -1,9 +1,14 @@
+@import "../Base/base";
+
 .header {
+  $root: &;
+
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   padding: 1.5rem 2rem;
+  color: $white;
   font-family: Bebas, sans-serif;
   transition: top 500ms ease-in-out;
 
@@ -11,11 +16,17 @@
     display: block;
     width: 9rem;
     height: 15rem;
+    transition: $transition-base;
   }
 
   &--scroll-up,
   :focus-within {
     top: 0;
+    background-color: $primary-brown;
+    opacity: 0.85;
+    #{$root}__logo {
+      height: 8rem;
+    }
   }
 
   &--scroll-down {
@@ -44,6 +55,35 @@
 
     &:last-child {
       margin: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding-bottom: 0.2rem;
+    text-decoration: none;
+    transform: perspective(1px) translateZ(0);
+
+    &::before {
+      position: absolute;
+      right: 51%;
+      bottom: 0;
+      left: 51%;
+      z-index: -1;
+      height: 0.3rem;
+      background: $white;
+      transition-timing-function: ease-out;
+      transition-duration: 0.3s;
+      transition-property: left, right;
+      content: "";
+    }
+
+    &:hover,
+    &--active {
+      &::before {
+        right: 0;
+        left: 0;
+      }
     }
   }
 }

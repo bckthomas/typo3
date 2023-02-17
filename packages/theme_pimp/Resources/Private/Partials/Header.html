@@ -31,7 +31,7 @@
           <f:if condition="{mainNavigationItem.children}">
             <f:then>
               <li class="main-navigation__item dropdown">
-                <a class="nav-link dropdown-toggle {f:if(condition: mainNavigationItem.active, then: 'active')}"
+                <a class="main-navigation__link dropdown-toggle {f:if(condition: mainNavigationItem.active, then: 'main-navigation__link--active')}"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -45,7 +45,7 @@
             </f:then>
             <f:else>
               <li class="main-navigation__item">
-                <a class="nav-link {f:if(condition: mainNavigationItem.active, then: 'active')}"
+                <a class="main-navigation__link {f:if(condition: mainNavigationItem.active, then: 'main-navigation__link--active')}"
                     href="{mainNavigationItem.link}"
                     >
                     {mainNavigationItem.title}

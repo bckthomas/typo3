@@ -4,6 +4,7 @@
   &__container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   &__item {
@@ -11,16 +12,19 @@
     align-items: center;
     margin-bottom: 1.5rem;
     padding: 0 1.5rem 1.5rem;
-    border-bottom: 0.1rem solid $white;
 
     &:last-child {
       margin-bottom: 0;
       padding-bottom: 0;
-      border-bottom: 0;
     }
 
     &__icon {
       margin-right: 2rem;
+    }
+
+    &__border {
+      height: 0.1rem;
+      border: 0.1rem solid $white;
     }
   }
 

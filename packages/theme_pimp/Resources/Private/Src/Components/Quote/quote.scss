@@ -1,0 +1,50 @@
+@import "../Base/base";
+
+.quote {
+  text-align: center;
+
+  &__title {
+    &::before {
+      display: inline-block;
+      margin-right: 1rem;
+      content: "[";
+    }
+
+    &::after {
+      display: inline-block;
+      margin-left: 1rem;
+      content: "]";
+    }
+  }
+
+  &__blockquote {
+    position: relative;
+    margin: auto;
+    font-style: italic;
+    text-indent: 6.5rem;
+
+    @include media-breakpoint-up(md) {
+      max-width: 60%;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      color: $white;
+      font-size: 8.5rem;
+    }
+
+    &::before {
+      top: -2.5rem;
+      left: -4.5rem;
+      font-size: 8.5rem;
+      content: "\201C";
+    }
+
+    &::after {
+      right: 2.5rem;
+      bottom: -65%;
+      content: "\201D";
+    }
+  }
+}

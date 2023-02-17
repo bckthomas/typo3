@@ -22,23 +22,26 @@
         </f:if>
 
         <f:if condition="{data_tx_pimpmaskexport_icontext}">
-          <div class="mt-auto">
-            <f:for each="{data_tx_pimpmaskexport_icontext}" as="data_item">
-              <div class="demarche__item">
-                <f:if condition="{data_item.data_tx_pimpmaskexport_icon}">
-                  <f:for each="{data_item.data_tx_pimpmaskexport_icon}" as="file">
-                    <f:image image="{file}" alt="" width="30c" class="demarche__item__icon" />
-                  </f:for>
-                </f:if>
+          <f:for each="{data_tx_pimpmaskexport_icontext}" as="data_item" iteration="iterator">
+            <div class="demarche__item">
+              <f:if condition="{data_item.data_tx_pimpmaskexport_icon}">
+                <f:for each="{data_item.data_tx_pimpmaskexport_icon}" as="file">
+                  <f:image image="{file}" alt="" height="50c" maxWidth="50c" class="demarche__item__icon" />
+                </f:for>
+              </f:if>
 
-                <f:if condition="{data_item.data.tx_pimpmaskexport_demachetext}">
-                  <p>
-                    <f:format.nl2br>{data_item.data.tx_pimpmaskexport_demachetext}</f:format.nl2br>
-                  </p>
-                </f:if>
-              </div>
-            </f:for>
-          </div>
+              <f:if condition="{data_item.data.tx_pimpmaskexport_demachetext}">
+                <p>
+                  <f:format.nl2br>{data_item.data.tx_pimpmaskexport_demachetext}</f:format.nl2br>
+                </p>
+              </f:if>
+            </div>
+            <f:if condition="{iterator.isLast}">
+              <f:else>
+                <div class="demarche__item__border"></div>
+              </f:else>
+            </f:if>
+          </f:for>
         </f:if>
 
       </div>

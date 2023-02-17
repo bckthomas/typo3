@@ -13,22 +13,18 @@ const isScrollingDown = () => {
     let isScrollDown;
 
     if (scrolledPosition > previousScrollPosition) {
-        isScrollDown = true;
-    } else {
-        isScrollDown = false;
-    }
-    previousScrollPosition = scrolledPosition;
-    return isScrollDown;
-};
-
-const handleNavScroll = () => {
-    if (isScrollingDown() && !nav.contains(document.activeElement)) {
         nav.classList.add('header--scroll-down');
         nav.classList.remove('header--scroll-up');
     } else {
         nav.classList.add('header--scroll-up');
         nav.classList.remove('header--scroll-down');
     }
+    if (scrolledPosition <= 0) {
+        nav.classList.remove('header--scroll-up');
+        nav.classList.remove('header--scroll-down');
+    }
+    previousScrollPosition = scrolledPosition;
+    return isScrollDown;
 };
 
 var throttleTimer;
@@ -47,6 +43,6 @@ const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 window.addEventListener('scroll', () => {
     if (mediaQuery && !mediaQuery.matches) {
-        throttle(handleNavScroll, 250);
+        throttle(isScrollingDown, 250);
     }
 });

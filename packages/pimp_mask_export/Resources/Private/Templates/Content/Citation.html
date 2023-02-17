@@ -1,8 +1,15 @@
-<f:if condition="{data.header}">
-    {data.header}<br />
-</f:if>
+<f:asset.css identifier="component" href="EXT:theme_pimp/Resources/Public/Css/Components/Component/component.css" />
+<f:asset.css identifier="quote" href="EXT:theme_pimp/Resources/Public/Css/Components/Quote/quote.css" />
+<f:asset.css identifier="title2" href="EXT:theme_pimp/Resources/Public/Css/Components/Title2/title2.css" />
 
-<f:if condition="{data.tx_pimpmaskexport_quote}">
-    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_pimpmaskexport_quote}</f:format.html><br />
-</f:if>
+<div class="quote component--dark component--padding">
+  <f:if condition="{data.header}">
+    <h2 class="quote__title js-animation-scroll animation-scroll fade-in">{data.header}</h2>
+  </f:if>
+  <f:if condition="{data.tx_pimpmaskexport_quote}">
+    <blockquote class="quote__blockquote js-animation-scroll animation-scroll fade-in-bottom">
+      <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_pimpmaskexport_quote}</f:format.html>
+    </blockquote>
+  </f:if>
 
+</div>
