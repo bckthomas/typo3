@@ -18,6 +18,7 @@
 		"brotkrueml/typo3-matomo-widgets": "^1.2",
 		"causal/extractor": "^2.1",
 		"causal/image_autoresize": "^2.1",
+		"codemonkey1988/responsive-images": "^3.1",
 		"georgringer/numbered-pagination": "^1.0",
 		"helhum/typo3-console": "^7.0.2",
 		"ichhabrecht/mask-export": "^4.0",
