@@ -32,10 +32,11 @@
       position: absolute;
       color: $white;
       font-size: 8.5rem;
+      line-height: 0.1;
     }
 
     &::before {
-      top: -2.5rem;
+      top: 2.5rem;
       left: -4.5rem;
       font-size: 8.5rem;
       content: "\201C";
@@ -43,7 +44,7 @@
 
     &::after {
       right: 2.5rem;
-      bottom: -65%;
+      bottom: -2.5rem;
       content: "\201D";
     }
   }

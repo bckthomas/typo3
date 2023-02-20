@@ -69,6 +69,13 @@ if(isset($_SERVER['HTTP_HOST'])) {
         'loginHighlightColor' => '#66c6de',
       ];
       break;
+    case 'pimpebenisterie.fr':
+      $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
+        'loginBackgroundImage' => 'fileadmin/pimp/image_home.png',
+        'loginLogo' => 'EXT:theme_pimp/Resources/Public/Images/logo.png',
+        'loginHighlightColor' => '#76b82a',
+      ];
+      break;
   }
 }
 

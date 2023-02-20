@@ -1,6 +1,12 @@
 @import "../Base/base";
 
-.demarche {
+.demarches {
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -10,8 +16,7 @@
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 1.5rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -28,11 +33,16 @@
     }
   }
 
-  &__image {
+  &__link {
+    display: block;
     margin-bottom: 2rem;
 
     &:last-child {
       margin: 0;
     }
   }
+}
+
+[data-fancybox] {
+  cursor: url("data:image/svg+xml;charset=utf8,%3Csvg width='124' height='124' viewBox='0 0 124 124' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M64.3485 57.3027H59.6516V52.6058H57.3031V57.3027H52.6061V59.6512H57.3031V64.3482H59.6516V59.6512H64.3485V57.3027ZM71.394 58.477C71.396 61.4846 70.3345 64.3961 68.3972 66.6967L77.2652 75.6044L75.6047 77.2649L66.697 68.3969C64.3965 70.3342 61.485 71.3957 58.4773 71.3936C51.3437 71.3936 45.5607 65.6106 45.5607 58.477C45.5607 51.3433 51.3437 45.5603 58.4773 45.5603C65.611 45.5603 71.394 51.3433 71.394 58.477ZM47.9092 58.477C47.9092 64.3136 52.6407 69.0452 58.4773 69.0452C64.3113 69.0387 69.039 64.3109 69.0455 58.477C69.0455 52.6403 64.314 47.9088 58.4773 47.9088C52.6407 47.9088 47.9092 52.6403 47.9092 58.477Z' fill='white'/%3E%3Crect x='0.5' y='0.5' width='123' height='123' rx='61.5' stroke='white'/%3E%3C/svg%3E") 62 62, pointer;
 }

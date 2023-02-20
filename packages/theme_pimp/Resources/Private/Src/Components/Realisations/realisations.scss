@@ -23,6 +23,7 @@
     overflow: hidden;
 
     @include media-breakpoint-down(lg) {
+      max-height: 20rem;
       margin-bottom: 1.5rem;
     }
 
