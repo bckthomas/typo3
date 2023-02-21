@@ -20,7 +20,7 @@
     "eslint": "eslint -c config/.eslintrc --cache --cache-location .cache/.eslintcache --fix \"theme_${site}/Resources/Private/Src/**/*.js\"",
     "uglify": "multi-uglifyjs theme_${site}/Resources/Private/Src/**/*.js --source-map -o theme_${site}/Resources/Public/JavaScript --suffix=.min",
 
-    "imagemin": "imagemin --plugin.mozjpeg.progressive=true --plugin.mozjpeg.quality=75 --plugin.gifsicle.interlaced=true --plugin.gifsicle.optimizationLevel=2 --plugin.optipng.optimizationLevel=3 theme_${site}/Resources/Private/Src/Images/* --out-dir=theme_${site}/Resources/Public/Images",
+    "imagemin": "imagemin --plugin.gifsicle.interlaced=true --plugin.gifsicle.optimizationLevel=2 --plugin.optipng.optimizationLevel=3 theme_${site}/Resources/Private/Src/Images/* --out-dir=theme_${site}/Resources/Public/Images",
     "svgsprite": "svg-sprite --config config/svgsprite.json theme_${site}/Resources/Private/Src/Icons/*.svg",
     "copyfonts": "cpy theme_${site}/Resources/Private/Src/Fonts/**/* theme_${site}/Resources/Public/Fonts",
 
@@ -42,7 +42,6 @@
     "del-cli": "^5.0.0",
     "eslint": "^8.23.1",
     "imagemin-cli": "^7.0.0",
-    "imagemin-mozjpeg": "^10.0.0",
     "multi-uglify-js": "^0.1.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
