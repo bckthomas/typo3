@@ -266,6 +266,7 @@ return [
                     'fileUploadAllowed' => 1,
                 ],
             ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_icontext.tx_pimpmaskexport_icon',
             'exclude' => 1,
         ],
         'tx_pimpmaskexport_demachetext' => [
@@ -273,6 +274,7 @@ return [
                 'type' => 'text',
                 'wrap' => 'virtual',
             ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_icontext.tx_pimpmaskexport_demachetext',
             'exclude' => 1,
         ],
         't3_origuid' => [

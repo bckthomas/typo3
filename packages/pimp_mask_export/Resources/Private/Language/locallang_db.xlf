@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-17T15:46:26+00:00" product-name="pimp_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-22T15:27:51+00:00" product-name="pimp_mask_export">
     <header/>
     <body>
       <trans-unit id="tx_pimpmaskexport_category">
         <source>tx_pimpmaskexport_category</source>
       </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_category.tx_pimpmaskexport_image">
+        <source>Image</source>
+      </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_category.tx_pimpmaskexport_titre">
+        <source>Intitulé</source>
+      </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_category.tx_pimpmaskexport_link">
+        <source>Lien</source>
+      </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_category.tx_pimpmaskexport_color">
+        <source>Couleur</source>
+      </trans-unit>
       <trans-unit id="tx_pimpmaskexport_icontext">
         <source>tx_pimpmaskexport_icontext</source>
+      </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_icontext.tx_pimpmaskexport_icon">
+        <source>Iocn</source>
+      </trans-unit>
+      <trans-unit id="tx_pimpmaskexport_icontext.tx_pimpmaskexport_demachetext">
+        <source>Texte</source>
       </trans-unit>
       <trans-unit id="tx_pimpmaskexport_texts">
         <source>tx_pimpmaskexport_texts</source>
@@ -19,22 +37,22 @@
         <source>Adresse</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_category">
-        <source></source>
+        <source>Thème</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_icontext">
-        <source></source>
+        <source>Icone et texte</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_image">
-        <source></source>
+        <source>Illustrations</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_image_background">
-        <source></source>
+        <source>Image de fond</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_link">
         <source>tx_pimpmaskexport_link</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_quote">
-        <source></source>
+        <source>Citation</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_texts">
         <source>Textes</source>

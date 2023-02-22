@@ -265,13 +265,16 @@ return [
                     'elementBrowserEnabled' => 1,
                     'fileUploadAllowed' => 1,
                 ],
+                'maxitems' => '1',
             ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_image',
             'exclude' => 1,
         ],
         'tx_pimpmaskexport_titre' => [
             'config' => [
                 'type' => 'input',
             ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_titre',
             'exclude' => 1,
         ],
         'tx_pimpmaskexport_link' => [
@@ -279,6 +282,7 @@ return [
                 'renderType' => 'inputLink',
                 'type' => 'input',
             ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_link',
             'exclude' => 1,
         ],
         'tx_pimpmaskexport_color' => [
@@ -287,6 +291,7 @@ return [
                 'size' => 10,
                 'type' => 'input',
             ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_color',
             'exclude' => 1,
         ],
         't3_origuid' => [
