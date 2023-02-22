@@ -20,7 +20,7 @@
                     "key": "accueil__image_plein_cran",
                     "label": "Image plein \u00e9cran",
                     "labels": [
-                        "",
+                        "Image",
                         "Textes"
                     ],
                     "shortLabel": "",
@@ -44,7 +44,7 @@
                     "label": "Citation",
                     "labels": [
                         "",
-                        ""
+                        "Citation"
                     ],
                     "shortLabel": "",
                     "sorting": 4
@@ -74,9 +74,9 @@
                     "labels": [
                         "",
                         "",
-                        "",
-                        "",
-                        ""
+                        "Illustrations",
+                        "Image de fond",
+                        "Icone et texte"
                     ],
                     "shortLabel": "",
                     "sorting": 3
@@ -122,7 +122,7 @@
                     "label": "Mes r\u00e9alisations",
                     "labels": [
                         "",
-                        ""
+                        "Th\u00e8me"
                     ],
                     "shortLabel": "",
                     "sorting": 2
@@ -445,6 +445,7 @@
                     "fullKey": "tx_mask_color",
                     "inlineParent": "tx_mask_category",
                     "key": "color",
+                    "label": "Couleur",
                     "order": 4,
                     "type": "colorpicker"
                 },
@@ -464,13 +465,15 @@
                             "useSortable": 1
                         },
                         "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
                         "type": "inline"
                     },
                     "fullKey": "tx_mask_image",
                     "imageoverlayPalette": 1,
                     "inlineParent": "tx_mask_category",
                     "key": "image",
-                    "order": 1,
+                    "label": "Image",
+                    "order": 2,
                     "type": "file"
                 },
                 "tx_mask_link": {
@@ -481,6 +484,7 @@
                     "fullKey": "tx_mask_link",
                     "inlineParent": "tx_mask_category",
                     "key": "link",
+                    "label": "Lien",
                     "order": 3,
                     "type": "link"
                 },
@@ -491,7 +495,8 @@
                     "fullKey": "tx_mask_titre",
                     "inlineParent": "tx_mask_category",
                     "key": "titre",
-                    "order": 2,
+                    "label": "Intitul\u00e9",
+                    "order": 1,
                     "type": "string"
                 }
             }
@@ -518,7 +523,8 @@
                     "fullKey": "tx_mask_demachetext",
                     "inlineParent": "tx_mask_icontext",
                     "key": "demachetext",
-                    "order": 2,
+                    "label": "Texte",
+                    "order": 1,
                     "type": "text"
                 },
                 "tx_mask_icon": {
@@ -543,7 +549,8 @@
                     "imageoverlayPalette": 1,
                     "inlineParent": "tx_mask_icontext",
                     "key": "icon",
-                    "order": 1,
+                    "label": "Iocn",
+                    "order": 2,
                     "type": "file"
                 }
             }

@@ -16,8 +16,8 @@ CREATE TABLE tx_pimpmaskexport_category (
     t3ver_count int(11) DEFAULT '0' NOT NULL,
     t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
     t3ver_move_id int(11) DEFAULT '0' NOT NULL,
-    tx_pimpmaskexport_image int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_titre varchar(255) DEFAULT '' NOT NULL,
+    tx_pimpmaskexport_image int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_link varchar(255) DEFAULT '' NOT NULL,
     tx_pimpmaskexport_color varchar(255) DEFAULT '' NOT NULL,
     KEY language (l10n_parent,sys_language_uid)
@@ -30,8 +30,8 @@ CREATE TABLE tx_pimpmaskexport_icontext (
     t3ver_count int(11) DEFAULT '0' NOT NULL,
     t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
     t3ver_move_id int(11) DEFAULT '0' NOT NULL,
-    tx_pimpmaskexport_icon int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_demachetext mediumtext,
+    tx_pimpmaskexport_icon int(11) unsigned DEFAULT '0' NOT NULL,
     KEY language (l10n_parent,sys_language_uid)
 );
 CREATE TABLE tx_pimpmaskexport_texts (

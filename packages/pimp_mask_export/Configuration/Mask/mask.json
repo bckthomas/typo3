@@ -414,7 +414,7 @@
                 "inlineParent": "tx_mask_category",
                 "key": "image",
                 "label": "Image",
-                "order": 1,
+                "order": 2,
                 "type": "file"
             },
             "tx_mask_link": {
@@ -437,7 +437,7 @@
                 "inlineParent": "tx_mask_category",
                 "key": "titre",
                 "label": "Intitul\u00e9",
-                "order": 2,
+                "order": 1,
                 "type": "string"
             }
         }
@@ -465,7 +465,7 @@
                 "inlineParent": "tx_mask_icontext",
                 "key": "demachetext",
                 "label": "Texte",
-                "order": 2,
+                "order": 1,
                 "type": "text"
             },
             "tx_mask_icon": {
@@ -491,7 +491,7 @@
                 "inlineParent": "tx_mask_icontext",
                 "key": "icon",
                 "label": "Iocn",
-                "order": 1,
+                "order": 2,
                 "type": "file"
             }
         }

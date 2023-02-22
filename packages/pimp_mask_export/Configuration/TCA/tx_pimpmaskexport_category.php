@@ -20,7 +20,7 @@ return [
             'fe_group' => 'fe_group',
         ],
         'title' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category',
-        'label' => 'tx_pimpmaskexport_image',
+        'label' => 'tx_pimpmaskexport_titre',
         'iconfile' => 'EXT:pimp_mask_export/Resources/Public/Icons/Extension.svg',
         'hideTable' => true,
         'searchFields' => 'tx_pimpmaskexport_titre',
@@ -182,6 +182,13 @@ return [
                 'type' => 'passthrough',
             ],
         ],
+        'tx_pimpmaskexport_titre' => [
+            'config' => [
+                'type' => 'input',
+            ],
+            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_titre',
+            'exclude' => 1,
+        ],
         'tx_pimpmaskexport_image' => [
             'config' => [
                 'type' => 'inline',
@@ -270,13 +277,6 @@ return [
             'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_image',
             'exclude' => 1,
         ],
-        'tx_pimpmaskexport_titre' => [
-            'config' => [
-                'type' => 'input',
-            ],
-            'label' => 'LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tx_pimpmaskexport_category.tx_pimpmaskexport_titre',
-            'exclude' => 1,
-        ],
         'tx_pimpmaskexport_link' => [
             'config' => [
                 'renderType' => 'inputLink',
@@ -309,7 +309,7 @@ return [
     ],
     'types' => [
         1 => [
-            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_pimpmaskexport_image,tx_pimpmaskexport_titre,tx_pimpmaskexport_link,tx_pimpmaskexport_color,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
+            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_pimpmaskexport_titre,tx_pimpmaskexport_image,tx_pimpmaskexport_link,tx_pimpmaskexport_color,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
         ],
     ],
 ];

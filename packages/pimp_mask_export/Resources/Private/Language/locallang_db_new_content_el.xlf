@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-22T15:27:51+00:00" product-name="pimp_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-22T15:30:25+00:00" product-name="pimp_mask_export">
     <header/>
     <body>
       <trans-unit id="wizards.newContentElement.accueil__image_plein_cran_title">
