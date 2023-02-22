@@ -14,15 +14,13 @@
 		}
 	},
 	"require": {
-		"b13/container": "^1.4",
-		"brotkrueml/typo3-matomo-widgets": "^1.2",
-		"causal/extractor": "^2.1",
-		"causal/image_autoresize": "^2.1",
-		"codemonkey1988/responsive-images": "^3.1",
-		"georgringer/numbered-pagination": "^1.0",
-		"helhum/typo3-console": "^7.0.2",
+		"b13/container": "^2",
+		"brotkrueml/typo3-matomo-widgets": "^1.7",
+		"causal/extractor": "^2",
+		"causal/image_autoresize": "^2",
+		"helhum/typo3-console": "^7",
 		"ichhabrecht/mask-export": "^4.0",
-		"lochmueller/sourceopt": "^4.0",
+		"lochmueller/sourceopt": "^5",
 		"lochmueller/staticfilecache": "^12.4",
 		"mask/mask": "^7.2",
 		"minifranske/fs-media-gallery": "^3.0",
@@ -60,7 +58,7 @@
 		"typo3/cms-tstemplate": "^11.5.0",
 		"typo3/cms-viewpage": "^11.5.0",
 		"vlucas/phpdotenv": "^5.4",
-		"yoast-seo-for-typo3/yoast_seo": "^8.1"
+		"yoast-seo-for-typo3/yoast_seo": "^8"
 	},
 	"scripts":{
 		"typo3-cms-scripts": [

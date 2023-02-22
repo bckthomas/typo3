@@ -130,7 +130,7 @@ return [
     'GFX' => [
         'imagefile_ext' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg,webp',
         'jpg_quality' => 50,
-        'processor' => 'ImageMagick',
+        'processor' => 'GraphicsMagick',
         'processor_allowTemporaryMasksAsPng' => false,
         'processor_colorspace' => 'sRGB',
         'processor_effects' => true,

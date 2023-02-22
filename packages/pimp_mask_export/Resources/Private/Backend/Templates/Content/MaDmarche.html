@@ -1,57 +1,46 @@
-<f:if condition="{processedRow.header}">
-    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
-    {processedRow.header} (raw={row.header})<br>
-</f:if>
 <f:if condition="{processedRow.bodytext}">
-    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text" /></strong>
-    {processedRow.bodytext} (raw={row.bodytext})<br>
+  <f:format.crop maxCharacters="100" append="...">
+    <f:format.raw>
+      {processedRow.bodytext}
+    </f:format.raw>
+  </f:format.crop>
 </f:if>
-<f:if condition="{processedRow.tx_pimpmaskexport_image}">
-    <strong><f:translate key="LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_pimpmaskexport_image" /></strong>
-<br><f:for each="{processedRow.tx_pimpmaskexport_image}" as="item">
-    <ul>
-        <li>
-    <ul>
-        <f:for each="{item.uid_local}" as="file">
-            <li><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
-        </f:for>
-    </ul>
-        </li>
-    </ul>
-</f:for>
-</f:if>
-<f:if condition="{processedRow.tx_pimpmaskexport_image_background}">
-    <strong><f:translate key="LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_pimpmaskexport_image_background" /></strong>
-<br><f:for each="{processedRow.tx_pimpmaskexport_image_background}" as="item">
-    <ul>
-        <li>
-    <ul>
-        <f:for each="{item.uid_local}" as="file">
-            <li><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
-        </f:for>
-    </ul>
-        </li>
-    </ul>
-</f:for>
-</f:if>
+
 <f:if condition="{processedRow.tx_pimpmaskexport_icontext}">
-    <strong><f:translate key="LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_pimpmaskexport_icontext" /></strong>
-<br><f:for each="{processedRow.tx_pimpmaskexport_icontext}" as="item">
-    <ul>
-        <li>
-            <f:translate key="" /> (id={item.uid})<br/>
-<f:for each="{item.tx_pimpmaskexport_icon}" as="item_item">
-    <ul>
-        <li>
-    <ul>
-        <f:for each="{item.uid_local}" as="file">
-            <li><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+  <ul class="list-unstyled">
+    <f:for each="{processedRow.tx_pimpmaskexport_icontext}" as="item">
+      <li class="mb-2">
+        <f:for each="{item.tx_pimpmaskexport_icon}" as="icon">
+          <f:for each="{icon.uid_local}" as="file">
+              <f:image src="{file.uid}" alt="" height="50c" maxWidth="50c" fileExtension="webp" style="display:inline-block; background-color:#eee;" />
+          </f:for>
         </f:for>
-    </ul>
-        </li>
-    </ul>
-</f:for>
-        </li>
-    </ul>
-</f:for>
+        <f:format.raw>
+          {item.tx_pimpmaskexport_demachetext}
+        </f:format.raw>
+      </li>
+    </f:for>
+  </ul>
 </f:if>
+
+<ul class="list-unstyled d-flex">
+  <f:if condition="{processedRow.tx_pimpmaskexport_image}">
+    <f:for each="{processedRow.tx_pimpmaskexport_image}" as="item">
+      <f:for each="{item.uid_local}" as="file">
+        <li>
+          <f:image src="{file.uid}" alt="" height="50c" maxWidth="50c" fileExtension="webp" />
+        </li>
+      </f:for>
+    </f:for>
+  </f:if>
+  <f:if condition="{processedRow.tx_pimpmaskexport_image_background}">
+    <f:for each="{processedRow.tx_pimpmaskexport_image_background}" as="item">
+      <f:for each="{item.uid_local}" as="file">
+        <li>
+          <f:image src="{file.uid}" alt="" height="50c" maxWidth="50c" fileExtension="webp" />
+        </li>
+      </f:for>
+  </f:for>
+  </f:if>
+</ul>
+
