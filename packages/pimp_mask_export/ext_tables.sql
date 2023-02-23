@@ -1,12 +1,23 @@
 CREATE TABLE tt_content (
     tx_pimpmaskexport_adress mediumtext,
+    tx_pimpmaskexport_background_image int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_category int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_pimpmaskexport_color mediumtext,
+    tx_pimpmaskexport_description mediumtext,
+    tx_pimpmaskexport_dimensions mediumtext,
+    tx_pimpmaskexport_disposition varchar(255) DEFAULT '' NOT NULL,
     tx_pimpmaskexport_icontext int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_image int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_image_background int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_pimpmaskexport_images int(11) unsigned DEFAULT '0' NOT NULL,
     tx_pimpmaskexport_link varchar(255) DEFAULT '' NOT NULL,
+    tx_pimpmaskexport_main_picture int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_pimpmaskexport_placage mediumtext,
+    tx_pimpmaskexport_price mediumtext,
     tx_pimpmaskexport_quote mediumtext,
-    tx_pimpmaskexport_texts int(11) unsigned DEFAULT '0' NOT NULL
+    tx_pimpmaskexport_texts int(11) unsigned DEFAULT '0' NOT NULL,
+    tx_pimpmaskexport_theme varchar(255) DEFAULT '' NOT NULL,
+    tx_pimpmaskexport_wood mediumtext
 );
 CREATE TABLE tx_pimpmaskexport_category (
     parentid int(11) DEFAULT '0' NOT NULL,

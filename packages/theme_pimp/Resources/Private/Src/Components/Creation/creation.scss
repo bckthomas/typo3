@@ -1,0 +1,65 @@
+@import "../Base/base";
+
+.creation {
+  $root: &;
+
+  padding: 5rem 0;
+
+  &--dark {
+    color: $white;
+    background-color: black;
+
+    #{$root}__detail__icon {
+      fill: $white;
+    }
+  }
+
+  &--disp1 {
+    &__images {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__description,
+    &__main-image {
+      display: flex;
+      align-items: center;
+    }
+
+    &__description {
+      order: 1;
+
+      @include media-breakpoint-up(md) {
+        order: 0;
+      }
+    }
+
+    &__main-image {
+      order: 0;
+
+      @include media-breakpoint-up(md) {
+        order: 1;
+      }
+    }
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    text-align: center;
+
+    &__info {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+    }
+
+    &__icon {
+      width: 6rem;
+      height: 6rem;
+      fill: $primary-dark;
+    }
+  }
+}

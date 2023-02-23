@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-22T15:30:25+00:00" product-name="pimp_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-02-23T07:04:13+00:00" product-name="pimp_mask_export">
     <header/>
     <body>
       <trans-unit id="tx_pimpmaskexport_category">
@@ -36,8 +36,23 @@
       <trans-unit id="tt_content.tx_pimpmaskexport_adress">
         <source>Adresse</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_background_image">
+        <source>Image de fond</source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_category">
         <source>Thème</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_color">
+        <source>Couleurs</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_description">
+        <source>Description</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_dimensions">
+        <source>Dimensions</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_disposition">
+        <source>Disposition</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_icontext">
         <source>Icone et texte</source>
@@ -48,14 +63,47 @@
       <trans-unit id="tt_content.tx_pimpmaskexport_image_background">
         <source>Image de fond</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_images">
+        <source>Illustrations</source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_link">
         <source>tx_pimpmaskexport_link</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_main_picture">
+        <source>Impage principale</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_placage">
+        <source>Placage</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_price">
+        <source>Prix</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_quote">
         <source>Citation</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_pimpmaskexport_texts">
         <source>Textes</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_theme">
+        <source>Thème</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_wood">
+        <source>Essence</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_disposition.I.0">
+        <source>Disposition 1</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_disposition.I.1">
+        <source>Disposition 2</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_disposition.I.2">
+        <source>Disposition 3</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_theme.I.0">
+        <source>Light</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_pimpmaskexport_theme.I.1">
+        <source>Dark</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.div._pimpmaskexport_">
         <source>pimp_mask_export</source>
@@ -65,6 +113,9 @@
       </trans-unit>
       <trans-unit id="tt_content.CType.pimpmaskexport_citation">
         <source>Citation</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.pimpmaskexport_creation">
+        <source>Création</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.pimpmaskexport_ma_dmarche">
         <source>Ma démarche</source>

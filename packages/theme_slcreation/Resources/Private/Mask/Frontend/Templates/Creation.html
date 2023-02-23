@@ -1,0 +1,56 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.tx_mask_description}">
+    {data.tx_mask_description -> f:format.nl2br()}
+</f:if>
+<f:variable name="theme" value="{data.tx_mask_theme}"/>
+<f:switch expression="{theme}">
+    <f:case value="light">
+        {theme}
+    </f:case>
+    <f:case value="dark">
+        {theme}
+    </f:case>
+</f:switch>
+<f:variable name="disposition" value="{data.tx_mask_disposition}"/>
+<f:switch expression="{disposition}">
+    <f:case value="disp1">
+        {disposition}
+    </f:case>
+    <f:case value="disp2">
+        {disposition}
+    </f:case>
+    <f:case value="disp3">
+        {disposition}
+    </f:case>
+</f:switch>
+<f:for each="{data.tx_mask_main_picture}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:for each="{data.tx_mask_background_image}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:for each="{data.tx_mask_images}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:if condition="{data.tx_mask_dimensions}">
+    {data.tx_mask_dimensions -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_wood}">
+    {data.tx_mask_wood -> f:format.nl2br()}
+</f:if>
+<f:if condition="{data.tx_mask_color}">
+    {data.tx_mask_color -> f:format.nl2br()}
+</f:if>
+<f:for each="{data.tx_mask_placage}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:for each="{data.tx_mask_price}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>

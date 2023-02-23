@@ -16,6 +16,14 @@ mod.wizards.newContentElement.wizardItems.common {
                     CType = pimpmaskexport_citation
                 }
             }
+            creation {
+                iconIdentifier = tx_pimpmaskexport_creation
+                title = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.creation_title
+                description = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.creation_description
+                tt_content_defValues {
+                    CType = pimpmaskexport_creation
+                }
+            }
             ma_dmarche {
                 iconIdentifier = tx_pimpmaskexport_ma_dmarche
                 title = LLL:EXT:pimp_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.ma_dmarche_title
@@ -41,5 +49,5 @@ mod.wizards.newContentElement.wizardItems.common {
                 }
             }
     }
-    show := addToList(accueil__image_plein_cran, citation, ma_dmarche, map, mes_ralisations)
+    show := addToList(accueil__image_plein_cran, citation, creation, ma_dmarche, map, mes_ralisations)
 }

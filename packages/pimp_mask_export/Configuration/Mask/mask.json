@@ -47,6 +47,65 @@
                 "shortLabel": "",
                 "sorting": 4
             },
+            "creation": {
+                "color": "#000000",
+                "colorOverlay": "#000000",
+                "columns": [
+                    "header",
+                    "tx_mask_description",
+                    "tx_mask_theme",
+                    "tx_mask_disposition",
+                    "tx_mask_91f84b108322c8",
+                    "tx_mask_main_picture",
+                    "tx_mask_background_image",
+                    "tx_mask_images",
+                    "tx_mask_fe8c0de959e838",
+                    "tx_mask_dimensions",
+                    "tx_mask_wood",
+                    "tx_mask_color",
+                    "tx_mask_placage",
+                    "tx_mask_price"
+                ],
+                "description": "",
+                "descriptions": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "icon": "",
+                "iconOverlay": "",
+                "key": "creation",
+                "label": "Cr\u00e9ation",
+                "labels": [
+                    "",
+                    "Description",
+                    "Thème",
+                    "Disposition",
+                    "Images",
+                    "Impage principale",
+                    "Image de fond",
+                    "Illustrations",
+                    "Informations",
+                    "Dimensions",
+                    "Essence",
+                    "Couleurs",
+                    "Placage",
+                    "Prix"
+                ],
+                "shortLabel": "",
+                "sorting": 6
+            },
             "ma_dmarche": {
                 "color": "#000000",
                 "colorOverlay": "#000000",
@@ -132,9 +191,34 @@
                     "tx_mask_adress": "mediumtext"
                 }
             },
+            "tx_mask_background_image": {
+                "tt_content": {
+                    "tx_mask_background_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
             "tx_mask_category": {
                 "tt_content": {
                     "tx_mask_category": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_color": {
+                "tt_content": {
+                    "tx_mask_color": "mediumtext"
+                }
+            },
+            "tx_mask_description": {
+                "tt_content": {
+                    "tx_mask_description": "mediumtext"
+                }
+            },
+            "tx_mask_dimensions": {
+                "tt_content": {
+                    "tx_mask_dimensions": "mediumtext"
+                }
+            },
+            "tx_mask_disposition": {
+                "tt_content": {
+                    "tx_mask_disposition": "varchar(255) DEFAULT '' NOT NULL"
                 }
             },
             "tx_mask_icontext": {
@@ -152,9 +236,29 @@
                     "tx_mask_image_background": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             },
+            "tx_mask_images": {
+                "tt_content": {
+                    "tx_mask_images": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
             "tx_mask_link": {
                 "tt_content": {
                     "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
+                }
+            },
+            "tx_mask_main_picture": {
+                "tt_content": {
+                    "tx_mask_main_picture": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_placage": {
+                "tt_content": {
+                    "tx_mask_placage": "mediumtext"
+                }
+            },
+            "tx_mask_price": {
+                "tt_content": {
+                    "tx_mask_price": "mediumtext"
                 }
             },
             "tx_mask_quote": {
@@ -165,6 +269,16 @@
             "tx_mask_texts": {
                 "tt_content": {
                     "tx_mask_texts": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_theme": {
+                "tt_content": {
+                    "tx_mask_theme": "varchar(255) DEFAULT '' NOT NULL"
+                }
+            },
+            "tx_mask_wood": {
+                "tt_content": {
+                    "tx_mask_wood": "mediumtext"
                 }
             }
         },
@@ -190,6 +304,14 @@
                 "key": "image",
                 "type": "file"
             },
+            "tx_mask_91f84b108322c8": {
+                "config": {
+                    "type": "tab"
+                },
+                "fullKey": "tx_mask_91f84b108322c8",
+                "key": "91f84b108322c8",
+                "type": "tab"
+            },
             "tx_mask_adress": {
                 "config": {
                     "enableRichtext": 1,
@@ -198,6 +320,30 @@
                 "fullKey": "tx_mask_adress",
                 "key": "adress",
                 "type": "richtext"
+            },
+            "tx_mask_background_image": {
+                "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
+                    "foreign_table": "sys_file_reference",
+                    "maxitems": "1",
+                    "type": "inline"
+                },
+                "fullKey": "tx_mask_background_image",
+                "imageoverlayPalette": 1,
+                "key": "background_image",
+                "type": "file"
             },
             "tx_mask_category": {
                 "config": {
@@ -227,6 +373,75 @@
                 "fullKey": "tx_mask_category",
                 "key": "category",
                 "type": "inline"
+            },
+            "tx_mask_color": {
+                "config": {
+                    "type": "text",
+                    "wrap": "virtual"
+                },
+                "fullKey": "tx_mask_color",
+                "key": "color",
+                "type": "text"
+            },
+            "tx_mask_description": {
+                "config": {
+                    "type": "text",
+                    "wrap": "virtual"
+                },
+                "fullKey": "tx_mask_description",
+                "key": "description",
+                "type": "text"
+            },
+            "tx_mask_dimensions": {
+                "config": {
+                    "type": "text",
+                    "wrap": "virtual"
+                },
+                "fullKey": "tx_mask_dimensions",
+                "key": "dimensions",
+                "type": "text"
+            },
+            "tx_mask_disposition": {
+                "config": {
+                    "fieldWizard": {
+                        "selectIcons": {
+                            "disabled": 1
+                        }
+                    },
+                    "items": [
+                        [
+                            "Disposition 1",
+                            "disp1",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Disposition 2",
+                            "disp2",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Disposition 3",
+                            "disp3",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "renderType": "selectSingle",
+                    "type": "select"
+                },
+                "fullKey": "tx_mask_disposition",
+                "key": "disposition",
+                "type": "select"
+            },
+            "tx_mask_fe8c0de959e838": {
+                "config": {
+                    "type": "tab"
+                },
+                "fullKey": "tx_mask_fe8c0de959e838",
+                "key": "fe8c0de959e838",
+                "type": "tab"
             },
             "tx_mask_icontext": {
                 "config": {
@@ -304,6 +519,29 @@
                 "key": "image_background",
                 "type": "file"
             },
+            "tx_mask_images": {
+                "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
+                    "foreign_table": "sys_file_reference",
+                    "type": "inline"
+                },
+                "fullKey": "tx_mask_images",
+                "imageoverlayPalette": 1,
+                "key": "images",
+                "type": "file"
+            },
             "tx_mask_link": {
                 "config": {
                     "renderType": "inputLink",
@@ -312,6 +550,48 @@
                 "fullKey": "tx_mask_link",
                 "key": "link",
                 "type": "link"
+            },
+            "tx_mask_main_picture": {
+                "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
+                    "foreign_table": "sys_file_reference",
+                    "maxitems": "1",
+                    "type": "inline"
+                },
+                "fullKey": "tx_mask_main_picture",
+                "imageoverlayPalette": 1,
+                "key": "main_picture",
+                "type": "file"
+            },
+            "tx_mask_placage": {
+                "config": {
+                    "type": "text",
+                    "wrap": "virtual"
+                },
+                "fullKey": "tx_mask_placage",
+                "key": "placage",
+                "type": "text"
+            },
+            "tx_mask_price": {
+                "config": {
+                    "type": "text",
+                    "wrap": "virtual"
+                },
+                "fullKey": "tx_mask_price",
+                "key": "price",
+                "type": "text"
             },
             "tx_mask_quote": {
                 "config": {
@@ -350,6 +630,43 @@
                 "fullKey": "tx_mask_texts",
                 "key": "texts",
                 "type": "inline"
+            },
+            "tx_mask_theme": {
+                "config": {
+                    "fieldWizard": {
+                        "selectIcons": {
+                            "disabled": 1
+                        }
+                    },
+                    "items": [
+                        [
+                            "Light",
+                            "light",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Dark",
+                            "dark",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "renderType": "selectSingle",
+                    "type": "select"
+                },
+                "fullKey": "tx_mask_theme",
+                "key": "theme",
+                "type": "select"
+            },
+            "tx_mask_wood": {
+                "config": {
+                    "type": "text",
+                    "wrap": "virtual"
+                },
+                "fullKey": "tx_mask_wood",
+                "key": "wood",
+                "type": "text"
             }
         }
     },
@@ -527,6 +844,7 @@
                 "columns": [
                     "accueil__image_plein_cran",
                     "citation",
+                    "creation",
                     "ma_dmarche",
                     "map",
                     "mes_ralisations"

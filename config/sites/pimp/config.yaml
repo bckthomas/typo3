@@ -14,11 +14,16 @@ languages:
     direction: ltr
     flag: fr
     websiteTitle: ''
-matomoWidgetsActiveWidgets: ''
-matomoWidgetsIdSite: 0
+matomoWidgetsActiveWidgets: 'actionsPerDay,actionsPerMonth,annotations,createAnnotation,bounceRate,browserPlugins,browsers,campaigns,contentNames,contentPieces,countries,javaScriptErrors,linkMatomo,osFamilies,pagesNotFound,siteSearchKeywords,siteSearchNoResultKeywords,visitsPerDay,visitsPerMonth'
+matomoWidgetsIdSite: 2
 matomoWidgetsPagesNotFoundTemplate: '404/URL = {path}/From = {referrer}'
-matomoWidgetsTitle: ''
-matomoWidgetsTokenAuth: ''
-matomoWidgetsUrl: ''
+matomoWidgetsTitle: 'Pimp'
+matomoWidgetsTokenAuth: '%env(MATOMO_TOKEN)%'
+matomoWidgetsUrl: '%env(MATOMO_URL)%'
 rootPageId: 1
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: *\r\nDisallow:"
 websiteTitle: 'PIMP Ebénisterie Récréative'

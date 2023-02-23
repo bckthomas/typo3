@@ -1,0 +1,10 @@
+@import "../Base/base";
+
+h1 {
+  @include font-size(8rem);
+
+  margin-bottom: 2rem;
+  color: $primary-brown;
+  font-family: Bebas, sans-serif;
+  text-align: center;
+}

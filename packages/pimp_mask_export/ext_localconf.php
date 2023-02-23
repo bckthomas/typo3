@@ -20,6 +20,13 @@ $iconRegistry->registerIcon(
     ]
 );
 $iconRegistry->registerIcon(
+    'tx_pimpmaskexport_creation',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    [
+        'source' => 'EXT:pimp_mask_export/Resources/Public/Icons/Content/creation.svg',
+    ]
+);
+$iconRegistry->registerIcon(
     'tx_pimpmaskexport_ma_dmarche',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
     [
