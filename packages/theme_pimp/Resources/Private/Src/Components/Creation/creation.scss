@@ -3,8 +3,6 @@
 .creation {
   $root: &;
 
-  padding: 5rem 0;
-
   &--dark {
     color: $white;
     background-color: black;
@@ -14,17 +12,20 @@
     }
   }
 
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
   &--disp1 {
     &__images {
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
 
-    &__description,
-    &__main-image {
-      display: flex;
-      align-items: center;
+      &__item {
+        @include delay(3);
+      }
     }
 
     &__description {
@@ -37,10 +38,18 @@
 
     &__main-image {
       order: 0;
+      text-align: center;
 
       @include media-breakpoint-up(md) {
         order: 1;
       }
+    }
+  }
+
+  &--disp2 {
+    &__images,
+    &__image {
+      text-align: center;
     }
   }
 

@@ -1,39 +1,40 @@
+<f:asset.css identifier="component" href="EXT:theme_pimp/Resources/Public/Css/Components/Component/component.css" />
 <f:asset.css identifier="title2" href="EXT:theme_pimp/Resources/Public/Css/Components/Title2/title2.css" />
 <f:asset.css identifier="creation" href="EXT:theme_pimp/Resources/Public/Css/Components/Creation/creation.css" />
 <f:asset.css identifier="FancyboxCSS" href="EXT:theme_package/Resources/Public/Css/Components/Fancybox/fancybox.css" />
 <f:asset.script identifier="FancyboxJS" src="EXT:theme_package/node_modules/@fancyapps/ui/dist/fancybox.umd.js" />
 
-<div class="creation {f:if(condition: '{data.tx_pimpmaskexport_theme} == dark', then: 'creation--dark')}">
+<div class="creation component component--padding {f:if(condition: '{data.tx_pimpmaskexport_theme} == dark', then: 'creation--dark')}">
   <f:switch expression="{data.tx_pimpmaskexport_disposition}">
     <f:case value="disp1">
       <div class="container creation--disp1">
         <f:if condition="{data.header}">
-          <h2>{data.header}</h2>
+          <h2 class="js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
         </f:if>
-        <div class="row">
-          <div class="col-md-6 creation--disp1__description">
+        <div class="row creation__container">
+          <div class="col-md-6 creation--disp1__description js-animation-scroll animation-scroll slide-in-left">
             <f:if condition="{data.tx_pimpmaskexport_description}">
               <p>
                 <f:format.nl2br>{data.tx_pimpmaskexport_description}</f:format.nl2br>
               </p>
             </f:if>
           </div>
-          <div class="col-md-6 creation--disp1__main-image">
+          <div class="col-md-6 creation--disp1__main-image js-animation-scroll animation-scroll slide-in-right">
             <f:if condition="{data_tx_pimpmaskexport_main_picture}">
               <a data-fancybox="gallery-{data.uid}" href="{data_tx_pimpmaskexport_main_picture.0.publicUrl}" >
-                <f:image image="{data_tx_pimpmaskexport_main_picture.0}" alt="" class="img-fluid" />
+                <f:image image="{data_tx_pimpmaskexport_main_picture.0}" alt="{data_tx_pimpmaskexport_main_picture.0.alternative}" class="img-fluid" width="500c"/>
               </a>
             </f:if>
           </div>
         </div>
-        <div class="row">
+        <div class="row creation__container">
           <div class="col-md-6">
             <f:if condition="{data_tx_pimpmaskexport_images}">
               <div class="creation--disp1__images">
                 <f:for each="{data_tx_pimpmaskexport_images}" as="file">
-                  <div>
+                  <div class="creation--disp1__images__item js-animation-scroll animation-scroll fade-in-bottom">
                     <a data-fancybox="gallery-{data.uid}" href="{file.publicUrl}" >
-                      <f:image image="{file}" alt="" width="130c" class="img-fluid" />
+                      <f:image image="{file}" alt="{file.alternative}" width="130c" class="img-fluid" />
                     </a>
                   </div>
                 </f:for>
@@ -54,48 +55,53 @@
       </div>
     </f:case>
     <f:case value="disp2">
-
-      <div class="container creation--disp2">
-
-        <f:if condition="{data.header}">
-          <h2>{data.header}</h2>
-        </f:if>
-        <div class="row">
-          <div class="col-md-8">
-            <f:if condition="{data.tx_pimpmaskexport_description}">
-              <p>
-                <f:format.nl2br>{data.tx_pimpmaskexport_description}</f:format.nl2br>
-              </p>
-            </f:if>
-          </div>
-          <div class="col-md-4">
-            <f:if condition="{data_tx_pimpmaskexport_images}">
-              <div class="creation--disp2__images">
-                <f:for each="{data_tx_pimpmaskexport_images}" as="file">
-                  <div>
-                    <a data-fancybox="gallery-{data.uid}" href="{file.publicUrl}" >
-                      <f:image image="{file}" alt="" width="130c" class="img-fluid" />
-                    </a>
-                  </div>
-                </f:for>
-              </div>
-            </f:if>
-          </div>
+      <div class="creation--disp2 component--background-image">
+        <div class="component--background-image__img">
+          <f:image image="{data_tx_pimpmaskexport_background_image.0}" alt="" class="img-fluid full-image__img" fileExtension="webp" />
         </div>
-        <div class="row">
-          <div class="col-md-8">
-            <f:if condition="{data_tx_pimpmaskexport_main_picture}">
-              <a data-fancybox="gallery-{data.uid}" href="{data_tx_pimpmaskexport_main_picture.0.publicUrl}" >
-                <f:image image="{data_tx_pimpmaskexport_main_picture.0}" alt="" class="img-fluid" />
-              </a>
-            </f:if>
+        <div class="container component__above-image">
+          <f:if condition="{data.header}">
+            <h2 class="js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
+          </f:if>
+          <div class="row creation__container">
+            <div class="col-md-8 js-animation-scroll animation-scroll slide-in-left">
+              <f:if condition="{data.tx_pimpmaskexport_description}">
+                <p>
+                  <f:format.nl2br>{data.tx_pimpmaskexport_description}</f:format.nl2br>
+                </p>
+              </f:if>
+            </div>
+            <div class="col-md-4">
+              <f:if condition="{data_tx_pimpmaskexport_images}">
+                <div class="creation--disp2__images">
+                  <f:for each="{data_tx_pimpmaskexport_images}" as="file">
+                    <div class="js-animation-scroll animation-scroll slide-in-right">
+                      <a data-fancybox="gallery-{data.uid}" href="{file.publicUrl}" >
+                        <f:image image="{file}" alt="{file.alternative}" width="200c" class="img-fluid" />
+                      </a>
+                    </div>
+                  </f:for>
+                </div>
+              </f:if>
+            </div>
           </div>
-          <div class="col-md-4">
-            <f:render section="dimensions" arguments="{dimensions:data.tx_pimpmaskexport_dimensions, publicFolder:publicFolder}"/>
-            <f:render section="wood" arguments="{wood:data.tx_pimpmaskexport_wood, publicFolder:publicFolder}"/>
-            <f:render section="color" arguments="{color:data.tx_pimpmaskexport_color, publicFolder:publicFolder}"/>
-            <f:render section="price" arguments="{price:data.tx_pimpmaskexport_price, publicFolder:publicFolder}"/>
-            <f:render section="placage" arguments="{placage:data.tx_pimpmaskexport_placage, publicFolder:publicFolder}"/>
+          <div class="row creation__container">
+            <div class="col-md-8 creation--disp2__image js-animation-scroll animation-scroll slide-in-left">
+              <f:if condition="{data_tx_pimpmaskexport_main_picture}">
+                <a data-fancybox="gallery-{data.uid}" href="{data_tx_pimpmaskexport_main_picture.0.publicUrl}" >
+                  <f:image image="{data_tx_pimpmaskexport_main_picture.0}" alt="{data_tx_pimpmaskexport_main_picture.0.alternative}" class="img-fluid" width="500c" />
+                </a>
+              </f:if>
+            </div>
+            <div class="col-md-4">
+              <div class="row row-cols-2 row-cols-lg-3">
+                <f:render section="dimensions" arguments="{dimensions:data.tx_pimpmaskexport_dimensions, publicFolder:publicFolder}"/>
+                <f:render section="wood" arguments="{wood:data.tx_pimpmaskexport_wood, publicFolder:publicFolder}"/>
+                <f:render section="color" arguments="{color:data.tx_pimpmaskexport_color, publicFolder:publicFolder}"/>
+                <f:render section="price" arguments="{price:data.tx_pimpmaskexport_price, publicFolder:publicFolder}"/>
+              </div>
+              <f:render section="placage" arguments="{placage:data.tx_pimpmaskexport_placage, publicFolder:publicFolder}"/>
+            </div>
           </div>
         </div>
       </div>
@@ -108,7 +114,7 @@
 
 <f:section name="dimensions">
   <f:if condition="{dimensions}">
-    <div class="creation__detail">
+    <div class="creation__detail js-animation-scroll animation-scroll fade-in-bottom">
       <svg aria-hidden="true" role="img" class="creation__detail__icon">
         <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#dimensions"></use>
       </svg>
@@ -121,7 +127,7 @@
 
 <f:section name="wood">
   <f:if condition="{wood}">
-    <div class="creation__detail">
+    <div class="creation__detail js-animation-scroll animation-scroll fade-in-bottom">
       <svg aria-hidden="true" role="img" class="creation__detail__icon">
         <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#wood"></use>
       </svg>
@@ -134,7 +140,7 @@
 
 <f:section name="color">
   <f:if condition="{color}">
-    <div class="creation__detail">
+    <div class="creation__detail js-animation-scroll animation-scroll fade-in-bottom">
       <svg aria-hidden="true" role="img" class="creation__detail__icon">
         <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#colors"></use>
       </svg>
@@ -147,7 +153,7 @@
 
 <f:section name="price">
   <f:if condition="{price}">
-    <div class="creation__detail">
+    <div class="creation__detail js-animation-scroll animation-scroll fade-in-bottom">
       <svg aria-hidden="true" role="img" class="creation__detail__icon">
         <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#price"></use>
       </svg>
@@ -160,7 +166,7 @@
 
 <f:section name="placage">
   <f:if condition="{placage}">
-    <div class="creation__detail">
+    <div class="creation__detail js-animation-scroll animation-scroll fade-in-bottom">
       <svg aria-hidden="true" role="img" class="creation__detail__icon">
         <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#placage"></use>
       </svg>
@@ -170,11 +176,3 @@
     </div>
   </f:if>
 </f:section>
-
-
-<f:if condition="{data_tx_pimpmaskexport_background_image}">
-    <f:for each="{data_tx_pimpmaskexport_background_image}" as="file">
-        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-        {file.description} / {file.identifier}<br />
-    </f:for>
-</f:if>

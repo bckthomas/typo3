@@ -10,3 +10,12 @@
       url($path + ".woff2") format("woff2");
   }
 }
+
+// https://stackoverflow.com/questions/19612125/how-to-use-scss-sass-to-increase-animation-delay-for-concurrent-divs
+@mixin delay($number) {
+  @for $i from 1 to ($number + 1) {
+    &:nth-child(#{$i}) {
+      animation-delay: (#{$i * 0.2s});
+    }
+  }
+}
