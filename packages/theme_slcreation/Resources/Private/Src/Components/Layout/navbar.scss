@@ -26,3 +26,15 @@
     }
   }
 }
+
+.navbar-brand {
+  &__logo {
+    width: 10rem;
+    height: 4.6rem;
+
+    &--footer {
+      width: 8rem;
+      height: 4rem;
+    }
+  }
+}

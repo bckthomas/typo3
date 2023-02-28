@@ -5,12 +5,18 @@
 		<f:if condition="{homePageUid} == {data.uid}">
 			<f:then>
 				<h1 class="navbar-brand">
-          <f:image src="{publicFolder}/Images/logo.png" alt="SL Créations Accueil" width="150c"/>
+          <svg aria-hidden="true" role="img" class="navbar-brand__logo">
+            <title>SL Création accueil</title>
+            <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+          </svg>
 				</h1>
 			</f:then>
 			<f:else>
-				<f:link.page pageUid="{homePageUid}" class="navbar-brand"> 
-          <f:image src="{publicFolder}/Images/logo.png" alt="Retour à l'accueil" width="150c"/>
+				<f:link.page pageUid="{homePageUid}" class="navbar-brand">
+          <svg aria-hidden="true" role="img" class="navbar-brand__logo">
+            <title>Retour à l'accueil</title>
+            <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+          </svg>
 				</f:link.page>
 			</f:else>
 		</f:if>

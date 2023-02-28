@@ -2,7 +2,10 @@
 
   <div>
     <f:link.page pageUid="{homePageUid}" class="navbar-brand">
-      <f:image src="{publicFolder}/Images/logo.png" alt="" width="100c"/>
+      <svg aria-hidden="true" role="img" class="navbar-brand__logo--footer">
+        <title>Retour à l'accueil</title>
+        <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+      </svg>
     </f:link.page>
     <span class="text-muted">© {f:format.date(date: 'now', format: 'Y')} SL Creations - Villefranche-sur-Saône</span>
   </div>
