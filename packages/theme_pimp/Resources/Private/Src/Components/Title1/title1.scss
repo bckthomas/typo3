@@ -1,36 +1,28 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 h1 {
-  @include font-size(8rem);
+  @include theme.font-size(8rem);
 
   position: relative;
   margin-bottom: 2rem;
-  color: $primary-brown;
+  color: theme.$primary-brown;
   font-family: Bebas, sans-serif;
   text-align: center;
   text-transform: uppercase;
 
-  &::before {
+  &::before,
+  &::after {
     position: absolute;
-    bottom: 0.3rem;
     left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    bottom: 0.3rem;
     display: block;
     width: 5rem;
     height: 0.5rem;
-    margin-left: -1.5rem;
-    background-color: #b80000;
-    content: "";
-  }
-
-  &::after {
-    position: relative;
-    left: 50%;
-    display: block;
-    width: 10rem;
-    height: 0.1rem;
-    margin-top: 2.5rem;
-    margin-left: -5rem;
-    background-color: #b80000;
+    background-color: theme.$primary-green;
     content: "";
   }
 }

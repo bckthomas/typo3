@@ -142,6 +142,15 @@
             </f:for>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-7 offset-md-5 creation--disp3__informations">
+            <f:render section="dimensions" arguments="{dimensions:data.tx_pimpmaskexport_dimensions, publicFolder:publicFolder}"/>
+            <f:render section="wood" arguments="{wood:data.tx_pimpmaskexport_wood, publicFolder:publicFolder}"/>
+            <f:render section="color" arguments="{color:data.tx_pimpmaskexport_color, publicFolder:publicFolder}"/>
+            <f:render section="price" arguments="{price:data.tx_pimpmaskexport_price, publicFolder:publicFolder}"/>
+            <f:render section="placage" arguments="{placage:data.tx_pimpmaskexport_placage, publicFolder:publicFolder}"/>
+          </div>
+        </div>
       </div>
     </f:case>
   </f:switch>

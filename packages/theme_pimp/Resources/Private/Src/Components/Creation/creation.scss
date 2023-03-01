@@ -79,5 +79,10 @@
       align-items: center;
       justify-content: space-around;
     }
+
+    &__informations {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
