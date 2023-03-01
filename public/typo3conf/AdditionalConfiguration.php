@@ -61,7 +61,7 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
 }
 
 if(isset($_SERVER['HTTP_HOST'])) {
-  switch ($_SERVER['HTTP_HOST']) {
+  switch (fixDomainName($_SERVER['HTTP_HOST'])) {
     case 'sl-creations.net':
       $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
         'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
@@ -79,4 +79,13 @@ if(isset($_SERVER['HTTP_HOST'])) {
   }
 }
 
+function fixDomainName($url='') {
+    $strToLower = strtolower(trim($url));
+    $httpPregReplace = preg_replace('/^http:\/\//i', '', $strToLower);
+    $httpsPregReplace = preg_replace('/^https:\/\//i', '', $httpPregReplace);
+    $wwwPregReplace = preg_replace('/^www\./i', '', $httpsPregReplace);
+    $explodeToArray = explode('/', $wwwPregReplace);
+    $finalDomainName = trim($explodeToArray[0]);
+    return $finalDomainName;
+}
 
