@@ -1,7 +1,7 @@
 @use "../Base/base" as theme;
 
 h1 {
-  @include theme.font-size(8rem);
+  @include theme.font-size(6rem);
 
   position: relative;
   margin-bottom: 2rem;
