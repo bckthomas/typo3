@@ -9,7 +9,7 @@ theme {
 	# cat=Mise en page; type=int+; label= Niveau du menu
 	mainNavigation.levels = 1
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
-	sender.email = noreply@site.fr
+	sender.email = noreply@pimpebenisterie.fr
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
 	footerMenuPid = 16
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
@@ -36,7 +36,7 @@ theme {
 
 #Meta
 page.meta {
-	description =
-	author = Thomas Beck
+	description = Création et fabrication de meubles sur mesure aux lignes audacieuses et épurées autour d'Aix-en-Provence.
+  author = Thomas Beck
 	keywords =
 }
