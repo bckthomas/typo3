@@ -1,4 +1,4 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 .quote {
   text-align: center;
@@ -23,14 +23,14 @@
     font-style: italic;
     text-indent: 6.5rem;
 
-    @include media-breakpoint-up(md) {
+    @include theme.media-breakpoint-up(md) {
       max-width: 60%;
     }
 
     &::before,
     &::after {
       position: absolute;
-      color: $white;
+      color: theme.$white;
       font-size: 8.5rem;
       line-height: 0.1;
     }

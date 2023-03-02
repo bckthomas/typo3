@@ -1,12 +1,12 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 .component {
   position: relative;
   overflow: hidden;
 
   &--dark {
-    color: $white;
-    background-color: $primary-brown;
+    color: theme.$white;
+    background-color: theme.$primary-brown;
   }
 
   &--h100 {
@@ -25,7 +25,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $primary-brown-light;
+      background-color: theme.$primary-brown-light;
       opacity: 0.75;
       content: "";
     }

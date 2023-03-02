@@ -1,18 +1,18 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 .contact-us {
   &__address {
     position: relative;
     display: inline-block;
     padding: 2rem;
-    color: $white;
-    background-color: $primary-green;
+    color: theme.$white;
+    background-color: theme.$primary-green;
 
     a {
       position: relative;
       display: inline-block;
       padding: 0.8rem 1rem;
-      border: 0.1rem solid $white;
+      border: 0.1rem solid theme.$white;
       text-decoration: none;
       transform: perspective(1px) translateZ(0);
       transition-duration: 0.5s;
@@ -25,7 +25,7 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-        background: $white;
+        background: theme.$white;
         transform: scaleX(0);
         transform-origin: 0 50%;
         transition-timing-function: ease-out;
@@ -35,7 +35,7 @@
       }
 
       &:hover {
-        color: $primary-green;
+        color: theme.$primary-green;
 
         &::before {
           transform: scaleX(1);

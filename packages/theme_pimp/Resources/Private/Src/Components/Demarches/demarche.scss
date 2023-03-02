@@ -1,4 +1,4 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 .demarches {
   &__images {
@@ -29,7 +29,7 @@
 
     &__border {
       height: 0.1rem;
-      border: 0.1rem solid $white;
+      border: 0.1rem solid theme.$white;
     }
   }
 

@@ -1,4 +1,4 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 .full-image {
   font-family: Bebas, sans-serif;
@@ -15,7 +15,7 @@
   }
 
   &__texts {
-    @include font-size(7rem);
+    @include theme.font-size(7rem);
 
     position: absolute;
     top: 50%;
@@ -23,7 +23,7 @@
     z-index: 2;
     margin: 0;
     padding: 0;
-    color: $white;
+    color: theme.$white;
     text-transform: uppercase;
     list-style: none;
     transform: translate(-50%, -50%);
@@ -43,7 +43,7 @@
 
     &:last-child {
       padding-bottom: 1rem;
-      border-bottom: 0.2rem solid $white;
+      border-bottom: 0.2rem solid theme.$white;
     }
   }
 

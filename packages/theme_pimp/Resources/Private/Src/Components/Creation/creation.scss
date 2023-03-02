@@ -1,14 +1,14 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
 
 .creation {
   $root: &;
 
   &--dark {
-    color: $white;
+    color: theme.$white;
     background-color: black;
 
     #{$root}__detail__icon {
-      fill: $white;
+      fill: theme.$white;
     }
   }
 
@@ -24,14 +24,14 @@
       justify-content: space-between;
 
       &__item {
-        @include delay(3);
+        @include theme.delay(3);
       }
     }
 
     &__description {
       order: 1;
 
-      @include media-breakpoint-up(md) {
+      @include theme.media-breakpoint-up(md) {
         order: 0;
       }
     }
@@ -40,7 +40,7 @@
       order: 0;
       text-align: center;
 
-      @include media-breakpoint-up(md) {
+      @include theme.media-breakpoint-up(md) {
         order: 1;
       }
     }
@@ -68,7 +68,7 @@
     &__icon {
       width: 6rem;
       height: 6rem;
-      fill: $primary-dark;
+      fill: theme.$primary-dark;
     }
   }
 
