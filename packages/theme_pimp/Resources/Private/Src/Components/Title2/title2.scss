@@ -1,7 +1,7 @@
-@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 h2 {
-  @include theme.font-size(4rem);
+  @include bootstrap.font-size(4rem);
 
   margin-bottom: 2rem;
   font-family: Bebas, sans-serif;

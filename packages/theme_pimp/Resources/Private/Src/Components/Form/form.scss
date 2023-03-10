@@ -1,0 +1,82 @@
+@use "../Base/base" as theme;
+@use "sass:color";
+
+// Bootstrap
+@import "../../Vendors/Bootstrap/utilities";
+@import "../../../../../../theme_package/node_modules/bootstrap/scss/forms";
+
+label {
+  position: absolute;
+  top: 2rem;
+  left: 1.2rem;
+  color: theme.$primary-brown;
+  font-weight: theme.$font-weight-bold;
+  font-size: 1.6rem;
+  transform: translate3d(0, 0, 0);
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 2.5rem 1.2rem 1.5rem;
+  border: 0.1rem solid theme.$primary-brown;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  appearance: none;
+
+  &::placeholder {
+    opacity: 0;
+    transition: theme.$transition-base;
+  }
+
+  &:hover {
+    background: color.adjust(theme.$color-theme, $lightness: 50%, $alpha: -0.4);
+  }
+
+  &:not(:placeholder-shown) {
+    & + .control-label {
+      color: theme.$color-theme;
+      font-weight: theme.$font-weight-normal;
+      transform: translate3d(0, -1.2rem, 0) scale(0.75);
+    }
+
+    &:invalid {
+      & + .control-label {
+        color: red;
+      }
+    }
+  }
+
+  &:focus {
+    border-color: theme.$primary-brown;
+    background: color.adjust(theme.$color-theme, $lightness: 50%, $alpha: -0.4);
+    outline: 0;
+    box-shadow: none;
+
+    &::placeholder {
+      opacity: 1;
+    }
+
+    & + .control-label {
+      font-weight: theme.$font-weight-normal;
+      transform: translate3d(0, -1.2rem, 0) scale(0.75);
+    }
+  }
+}
+
+.btn-primary {
+  @include theme.button-revert;
+
+  display: block;
+  margin: auto;
+  font-size: 2rem;
+}

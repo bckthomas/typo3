@@ -1,4 +1,5 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .header {
   $root: &;
@@ -8,7 +9,7 @@
   z-index: 3;
   width: 100%;
   padding: 1.5rem 2rem;
-  color: $primary-brown;
+  color: theme.$primary-brown;
   font-family: Bebas, sans-serif;
   transition: top 500ms ease-in-out;
 
@@ -16,14 +17,13 @@
     display: block;
     width: 9rem;
     height: 8rem;
-    transition: $transition-base;
+    transition: theme.$transition-base;
   }
 
-  &--scroll-up,
-  :focus-within {
+  &--scroll-up {
     top: 0;
-    color: $white;
-    background-color: rgba($primary-brown, 0.85);
+    color: theme.$color-white;
+    background-color: #{rgba(theme.$primary-brown, 0.85)};
     #{$root}__logo {
       height: 8rem;
     }
@@ -45,7 +45,7 @@
     font-size: 2.2rem;
     list-style: none;
 
-    @include media-breakpoint-up(md) {
+    @include bootstrap.media-breakpoint-up(md) {
       display: flex;
     }
 
@@ -60,6 +60,7 @@
     &__link {
       position: relative;
       padding-bottom: 0.2rem;
+      color: theme.$primary-brown;
       text-decoration: none;
       transform: perspective(1px) translateZ(0);
 
@@ -70,7 +71,7 @@
         left: 51%;
         z-index: -1;
         height: 0.3rem;
-        background: $primary-brown;
+        background: theme.$primary-brown;
         transition-timing-function: ease-out;
         transition-duration: 0.3s;
         transition-property: left, right;
@@ -79,6 +80,8 @@
 
       &:hover,
       &--active {
+        color: theme.$primary-brown;
+
         &::before {
           right: 0;
           left: 0;
@@ -88,16 +91,20 @@
   }
 
   &--homepage {
-    color: $white;
-
     #{$root}__logo {
       height: 15rem;
     }
 
     .main-navigation {
       &__link {
+        color: theme.$color-white;
+
+        &:hover {
+          color: theme.$color-white;
+        }
+
         &::before {
-          background: $white;
+          background: theme.$color-white;
         }
       }
     }

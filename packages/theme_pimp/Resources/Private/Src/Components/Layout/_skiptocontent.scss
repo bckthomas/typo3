@@ -1,3 +1,5 @@
+@use "../Base/base" as theme;
+
 .skiptocontent {
   position: absolute;
   top: -4rem;
@@ -6,8 +8,8 @@
   border-right: 0.1rem solid white;
   border-bottom: 0.1rem solid white;
   border-bottom-right-radius: 0.8rem;
-  background: $primary-green;
-  transition: $transition-base;
+  background: theme.$color-theme;
+  transition: theme.$transition-base;
 
   &:focus,
   &:active {

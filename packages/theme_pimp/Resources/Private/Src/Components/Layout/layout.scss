@@ -1,26 +1,14 @@
-@import "../Base/base";
-
-// Bootstrap
-
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/reboot";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/containers";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/helpers";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/utilities";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/utilities/api";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/navbar";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/grid";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/images";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/type";
+@use "../Base/base" as theme;
 @import "skiptocontent";
 @import "header";
 @import "footer";
-@include font-face(Bebas, "../../../Fonts/bebasneue-regular", 400, normal);
-@include font-face(Lato, "../../../Fonts/lato-regular", 400, normal);
+@include theme.font-face(Bebas, "../../../Fonts/bebasneue-regular", 400, normal);
+@include theme.font-face(Lato, "../../../Fonts/lato-regular", 400, normal);
 
 .rs {
   &__link {
     display: inline-block;
-    transition: $transition-base;
+    transition: theme.$transition-base;
 
     &:nth-child(2) {
       margin-left: 2rem;

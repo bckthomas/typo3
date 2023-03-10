@@ -1,4 +1,5 @@
 @use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .full-image {
   font-family: Bebas, sans-serif;
@@ -15,7 +16,7 @@
   }
 
   &__texts {
-    @include theme.font-size(7rem);
+    @include bootstrap.font-size(7rem);
 
     position: absolute;
     top: 50%;
@@ -23,7 +24,7 @@
     z-index: 2;
     margin: 0;
     padding: 0;
-    color: theme.$white;
+    color: theme.$color-white;
     text-transform: uppercase;
     list-style: none;
     transform: translate(-50%, -50%);
@@ -43,7 +44,7 @@
 
     &:last-child {
       padding-bottom: 1rem;
-      border-bottom: 0.2rem solid theme.$white;
+      border-bottom: 0.2rem solid theme.$color-white;
     }
   }
 

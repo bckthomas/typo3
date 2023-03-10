@@ -1,4 +1,5 @@
 @use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .realisation {
   position: relative;
@@ -22,7 +23,7 @@
     position: relative;
     overflow: hidden;
 
-    @include theme.media-breakpoint-down(lg) {
+    @include bootstrap.media-breakpoint-down(lg) {
       max-height: 20rem;
       margin-bottom: 1.5rem;
     }
@@ -36,7 +37,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: theme.$white;
+        background-color: theme.$color-white;
         opacity: 0.4;
         transition: theme.$transition-base;
         content: "";
@@ -59,7 +60,7 @@
       z-index: 2;
       width: 15rem;
       overflow: hidden;
-      color: theme.$white;
+      color: theme.$color-white;
       box-shadow: 0 0 1.5rem -0.3rem rgb(0 0 0 / 58%);
       transition: theme.$transition-base;
 
@@ -70,7 +71,7 @@
       }
 
       &__content {
-        @include theme.font-size(3.5rem);
+        @include bootstrap.font-size(3.5rem);
 
         position: absolute;
         top: 0;

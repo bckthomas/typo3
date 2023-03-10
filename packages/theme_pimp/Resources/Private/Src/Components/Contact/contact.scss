@@ -5,14 +5,14 @@
     position: relative;
     display: inline-block;
     padding: 2rem;
-    color: theme.$white;
-    background-color: theme.$primary-green;
+    color: theme.$color-white;
+    background-color: theme.$color-theme;
 
     a {
       position: relative;
       display: inline-block;
       padding: 0.8rem 1rem;
-      border: 0.1rem solid theme.$white;
+      border: 0.1rem solid theme.$color-white;
       text-decoration: none;
       transform: perspective(1px) translateZ(0);
       transition-duration: 0.5s;
@@ -25,7 +25,7 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-        background: theme.$white;
+        background: theme.$color-white;
         transform: scaleX(0);
         transform-origin: 0 50%;
         transition-timing-function: ease-out;
@@ -35,7 +35,7 @@
       }
 
       &:hover {
-        color: theme.$primary-green;
+        color: theme.$color-theme;
 
         &::before {
           transform: scaleX(1);

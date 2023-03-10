@@ -1,4 +1,5 @@
 @use "sass:string";
+@use "variables" as theme;
 
 @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
   @font-face {
@@ -17,5 +18,57 @@
     &:nth-child(#{$i}) {
       animation-delay: (#{$i * 0.2s});
     }
+  }
+}
+
+@mixin button {
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  border: 0.1rem solid theme.$color-white;
+  text-decoration: none;
+  background: none;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+  transition-property: color;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: theme.$color-white;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    content: "";
+  }
+
+  &:hover {
+    color: theme.$color-theme;
+
+    &::before {
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+  }
+}
+
+@mixin button-revert {
+  @include button;
+
+  border: 0.1rem solid theme.$color-theme;
+  color: theme.$color-theme;
+
+  &::before {
+    background: theme.$color-theme;
+  }
+
+  &:hover {
+    color: theme.$color-white;
   }
 }

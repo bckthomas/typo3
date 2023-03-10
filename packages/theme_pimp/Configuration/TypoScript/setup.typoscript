@@ -1,0 +1,10 @@
+// Form
+plugin.tx_form {
+  settings {
+    yamlConfigurations {
+      100 = fileadmin/form_definitions/BasePimpSetup.yaml
+    }
+  }
+}
+
+page.includeCSS.bootstrap = {$theme.publicFolder}/Css/Vendors/Bootstrap/bootstrap.css

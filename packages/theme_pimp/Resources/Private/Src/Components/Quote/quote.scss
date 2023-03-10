@@ -1,4 +1,5 @@
 @use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .quote {
   text-align: center;
@@ -23,14 +24,14 @@
     font-style: italic;
     text-indent: 6.5rem;
 
-    @include theme.media-breakpoint-up(md) {
+    @include bootstrap.media-breakpoint-up(md) {
       max-width: 60%;
     }
 
     &::before,
     &::after {
       position: absolute;
-      color: theme.$white;
+      color: theme.$color-white;
       font-size: 8.5rem;
       line-height: 0.1;
     }

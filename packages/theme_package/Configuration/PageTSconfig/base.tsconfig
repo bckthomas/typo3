@@ -20,6 +20,7 @@ TCEFORM {
         layout {
             removeItems = 1,2,3
             addItems.10 = Full width
+            addItems.20 = Container
         }
         space_before_class {
             removeItems = extra-small, small, medium, large, extra-large
@@ -52,10 +53,59 @@ TCEFORM {
         imageorient.addItems {
             69 = Background image
             69.icon = EXT:theme_package/Resources/Public/Icons/background-image.svg
+        }
     }
-    pages{
+    pages {
         layout {
             removeItems = 1,2,3
         }
     }
+  /*
+    sys_file_reference.crop.config.cropVariants {
+      default {
+        title = Extra large (≥1200px)
+        selectedRatio = NaN
+        allowedAspectRatios {
+          NaN {
+            title = Free
+            value = 0.0
+          }
+          21:9 {
+            title = 21:9
+            value = 2.3333333
+          }
+          16:9 {
+            title = 16:9
+            value = 1.7777777
+          }
+          4:3 {
+            title = 4:3
+            value = 1.3333333
+          }
+          3:2 {
+            title = 3:2
+            value = 1.5
+          }
+          1:1 {
+            title = 1:1
+            value = 1
+          }
+        }
+      }
+      xxl < .default
+      xxl.title = Extra extra Large (≥1400px)
+
+      lg < .default
+      lg.title = Large (≥992px)
+
+      md < .default
+      md.title = Medium (≥768px)
+
+      sm < .default
+      sm.title = Small (≥576px)
+
+      es < .default
+      es.title = Extra small (<576px)
+    }
+  */
 }

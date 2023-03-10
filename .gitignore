@@ -70,8 +70,6 @@ public/typo3conf/ENABLE_INSTALL_TOOL
 var
 public/typo3conf/ext/*
 
-packages/theme_package/Resources/Public/Css
-packages/theme_package/Resources/Public/JavaScript
 .env
 composer.lock
 .cache/

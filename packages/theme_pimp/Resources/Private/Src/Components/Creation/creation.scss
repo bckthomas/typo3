@@ -1,14 +1,15 @@
 @use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .creation {
   $root: &;
 
   &--dark {
-    color: theme.$white;
+    color: theme.$color-white;
     background-color: black;
 
     #{$root}__detail__icon {
-      fill: theme.$white;
+      fill: theme.$color-white;
     }
   }
 
@@ -31,7 +32,7 @@
     &__description {
       order: 1;
 
-      @include theme.media-breakpoint-up(md) {
+      @include bootstrap.media-breakpoint-up(md) {
         order: 0;
       }
     }
@@ -40,7 +41,7 @@
       order: 0;
       text-align: center;
 
-      @include theme.media-breakpoint-up(md) {
+      @include bootstrap.media-breakpoint-up(md) {
         order: 1;
       }
     }

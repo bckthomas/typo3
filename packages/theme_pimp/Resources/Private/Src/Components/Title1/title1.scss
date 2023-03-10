@@ -1,7 +1,8 @@
 @use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 h1 {
-  @include theme.font-size(6rem);
+  @include bootstrap.font-size(6rem);
 
   position: relative;
   margin-bottom: 2rem;
@@ -22,7 +23,7 @@ h1 {
     display: block;
     width: 5rem;
     height: 0.5rem;
-    background-color: theme.$primary-green;
+    background-color: theme.$color-theme;
     content: "";
   }
 }
