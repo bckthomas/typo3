@@ -1,3 +1,5 @@
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
 .image-cover {
   position: relative;
   padding: 20rem 0;
@@ -7,7 +9,7 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    background: rgba($dark, 0.6);
+    background: #{rgba(bootstrap.$dark, 0.6)};
     content: "";
     inset: 0;
   }
@@ -26,7 +28,7 @@
   &__text {
     position: relative;
     z-index: 3;
-    color: $white;
+    color: bootstrap.$white;
 
     h2 {
       margin-bottom: 1.5rem;

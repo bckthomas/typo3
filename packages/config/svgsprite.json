@@ -7,7 +7,7 @@
     "symbol": {
       "dest": ".",
       "sprite": "icon-sprite.svg",
-      "example": true
+      "example": false
     }
   }
 }

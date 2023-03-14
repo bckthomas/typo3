@@ -4,11 +4,5 @@ $transition-base: all 0.4s ease-in-out;
   --bs-body-font-family: "Sora", sans-serif;
 }
 
-$primary: $cyan;
 $link-color: #087e96;
-
-// Navbar
-$navbar-light-active-color: #087e96;
-$navbar-padding-y: $spacer * 2;
-$navbar-nav-link-padding-x: $spacer;
-$navbar-light-toggler-border-color: rgba($primary, 0.1);
+$primary: #0dcaf0;

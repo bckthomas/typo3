@@ -1,28 +1,29 @@
-@import "../Base/base";
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .navbar {
   border-bottom: 0.1rem solid #e6e9ea;
 }
 
 .nav-link {
-  font-weight: $font-weight-bolder;
+  font-weight: bootstrap.$font-weight-bolder;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .navbar-submenu {
   padding: 0;
-  background-color: $cyan-900;
+  background-color: bootstrap.$cyan-900;
 
   &_link {
     padding: 1rem;
-    color: $white;
+    color: bootstrap.$white;
     font-size: 0.9rem;
     text-transform: none;
-    transition: $transition-base;
+    transition: theme.$transition-base;
 
     &:hover {
-      background-color: $primary;
+      background-color: bootstrap.$primary;
     }
   }
 }

@@ -1,7 +1,7 @@
 @use "../Base/base" as theme;
 @use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
-h1 {
+h1:not(.navbar-brand) {
   @include bootstrap.font-size(6rem);
 
   position: relative;

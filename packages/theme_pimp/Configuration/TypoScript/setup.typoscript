@@ -6,5 +6,3 @@ plugin.tx_form {
     }
   }
 }
-
-page.includeCSS.bootstrap = {$theme.publicFolder}/Css/Vendors/Bootstrap/bootstrap.css

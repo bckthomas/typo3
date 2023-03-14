@@ -1,3 +1,6 @@
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
 .skiptocontent {
   position: absolute;
   top: -4rem;
@@ -6,8 +9,8 @@
   border-right: 0.1rem solid white;
   border-bottom: 0.1rem solid white;
   border-bottom-right-radius: 0.8rem;
-  background: $primary;
-  transition: $transition-base;
+  background: bootstrap.$primary;
+  transition: theme.$transition-base;
 
   &:focus,
   &:active {
