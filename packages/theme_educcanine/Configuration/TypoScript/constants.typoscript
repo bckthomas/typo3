@@ -1,15 +1,15 @@
 theme {
-	privateFolder = EXT:theme_pimp/Resources/Private
-	publicFolder = typo3conf/ext/theme_pimp/Resources/Public
-	extFolder = EXT:theme_pimp/Resources/Extensions
-	// containerFolder = EXT:theme_pimp/Resources/Container
+	privateFolder = EXT:theme_educcanine/Resources/Private
+	publicFolder = typo3conf/ext/theme_educcanine/Resources/Public
+	extFolder = EXT:theme_educcanine/Resources/Extensions
+	// containerFolder = EXT:theme_educcanine/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public
 	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
-	homePageUid = 1
+	homePageUid = 24
 	# cat=Mise en page; type=int+; label= Niveau du menu
 	mainNavigation.levels = 1
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
-	sender.email = noreply@pimpebenisterie.fr
+	sender.email = noreply@educ-canine.com
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
 	footerMenuPid = 16
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
@@ -19,12 +19,12 @@ theme {
 	# cat=Configuration du thème; type=string; label= Html tag class
 	htmlTag_class = h-100
 	# cat=Configuration du site; type=int+; label= Id Matomo
-	matomoSiteId = 2
+	matomoSiteId = 3
 }
 
 #Meta
 page.meta {
-	description = Création et fabrication de meubles sur mesure aux lignes audacieuses et épurées autour d'Aix-en-Provence.
+	description = Education canine à domicile dans le Morbihan. Cours d'agility, formation chiens dits dangereux et médiation animale
   author = Thomas Beck
-	keywords =
+	keywords = éducation canine, morbihan, agility, cours à domicile, formation chiens dits dangereux
 }

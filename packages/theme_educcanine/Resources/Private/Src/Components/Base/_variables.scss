@@ -1,0 +1,24 @@
+$transition-base: all 0.4s ease-in-out;
+
+// Colors
+$color-theme: #76b72a;
+$primary-dark: #000a1f;
+$primary-brown: #261918;
+$primary-brown-light: #6e5454;
+$link-color: #087e96;
+$color-white: #fff;
+
+// Typography
+$font-family-primary: "Lato", var(--bs-font-sans-serif);
+$font-size-base: 1.6rem;
+
+// Font weights
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
