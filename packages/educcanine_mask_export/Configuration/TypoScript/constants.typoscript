@@ -1,0 +1,8 @@
+# cat=educcanine_mask_export/file; type=string; label=Path to template root (FE)
+plugin.tx_educcanineeduccanine_mask_exportexport.view.templateRootPath =
+
+# cat=educcanine_mask_export/file; type=string; label=Path to template partials (FE)
+plugin.tx_educcanineeduccanine_mask_exportexport.view.partialRootPath =
+
+# cat=educcanine_mask_export/file; type=string; label=Path to template layouts (FE)
+plugin.tx_educcanineeduccanine_mask_exportexport.view.layoutRootPath =

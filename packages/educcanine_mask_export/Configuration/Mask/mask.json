@@ -1,0 +1,157 @@
+{
+    "tt_content": {
+        "elements": {
+            "qui_suisje": {
+                "color": "#000000",
+                "colorOverlay": "#000000",
+                "columns": [
+                    "header",
+                    "bodytext",
+                    "image",
+                    "tx_mask_theme",
+                    "tx_mask_circle",
+                    "tx_mask_rectangle",
+                    "tx_mask_empreinte"
+                ],
+                "description": "",
+                "descriptions": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "icon": "",
+                "iconOverlay": "",
+                "key": "qui_suisje",
+                "label": "Composant",
+                "labels": [
+                    "",
+                    "",
+                    "",
+                    "Th\u00e8me",
+                    "Afficher le cercle",
+                    "Afficher le rectangle",
+                    "Afficher l'empreinte"
+                ],
+                "shortLabel": "",
+                "sorting": 7
+            }
+        },
+        "sql": {
+            "tx_mask_circle": {
+                "tt_content": {
+                    "tx_mask_circle": "int(11) DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_empreinte": {
+                "tt_content": {
+                    "tx_mask_empreinte": "int(11) DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_rectangle": {
+                "tt_content": {
+                    "tx_mask_rectangle": "int(11) DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_theme": {
+                "tt_content": {
+                    "tx_mask_theme": "varchar(255) DEFAULT '' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "bodytext": {
+                "bodytextTypeByElement": {
+                    "ma_dmarche": "richtext",
+                    "qui_suisje": "text"
+                },
+                "coreField": 1,
+                "fullKey": "bodytext",
+                "key": "bodytext"
+            },
+            "header": {
+                "coreField": 1,
+                "fullKey": "header",
+                "key": "header",
+                "type": "string"
+            },
+            "image": {
+                "coreField": 1,
+                "fullKey": "image",
+                "imageoverlayPalette": 1,
+                "key": "image",
+                "type": "file"
+            },
+            "tx_mask_circle": {
+                "config": {
+                    "items": [],
+                    "type": "check"
+                },
+                "fullKey": "tx_mask_circle",
+                "key": "circle",
+                "type": "check"
+            },
+            "tx_mask_empreinte": {
+                "config": {
+                    "items": [],
+                    "type": "check"
+                },
+                "fullKey": "tx_mask_empreinte",
+                "key": "empreinte",
+                "type": "check"
+            },
+            "tx_mask_rectangle": {
+                "config": {
+                    "items": [],
+                    "type": "check"
+                },
+                "fullKey": "tx_mask_rectangle",
+                "key": "rectangle",
+                "type": "check"
+            },
+            "tx_mask_theme": {
+                "config": {
+                    "fieldWizard": {
+                        "selectIcons": {
+                            "disabled": 1
+                        }
+                    },
+                    "items": [
+                        [
+                            "Avec formes",
+                            "theme1",
+                            "",
+                            ""
+                        ],
+                        [
+                            "En ligne",
+                            "theme2",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "renderType": "selectSingle",
+                    "type": "select"
+                },
+                "fullKey": "tx_mask_theme",
+                "key": "theme",
+                "type": "select"
+            }
+        }
+    },
+    "mask_export": {
+        "elements": {
+            "configuration": {
+                "key": "configuration",
+                "label": "educcanine_mask_export",
+                "shortLabel": "EduccanineMaskExport",
+                "columns": [
+                    "qui_suisje"
+                ]
+            }
+        }
+    }
+}

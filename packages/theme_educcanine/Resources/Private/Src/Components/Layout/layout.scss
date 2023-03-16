@@ -1,0 +1,7 @@
+@use "../Base/base" as theme;
+@import "skiptocontent";
+
+// @import "header";
+@import "footer";
+@include theme.font-face(Montserrat, "../../../Fonts/montserrat.bold", 400, normal);
+@include theme.font-face(Opensans, "../../../Fonts/opensans-light", 400, normal);

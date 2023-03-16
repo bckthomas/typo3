@@ -1,0 +1,50 @@
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
+.component-geometry {
+  position: relative;
+
+  @include bootstrap.media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    content: "";
+  }
+
+  &::after {
+    top: 0;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 100%;
+    background-color: theme.$primary-orange;
+    content: "";
+  }
+
+  &::before {
+    bottom: -5rem;
+    width: 100%;
+    height: 33rem;
+    background-color: theme.$color-theme;
+
+    @include bootstrap.media-breakpoint-up(md) {
+      width: 66rem;
+    }
+  }
+
+  &__text {
+    padding: 3rem 4rem 3rem 3.5rem;
+    background-color: theme.$color-white;
+
+    @include bootstrap.media-breakpoint-up(md) {
+      max-width: 40rem;
+      margin-left: -5rem;
+    }
+  }
+}

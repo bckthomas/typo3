@@ -1,0 +1,38 @@
+<f:if condition="{processedRow.header}">
+    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
+    {processedRow.header} (raw={row.header})<br>
+</f:if>
+<f:if condition="{processedRow.bodytext}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text" /></strong>
+    {processedRow.bodytext} (raw={row.bodytext})<br>
+</f:if>
+<f:if condition="{processedRow.image}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.images" /></strong>
+<br><f:for each="{processedRow.image}" as="item">
+    <ul>
+        <li>
+    <ul>
+        <f:for each="{item.uid_local}" as="file">
+            <li><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+        </f:for>
+    </ul>
+        </li>
+    </ul>
+</f:for>
+</f:if>
+<f:if condition="{processedRow.tx_educcanineeduccanine_mask_exportexport_theme}">
+    <strong><f:translate key="LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_educcanineeduccanine_mask_exportexport_theme" /></strong>
+    {processedRow.tx_educcanineeduccanine_mask_exportexport_theme.0} (raw={row.tx_educcanineeduccanine_mask_exportexport_theme})<br>
+</f:if>
+<f:if condition="{processedRow.tx_educcanineeduccanine_mask_exportexport_circle}">
+    <strong><f:translate key="LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_educcanineeduccanine_mask_exportexport_circle" /></strong>
+    {processedRow.tx_educcanineeduccanine_mask_exportexport_circle} (raw={row.tx_educcanineeduccanine_mask_exportexport_circle})<br>
+</f:if>
+<f:if condition="{processedRow.tx_educcanineeduccanine_mask_exportexport_rectangle}">
+    <strong><f:translate key="LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_educcanineeduccanine_mask_exportexport_rectangle" /></strong>
+    {processedRow.tx_educcanineeduccanine_mask_exportexport_rectangle} (raw={row.tx_educcanineeduccanine_mask_exportexport_rectangle})<br>
+</f:if>
+<f:if condition="{processedRow.tx_educcanineeduccanine_mask_exportexport_empreinte}">
+    <strong><f:translate key="LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_educcanineeduccanine_mask_exportexport_empreinte" /></strong>
+    {processedRow.tx_educcanineeduccanine_mask_exportexport_empreinte} (raw={row.tx_educcanineeduccanine_mask_exportexport_empreinte})<br>
+</f:if>

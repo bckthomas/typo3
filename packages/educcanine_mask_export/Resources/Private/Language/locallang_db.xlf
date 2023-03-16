@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-16T13:05:33+00:00" product-name="educcanine_mask_export">
+    <header/>
+    <body>
+      <trans-unit id="tt_content.tx_educcanineeduccanine_mask_exportexport_circle">
+        <source>Afficher le cercle</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_educcanineeduccanine_mask_exportexport_empreinte">
+        <source>Afficher l'empreinte</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_educcanineeduccanine_mask_exportexport_rectangle">
+        <source>Afficher le rectangle</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_educcanineeduccanine_mask_exportexport_theme">
+        <source>Thème</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_educcanineeduccanine_mask_exportexport_theme.I.0">
+        <source>Avec formes</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_educcanineeduccanine_mask_exportexport_theme.I.1">
+        <source>En ligne</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.div._educcanineeduccanine_mask_exportexport_">
+        <source>educcanine_mask_export</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.educcanineeduccanine_mask_exportexport_qui_suisje">
+        <source>Composant</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

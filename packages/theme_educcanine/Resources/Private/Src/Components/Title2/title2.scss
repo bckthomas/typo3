@@ -1,0 +1,10 @@
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
+h2 {
+  @include bootstrap.font-size(3.6rem);
+
+  margin-bottom: 2rem;
+  color: theme.$primary-dark;
+  font-family: Montserrat, sans-serif;
+}

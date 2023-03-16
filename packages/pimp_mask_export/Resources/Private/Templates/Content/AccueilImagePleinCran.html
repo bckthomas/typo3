@@ -11,21 +11,6 @@
             background-image: url({f:uri.image(image:file)});
           }
         </f:asset.css>
-
-        <f:comment>
-          <picture>
-            <source srcset="{f:uri.image(image: file, maxWidth: settings.maxImgWidth, cropVariant: 'default')}" media="(min-width: 1200px)">
-            <source srcset="{f:uri.image(image: file, maxWidth: '576', cropVariant: 'es')}, {f:uri.image(image: file, maxWidth: '1984', cropVariant: 'default')} 2x" media="(min-width: 992px)">
-            <source srcset="{f:uri.image(image: file, maxWidth: '768', cropVariant: 'md')}, {f:uri.image(image: file, maxWidth: '1536', cropVariant: 'tablet')} 2x" media="(min-width: 768px)">
-            <source srcset="{f:uri.image(image: file, maxWidth: '768', cropVariant: 'lg')}, {f:uri.image(image: file, maxWidth: '1536', cropVariant: 'mobile')} 2x" media="(max-width: 767px)">
-            <!---Fallback--->
-            <img class="img-fluid" src="{f:uri.image(image: file, maxWidth: settings.maxImgWidth, cropVariant: 'default')}" alt="">
-          </picture>
-        </f:comment>
-        <f:comment>
-        <f:render partial="PictureTag" arguments="{_all}" />
-          <f:image image="{file}" alt="" class="img-fluid full-image__img" fileExtension="webp"/>
-        </f:comment>
       </f:for>
   </f:if>>
   <f:if condition="{data_tx_pimpmaskexport_texts}">

@@ -9,17 +9,18 @@ baseVariants:
 disableStaticFileCache: false
 languages:
   -
-    title: English
+    title: French
     enabled: true
     languageId: 0
     base: /
-    typo3Language: default
-    locale: en_US.UTF-8
-    iso-639-1: en
-    navigationTitle: English
-    hreflang: en-us
+    typo3Language: fr
+    locale: fr_FR.UTF-8
+    iso-639-1: fr
+    navigationTitle: French
+    hreflang: fr-fr
     direction: ltr
-    flag: us
+    flag: fr
+    websiteTitle: ''
 matomoWidgetsActiveWidgets: ''
 matomoWidgetsIdSite: 0
 matomoWidgetsPagesNotFoundTemplate: '404/URL = {path}/From = {referrer}'

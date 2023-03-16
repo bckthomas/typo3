@@ -1,0 +1,20 @@
+@use "../Base/base" as theme;
+
+// @use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
+.component-3cols {
+  &__title,
+  &__texte {
+    display: flex;
+    align-items: center;
+    padding: 6rem 3rem;
+  }
+
+  &__title {
+    background-color: theme.$primary-pink;
+
+    h2 {
+      color: theme.$color-white;
+    }
+  }
+}

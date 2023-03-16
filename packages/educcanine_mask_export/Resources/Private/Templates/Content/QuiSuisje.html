@@ -1,0 +1,44 @@
+<f:asset.css identifier="title2" href="EXT:theme_educcanine/Resources/Public/Css/Components/Title2/title2.css" />
+
+  <f:switch expression="{data.tx_educcanineeduccanine_mask_exportexport_theme}">
+    <f:case value="theme1">
+      <f:asset.css identifier="geometry" href="EXT:theme_educcanine/Resources/Public/Css/Components/Geometry/geometry.css" />
+      <div class="container component-geometry">
+
+        <f:if condition="{data_image}">
+          <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid" width="580c" height="650c"/>
+        </f:if>
+
+        <div class="component-geometry__text">
+          <h2>{data.header}</h2>
+          <f:if condition="{data.bodytext}">
+            <f:format.raw>{data.bodytext}</f:format.raw>
+          </f:if>
+        </div>
+        <f:if condition="{data.tx_educcanineeduccanine_mask_exportexport_empreinte}">
+          <f:then>
+            On<br />
+          </f:then>
+        </f:if>
+      </div>
+    </f:case>
+
+    <f:case value="theme2">
+      <f:asset.css identifier="3cols" href="EXT:theme_educcanine/Resources/Public/Css/Components/3cols/3cols.css" />
+      <div class="row">
+        <div class="col-md-4 component-3cols__title">
+          <h2>{data.header}</h2>
+        </div>
+        <div class="col-6 col-md-4 component-3cols__texte">
+          <f:format.raw>{data.bodytext}</f:format.raw>
+        </div>
+        <div class="col-6 col-md-4">
+          <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid" />
+        </div>
+      </div>
+    </f:case>x
+  </f:switch>
+
+
+
+
