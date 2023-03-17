@@ -8,16 +8,10 @@
                     "header",
                     "bodytext",
                     "image",
-                    "tx_mask_theme",
-                    "tx_mask_circle",
-                    "tx_mask_rectangle",
-                    "tx_mask_empreinte"
+                    "tx_mask_ectheme"
                 ],
                 "description": "",
                 "descriptions": [
-                    "",
-                    "",
-                    "",
                     "",
                     "",
                     "",
@@ -31,34 +25,44 @@
                     "",
                     "",
                     "",
-                    "Th\u00e8me",
-                    "Afficher le cercle",
-                    "Afficher le rectangle",
-                    "Afficher l'empreinte"
+                    "Th\u00e8mes"
                 ],
                 "shortLabel": "",
                 "sorting": 7
+            },
+            "squares": {
+                "color": "#000000",
+                "colorOverlay": "#000000",
+                "columns": [
+                    "header",
+                    "tx_mask_squares"
+                ],
+                "description": "",
+                "descriptions": [
+                    "",
+                    ""
+                ],
+                "icon": "",
+                "iconOverlay": "",
+                "key": "squares",
+                "label": "Carr\u00e9s",
+                "labels": [
+                    "",
+                    "Comp\u00e9tences"
+                ],
+                "shortLabel": "",
+                "sorting": 8
             }
         },
         "sql": {
-            "tx_mask_circle": {
+            "tx_mask_ectheme": {
                 "tt_content": {
-                    "tx_mask_circle": "int(11) DEFAULT '0' NOT NULL"
+                    "tx_mask_ectheme": "varchar(255) DEFAULT '' NOT NULL"
                 }
             },
-            "tx_mask_empreinte": {
+            "tx_mask_squares": {
                 "tt_content": {
-                    "tx_mask_empreinte": "int(11) DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_rectangle": {
-                "tt_content": {
-                    "tx_mask_rectangle": "int(11) DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_theme": {
-                "tt_content": {
-                    "tx_mask_theme": "varchar(255) DEFAULT '' NOT NULL"
+                    "tx_mask_squares": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -85,34 +89,7 @@
                 "key": "image",
                 "type": "file"
             },
-            "tx_mask_circle": {
-                "config": {
-                    "items": [],
-                    "type": "check"
-                },
-                "fullKey": "tx_mask_circle",
-                "key": "circle",
-                "type": "check"
-            },
-            "tx_mask_empreinte": {
-                "config": {
-                    "items": [],
-                    "type": "check"
-                },
-                "fullKey": "tx_mask_empreinte",
-                "key": "empreinte",
-                "type": "check"
-            },
-            "tx_mask_rectangle": {
-                "config": {
-                    "items": [],
-                    "type": "check"
-                },
-                "fullKey": "tx_mask_rectangle",
-                "key": "rectangle",
-                "type": "check"
-            },
-            "tx_mask_theme": {
+            "tx_mask_ectheme": {
                 "config": {
                     "fieldWizard": {
                         "selectIcons": {
@@ -136,9 +113,135 @@
                     "renderType": "selectSingle",
                     "type": "select"
                 },
-                "fullKey": "tx_mask_theme",
-                "key": "theme",
+                "fullKey": "tx_mask_ectheme",
+                "key": "ectheme",
                 "type": "select"
+            },
+            "tx_mask_squares": {
+                "config": {
+                    "appearance": {
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "new": 1,
+                            "sort": 1
+                        },
+                        "levelLinksPosition": "top",
+                        "showAllLocalizationLink": 1,
+                        "showNewRecordLink": 1,
+                        "showPossibleLocalizationRecords": 1,
+                        "useSortable": 1
+                    },
+                    "foreign_field": "parentid",
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_table_field": "parenttable",
+                    "type": "inline"
+                },
+                "fullKey": "tx_mask_squares",
+                "key": "squares",
+                "type": "inline"
+            }
+        }
+    },
+    "tx_mask_squares": {
+        "sql": {
+            "tx_mask_competence": {
+                "tx_mask_squares": {
+                    "tx_mask_competence": "mediumtext"
+                }
+            },
+            "tx_mask_competence_color": {
+                "tx_mask_squares": {
+                    "tx_mask_competence_color": "varchar(255) DEFAULT '' NOT NULL"
+                }
+            },
+            "tx_mask_competence_icon": {
+                "tx_mask_squares": {
+                    "tx_mask_competence_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_competence": {
+                "config": {
+                    "enableRichtext": 1,
+                    "type": "text"
+                },
+                "fullKey": "tx_mask_competence",
+                "inlineParent": "tx_mask_squares",
+                "key": "competence",
+                "label": "Comp\u00e9tence",
+                "order": 1,
+                "type": "richtext"
+            },
+            "tx_mask_competence_color": {
+                "config": {
+                    "fieldWizard": {
+                        "selectIcons": {
+                            "disabled": 1
+                        }
+                    },
+                    "items": [
+                        [
+                            "Rose",
+                            "pink",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Violet",
+                            "purple",
+                            "",
+                            ""
+                        ],
+                        [
+                            "Orange",
+                            "orange",
+                            "",
+                            ""
+                        ]
+                    ],
+                    "renderType": "selectSingle",
+                    "type": "select"
+                },
+                "fullKey": "tx_mask_competence_color",
+                "inlineParent": "tx_mask_squares",
+                "key": "competence_color",
+                "label": "Couleur",
+                "order": 2,
+                "type": "select"
+            },
+            "tx_mask_competence_icon": {
+                "allowedFileExtensions": "svg",
+                "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
+                    "foreign_table": "sys_file_reference",
+                    "maxitems": "1",
+                    "type": "inline"
+                },
+                "fullKey": "tx_mask_competence_icon",
+                "imageoverlayPalette": 1,
+                "inlineParent": "tx_mask_squares",
+                "key": "competence_icon",
+                "label": "Icone",
+                "order": 3,
+                "type": "file"
             }
         }
     },
@@ -149,7 +252,8 @@
                 "label": "educcanine_mask_export",
                 "shortLabel": "EduccanineMaskExport",
                 "columns": [
-                    "qui_suisje"
+                    "qui_suisje",
+                    "squares"
                 ]
             }
         }

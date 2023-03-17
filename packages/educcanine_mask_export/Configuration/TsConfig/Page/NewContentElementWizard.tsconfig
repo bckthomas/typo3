@@ -8,6 +8,14 @@ mod.wizards.newContentElement.wizardItems.common {
                     CType = educcanineeduccanine_mask_exportexport_qui_suisje
                 }
             }
+            squares {
+                iconIdentifier = tx_educcanineeduccanine_mask_exportexport_squares
+                title = LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.squares_title
+                description = LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.squares_description
+                tt_content_defValues {
+                    CType = educcanineeduccanine_mask_exportexport_squares
+                }
+            }
     }
-    show := addToList(qui_suisje)
+    show := addToList(qui_suisje, squares)
 }

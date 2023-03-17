@@ -1,0 +1,14 @@
+<f:if condition="{processedRow.header}">
+    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
+    {processedRow.header} (raw={row.header})<br>
+</f:if>
+<f:if condition="{processedRow.tx_educcanineeduccanine_mask_exportexport_squares}">
+    <strong><f:translate key="LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_educcanineeduccanine_mask_exportexport_squares" /></strong>
+<br><f:for each="{processedRow.tx_educcanineeduccanine_mask_exportexport_squares}" as="item">
+    <ul>
+        <li>
+            <f:translate key="LLL:EXT:educcanine_mask_export/Resources/Private/Language/locallang_db.xlf:tx_educcanineeduccanine_mask_exportexport_squares.tx_educcanineeduccanine_mask_exportexport_competence" /> {item.tx_educcanineeduccanine_mask_exportexport_competence} (id={item.uid})<br/>
+        </li>
+    </ul>
+</f:for>
+</f:if>

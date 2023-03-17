@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "educcanine_mask_export".
  *
- * Auto generated 16-03-2023 13:05
+ * Auto generated 17-03-2023 15:02
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next

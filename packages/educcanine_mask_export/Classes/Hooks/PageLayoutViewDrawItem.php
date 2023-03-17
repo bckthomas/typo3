@@ -16,6 +16,7 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
      */
     protected $supportedContentTypes = [
     'educcanineeduccanine_mask_exportexport_qui_suisje' => 'QuiSuisje',
+    'educcanineeduccanine_mask_exportexport_squares' => 'Squares',
 ];
 
     /**

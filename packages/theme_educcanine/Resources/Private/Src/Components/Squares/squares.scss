@@ -1,0 +1,28 @@
+@use "../Base/base" as theme;
+
+// @use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
+.component-squares {
+  margin-top: 1.5rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 3rem;
+    color: theme.$color-white;
+    text-align: center;
+
+    &--pink {
+      background-color: theme.$primary-pink;
+    }
+
+    &--purple {
+      background-color: theme.$color-theme;
+    }
+
+    &--orange {
+      background-color: theme.$primary-orange;
+    }
+  }
+}
