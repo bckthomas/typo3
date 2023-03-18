@@ -11,7 +11,7 @@ theme {
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@educ-canine.com
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
-	footerMenuPid = 16
+	footerMenuPid = 25
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
 	infoFooter =
 	# cat=Configuration du thème; type=string; label= Body class
@@ -26,5 +26,5 @@ theme {
 page.meta {
 	description = Education canine à domicile dans le Morbihan. Cours d'agility, formation chiens dits dangereux et médiation animale
   author = Thomas Beck
-	keywords = éducation canine, morbihan, agility, cours à domicile, formation chiens dits dangereux
+	keywords = éducation canine, morbihan, agility, cours à domicile, formation chiens dits dangereux, équithérapie
 }

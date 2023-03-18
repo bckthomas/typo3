@@ -3,20 +3,19 @@
 
 <div class="container-lg component-squares">
       <f:if condition="{data.header}">
-        <h2>{data.header}</h2>
+        <h2 class="js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
       </f:if>
   <div class="row align-items-center">
     <f:for each="{data_tx_educcanineeduccanine_mask_exportexport_squares}" as="data_item" iteration="iterator">
       <f:if condition="{iterator.isOdd}">
-        <div class="col-md-6 col-lg-4">
-      </f:if>
-      <f:if condition="{data_item.data_tx_educcanineeduccanine_mask_exportexport_competence_icon}">
-        <f:for each="{data_item.data_tx_educcanineeduccanine_mask_exportexport_competence_icon}" as="file">
-          <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
-          {file.description} / {file.identifier}<br />
-        </f:for>
+        <div class="col-md-6 col-lg-4 js-animation-scroll animation-scroll fade-in-bottom">
       </f:if>
       <div class="component-squares__item component-squares__item--{data_item.data.tx_educcanineeduccanine_mask_exportexport_competence_color}">
+          <f:if condition="{data_item.data_tx_educcanineeduccanine_mask_exportexport_competence_icon}">
+            <div class="component-squares__item__icon">
+              <f:image image="{data_item.data_tx_educcanineeduccanine_mask_exportexport_competence_icon.0}" alt="{data_item.data_tx_educcanineeduccanine_mask_exportexport_competence_icon.0.alternative}" class="component-squares__item__icon__svg" />
+            </div>
+          </f:if>
           <f:if condition="{data_item.data.tx_educcanineeduccanine_mask_exportexport_competence}">
               <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_educcanineeduccanine_mask_exportexport_competence}</f:format.html>
           </f:if>

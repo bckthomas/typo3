@@ -1,0 +1,16 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__slogan {
+    margin: 0 auto 0 2rem;
+  }
+
+  &__logo {
+    width: 12.5rem;
+    height: 10.2rem;
+  }
+}

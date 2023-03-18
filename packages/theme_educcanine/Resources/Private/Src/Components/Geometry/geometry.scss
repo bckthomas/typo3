@@ -10,24 +10,22 @@
     justify-content: center;
   }
 
-  &::after,
-  &::before {
+  &__circle,
+  &__rectangle {
     position: absolute;
-    right: 0;
     z-index: -1;
-    content: "";
   }
 
-  &::after {
+  &__circle {
     top: 0;
+    right: 0;
     width: 22rem;
     height: 22rem;
     border-radius: 100%;
     background-color: theme.$primary-orange;
-    content: "";
   }
 
-  &::before {
+  &__rectangle {
     bottom: -5rem;
     width: 100%;
     height: 33rem;

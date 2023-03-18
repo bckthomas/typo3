@@ -18,9 +18,3 @@ lib.contentElement {
 			packageComponentsFolder.value = EXT:theme_package/Resources/Public
 	}
 }
-
-tt_content.pimpmaskexport_creation {
-  variables {
-    publicFolder < lib.contentElement.variables.publicFolder
-  }
-}

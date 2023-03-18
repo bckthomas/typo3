@@ -6,10 +6,10 @@
     <div class="container component-geometry">
 
       <f:if condition="{data_image}">
-        <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid" width="580c" height="650c"/>
+        <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid js-animation-scroll animation-scroll slide-in-left" width="580c" height="650c"/>
       </f:if>
 
-      <div class="component-geometry__text">
+      <div class="component-geometry__text js-animation-scroll animation-scroll slide-in-right">
         <h2>{data.header}</h2>
         <f:if condition="{data.bodytext}">
           <f:format.raw>{data.bodytext}</f:format.raw>
@@ -20,19 +20,21 @@
           On<br />
         </f:then>
       </f:if>
+      <div class="component-geometry__circle js-animation-scroll animation-scroll scale-up-ver-center"></div>
+      <div class="component-geometry__rectangle js-animation-scroll animation-scroll scale-in-ver-bottom"></div>
     </div>
   </f:case>
 
   <f:case value="theme2">
     <f:asset.css identifier="3cols" href="EXT:theme_educcanine/Resources/Public/Css/Components/3cols/3cols.css" />
     <div class="row">
-      <div class="col-md-4 component-3cols__title">
+      <div class="col-md-4 component-3cols__title js-animation-scroll animation-scroll slide-in-left">
         <h2>{data.header}</h2>
       </div>
-      <div class="col-6 col-md-4 component-3cols__texte">
+      <div class="col-6 col-md-4 component-3cols__texte js-animation-scroll animation-scroll fade-in-bottom">
         <f:format.raw>{data.bodytext}</f:format.raw>
       </div>
-      <div class="col-6 col-md-4">
+      <div class="col-6 col-md-4 js-animation-scroll animation-scroll slide-in-right">
         <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid" />
       </div>
     </div>
