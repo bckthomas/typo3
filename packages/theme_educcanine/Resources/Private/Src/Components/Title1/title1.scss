@@ -1,0 +1,21 @@
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
+h1 {
+  margin-top: 2rem;
+  font-weight: theme.$font-weight-bold;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+
+  @include bootstrap.font-size(6rem);
+
+
+  &::after {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 2rem;
+    border-bottom: 0.3rem solid theme.$primary-dark;
+    content: "";
+  }
+}
