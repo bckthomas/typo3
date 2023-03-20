@@ -132,7 +132,7 @@ return [
         'jpg_quality' => 50,
         'processor' => 'GraphicsMagick',
         'processor_allowTemporaryMasksAsPng' => false,
-        'processor_colorspace' => 'sRGB',
+        'processor_colorspace' => 'RGB',
         'processor_effects' => true,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
