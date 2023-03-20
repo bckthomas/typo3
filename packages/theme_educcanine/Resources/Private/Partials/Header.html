@@ -72,7 +72,7 @@
 		<f:for each="{menu}" as="page" iteration="iterator">
 			<li>
 				<a  href="{page.link}"
-            class="dropdown-item {f:if(condition: mainNavigationItem.active, then: 'active')}"
+            class="dropdown-item {f:if(condition: page.active, then: 'active')}"
             >
 					{page.title}
 				</a>
@@ -80,3 +80,5 @@
 		</f:for>
 	</ul>
 </f:section>
+
+
