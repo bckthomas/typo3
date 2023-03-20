@@ -7,7 +7,7 @@ theme {
 	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
 	homePageUid = 24
 	# cat=Mise en page; type=int+; label= Niveau du menu
-	mainNavigation.levels = 1
+	mainNavigation.levels = 2
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@educ-canine.com
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
