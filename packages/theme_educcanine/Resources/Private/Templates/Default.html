@@ -6,8 +6,8 @@
 		<!--TYPO3SEARCH_begin-->
 		<f:if condition="{data.uid} != {homePageUid}">
 			<div class="container">
+      <f:cObject typoscriptObjectPath="lib.pageTitle" />
     </f:if>
-    <f:cObject typoscriptObjectPath="lib.pageTitle" />
 		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col0}" />
 
     <f:if condition="{data.uid} != {homePageUid}">

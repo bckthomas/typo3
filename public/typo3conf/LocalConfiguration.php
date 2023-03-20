@@ -129,11 +129,11 @@ return [
     ],
     'GFX' => [
         'imagefile_ext' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg,webp',
-        'jpg_quality' => 50,
+        'jpg_quality' => 85,
         'processor' => 'GraphicsMagick',
         'processor_allowTemporaryMasksAsPng' => false,
         'processor_colorspace' => 'RGB',
-        'processor_effects' => true,
+        'processor_effects' => false,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
         'processor_path_lzw' => '/usr/bin/',
