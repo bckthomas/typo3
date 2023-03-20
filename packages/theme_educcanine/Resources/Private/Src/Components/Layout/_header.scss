@@ -15,7 +15,7 @@
     margin: 0 auto 0 2rem;
     color: theme.$primary-pink;
     font-weight: theme.$font-weight-bold;
-    font-family: Montserrat, sans-serif;
+    font-family: theme.$font-family-secondary;
   }
 
   &__logo {

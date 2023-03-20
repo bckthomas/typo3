@@ -10,7 +10,9 @@
       </f:if>
 
       <div class="component-geometry__text js-animation-scroll animation-scroll slide-in-right">
-        <h2>{data.header}</h2>
+        <f:if condition="{data.header}">
+          <h2>{data.header}</h2>
+        </f:if>
         <f:if condition="{data.bodytext}">
           <f:format.raw>{data.bodytext}</f:format.raw>
         </f:if>
@@ -29,7 +31,9 @@
     <f:asset.css identifier="3cols" href="EXT:theme_educcanine/Resources/Public/Css/Components/3cols/3cols.css" />
     <div class="row">
       <div class="col-md-4 component-3cols__title js-animation-scroll animation-scroll slide-in-left">
-        <h2>{data.header}</h2>
+        <f:if condition="{data.header}">
+          <h2>{data.header}</h2>
+        </f:if>
       </div>
       <div class="col-6 col-md-4 component-3cols__texte js-animation-scroll animation-scroll fade-in-bottom">
         <f:format.raw>{data.bodytext}</f:format.raw>
