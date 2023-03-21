@@ -3,6 +3,32 @@
     "tables": {
         "tt_content": {
             "elements": {
+                "3_cols_pleine_largeur": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "bodytext",
+                        "image"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "3_cols_pleine_largeur",
+                    "label": "EC - 3 cols pleine largeur",
+                    "labels": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 10
+                },
                 "accueil__image_plein_cran": {
                     "color": "#000000",
                     "colorOverlay": "#000000",
@@ -18,7 +44,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "accueil__image_plein_cran",
-                    "label": "Image plein \u00e9cran",
+                    "label": "Pimp - Image plein \u00e9cran",
                     "labels": [
                         "Image",
                         "Textes"
@@ -41,7 +67,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "citation",
-                    "label": "Citation",
+                    "label": "Pimp - Citation",
                     "labels": [
                         "",
                         "Citation"
@@ -88,7 +114,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "creation",
-                    "label": "Cr\u00e9ation",
+                    "label": "Pimp - Cr\u00e9ation",
                     "labels": [
                         "",
                         "Description",
@@ -107,6 +133,58 @@
                     ],
                     "shortLabel": "",
                     "sorting": 6
+                },
+                "ec__3_cols_couleurs": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_693fa2f88ab2d8",
+                        "tx_mask_d500ac18401",
+                        "tx_mask_f427a64782114"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "ec__3_cols_couleurs",
+                    "label": "EC - 3 cols couleurs",
+                    "labels": [
+                        "Premi\u00e8re colonne",
+                        "Deuxi\u00e8me colonne",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "formes": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "bodytext",
+                        "image"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "formes",
+                    "label": "EC - Formes",
+                    "labels": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 9
                 },
                 "ma_dmarche": {
                     "color": "#000000",
@@ -129,7 +207,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "ma_dmarche",
-                    "label": "Ma d\u00e9marche",
+                    "label": "Pimp - Ma d\u00e9marche",
                     "labels": [
                         "",
                         "",
@@ -155,7 +233,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "map",
-                    "label": "Map",
+                    "label": "Pimp - Map",
                     "labels": [
                         "",
                         "Adresse"
@@ -178,42 +256,13 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "mes_ralisations",
-                    "label": "Mes r\u00e9alisations",
+                    "label": "Pimp - Mes r\u00e9alisations",
                     "labels": [
                         "",
                         "Th\u00e8me"
                     ],
                     "shortLabel": "",
                     "sorting": 2
-                },
-                "qui_suisje": {
-                    "color": "#000000",
-                    "colorOverlay": "#000000",
-                    "columns": [
-                        "header",
-                        "bodytext",
-                        "image",
-                        "tx_mask_ectheme"
-                    ],
-                    "description": "",
-                    "descriptions": [
-                        "",
-                        "",
-                        "",
-                        ""
-                    ],
-                    "icon": "",
-                    "iconOverlay": "",
-                    "key": "qui_suisje",
-                    "label": "Composant",
-                    "labels": [
-                        "",
-                        "",
-                        "",
-                        "Th\u00e8mes"
-                    ],
-                    "shortLabel": "",
-                    "sorting": 7
                 },
                 "squares": {
                     "color": "#000000",
@@ -230,7 +279,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "squares",
-                    "label": "Carr\u00e9s",
+                    "label": "EC - Carr\u00e9s",
                     "labels": [
                         "",
                         "Comp\u00e9tences"
@@ -257,7 +306,7 @@
                     "icon": "",
                     "iconOverlay": "",
                     "key": "texte_image_arrondie",
-                    "label": "Texte + image arrondie",
+                    "label": "SL - Texte + image arrondie",
                     "labels": [
                         "Titre",
                         "Texte",
@@ -266,6 +315,33 @@
                     ],
                     "shortLabel": "",
                     "sorting": 0
+                }
+            },
+            "palettes": {
+                "tx_mask_693fa2f88ab2d8": {
+                    "description": "",
+                    "label": "Premi\u00e8re colonne",
+                    "showitem": [
+                        "image",
+                        "header",
+                        "bodytext"
+                    ]
+                },
+                "tx_mask_d500ac18401": {
+                    "description": "",
+                    "label": "Deuxi\u00e8me colonne",
+                    "showitem": [
+                        "tx_mask_col_text",
+                        "tx_mask_col_text2"
+                    ]
+                },
+                "tx_mask_f427a64782114": {
+                    "description": "",
+                    "label": "",
+                    "showitem": [
+                        "tx_mask_col_text3",
+                        "media"
+                    ]
                 }
             },
             "sql": {
@@ -282,6 +358,21 @@
                 "tx_mask_category": {
                     "tt_content": {
                         "tx_mask_category": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_col_text": {
+                    "tt_content": {
+                        "tx_mask_col_text": "mediumtext"
+                    }
+                },
+                "tx_mask_col_text2": {
+                    "tt_content": {
+                        "tx_mask_col_text2": "mediumtext"
+                    }
+                },
+                "tx_mask_col_text3": {
+                    "tt_content": {
+                        "tx_mask_col_text3": "mediumtext"
                     }
                 },
                 "tx_mask_color": {
@@ -302,11 +393,6 @@
                 "tx_mask_disposition": {
                     "tt_content": {
                         "tx_mask_disposition": "varchar(255) DEFAULT '' NOT NULL"
-                    }
-                },
-                "tx_mask_ectheme": {
-                    "tt_content": {
-                        "tx_mask_ectheme": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
                 "tx_mask_icontext": {
@@ -388,25 +474,95 @@
             "tca": {
                 "bodytext": {
                     "bodytextTypeByElement": {
+                        "3_cols_pleine_largeur": "text",
+                        "ec__3_cols_couleurs": "richtext",
+                        "formes": "text",
                         "ma_dmarche": "richtext",
                         "qui_suisje": "text"
                     },
                     "coreField": 1,
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
                     "fullKey": "bodytext",
-                    "key": "bodytext"
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_693fa2f88ab2d8"
+                    },
+                    "key": "bodytext",
+                    "label": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 3
+                    }
                 },
                 "header": {
                     "coreField": 1,
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
                     "fullKey": "header",
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_693fa2f88ab2d8"
+                    },
                     "key": "header",
+                    "label": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 2
+                    },
                     "type": "string"
                 },
                 "image": {
                     "coreField": 1,
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
                     "fullKey": "image",
                     "imageoverlayPalette": 1,
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_693fa2f88ab2d8"
+                    },
                     "key": "image",
+                    "label": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 1
+                    },
                     "type": "file"
+                },
+                "media": {
+                    "coreField": 1,
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "fullKey": "media",
+                    "imageoverlayPalette": 1,
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_f427a64782114"
+                    },
+                    "key": "media",
+                    "label": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 2
+                    },
+                    "type": "file"
+                },
+                "tx_mask_693fa2f88ab2d8": {
+                    "config": {
+                        "type": "palette"
+                    },
+                    "fullKey": "tx_mask_693fa2f88ab2d8",
+                    "key": "693fa2f88ab2d8",
+                    "type": "palette"
                 },
                 "tx_mask_91f84b108322c8": {
                     "config": {
@@ -478,6 +634,72 @@
                     "key": "category",
                     "type": "inline"
                 },
+                "tx_mask_col_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "fullKey": "tx_mask_col_text",
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_d500ac18401"
+                    },
+                    "key": "col_text",
+                    "label": {
+                        "ec__3_cols_couleurs": "Texte"
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 1
+                    },
+                    "type": "richtext"
+                },
+                "tx_mask_col_text2": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "fullKey": "tx_mask_col_text2",
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_d500ac18401"
+                    },
+                    "key": "col_text2",
+                    "label": {
+                        "ec__3_cols_couleurs": "Texte"
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 2
+                    },
+                    "type": "richtext"
+                },
+                "tx_mask_col_text3": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "description": {
+                        "ec__3_cols_couleurs": ""
+                    },
+                    "fullKey": "tx_mask_col_text3",
+                    "inPalette": 1,
+                    "inlineParent": {
+                        "ec__3_cols_couleurs": "tx_mask_f427a64782114"
+                    },
+                    "key": "col_text3",
+                    "label": {
+                        "ec__3_cols_couleurs": "Texte"
+                    },
+                    "order": {
+                        "ec__3_cols_couleurs": 1
+                    },
+                    "type": "richtext"
+                },
                 "tx_mask_color": {
                     "config": {
                         "type": "text",
@@ -486,6 +708,14 @@
                     "fullKey": "tx_mask_color",
                     "key": "color",
                     "type": "text"
+                },
+                "tx_mask_d500ac18401": {
+                    "config": {
+                        "type": "palette"
+                    },
+                    "fullKey": "tx_mask_d500ac18401",
+                    "key": "d500ac18401",
+                    "type": "palette"
                 },
                 "tx_mask_description": {
                     "config": {
@@ -539,33 +769,13 @@
                     "key": "disposition",
                     "type": "select"
                 },
-                "tx_mask_ectheme": {
+                "tx_mask_f427a64782114": {
                     "config": {
-                        "fieldWizard": {
-                            "selectIcons": {
-                                "disabled": 1
-                            }
-                        },
-                        "items": [
-                            [
-                                "Avec formes",
-                                "theme1",
-                                "",
-                                ""
-                            ],
-                            [
-                                "En ligne",
-                                "theme2",
-                                "",
-                                ""
-                            ]
-                        ],
-                        "renderType": "selectSingle",
-                        "type": "select"
+                        "type": "palette"
                     },
-                    "fullKey": "tx_mask_ectheme",
-                    "key": "ectheme",
-                    "type": "select"
+                    "fullKey": "tx_mask_f427a64782114",
+                    "key": "f427a64782114",
+                    "type": "palette"
                 },
                 "tx_mask_fe8c0de959e838": {
                     "config": {

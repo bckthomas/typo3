@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-20T21:49:41+00:00" product-name="ec_mask_export">
+    <header/>
+    <body>
+      <trans-unit id="tx_ecmaskexport_squares">
+        <source>tx_ecmaskexport_squares</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence">
+        <source>Compétence</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_color">
+        <source>Couleur</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_icon">
+        <source>Icone</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_color.I.0">
+        <source>Rose</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_color.I.1">
+        <source>Violet</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_color.I.2">
+        <source>Orange</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_ecmaskexport_squares">
+        <source>Compétences</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.div._ecmaskexport_">
+        <source>ec_mask_export</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.ecmaskexport_3_cols_pleine_largeur">
+        <source>EC - 3 cols pleine largeur</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.ecmaskexport_ec__3_cols_couleurs">
+        <source>EC - 3 cols couleurs</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.ecmaskexport_formes">
+        <source>EC - Formes</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.ecmaskexport_squares">
+        <source>EC - Carrés</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

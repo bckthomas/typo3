@@ -1,0 +1,80 @@
+tt_content.ecmaskexport_3_cols_pleine_largeur = FLUIDTEMPLATE
+tt_content.ecmaskexport_3_cols_pleine_largeur {
+    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
+    templateName = 3ColsPleineLargeur
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = image
+        references {
+            fieldName = image
+            table = tt_content
+        }
+        as = data_image
+    }
+}
+tt_content.ecmaskexport_ec__3_cols_couleurs = FLUIDTEMPLATE
+tt_content.ecmaskexport_ec__3_cols_couleurs {
+    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
+    templateName = Ec3ColsCouleurs
+}
+tt_content.ecmaskexport_formes = FLUIDTEMPLATE
+tt_content.ecmaskexport_formes {
+    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
+    templateName = Formes
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = image
+        references {
+            fieldName = image
+            table = tt_content
+        }
+        as = data_image
+    }
+}
+tt_content.ecmaskexport_squares = FLUIDTEMPLATE
+tt_content.ecmaskexport_squares {
+    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
+    templateName = Squares
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_ecmaskexport_squares
+        table = tx_ecmaskexport_squares
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_ecmaskexport_squares
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_ecmaskexport_competence_icon
+        references {
+            fieldName = tx_ecmaskexport_competence_icon
+            table = tx_ecmaskexport_squares
+        }
+        as = data_tx_ecmaskexport_competence_icon
+    }
+
+}
+}

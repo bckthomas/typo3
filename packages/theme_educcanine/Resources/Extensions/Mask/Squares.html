@@ -1,0 +1,28 @@
+<f:asset.css identifier="title2" href="EXT:theme_educcanine/Resources/Public/Css/Components/Title2/title2.css" />
+<f:asset.css identifier="squares" href="EXT:theme_educcanine/Resources/Public/Css/Components/Squares/squares.css" />
+
+<div class="container-lg component-squares">
+  <f:if condition="{data.header}">
+    <h2 class="js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
+  </f:if>
+  <div class="row align-items-center">
+    <f:for each="{data_tx_ecmaskexport_squares}" as="data_item" iteration="iterator">
+      <f:if condition="{iterator.isOdd}">
+        <div class="col-md-6 col-lg-4 js-animation-scroll animation-scroll fade-in-bottom">
+      </f:if>
+      <div class="component-squares__item component-squares__item--{data_item.data.tx_ecmaskexport_competence_color}">
+        <f:if condition="{data_item.data_tx_ecmaskexport_competence_icon}">
+          <div class="component-squares__item__icon">
+            <f:image image="{data_item.data_tx_ecmaskexport_competence_icon.0}" alt="{data_item.data_tx_ecmaskexport_competence_icon.0.alternative}" class="component-squares__item__icon__svg"/>
+          </div>
+        </f:if>
+        <f:if condition="{data_item.data.tx_ecmaskexport_competence}">
+          <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_ecmaskexport_competence}</f:format.html>
+        </f:if>
+      </div>
+      <f:if condition="{iterator.isEven} || {iterator.isLast}">
+  </div>
+  </f:if>
+  </f:for>
+</div>
+</div>

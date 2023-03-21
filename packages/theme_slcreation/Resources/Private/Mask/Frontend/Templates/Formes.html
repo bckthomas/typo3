@@ -1,0 +1,10 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.bodytext}">
+    {data.bodytext -> f:format.nl2br()}
+</f:if>
+<f:for each="{data.image}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
