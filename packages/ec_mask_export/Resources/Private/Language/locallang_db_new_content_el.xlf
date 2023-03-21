@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-20T21:49:41+00:00" product-name="ec_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-21T13:30:51+00:00" product-name="ec_mask_export">
     <header/>
     <body>
+      <trans-unit id="wizards.newContentElement.3_cols_couleurs_title">
+        <source>EC - 3 cols couleurs</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.3_cols_couleurs_description">
+        <source></source>
+      </trans-unit>
       <trans-unit id="wizards.newContentElement.3_cols_pleine_largeur_title">
         <source>EC - 3 cols pleine largeur</source>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.3_cols_pleine_largeur_description">
-        <source></source>
-      </trans-unit>
-      <trans-unit id="wizards.newContentElement.ec__3_cols_couleurs_title">
-        <source>EC - 3 cols couleurs</source>
-      </trans-unit>
-      <trans-unit id="wizards.newContentElement.ec__3_cols_couleurs_description">
         <source></source>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.formes_title">

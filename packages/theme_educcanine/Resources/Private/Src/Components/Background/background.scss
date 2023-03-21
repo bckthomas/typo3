@@ -1,0 +1,28 @@
+@use "../Base/base" as theme;
+
+.background {
+  &__color {
+    padding: 2rem;
+    color: theme.$color-white;
+
+    h2 {
+      color: theme.$color-white;
+    }
+
+    img + h2 {
+      margin-top: 1.5rem;
+    }
+
+    &--orange {
+      background-color: theme.$primary-orange;
+    }
+
+    &--pink {
+      background-color: theme.$primary-pink;
+    }
+
+    &--purple {
+      background-color: theme.$color-theme;
+    }
+  }
+}

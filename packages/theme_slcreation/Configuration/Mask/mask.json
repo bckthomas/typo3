@@ -3,6 +3,50 @@
     "tables": {
         "tt_content": {
             "elements": {
+                "3_cols_couleurs": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_col_color",
+                        "image",
+                        "header",
+                        "bodytext",
+                        "tx_mask_text",
+                        "tx_mask_text2",
+                        "tx_mask_color_col",
+                        "tx_mask_text3",
+                        "tx_mask_image_col"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "3_cols_couleurs",
+                    "label": "EC - 3 cols couleurs",
+                    "labels": [
+                        "Couleur de la colonne",
+                        "",
+                        "",
+                        "",
+                        "Texte",
+                        "Texte",
+                        "Couleur de fond",
+                        "Texte",
+                        "Image"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 11
+                },
                 "3_cols_pleine_largeur": {
                     "color": "#000000",
                     "colorOverlay": "#000000",
@@ -133,32 +177,6 @@
                     ],
                     "shortLabel": "",
                     "sorting": 6
-                },
-                "ec__3_cols_couleurs": {
-                    "color": "#000000",
-                    "colorOverlay": "#000000",
-                    "columns": [
-                        "tx_mask_693fa2f88ab2d8",
-                        "tx_mask_d500ac18401",
-                        "tx_mask_f427a64782114"
-                    ],
-                    "description": "",
-                    "descriptions": [
-                        "",
-                        "",
-                        ""
-                    ],
-                    "icon": "",
-                    "iconOverlay": "",
-                    "key": "ec__3_cols_couleurs",
-                    "label": "EC - 3 cols couleurs",
-                    "labels": [
-                        "Premi\u00e8re colonne",
-                        "Deuxi\u00e8me colonne",
-                        ""
-                    ],
-                    "shortLabel": "",
-                    "sorting": 0
                 },
                 "formes": {
                     "color": "#000000",
@@ -317,33 +335,6 @@
                     "sorting": 0
                 }
             },
-            "palettes": {
-                "tx_mask_693fa2f88ab2d8": {
-                    "description": "",
-                    "label": "Premi\u00e8re colonne",
-                    "showitem": [
-                        "image",
-                        "header",
-                        "bodytext"
-                    ]
-                },
-                "tx_mask_d500ac18401": {
-                    "description": "",
-                    "label": "Deuxi\u00e8me colonne",
-                    "showitem": [
-                        "tx_mask_col_text",
-                        "tx_mask_col_text2"
-                    ]
-                },
-                "tx_mask_f427a64782114": {
-                    "description": "",
-                    "label": "",
-                    "showitem": [
-                        "tx_mask_col_text3",
-                        "media"
-                    ]
-                }
-            },
             "sql": {
                 "tx_mask_adress": {
                     "tt_content": {
@@ -360,24 +351,19 @@
                         "tx_mask_category": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
-                "tx_mask_col_text": {
+                "tx_mask_col_color": {
                     "tt_content": {
-                        "tx_mask_col_text": "mediumtext"
-                    }
-                },
-                "tx_mask_col_text2": {
-                    "tt_content": {
-                        "tx_mask_col_text2": "mediumtext"
-                    }
-                },
-                "tx_mask_col_text3": {
-                    "tt_content": {
-                        "tx_mask_col_text3": "mediumtext"
+                        "tx_mask_col_color": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
                 "tx_mask_color": {
                     "tt_content": {
                         "tx_mask_color": "mediumtext"
+                    }
+                },
+                "tx_mask_color_col": {
+                    "tt_content": {
+                        "tx_mask_color_col": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
                 "tx_mask_description": {
@@ -408,6 +394,11 @@
                 "tx_mask_image_background": {
                     "tt_content": {
                         "tx_mask_image_background": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image_col": {
+                    "tt_content": {
+                        "tx_mask_image_col": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
                 "tx_mask_images": {
@@ -445,6 +436,21 @@
                         "tx_mask_squares": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
+                "tx_mask_text": {
+                    "tt_content": {
+                        "tx_mask_text": "mediumtext"
+                    }
+                },
+                "tx_mask_text2": {
+                    "tt_content": {
+                        "tx_mask_text2": "mediumtext"
+                    }
+                },
+                "tx_mask_text3": {
+                    "tt_content": {
+                        "tx_mask_text3": "mediumtext"
+                    }
+                },
                 "tx_mask_texte": {
                     "tt_content": {
                         "tx_mask_texte": "mediumtext"
@@ -474,6 +480,7 @@
             "tca": {
                 "bodytext": {
                     "bodytextTypeByElement": {
+                        "3_cols_couleurs": "richtext",
                         "3_cols_pleine_largeur": "text",
                         "ec__3_cols_couleurs": "richtext",
                         "formes": "text",
@@ -482,87 +489,35 @@
                     },
                     "coreField": 1,
                     "description": {
+                        "3_cols_couleurs": "",
                         "ec__3_cols_couleurs": ""
                     },
                     "fullKey": "bodytext",
                     "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_693fa2f88ab2d8"
-                    },
-                    "key": "bodytext",
-                    "label": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 3
-                    }
+                    "key": "bodytext"
                 },
                 "header": {
                     "coreField": 1,
                     "description": {
+                        "3_cols_couleurs": "",
                         "ec__3_cols_couleurs": ""
                     },
                     "fullKey": "header",
                     "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_693fa2f88ab2d8"
-                    },
                     "key": "header",
-                    "label": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 2
-                    },
                     "type": "string"
                 },
                 "image": {
                     "coreField": 1,
                     "description": {
+                        "3_cols_couleurs": "",
                         "ec__3_cols_couleurs": ""
                     },
                     "fullKey": "image",
                     "imageoverlayPalette": 1,
                     "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_693fa2f88ab2d8"
-                    },
                     "key": "image",
-                    "label": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 1
-                    },
                     "type": "file"
-                },
-                "media": {
-                    "coreField": 1,
-                    "description": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "fullKey": "media",
-                    "imageoverlayPalette": 1,
-                    "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_f427a64782114"
-                    },
-                    "key": "media",
-                    "label": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 2
-                    },
-                    "type": "file"
-                },
-                "tx_mask_693fa2f88ab2d8": {
-                    "config": {
-                        "type": "palette"
-                    },
-                    "fullKey": "tx_mask_693fa2f88ab2d8",
-                    "key": "693fa2f88ab2d8",
-                    "type": "palette"
                 },
                 "tx_mask_91f84b108322c8": {
                     "config": {
@@ -634,71 +589,33 @@
                     "key": "category",
                     "type": "inline"
                 },
-                "tx_mask_col_text": {
+                "tx_mask_col_color": {
                     "config": {
-                        "enableRichtext": 1,
-                        "type": "text"
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "Violet",
+                                "purple",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Orange",
+                                "orrange",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
                     },
-                    "description": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "fullKey": "tx_mask_col_text",
-                    "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_d500ac18401"
-                    },
-                    "key": "col_text",
-                    "label": {
-                        "ec__3_cols_couleurs": "Texte"
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 1
-                    },
-                    "type": "richtext"
-                },
-                "tx_mask_col_text2": {
-                    "config": {
-                        "enableRichtext": 1,
-                        "type": "text"
-                    },
-                    "description": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "fullKey": "tx_mask_col_text2",
-                    "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_d500ac18401"
-                    },
-                    "key": "col_text2",
-                    "label": {
-                        "ec__3_cols_couleurs": "Texte"
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 2
-                    },
-                    "type": "richtext"
-                },
-                "tx_mask_col_text3": {
-                    "config": {
-                        "enableRichtext": 1,
-                        "type": "text"
-                    },
-                    "description": {
-                        "ec__3_cols_couleurs": ""
-                    },
-                    "fullKey": "tx_mask_col_text3",
-                    "inPalette": 1,
-                    "inlineParent": {
-                        "ec__3_cols_couleurs": "tx_mask_f427a64782114"
-                    },
-                    "key": "col_text3",
-                    "label": {
-                        "ec__3_cols_couleurs": "Texte"
-                    },
-                    "order": {
-                        "ec__3_cols_couleurs": 1
-                    },
-                    "type": "richtext"
+                    "fullKey": "tx_mask_col_color",
+                    "key": "col_color",
+                    "type": "select"
                 },
                 "tx_mask_color": {
                     "config": {
@@ -709,13 +626,33 @@
                     "key": "color",
                     "type": "text"
                 },
-                "tx_mask_d500ac18401": {
+                "tx_mask_color_col": {
                     "config": {
-                        "type": "palette"
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "Orange",
+                                "orange",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Violet",
+                                "purple",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
                     },
-                    "fullKey": "tx_mask_d500ac18401",
-                    "key": "d500ac18401",
-                    "type": "palette"
+                    "fullKey": "tx_mask_color_col",
+                    "key": "color_col",
+                    "type": "select"
                 },
                 "tx_mask_description": {
                     "config": {
@@ -768,14 +705,6 @@
                     "fullKey": "tx_mask_disposition",
                     "key": "disposition",
                     "type": "select"
-                },
-                "tx_mask_f427a64782114": {
-                    "config": {
-                        "type": "palette"
-                    },
-                    "fullKey": "tx_mask_f427a64782114",
-                    "key": "f427a64782114",
-                    "type": "palette"
                 },
                 "tx_mask_fe8c0de959e838": {
                     "config": {
@@ -833,8 +762,12 @@
                         "maxitems": "2",
                         "type": "inline"
                     },
+                    "description": {
+                        "3_cols_couleurs": ""
+                    },
                     "fullKey": "tx_mask_image",
                     "imageoverlayPalette": 1,
+                    "inPalette": 1,
                     "key": "image",
                     "type": "file"
                 },
@@ -859,6 +792,29 @@
                     "fullKey": "tx_mask_image_background",
                     "imageoverlayPalette": 1,
                     "key": "image_background",
+                    "type": "file"
+                },
+                "tx_mask_image_col": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image_col",
+                    "imageoverlayPalette": 1,
+                    "key": "image_col",
                     "type": "file"
                 },
                 "tx_mask_images": {
@@ -971,6 +927,33 @@
                     "fullKey": "tx_mask_squares",
                     "key": "squares",
                     "type": "inline"
+                },
+                "tx_mask_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "key": "text",
+                    "type": "richtext"
+                },
+                "tx_mask_text2": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text2",
+                    "key": "text2",
+                    "type": "richtext"
+                },
+                "tx_mask_text3": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text3",
+                    "key": "text3",
+                    "type": "richtext"
                 },
                 "tx_mask_texte": {
                     "config": {

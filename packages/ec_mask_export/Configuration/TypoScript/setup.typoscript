@@ -1,3 +1,31 @@
+tt_content.ecmaskexport_3_cols_couleurs = FLUIDTEMPLATE
+tt_content.ecmaskexport_3_cols_couleurs {
+    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
+    templateName = 3ColsCouleurs
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = image
+        references {
+            fieldName = image
+            table = tt_content
+        }
+        as = data_image
+    }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.20 {
+        if.isTrue.field = tx_ecmaskexport_image_col
+        references {
+            fieldName = tx_ecmaskexport_image_col
+            table = tt_content
+        }
+        as = data_tx_ecmaskexport_image_col
+    }
+}
 tt_content.ecmaskexport_3_cols_pleine_largeur = FLUIDTEMPLATE
 tt_content.ecmaskexport_3_cols_pleine_largeur {
     layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
@@ -16,16 +44,6 @@ tt_content.ecmaskexport_3_cols_pleine_largeur {
         }
         as = data_image
     }
-}
-tt_content.ecmaskexport_ec__3_cols_couleurs = FLUIDTEMPLATE
-tt_content.ecmaskexport_ec__3_cols_couleurs {
-    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
-    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
-    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
-    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
-    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
-    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
-    templateName = Ec3ColsCouleurs
 }
 tt_content.ecmaskexport_formes = FLUIDTEMPLATE
 tt_content.ecmaskexport_formes {

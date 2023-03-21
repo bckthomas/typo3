@@ -15,8 +15,8 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
      * @var array
      */
     protected $supportedContentTypes = [
+    'ecmaskexport_3_cols_couleurs' => '3ColsCouleurs',
     'ecmaskexport_3_cols_pleine_largeur' => '3ColsPleineLargeur',
-    'ecmaskexport_ec__3_cols_couleurs' => 'Ec3ColsCouleurs',
     'ecmaskexport_formes' => 'Formes',
     'ecmaskexport_squares' => 'Squares',
 ];
