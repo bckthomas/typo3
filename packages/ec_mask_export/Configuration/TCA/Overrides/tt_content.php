@@ -149,6 +149,14 @@ $tempColumns = [
         'exclude' => 1,
         'label' => 'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_image_col',
     ],
+    'tx_ecmaskexport_price' => [
+        'config' => [
+            'type' => 'text',
+            'wrap' => 'virtual',
+        ],
+        'exclude' => 1,
+        'label' => 'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_price',
+    ],
     'tx_ecmaskexport_squares' => [
         'config' => [
             'appearance' => [
