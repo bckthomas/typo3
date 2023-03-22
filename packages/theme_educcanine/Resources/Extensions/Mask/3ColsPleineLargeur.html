@@ -7,10 +7,10 @@
       <h2>{data.header}</h2>
     </f:if>
   </div>
-  <div class="col-6 col-md-4 component-3cols__texte js-animation-scroll animation-scroll fade-in-bottom">
-    <f:format.raw>{data.bodytext}</f:format.raw>
+  <div class="col-md-4 component-3cols__texte js-animation-scroll animation-scroll fade-in-bottom">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
   </div>
-  <div class="col-6 col-md-4 js-animation-scroll animation-scroll slide-in-right">
+  <div class="col-md-4 js-animation-scroll animation-scroll slide-in-right">
     <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid" fileExtension="webp" />
   </div>
 </div>

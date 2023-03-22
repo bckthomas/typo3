@@ -77,7 +77,7 @@
                 "columns": [
                     "header",
                     "bodytext",
-                    "image"
+                    "media"
                 ],
                 "description": "",
                 "descriptions": [
@@ -198,6 +198,13 @@
                 "imageoverlayPalette": 1,
                 "inPalette": 1,
                 "key": "image",
+                "type": "file"
+            },
+            "media": {
+                "coreField": 1,
+                "fullKey": "media",
+                "imageoverlayPalette": 1,
+                "key": "media",
                 "type": "file"
             },
             "tx_mask_col_color": {

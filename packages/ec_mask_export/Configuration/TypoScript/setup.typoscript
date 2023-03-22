@@ -56,12 +56,12 @@ tt_content.ecmaskexport_formes {
     templateName = Formes
     dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     dataProcessing.10 {
-        if.isTrue.field = image
+        if.isTrue.field = media
         references {
-            fieldName = image
+            fieldName = media
             table = tt_content
         }
-        as = data_image
+        as = data_media
     }
 }
 tt_content.ecmaskexport_squares = FLUIDTEMPLATE
