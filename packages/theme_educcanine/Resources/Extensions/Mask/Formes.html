@@ -3,10 +3,10 @@
 
 <div class="container component-geometry">
 
+  <f:if condition="{data_image}">
+    <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid js-animation-scroll animation-scroll slide-in-left" width="580c" height="650c"  fileExtension="webp"/>
+  </f:if>
   <f:if condition="{data_media}">
-    <f:if condition="{data_image}">
-      <f:image image="{data_image.0}" alt="{data_image.0.alternative}" class="img-fluid js-animation-scroll animation-scroll slide-in-left" width="580c" height="650c"  fileExtension="webp"/>
-    </f:if>
     <f:for each="{data_media}" as="file">
       <f:switch expression="{file.type}">
         <f:case value="4">
