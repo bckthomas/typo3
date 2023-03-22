@@ -3,7 +3,7 @@
 </f:if>
 
 <f:if condition="{data.bodytext}">
-    <f:format.nl2br>{data.bodytext}</f:format.nl2br><br />
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html><br />
 </f:if>
 
 <f:if condition="{data_image}">

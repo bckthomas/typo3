@@ -481,9 +481,9 @@
                 "bodytext": {
                     "bodytextTypeByElement": {
                         "3_cols_couleurs": "richtext",
-                        "3_cols_pleine_largeur": "text",
+                        "3_cols_pleine_largeur": "richtext",
                         "ec__3_cols_couleurs": "richtext",
-                        "formes": "text",
+                        "formes": "richtext",
                         "ma_dmarche": "richtext",
                         "qui_suisje": "text"
                     },

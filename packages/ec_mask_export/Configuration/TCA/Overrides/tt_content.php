@@ -18,18 +18,12 @@ $tempColumns = [
             'items' => [
                 [
                     'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_col_color.I.0',
-                    'pink',
-                    '',
-                    '',
-                ],
-                [
-                    'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_col_color.I.1',
                     'purple',
                     '',
                     '',
                 ],
                 [
-                    'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_col_color.I.2',
+                    'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_col_color.I.1',
                     'orrange',
                     '',
                     '',
@@ -51,19 +45,13 @@ $tempColumns = [
             'items' => [
                 [
                     'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_color_col.I.0',
-                    'pink',
+                    'orange',
                     '',
                     '',
                 ],
                 [
                     'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_color_col.I.1',
                     'purple',
-                    '',
-                    '',
-                ],
-                [
-                    'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tt_content.tx_ecmaskexport_color_col.I.2',
-                    'orange',
                     '',
                     '',
                 ],
@@ -271,9 +259,23 @@ $tempTypes = [
         'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,tx_ecmaskexport_col_color,image,header,bodytext,tx_ecmaskexport_text,tx_ecmaskexport_text2,tx_ecmaskexport_color_col,tx_ecmaskexport_text3,tx_ecmaskexport_image_col,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, tx_content_animation,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended, image_shadow, image_rounded',
     ],
     'ecmaskexport_3_cols_pleine_largeur' => [
+        'columnsOverrides' => [
+            'bodytext' => [
+                'config' => [
+                    'enableRichtext' => 1,
+                ],
+            ],
+        ],
         'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,bodytext,image,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, tx_content_animation,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended, image_shadow, image_rounded',
     ],
     'ecmaskexport_formes' => [
+        'columnsOverrides' => [
+            'bodytext' => [
+                'config' => [
+                    'enableRichtext' => 1,
+                ],
+            ],
+        ],
         'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,bodytext,image,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames, tx_content_animation,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended, image_shadow, image_rounded',
     ],
     'ecmaskexport_squares' => [
