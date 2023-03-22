@@ -77,10 +77,12 @@
                 "columns": [
                     "header",
                     "bodytext",
+                    "image",
                     "media"
                 ],
                 "description": "",
                 "descriptions": [
+                    "",
                     "",
                     "",
                     ""
@@ -92,7 +94,8 @@
                 "labels": [
                     "",
                     "",
-                    ""
+                    "Image",
+                    "Vid\u00e9o"
                 ],
                 "shortLabel": "",
                 "sorting": 9
