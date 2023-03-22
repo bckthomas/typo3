@@ -16,10 +16,6 @@
           <div class="component-squares__item__icon">
             <f:image image="{data_item.data_tx_ecmaskexport_competence_icon.0}" alt="{data_item.data_tx_ecmaskexport_competence_icon.0.alternative}" class="component-squares__item__icon__svg"/>
           </div>
-        </f:if>
-        <f:if condition="{data_item.data.tx_ecmaskexport_price}">
-          <h2>{data_item.data.tx_ecmaskexport_price}</h2>
-        </f:if>
         <f:if condition="{data_item.data.tx_ecmaskexport_competence}">
           <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_ecmaskexport_competence}</f:format.html>
         </f:if>

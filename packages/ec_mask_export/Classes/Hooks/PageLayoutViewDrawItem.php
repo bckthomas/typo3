@@ -18,6 +18,7 @@ class PageLayoutViewDrawItem implements PageLayoutViewDrawItemHookInterface
     'ecmaskexport_3_cols_couleurs' => '3ColsCouleurs',
     'ecmaskexport_3_cols_pleine_largeur' => '3ColsPleineLargeur',
     'ecmaskexport_formes' => 'Formes',
+    'ecmaskexport_prix' => 'Prix',
     'ecmaskexport_squares' => 'Squares',
 ];
 

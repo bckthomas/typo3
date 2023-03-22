@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-22T13:25:38+00:00" product-name="ec_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-22T13:38:03+00:00" product-name="ec_mask_export">
     <header/>
     <body>
       <trans-unit id="wizards.newContentElement.3_cols_couleurs_title">
@@ -19,6 +19,12 @@
         <source>EC - Formes</source>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.formes_description">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.prix_title">
+        <source>EC - Prix</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.prix_description">
         <source></source>
       </trans-unit>
       <trans-unit id="wizards.newContentElement.squares_title">

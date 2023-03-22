@@ -1,0 +1,34 @@
+@use "../Base/base" as theme;
+@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+
+.component-price {
+  @include bootstrap.media-breakpoint-up(md) {
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @include bootstrap.media-breakpoint-down(md) {
+    &__item {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__price {
+    font-weight: theme.$font-weight-bold;
+    text-align: center;
+
+    @include bootstrap.font-size(3.5rem);
+  }
+
+  &__service {
+    margin-bottom: 1.5rem;
+    font-weight: theme.$font-weight-bold;
+    font-family: theme.$font-family-secondary;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include bootstrap.font-size(2rem);
+  }
+}

@@ -285,6 +285,29 @@
                     "shortLabel": "",
                     "sorting": 2
                 },
+                "prix": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_prices"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "prix",
+                    "label": "EC - Prix",
+                    "labels": [
+                        "",
+                        "Prix"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
                 "squares": {
                     "color": "#000000",
                     "colorOverlay": "#000000",
@@ -427,6 +450,11 @@
                 "tx_mask_price": {
                     "tt_content": {
                         "tx_mask_price": "mediumtext"
+                    }
+                },
+                "tx_mask_prices": {
+                    "tt_content": {
+                        "tx_mask_prices": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
                 "tx_mask_quote": {
@@ -901,6 +929,34 @@
                     "key": "price",
                     "type": "text"
                 },
+                "tx_mask_prices": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_prices",
+                    "key": "prices",
+                    "type": "inline"
+                },
                 "tx_mask_quote": {
                     "config": {
                         "enableRichtext": 1,
@@ -1191,6 +1247,86 @@
                     "label": "Iocn",
                     "order": 2,
                     "type": "file"
+                }
+            }
+        },
+        "tx_mask_prices": {
+            "sql": {
+                "tx_mask_colors": {
+                    "tx_mask_prices": {
+                        "tx_mask_colors": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_price": {
+                    "tx_mask_prices": {
+                        "tx_mask_price": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_service": {
+                    "tx_mask_prices": {
+                        "tx_mask_service": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_colors": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "Rose",
+                                "pink",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Violet",
+                                "purple",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Orange",
+                                "orange",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_colors",
+                    "inlineParent": "tx_mask_prices",
+                    "key": "colors",
+                    "label": "Couleur",
+                    "order": 3,
+                    "type": "select"
+                },
+                "tx_mask_price": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_price",
+                    "inlineParent": "tx_mask_prices",
+                    "key": "price",
+                    "label": "Prix",
+                    "order": 2,
+                    "type": "string"
+                },
+                "tx_mask_service": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_service",
+                    "inlineParent": "tx_mask_prices",
+                    "key": "service",
+                    "label": "Service",
+                    "order": 1,
+                    "type": "string"
                 }
             }
         },

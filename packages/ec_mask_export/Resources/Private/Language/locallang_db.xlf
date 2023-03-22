@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-22T13:25:38+00:00" product-name="ec_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-22T13:38:03+00:00" product-name="ec_mask_export">
     <header/>
     <body>
+      <trans-unit id="tx_ecmaskexport_prices">
+        <source>tx_ecmaskexport_prices</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_service">
+        <source>Service</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_price">
+        <source>Prix</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_colors">
+        <source>Couleur</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_colors.I.0">
+        <source>Rose</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_colors.I.1">
+        <source>Violet</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_colors.I.2">
+        <source>Orange</source>
+      </trans-unit>
       <trans-unit id="tx_ecmaskexport_squares">
         <source>tx_ecmaskexport_squares</source>
       </trans-unit>
@@ -45,6 +66,9 @@
       <trans-unit id="tt_content.tx_ecmaskexport_price">
         <source>tx_ecmaskexport_price</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_ecmaskexport_prices">
+        <source>Prix</source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_ecmaskexport_squares">
         <source>Compétences</source>
       </trans-unit>
@@ -80,6 +104,9 @@
       </trans-unit>
       <trans-unit id="tt_content.CType.ecmaskexport_formes">
         <source>EC - Formes</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.ecmaskexport_prix">
+        <source>EC - Prix</source>
       </trans-unit>
       <trans-unit id="tt_content.CType.ecmaskexport_squares">
         <source>EC - Carrés</source>

@@ -27,6 +27,13 @@ $iconRegistry->registerIcon(
     ]
 );
 $iconRegistry->registerIcon(
+    'tx_ecmaskexport_prix',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    [
+        'source' => 'EXT:ec_mask_export/Resources/Public/Icons/Content/prix.svg',
+    ]
+);
+$iconRegistry->registerIcon(
     'tx_ecmaskexport_squares',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
     [

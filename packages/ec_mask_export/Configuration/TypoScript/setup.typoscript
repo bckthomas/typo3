@@ -73,6 +73,26 @@ tt_content.ecmaskexport_formes {
         as = data_media
     }
 }
+tt_content.ecmaskexport_prix = FLUIDTEMPLATE
+tt_content.ecmaskexport_prix {
+    layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_ecmaskexport.view.layoutRootPath}
+    partialRootPaths.0 = EXT:ec_mask_export/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_ecmaskexport.view.partialRootPath}
+    templateRootPaths.0 = EXT:ec_mask_export/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_ecmaskexport.view.templateRootPath}
+    templateName = Prix
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_ecmaskexport_prices
+        table = tx_ecmaskexport_prices
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_ecmaskexport_prices
+    }
+}
 tt_content.ecmaskexport_squares = FLUIDTEMPLATE
 tt_content.ecmaskexport_squares {
     layoutRootPaths.0 = EXT:ec_mask_export/Resources/Private/Layouts/

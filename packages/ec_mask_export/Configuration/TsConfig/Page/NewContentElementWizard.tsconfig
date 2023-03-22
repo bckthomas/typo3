@@ -24,6 +24,14 @@ mod.wizards.newContentElement.wizardItems.common {
                     CType = ecmaskexport_formes
                 }
             }
+            prix {
+                iconIdentifier = tx_ecmaskexport_prix
+                title = LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.prix_title
+                description = LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.prix_description
+                tt_content_defValues {
+                    CType = ecmaskexport_prix
+                }
+            }
             squares {
                 iconIdentifier = tx_ecmaskexport_squares
                 title = LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.squares_title
@@ -33,5 +41,5 @@ mod.wizards.newContentElement.wizardItems.common {
                 }
             }
     }
-    show := addToList(3_cols_couleurs, 3_cols_pleine_largeur, formes, squares)
+    show := addToList(3_cols_couleurs, 3_cols_pleine_largeur, formes, prix, squares)
 }
