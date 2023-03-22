@@ -6,11 +6,11 @@
     align-items: center;
   }
 
-    &__first {
-        img {
-            margin-bottom: 1.5rem;
-        }
+  &__first {
+    img {
+      margin-bottom: 1.5rem;
     }
+  }
 
   &__text {
     @include bootstrap.media-breakpoint-down(md) {

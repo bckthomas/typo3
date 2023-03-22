@@ -1,1 +1,1 @@
-.component-3cols__texte,.component-3cols__title{align-items:center;display:flex;padding:6rem 3rem;text-align:center}.component-3cols__title{background-color:#df046f}.component-3cols__title h2{color:#fff}
+.component-3cols{align-items:center;display:flex}.component-3cols__texte,.component-3cols__title{align-items:center;display:flex;flex-direction:column;padding:6rem 3rem;text-align:center}.component-3cols__title{background-color:#df046f}.component-3cols__title h2{color:#fff}
