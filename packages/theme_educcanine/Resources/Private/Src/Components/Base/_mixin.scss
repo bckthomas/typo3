@@ -61,11 +61,11 @@
 @mixin button-revert {
   @include button;
 
-  border: 0.1rem solid theme.$color-theme;
-  color: theme.$color-theme;
+  border: 0.1rem solid theme.$primary-pink;
+  color: theme.$primary-pink;
 
   &::before {
-    background: theme.$color-theme;
+    background: theme.$primary-pink;
   }
 
   &:hover {
