@@ -14,6 +14,10 @@
     {data_item.data.tx_ecmaskexport_price}<br />
 </f:if>
 
+<f:if condition="{data_item.data.tx_ecmaskexport_info_price}">
+    {data_item.data.tx_ecmaskexport_info_price}<br />
+</f:if>
+
 <f:if condition="{data_item.data.tx_ecmaskexport_colors}">
     <f:switch expression="{data_item.data.tx_ecmaskexport_colors}">
         <f:case value="1">Value is: 1</f:case>

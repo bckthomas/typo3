@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-22T13:38:03+00:00" product-name="ec_mask_export">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-22T13:58:40+00:00" product-name="ec_mask_export">
     <header/>
     <body>
       <trans-unit id="tx_ecmaskexport_prices">
@@ -11,6 +11,9 @@
       </trans-unit>
       <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_price">
         <source>Prix</source>
+      </trans-unit>
+      <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_info_price">
+        <source>Information prix</source>
       </trans-unit>
       <trans-unit id="tx_ecmaskexport_prices.tx_ecmaskexport_colors">
         <source>Couleur</source>
@@ -35,9 +38,6 @@
       </trans-unit>
       <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_icon">
         <source>Icone</source>
-      </trans-unit>
-      <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_price">
-        <source>Prix</source>
       </trans-unit>
       <trans-unit id="tx_ecmaskexport_squares.tx_ecmaskexport_competence_color.I.0">
         <source>Rose</source>

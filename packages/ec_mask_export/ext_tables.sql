@@ -19,6 +19,7 @@ CREATE TABLE tx_ecmaskexport_prices (
     t3ver_move_id int(11) DEFAULT '0' NOT NULL,
     tx_ecmaskexport_service varchar(255) DEFAULT '' NOT NULL,
     tx_ecmaskexport_price varchar(255) DEFAULT '' NOT NULL,
+    tx_ecmaskexport_info_price varchar(255) DEFAULT '' NOT NULL,
     tx_ecmaskexport_colors varchar(255) DEFAULT '' NOT NULL,
     KEY language (l10n_parent,sys_language_uid)
 );
@@ -33,7 +34,6 @@ CREATE TABLE tx_ecmaskexport_squares (
     tx_ecmaskexport_competence mediumtext,
     tx_ecmaskexport_competence_color varchar(255) DEFAULT '' NOT NULL,
     tx_ecmaskexport_competence_icon int(11) unsigned DEFAULT '0' NOT NULL,
-    tx_ecmaskexport_price varchar(255) DEFAULT '' NOT NULL,
     KEY language (l10n_parent,sys_language_uid)
 );
 CREATE TABLE tx_ecmaskexport_texts (

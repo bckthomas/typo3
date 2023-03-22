@@ -2,8 +2,10 @@
 @use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .component-price {
-  @include bootstrap.media-breakpoint-up(md) {
-    &__container {
+  &__container {
+    margin-bottom: 2rem;
+
+    @include bootstrap.media-breakpoint-up(md) {
       display: flex;
       align-items: center;
     }
@@ -16,10 +18,17 @@
   }
 
   &__price {
-    font-weight: theme.$font-weight-bold;
     text-align: center;
 
-    @include bootstrap.font-size(3.5rem);
+    &__value {
+      font-weight: theme.$font-weight-bold;
+
+      @include bootstrap.font-size(3.5rem);
+    }
+
+    &__information {
+      font-style: italic;
+    }
   }
 
   &__service {

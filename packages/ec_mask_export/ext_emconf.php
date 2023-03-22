@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "ec_mask_export".
  *
- * Auto generated 22-03-2023 13:38
+ * Auto generated 22-03-2023 13:58
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next

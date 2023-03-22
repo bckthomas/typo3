@@ -1257,6 +1257,11 @@
                         "tx_mask_colors": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 },
+                "tx_mask_info_price": {
+                    "tx_mask_prices": {
+                        "tx_mask_info_price": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
                 "tx_mask_price": {
                     "tx_mask_prices": {
                         "tx_mask_price": "varchar(255) DEFAULT '' NOT NULL"
@@ -1303,8 +1308,19 @@
                     "inlineParent": "tx_mask_prices",
                     "key": "colors",
                     "label": "Couleur",
-                    "order": 3,
+                    "order": 4,
                     "type": "select"
+                },
+                "tx_mask_info_price": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_info_price",
+                    "inlineParent": "tx_mask_prices",
+                    "key": "info_price",
+                    "label": "Information prix",
+                    "order": 3,
+                    "type": "string"
                 },
                 "tx_mask_price": {
                     "config": {
@@ -1345,11 +1361,6 @@
                 "tx_mask_competence_icon": {
                     "tx_mask_squares": {
                         "tx_mask_competence_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
-                    }
-                },
-                "tx_mask_price": {
-                    "tx_mask_squares": {
-                        "tx_mask_price": "varchar(255) DEFAULT '' NOT NULL"
                     }
                 }
             },
@@ -1430,17 +1441,6 @@
                     "label": "Icone",
                     "order": 3,
                     "type": "file"
-                },
-                "tx_mask_price": {
-                    "config": {
-                        "type": "input"
-                    },
-                    "fullKey": "tx_mask_price",
-                    "inlineParent": "tx_mask_squares",
-                    "key": "price",
-                    "label": "Prix",
-                    "order": 4,
-                    "type": "string"
                 }
             }
         },

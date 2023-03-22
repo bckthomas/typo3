@@ -23,7 +23,7 @@ return [
         'label' => 'tx_ecmaskexport_service',
         'iconfile' => 'EXT:ec_mask_export/Resources/Public/Icons/Extension.svg',
         'hideTable' => true,
-        'searchFields' => 'tx_ecmaskexport_service,tx_ecmaskexport_price',
+        'searchFields' => 'tx_ecmaskexport_service,tx_ecmaskexport_price,tx_ecmaskexport_info_price',
     ],
     'palettes' => [
         'language' => [
@@ -196,6 +196,13 @@ return [
             'label' => 'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tx_ecmaskexport_prices.tx_ecmaskexport_price',
             'exclude' => 1,
         ],
+        'tx_ecmaskexport_info_price' => [
+            'config' => [
+                'type' => 'input',
+            ],
+            'label' => 'LLL:EXT:ec_mask_export/Resources/Private/Language/locallang_db.xlf:tx_ecmaskexport_prices.tx_ecmaskexport_info_price',
+            'exclude' => 1,
+        ],
         'tx_ecmaskexport_colors' => [
             'config' => [
                 'fieldWizard' => [
@@ -244,7 +251,7 @@ return [
     ],
     'types' => [
         1 => [
-            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_ecmaskexport_service,tx_ecmaskexport_price,tx_ecmaskexport_colors,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
+            'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,tx_ecmaskexport_service,tx_ecmaskexport_price,tx_ecmaskexport_info_price,tx_ecmaskexport_colors,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access',
         ],
     ],
 ];
