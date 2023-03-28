@@ -76,6 +76,13 @@ if(isset($_SERVER['HTTP_HOST'])) {
         'loginHighlightColor' => '#76b82a',
       ];
       break;
+      case 'educ-canine.com':
+          $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
+              'loginBackgroundImage' => 'fileadmin/educcanine/education-canine__accueil.jpg',
+              'loginLogo' => 'EXT:theme_educanine/Resources/Public/Images/logo.png',
+              'loginHighlightColor' => '#df046f',
+          ];
+          break;
   }
 }
 
