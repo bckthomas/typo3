@@ -570,3 +570,6 @@ RewriteRule ^.*\.sfc$ %{ENV:CWD}index.php?eID=sfc_manifest [QSA,L]
 ### End: StaticFileCache ###
 RewriteCond %{HTTP_HOST} ^sl-creations\.net$
 RewriteRule ^(.*)$ https://www.sl-creations.net/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^educ-canine\.com$
+RewriteRule ^(.*)$ https://www.educ-canine.com/$1 [L,R=301]
