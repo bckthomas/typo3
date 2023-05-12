@@ -1,0 +1,345 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "pimp_creation": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_description",
+                        "tx_mask_theme",
+                        "tx_mask_disposition",
+                        "tx_mask_9331184c9fe3d",
+                        "tx_mask_main_picture",
+                        "tx_mask_image_background",
+                        "tx_mask_images",
+                        "tx_mask_e2ee3aa7a3d118",
+                        "tx_mask_dimensions",
+                        "tx_mask_wood",
+                        "tx_mask_color",
+                        "tx_mask_placage",
+                        "tx_mask_price"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "pimp_creation",
+                    "label": "Pimp - Cr\u00e9ation",
+                    "labels": [
+                        "",
+                        "Description",
+                        "Th\u00e8me",
+                        "Disposition",
+                        "Images",
+                        "Impage principale",
+                        "Image de fond",
+                        "Illustrations",
+                        "Informations",
+                        "Dimensions",
+                        "Essence de bois",
+                        "Couleur",
+                        "Placage",
+                        "Prix"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 6
+                }
+            },
+            "sql": {
+                "tx_mask_color": {
+                    "tt_content": {
+                        "tx_mask_color": "mediumtext"
+                    }
+                },
+                "tx_mask_description": {
+                    "tt_content": {
+                        "tx_mask_description": "mediumtext"
+                    }
+                },
+                "tx_mask_dimensions": {
+                    "tt_content": {
+                        "tx_mask_dimensions": "mediumtext"
+                    }
+                },
+                "tx_mask_disposition": {
+                    "tt_content": {
+                        "tx_mask_disposition": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_image_background": {
+                    "tt_content": {
+                        "tx_mask_image_background": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_images": {
+                    "tt_content": {
+                        "tx_mask_images": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_main_picture": {
+                    "tt_content": {
+                        "tx_mask_main_picture": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_placage": {
+                    "tt_content": {
+                        "tx_mask_placage": "mediumtext"
+                    }
+                },
+                "tx_mask_price": {
+                    "tt_content": {
+                        "tx_mask_price": "mediumtext"
+                    }
+                },
+                "tx_mask_theme": {
+                    "tt_content": {
+                        "tx_mask_theme": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_wood": {
+                    "tt_content": {
+                        "tx_mask_wood": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "tx_mask_9331184c9fe3d": {
+                    "config": {
+                        "type": "tab"
+                    },
+                    "fullKey": "tx_mask_9331184c9fe3d",
+                    "key": "9331184c9fe3d",
+                    "type": "tab"
+                },
+                "tx_mask_color": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_color",
+                    "key": "color",
+                    "type": "text"
+                },
+                "tx_mask_description": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_description",
+                    "key": "description",
+                    "type": "text"
+                },
+                "tx_mask_dimensions": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_dimensions",
+                    "key": "dimensions",
+                    "type": "text"
+                },
+                "tx_mask_disposition": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Disposition 1",
+                                "value": "disp1"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Disposition 2",
+                                "value": "disp2"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Disposition 3",
+                                "value": "disp3"
+                            }
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_disposition",
+                    "key": "disposition",
+                    "type": "select"
+                },
+                "tx_mask_e2ee3aa7a3d118": {
+                    "config": {
+                        "type": "tab"
+                    },
+                    "fullKey": "tx_mask_e2ee3aa7a3d118",
+                    "key": "e2ee3aa7a3d118",
+                    "type": "tab"
+                },
+                "tx_mask_image_background": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_image_background",
+                    "imageoverlayPalette": 1,
+                    "key": "image_background",
+                    "type": "file"
+                },
+                "tx_mask_images": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 1
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_images",
+                    "imageoverlayPalette": 1,
+                    "key": "images",
+                    "type": "file"
+                },
+                "tx_mask_main_picture": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_main_picture",
+                    "imageoverlayPalette": 1,
+                    "key": "main_picture",
+                    "type": "file"
+                },
+                "tx_mask_placage": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_placage",
+                    "key": "placage",
+                    "type": "text"
+                },
+                "tx_mask_price": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_price",
+                    "key": "price",
+                    "type": "text"
+                },
+                "tx_mask_theme": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Clair",
+                                "value": "light"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Sombre",
+                                "value": "dark"
+                            }
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_theme",
+                    "key": "theme",
+                    "type": "select"
+                },
+                "tx_mask_wood": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_wood",
+                    "key": "wood",
+                    "type": "text"
+                }
+            }
+        }
+    }
+}

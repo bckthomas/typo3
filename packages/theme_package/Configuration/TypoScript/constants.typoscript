@@ -5,4 +5,5 @@ styles.content.textmedia {
   maxWInText = 1920
 }
 
+package.languageFolder = LLL:EXT:theme_package/Resources/Private/Language/fr.locallang.xlf
 sourceopt.removeGenerator = 0

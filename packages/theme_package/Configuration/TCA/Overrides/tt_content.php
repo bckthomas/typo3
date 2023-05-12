@@ -15,7 +15,7 @@ defined('TYPO3') or die();
           ]
       )
   )
-  ->setIcon('EXT:theme_package/Resources/Private/Icons/container-5050.svg')
+  ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-5050.svg')
   ->setSaveAndCloseInNewContentElementWizard(false)
 );
 
@@ -34,7 +34,7 @@ defined('TYPO3') or die();
             ]
         )
     )
-    ->setIcon('EXT:theme_package/Resources/Private/Icons/container-333333.svg')
+    ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-333333.svg')
 );
 
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)-> configureContainer(
@@ -53,7 +53,7 @@ defined('TYPO3') or die();
             ]
         )
     )
-    ->setIcon('EXT:theme_package/Resources/Private/Icons/container-25252525.svg')
+    ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-25252525.svg')
 );
 
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)-> configureContainer(
@@ -70,7 +70,7 @@ defined('TYPO3') or die();
             ]
         )
     )
-    ->setIcon('EXT:theme_package/Resources/Private/Icons/container-2575.svg')
+    ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-2575.svg')
 );
 
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)-> configureContainer(
@@ -87,7 +87,7 @@ defined('TYPO3') or die();
             ]
         )
     )
-    ->setIcon('EXT:theme_package/Resources/Private/Icons/container-7525.svg')
+    ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-7525.svg')
 );
 
 $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'] = str_replace(

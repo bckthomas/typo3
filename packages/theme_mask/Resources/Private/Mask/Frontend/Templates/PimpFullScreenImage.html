@@ -1,0 +1,39 @@
+<f:asset.css identifier="component" href="EXT:theme_pimp/Resources/Public/Css/Components/Component/component.css" />
+<f:asset.css identifier="full-image" href="EXT:theme_pimp/Resources/Public/Css/Components/Full-image/full-image.css" />
+
+<div class="full-image component component--background-image component--h100">
+  <f:if condition="{data.image}">
+    <f:for each="{data.image}" as="file">
+      <div class="full-image__img"> </div>
+      <f:asset.css identifier="full-image-img">
+        .full-image__img {
+          background-image: url({f:uri.image(image:file)});
+        }
+      </f:asset.css>
+    </f:for>
+  </f:if>>
+  <f:if condition="{data.tx_mask_texts}">
+    <ul class="full-image__texts">
+      <f:for each="{data.tx_mask_texts}" as="data_item">
+        <li class="full-image__text js-animation-scroll animation-scroll slide-in-left">
+          {data_item.tx_mask_text}
+        </li>
+      </f:for>
+    </ul>
+  </f:if>
+  <div class="full-image__links">
+    <div class="container">
+      <a class="rs__link" target="_blank" title="Page Facebook PIMP Ebénisterie ({f:translate(key: '{languageFolder}:newTab')})" href="https://www.facebook.com/pimpebenisterie">
+        <svg aria-hidden="true" role="img" class="rs__link__icon">
+          <use xlink:href="typo3conf/ext/theme_pimp/Resources/Public/Svg/icon-sprite.svg#facebook"></use>
+        </svg>
+      </a>
+      <a class="rs__link" target="_blank" title="Page Instagram PIMP Ebénisterie ({f:translate(key: '{languageFolder}:newTab')})" href="https://www.instagram.com/pimpebenisterie/">
+        <svg aria-hidden="true" role="img" class="rs__link__icon">
+          <title>Pimp ébénisterie Instagram</title>
+          <use xlink:href="typo3conf/ext/theme_pimp/Resources/Public/Svg/icon-sprite.svg#instagram"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "educcanine_formes": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "bodytext",
+                        "image",
+                        "media"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "educcanine_formes",
+                    "label": "Educ-canine - Formes",
+                    "labels": [
+                        "",
+                        "",
+                        "Image",
+                        "Vid\u00e9o"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 8
+                }
+            },
+            "tca": {
+                "bodytext": {
+                    "bodytextTypeByElement": {
+                        "educcanine_3_cols_colors": "richtext",
+                        "educcanine_3_cols_full_width": "richtext",
+                        "educcanine_formes": "richtext",
+                        "pimp_demarche": "richtext"
+                    },
+                    "coreField": 1,
+                    "fullKey": "bodytext",
+                    "key": "bodytext"
+                },
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "media": {
+                    "coreField": 1,
+                    "fullKey": "media",
+                    "imageoverlayPalette": 1,
+                    "key": "media",
+                    "type": "file"
+                }
+            }
+        }
+    }
+}

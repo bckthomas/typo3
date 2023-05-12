@@ -1,0 +1,56 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "pimp_citation": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_quote"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "pimp_citation",
+                    "label": "Pimp - Citation",
+                    "labels": [
+                        "",
+                        "Citation"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 4
+                }
+            },
+            "sql": {
+                "tx_mask_quote": {
+                    "tt_content": {
+                        "tx_mask_quote": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "tx_mask_quote": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_quote",
+                    "key": "quote",
+                    "type": "richtext"
+                }
+            }
+        }
+    }
+}

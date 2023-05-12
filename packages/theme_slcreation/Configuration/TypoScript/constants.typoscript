@@ -20,23 +20,11 @@ theme {
 	htmlTag_class = h-100
 	# cat=Configuration du site; type=int+; label= Id Matomo
 	matomoSiteId = 1
-
-	extension {
-		# cat=Configuration du thème; type=boolean; label= Gallery
-		fs_media_gallery = 1
-		fs_media_gallery {
-			storagePid = 12
-			album.thumb {
-				width = 300
-				height = 197
-			}
-		}
-	}
 }
 
 #Meta
 page.meta {
-	description =
+	description = Une piscine pour cet été, une terrasse confortable ou une allée propre et pratique ? Laissez vos envies devenir réalité avec un professionnel expérimenté !
 	author = Thomas Beck
-	keywords =
+	keywords = piscine, dallage, pavage, spa, maçonnerie, escalier, clôture, portail, terrasse, Villefranche sur Saône, Beaujolais
 }

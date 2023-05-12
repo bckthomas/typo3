@@ -1,0 +1,221 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "educcanine_3_cols_colors": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_col_color",
+                        "image",
+                        "header",
+                        "bodytext",
+                        "tx_mask_text1",
+                        "tx_mask_text2",
+                        "tx_mask_color_col",
+                        "tx_mask_text3",
+                        "tx_mask_image_col"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "educcanine_3_cols_colors",
+                    "label": "Educ-canine - 3 cols couleurs",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Texte",
+                        "Texte",
+                        "Couleur de fond",
+                        "Texte",
+                        "Image"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                }
+            },
+            "sql": {
+                "tx_mask_col_color": {
+                    "tt_content": {
+                        "tx_mask_col_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_color_col": {
+                    "tt_content": {
+                        "tx_mask_color_col": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_image_col": {
+                    "tt_content": {
+                        "tx_mask_image_col": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_text1": {
+                    "tt_content": {
+                        "tx_mask_text1": "mediumtext"
+                    }
+                },
+                "tx_mask_text2": {
+                    "tt_content": {
+                        "tx_mask_text2": "mediumtext"
+                    }
+                },
+                "tx_mask_text3": {
+                    "tt_content": {
+                        "tx_mask_text3": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "bodytext": {
+                    "bodytextTypeByElement": {
+                        "educcanine_3_cols_colors": "richtext",
+                        "educcanine_3_cols_full_width": "richtext",
+                        "educcanine_formes": "richtext",
+                        "pimp_demarche": "richtext"
+                    },
+                    "coreField": 1,
+                    "fullKey": "bodytext",
+                    "key": "bodytext"
+                },
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "tx_mask_col_color": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Violet",
+                                "value": "purple"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Orange",
+                                "value": "orange"
+                            }
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_col_color",
+                    "key": "col_color",
+                    "type": "select"
+                },
+                "tx_mask_color_col": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Orange",
+                                "value": "orange"
+                            },
+                            {
+                                "description": "",
+                                "group": "",
+                                "icon": "",
+                                "label": "Violet",
+                                "value": "purple"
+                            }
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_color_col",
+                    "key": "color_col",
+                    "type": "select"
+                },
+                "tx_mask_image_col": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_image_col",
+                    "imageoverlayPalette": 1,
+                    "key": "image_col",
+                    "type": "file"
+                },
+                "tx_mask_text1": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text1",
+                    "key": "text1",
+                    "type": "richtext"
+                },
+                "tx_mask_text2": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text2",
+                    "key": "text2",
+                    "type": "richtext"
+                },
+                "tx_mask_text3": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text3",
+                    "key": "text3",
+                    "type": "richtext"
+                }
+            }
+        }
+    }
+}

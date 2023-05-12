@@ -1,0 +1,164 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "pimp_realisations": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_category"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "pimp_realisations",
+                    "label": "Pimp - R\u00e9alisations",
+                    "labels": [
+                        "",
+                        "Th\u00e8me"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 2
+                }
+            },
+            "sql": {
+                "tx_mask_category": {
+                    "tt_content": {
+                        "tx_mask_category": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "tx_mask_category": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_category",
+                    "key": "category",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_category": {
+            "sql": {
+                "tx_mask_color": {
+                    "tx_mask_category": {
+                        "tx_mask_color": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_category": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_category": {
+                        "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_title": {
+                    "tx_mask_category": {
+                        "tx_mask_title": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_color": {
+                    "config": {
+                        "nullable": 0,
+                        "size": 10,
+                        "type": "color"
+                    },
+                    "fullKey": "tx_mask_color",
+                    "inlineParent": "tx_mask_category",
+                    "key": "color",
+                    "label": "Couleur",
+                    "order": 4,
+                    "type": "colorpicker"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_category",
+                    "key": "image",
+                    "label": "Image",
+                    "order": 2,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_category",
+                    "key": "link",
+                    "label": "Lien",
+                    "order": 3,
+                    "type": "link"
+                },
+                "tx_mask_title": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_title",
+                    "inlineParent": "tx_mask_category",
+                    "key": "title",
+                    "label": "Intitul\u00e9",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
