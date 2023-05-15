@@ -7,5 +7,5 @@ defined('TYPO3') or die();
 
 // Add color to page tree.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
-  options.pageTree.backgroundColor.24 = rgba(53,152,219,0.2)
+  options.pageTree.backgroundColor.24 = rgba(223,4,111,0.2)
 ');

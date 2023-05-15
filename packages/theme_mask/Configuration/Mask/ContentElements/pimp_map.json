@@ -1,0 +1,56 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "pimp_map": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_address"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "pimp_map",
+                    "label": "Pimp - Map",
+                    "labels": [
+                        "",
+                        "Adresse"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 5
+                }
+            },
+            "sql": {
+                "tx_mask_address": {
+                    "tt_content": {
+                        "tx_mask_address": "mediumtext"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "tx_mask_address": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_address",
+                    "key": "address",
+                    "type": "richtext"
+                }
+            }
+        }
+    }
+}

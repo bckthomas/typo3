@@ -66,7 +66,7 @@ public/typo3temp
 public/index.php
 public/typo3conf/l10n
 public/typo3conf/deprecation*
-public/typo3conf/ENABLE_INSTALL_TOOL
+public/_assets
 var
 public/typo3conf/ext/*
 

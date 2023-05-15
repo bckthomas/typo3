@@ -28,5 +28,3 @@ page.meta {
   author = Thomas Beck
 	keywords = éducation canine, morbihan, agility, cours à domicile, formation chiens dits dangereux, équithérapie
 }
-
-plugin.tx_ecmaskexport.view.templateRootPath = EXT:theme_educcanine/Resources/Extensions/Mask

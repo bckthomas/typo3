@@ -1,0 +1,44 @@
+<f:asset.css identifier="title2" href="EXT:theme_educcanine/Resources/Public/Css/Components/Title2/title2.css" />
+<f:asset.css identifier="3colscouleurs" href="EXT:theme_educcanine/Resources/Public/Css/Components/3cols-couleurs/3cols-couleurs.css" />
+<f:asset.css identifier="background" href="EXT:theme_educcanine/Resources/Public/Css/Components/Background/background.css" />
+
+<div class="container">
+  <div class="row cols-couleurs__container">
+    <div class="col-md-4 cols-couleurs__first">
+      <div class="background__color background__color--{data.tx_mask_col_color} js-animation-scroll animation-scroll slide-in-left">
+        <f:image image="{data.image.0}" alt="{data.image.0.alternative}" class="img-fluid" />
+
+        <f:if condition="{data.header}">
+          <h2>{data.header}</h2>
+        </f:if>
+        <f:if condition="{data.bodytext}">
+          {data.bodytext -> f:format.html()}
+        </f:if>
+      </div>
+    </div>
+    <div class="col-md-4 cols-couleurs__text js-animation-scroll animation-scroll fade-in-bottom">
+      <f:if condition="{data.tx_mask_text}">
+        {data.tx_mask_text -> f:format.html()}
+      </f:if>
+      <div class="mt-5">
+        <f:if condition="{data.tx_mask_text2}">
+          {data.tx_mask_text2 -> f:format.html()}
+        </f:if>
+      </div>
+
+    </div>
+    <div class="col-md-4 js-animation-scroll animation-scroll slide-in-right">
+
+      <div class="background__color background__color--{data.tx_mask_color_col}">
+        <f:if condition="{data.tx_mask_text3}">
+          {data.tx_mask_text3 -> f:format.html()}
+        </f:if>
+      </div>
+
+      <f:if condition="{data.tx_mask_image_col}">
+        <f:image image="{data.tx_mask_image_col.0}" alt="{data.tx_mask_image_col.0.alternative}" class="img-fluid" />
+      </f:if>
+
+    </div>
+  </div>
+</div>

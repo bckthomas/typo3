@@ -23,7 +23,7 @@ page {
       homePageUid = TEXT
       homePageUid.value = {$theme.homePageUid}
       languageFolder = TEXT
-      languageFolder.value = LLL:EXT:theme_package/Resources/Private/Language/fr.locallang.xlf
+      languageFolder.value = {$package.languageFolder}
       publicFolder = TEXT
       publicFolder.value = {$theme.publicFolder}
 			packageComponentsFolder = TEXT
@@ -68,8 +68,8 @@ page {
   }
   bodyTag = {$theme.bodyTag}
   includeJSFooterlibs {
-    popper = EXT:theme_package/node_modules/@popperjs/core/dist/umd/popper.min.js
-    bootstrap = EXT:theme_package/node_modules/bootstrap/dist/js/bootstrap.min.js
+    popper = typo3conf/ext/theme_package/node_modules/@popperjs/core/dist/umd/popper.min.js
+    bootstrap = typo3conf/ext/theme_package/node_modules/bootstrap/dist/js/bootstrap.min.js
   }
 
 }

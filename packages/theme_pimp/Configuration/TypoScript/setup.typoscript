@@ -12,3 +12,8 @@ tt_content.pimpmaskexport_creation {
     publicFolder < lib.contentElement.variables.publicFolder
   }
 }
+
+tt_content.mask_pimp_fullscreen_image.variables {
+  languageFolder = TEXT
+  languageFolder.value = {$package.languageFolder}
+}

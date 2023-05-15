@@ -1,0 +1,100 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "pimp_fullscreen_image": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "image",
+                        "tx_mask_texts"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "pimp_fullscreen_image",
+                    "label": "Pimp - Image plein \u00e9cran",
+                    "labels": [
+                        "",
+                        "Textes"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                }
+            },
+            "sql": {
+                "tx_mask_texts": {
+                    "tt_content": {
+                        "tx_mask_texts": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "tx_mask_texts": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_texts",
+                    "key": "texts",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_texts": {
+            "sql": {
+                "tx_mask_text": {
+                    "tx_mask_texts": {
+                        "tx_mask_text": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_text": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "inlineParent": "tx_mask_texts",
+                    "key": "text",
+                    "label": "Texte",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<f:if condition="{data.image}">
+  <f:media file="{data.image.0}" alt="" height="50c" width="50c" fileExtension="webp" />
+</f:if>
+<f:if condition="{data.tx_mask_texts}">
+  <f:for each="{data.tx_mask_texts}" as="item">
+    <ul class="list-unstyled">
+      <li>
+        {item.tx_mask_text}
+      </li>
+    </ul>
+  </f:for>
+</f:if>

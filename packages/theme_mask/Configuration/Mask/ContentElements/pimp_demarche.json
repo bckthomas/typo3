@@ -1,0 +1,185 @@
+{
+    "version": "8.1.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "pimp_demarche": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "bodytext",
+                        "image",
+                        "tx_mask_image_background",
+                        "tx_mask_icontext"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "pimp_demarche",
+                    "label": "Pimp - D\u00e9marche",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "Image de fond",
+                        "Icone et texte"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 3
+                }
+            },
+            "sql": {
+                "tx_mask_icontext": {
+                    "tt_content": {
+                        "tx_mask_icontext": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image_background": {
+                    "tt_content": {
+                        "tx_mask_image_background": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "bodytext": {
+                    "bodytextTypeByElement": {
+                        "educcanine_3_cols_colors": "richtext",
+                        "educcanine_3_cols_full_width": "richtext",
+                        "educcanine_formes": "richtext",
+                        "pimp_demarche": "richtext"
+                    },
+                    "coreField": 1,
+                    "fullKey": "bodytext",
+                    "key": "bodytext"
+                },
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "tx_mask_icontext": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_icontext",
+                    "key": "icontext",
+                    "type": "inline"
+                },
+                "tx_mask_image_background": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_image_background",
+                    "imageoverlayPalette": 1,
+                    "key": "image_background",
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_icontext": {
+            "sql": {
+                "tx_mask_demachetext": {
+                    "tx_mask_icontext": {
+                        "tx_mask_demachetext": "mediumtext"
+                    }
+                },
+                "tx_mask_icon": {
+                    "tx_mask_icontext": {
+                        "tx_mask_icon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_demachetext": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_demachetext",
+                    "inlineParent": "tx_mask_icontext",
+                    "key": "demachetext",
+                    "label": "Texte",
+                    "order": 1,
+                    "type": "text"
+                },
+                "tx_mask_icon": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "maxitems": "",
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_icon",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_icontext",
+                    "key": "icon",
+                    "label": "Icone",
+                    "order": 2,
+                    "type": "file"
+                }
+            }
+        }
+    }
+}

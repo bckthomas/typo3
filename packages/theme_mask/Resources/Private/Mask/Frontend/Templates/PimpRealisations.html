@@ -1,0 +1,32 @@
+<f:asset.css identifier="component" href="EXT:theme_pimp/Resources/Public/Css/Components/Component/component.css" />
+<f:asset.css identifier="realisations" href="EXT:theme_pimp/Resources/Public/Css/Components/Realisations/realisations.css" />
+<f:asset.css identifier="title2" href="EXT:theme_pimp/Resources/Public/Css/Components/Title2/title2.css" />
+
+<div class="realisations component--dark component--padding">
+  <div class="container">
+    <f:if condition="{data.header}">
+      <h2>{data.header}</h2>
+    </f:if>
+    <div class="row">
+      <f:for each="{data.tx_mask_category}" as="data_item" iteration="fooIterator">
+        <f:asset.css identifier="categoryColor-{fooIterator.index}">
+          .realisation__color-{fooIterator.index} { background-color: {data_item.tx_mask_color}; }
+        </f:asset.css>
+        <div class="col-md-6 col-lg-3 realisation js-animation-scroll animation-scroll fade-in-bottom">
+          <div class="realisation__item">
+            <a href="{data_item.tx_mask_link}" class="realisation__item__link">
+              <f:for each="{data_item.tx_mask_image}" as="file">
+                <f:image image="{file}" alt="" class="img-fluid" width="360c" height="640c" fileExtension="webp"/>
+              </f:for>
+              <div class="realisation__item__title realisation__color-{fooIterator.index}">
+                <div class="realisation__item__title__content">
+                  {data_item.tx_mask_title}
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </f:for>
+    </div>
+  </div>
+</div>
