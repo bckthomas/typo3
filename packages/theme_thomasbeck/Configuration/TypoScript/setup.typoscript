@@ -1,0 +1,9 @@
+// Form
+plugin.tx_form {
+ settings {
+   yamlConfigurations {
+    100 = fileadmin/form_definitions/BaseSLCreationSetup.yaml
+  }
+ }
+}
+

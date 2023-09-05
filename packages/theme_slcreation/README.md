@@ -12,3 +12,6 @@ autoload > psr-4
 
 # ext_localconf.php
 Modifier RTE Presets
+
+
+Install new theme : composer require thbck/theme-thomasbeck:@dev
