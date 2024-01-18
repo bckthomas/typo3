@@ -17,6 +17,7 @@
 		"b13/container": "^2",
 		"brotkrueml/typo3-matomo-widgets": "^2",
 		"causal/image_autoresize": "^2.2",
+		"contentblocks/content-blocks": "^0.4.0",
 		"helhum/typo3-console": "^8",
 		"lochmueller/sourceopt": "^5",
 		"mask/mask": "^8",

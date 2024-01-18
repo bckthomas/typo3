@@ -48,6 +48,7 @@ return [
             'layouts' => 'EXT:theme_mask/Resources/Private/Mask/Frontend/Layouts',
             'layouts_backend' => 'EXT:theme_mask/Resources/Private/Mask/Backend/Layouts',
             'loader_identifier' => 'json-split',
+            'override_shared_fields' => '0',
             'partials' => 'EXT:theme_mask/Resources/Private/Mask/Frontend/Partials',
             'partials_backend' => 'EXT:theme_mask/Resources/Private/Mask/Backend/Partials',
             'preview' => 'EXT:theme_mask/Resources/Public/Mask/',

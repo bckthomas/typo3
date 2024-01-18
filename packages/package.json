@@ -4,31 +4,29 @@
   "description": "NPM scripts for themes",
   "main": "index.js",
   "dependencies": {
-    "isexe": "^2.0.0",
-    "shebang-regex": "^3.0.0",
-    "which": "^2.0.2",
     "cross-spawn": "^7.0.3",
+    "isexe": "^2.0.0",
     "path-key": "^3.1.1",
-    "shebang-command": "^2.0.0"
+    "shebang-command": "^2.0.0",
+    "shebang-regex": "^3.0.0",
+    "which": "^2.0.2"
   },
   "scripts": {
-    "clean": "del-cli theme_${site}/Resources/Public/",
-    "stylelint": "cross-env-shell stylelint --config config/.stylelintrc --cache --cache-location .cache/.stylelintcache --fix \"theme_${site}/Resources/Private/Src/**/*.scss\"",
-    "sass": "sass --update --style=compressed theme_${site}/Resources/Private/Src:theme_${site}/Resources/Public/Css",
-    "postcss": "postcss theme_${site}/Resources/Public/Css/**/*.css --base theme_${site}/Resources/Public/Css --config config/postcss.config.js -d theme_${site}/Resources/Public/Css",
-
-    "eslint": "eslint -c config/.eslintrc --cache --cache-location .cache/.eslintcache --fix \"theme_${site}/Resources/Private/Src/**/*.js\"",
-    "uglify": "multi-uglifyjs theme_${site}/Resources/Private/Src/**/*.js --source-map -o theme_${site}/Resources/Public/JavaScript --suffix=.min",
-
-    "imagemin": "imagemin --plugin.mozjpeg.progressive=true --plugin.mozjpeg.quality=75 --plugin.gifsicle.interlaced=true --plugin.gifsicle.optimizationLevel=2 --plugin.optipng.optimizationLevel=3 theme_${site}/Resources/Private/Src/Images/* --out-dir=theme_${site}/Resources/Public/Images",
-    "svgsprite": "svg-sprite --config config/svgsprite.json theme_${site}/Resources/Private/Src/Icons/*.svg",
-    "copyfonts": "cpy theme_${site}/Resources/Private/Src/Fonts/**/* theme_${site}/Resources/Public/Fonts",
-
+    "clean": "del-cli theme_$npm_config_site/Resources/Public/",
+    "stylelint": "cross-env-shell stylelint --config config/.stylelintrc --cache --cache-location .cache/.stylelintcache --fix \"theme_$npm_config_site/Resources/Private/Src/**/*.scss\"",
+    "sass": "sass --update --style=compressed theme_$npm_config_site/Resources/Private/Src:theme_$npm_config_site/Resources/Public/Css",
+    "postcss": "postcss theme_$npm_config_site/Resources/Public/Css/**/*.css --base theme_$npm_config_site/Resources/Public/Css --config config/postcss.config.js -d theme_$npm_config_site/Resources/Public/Css",
+    "eslint": "eslint -c config/.eslintrc --cache --cache-location .cache/.eslintcache --fix \"theme_$npm_config_site/Resources/Private/Src/**/*.js\"",
+    "uglify": "multi-uglifyjs theme_$npm_config_site/Resources/Private/Src/**/*.js --source-map -o theme_$npm_config_site/Resources/Public/JavaScript --suffix=.min",
+    "imagemin": "imagemin --plugin.mozjpeg.progressive=true --plugin.mozjpeg.quality=75 --plugin.gifsicle.interlaced=true --plugin.gifsicle.optimizationLevel=2 --plugin.optipng.optimizationLevel=3 theme_$npm_config_site/Resources/Private/Src/Images/* --out-dir=theme_$npm_config_site/Resources/Public/Images",
+    "svgsprite": "svg-sprite --config config/svgsprite.json theme_$npm_config_site/Resources/Private/Src/Icons/*.svg",
+    "svgo": "svgo -f theme_$npm_config_site/Resources/Private/Src/Icons/ -o theme_$npm_config_site/Resources/Private/Src/Icons/output",
+    "svgfont": "svgtofont --sources theme_$npm_config_site/Resources/Private/Src/Icons/output --output theme_$npm_config_site/Resources/Public/Fonts",
+    "copyfonts": "cpy theme_$npm_config_site/Resources/Private/Src/Fonts/**/* theme_$npm_config_site/Resources/Public/Fonts",
     "build:css": "npm run stylelint ; npm run sass ; npm run postcss",
     "build:js": "npm run eslint ; npm run uglify",
-    "build:img": "npm run imagemin ; npm run svgsprite",
+    "build:img": "npm run imagemin ; npm run svgo; npm run svgfont",
     "build:fonts": "npm run copyfonts",
-
     "watch": "npm-run-all --parallel watch:*",
     "build": "npm run clean ; npm run build:css ; npm run build:js ; npm run build:img ; npm run build:fonts"
   },
@@ -56,6 +54,16 @@
     "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.3.0",
-    "svg-sprite": "^2.0.2"
+    "svg-sprite": "^2.0.2",
+    "svgo": "^3.0.2",
+    "svgtofont": "^4.0.0"
+  },
+  "svgtofont": {
+    "css": {
+      "include": "\\.(scss)$"
+    },
+    "outSVGReact": false,
+    "outSVGReactNative": false,
+    "fontName": "iconfont"
   }
 }
