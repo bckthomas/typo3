@@ -1,0 +1,14 @@
+@use "../Base/base" as theme;
+
+// Bootstrap
+
+@import "skiptocontent";
+@import "title";
+@import "image";
+@include theme.font-face(Sora, "../../../Fonts/Sora-Light", 300, normal);
+@include theme.font-face(Sora, "../../../Fonts/Sora-Regular", 400, normal);
+@include theme.font-face(Sora, "../../../Fonts/Sora-SemiBold", 600, normal);
+
+a:hover {
+  color: theme.$primary;
+}

@@ -19,10 +19,10 @@ config {
 	moveJsFromHeaderToFooter = 1
 	// removeDefaultJS = external
 	// sendCacheHeaders = 1
-	spamProtectEmailAddresses = ascii
+  spamProtectEmailAddresses = -2
 	// spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
 	tx_extbase.mvc.callDefaultActionIfActionCantBeResolved = 1
-	
+
 	pageTitleSeparator = -
 	pageTitleSeparator.noTrimWrap = | | |
 }
