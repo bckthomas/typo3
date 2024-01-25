@@ -1,5 +1,6 @@
 {
     "version": "8.1.0",
+    "restructuringDone": false,
     "tables": {
         "tt_content": {
             "elements": {
@@ -9,10 +10,36 @@
                     "columns": [
                         "tx_mask_title",
                         "tx_mask_text",
-                        "image"
+                        "image",
+                        "tx_mask_link"
                     ],
+                    "columnsOverride": {
+                        "image": {
+                            "config": {
+                                "appearance": {
+                                    "elementBrowserEnabled": 1,
+                                    "enabledControls": {
+                                        "delete": 1,
+                                        "dragdrop": 1,
+                                        "hide": 1,
+                                        "info": 1,
+                                        "localize": 1,
+                                        "sort": 0
+                                    },
+                                    "fileUploadAllowed": 1,
+                                    "useSortable": 1
+                                },
+                                "minitems": ""
+                            },
+                            "fullKey": "image",
+                            "imageoverlayPalette": 1,
+                            "key": "image",
+                            "type": "file"
+                        }
+                    },
                     "description": "",
                     "descriptions": [
+                        "",
                         "",
                         "",
                         ""
@@ -24,13 +51,19 @@
                     "labels": [
                         "",
                         "",
-                        ""
+                        "",
+                        "Lien"
                     ],
                     "shortLabel": "",
                     "sorting": 0
                 }
             },
             "sql": {
+                "tx_mask_link": {
+                    "tt_content": {
+                        "tx_mask_link": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
                 "tx_mask_text": {
                     "tt_content": {
                         "tx_mask_text": "mediumtext"
@@ -49,6 +82,18 @@
                     "imageoverlayPalette": 1,
                     "key": "image",
                     "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "allowedTypes": [
+                            "page"
+                        ],
+                        "nullable": 0,
+                        "type": "link"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "key": "link",
+                    "type": "link"
                 },
                 "tx_mask_text": {
                     "config": {

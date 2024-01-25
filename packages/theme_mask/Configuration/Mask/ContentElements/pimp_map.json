@@ -1,5 +1,6 @@
 {
     "version": "8.1.0",
+    "restructuringDone": false,
     "tables": {
         "tt_content": {
             "elements": {

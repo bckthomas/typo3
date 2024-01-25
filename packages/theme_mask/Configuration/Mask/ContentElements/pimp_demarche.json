@@ -1,5 +1,6 @@
 {
     "version": "8.1.0",
+    "restructuringDone": false,
     "tables": {
         "tt_content": {
             "elements": {
@@ -116,7 +117,6 @@
                             "fileUploadAllowed": 1,
                             "useSortable": 1
                         },
-                        "maxitems": "",
                         "minitems": ""
                     },
                     "fullKey": "tx_mask_image_background",
@@ -168,7 +168,6 @@
                             "fileUploadAllowed": 1,
                             "useSortable": 1
                         },
-                        "maxitems": "",
                         "minitems": ""
                     },
                     "fullKey": "tx_mask_icon",
