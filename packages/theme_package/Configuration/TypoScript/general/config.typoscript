@@ -25,4 +25,5 @@ config {
 
 	pageTitleSeparator = -
 	pageTitleSeparator.noTrimWrap = | | |
+	pageTitleFirst = 1
 }
