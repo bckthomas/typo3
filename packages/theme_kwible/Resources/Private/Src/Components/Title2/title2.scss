@@ -1,0 +1,36 @@
+@use "../Base/base" as theme;
+
+h2 {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.heander__line {
+    text-align: center;
+
+    &__text {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: .2rem;
+            background-color: #000000;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &::before {
+            left: -30px;
+        }
+
+        &::after {
+            right: -30px;
+        }
+    }
+
+}

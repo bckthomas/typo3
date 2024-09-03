@@ -1,0 +1,57 @@
+@use "../Base/base" as theme;
+
+.news {
+    &__image {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__category {
+        font-size: 1.5rem;
+        color: theme.$color-secondary;
+        display: block;
+        font-weight: theme.$font-weight-bold;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        line-height: 1.3;
+        font-weight: theme.$font-weight-bolder;
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: theme.$transition-base;
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: "";
+        }
+
+        &:hover {
+            color: theme.$color-secondary;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    &__date {
+        color: #888888;
+        font-size: 1.4rem;
+    }
+}

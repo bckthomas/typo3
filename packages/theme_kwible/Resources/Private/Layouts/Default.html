@@ -1,0 +1,18 @@
+<f:asset.css identifier="AnimationCSS" href="{packageComponentsFolder}/Css/Components/Animations/animations.css" />
+<f:asset.script identifier="AnimationJS" src="{packageComponentsFolder}/JavaScript/animations.min.js" />
+<f:asset.css identifier="frame" href="{publicFolder}/Css/Components/Frame/frame.css" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,800,900" rel="stylesheet">
+
+<header role="banner" class="header">
+	<f:render partial="Header" arguments="{_all}" />
+</header>
+
+<main id="mainContent" class="flex-shrink-0 {f:if(condition: '{homePageUid} != {data.uid}', then: 'main--margin')}" role="main">
+  <div class="container">
+		<f:render section="Main" />
+  </div>
+</main>
+
+<footer class="footer mt-auto" role="contentinfo">
+	<f:render partial="Footer" arguments="{_all}" />
+</footer>

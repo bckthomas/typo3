@@ -1,0 +1,25 @@
+@use "../Base/base" as theme;
+@import "skiptocontent";
+@import "title";
+@import "image";
+@import "header";
+@include theme.font-face(Overpass, "../../../Fonts/overpass");
+
+a:hover {
+  color: theme.$primary;
+}
+
+body {
+    background-color: theme.$color-grey-light;
+}
+
+footer {
+    color: theme.$color-footer;
+    background-color: theme.$background-footer;
+    padding: 2rem 0;
+}
+
+.image-circle {
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}

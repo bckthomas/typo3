@@ -1,0 +1,54 @@
+@use "../Base/base" as theme;
+
+.frame-default {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: theme.$color-white;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.frame-type-menu_pages,
+.frame-type-news_pi1 {
+    padding: 0;
+    box-shadow: none;
+    background-color: initial;
+}
+
+.list-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: .9rem 0;
+        position: relative;
+    }
+
+    a {
+        transition: all 0.3s ease;
+        font-weight: 300;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: theme.$color-primary;
+            width: 1rem;
+            height: .1rem;
+            border-radius: 50%;
+            bottom: 50%;
+            opacity: 0;
+            left: 0;
+            transition: theme.$transition-base;
+        }
+
+        &:hover {
+            padding-left: 1.5rem;
+            color: theme.$color-primary;
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}

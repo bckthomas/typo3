@@ -1,0 +1,42 @@
+theme {
+	privateFolder = EXT:theme_kwible/Resources/Private
+	publicFolder = EXT:theme_kwible/Resources/Public
+	extFolder = EXT:theme_kwible/Resources/Extensions
+	extensionName = theme_kwible
+	// containerFolder = EXT:theme_kwible/Resources/Container
+	// packagePublicFolder =  EXT:theme_package/Resources/Public
+	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
+	homePageUid = 42
+	# cat=Mise en page; type=int+; label= Niveau du menu
+	mainNavigation.levels = 2
+	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
+	sender.email = noreply@site.fr
+	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
+	footerMenuPid = 11
+	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
+	infoFooter =
+	# cat=Configuration du thème; type=string; label= Body class
+	bodyTag = <body class="d-flex flex-column h-100">
+	# cat=Configuration du thème; type=string; label= Html tag class
+	htmlTag_class = h-100
+	# cat=Configuration du site; type=int+; label= Id Matomo
+	matomoSiteId = 7
+}
+
+#Meta
+page.meta {
+	description =
+	author = Thomas Beck
+	keywords =
+}
+
+plugin {
+  tx_news {
+    view {
+      templateRootPath = EXT:theme_kwible/Resources/Extensions/News/Templates/
+      partialRootPath = EXT:theme_kwible/Resources/Extensions/News/Partials/
+      layoutRootPath = EXT:theme_kwible/Resources/Extensions/News/Layouts/
+    }
+    settings.cssFile =
+  }
+}

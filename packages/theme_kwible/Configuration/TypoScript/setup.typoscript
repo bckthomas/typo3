@@ -1,0 +1,18 @@
+// Form
+plugin.tx_form {
+ settings {
+   yamlConfigurations {
+    100 = fileadmin/form_definitions/BaseSLCreationSetup.yaml
+  }
+ }
+}
+
+plugin.tx_news {
+  variables {
+    publicFolder = TEXT
+    publicFolder.value = {$theme.publicFolder}
+  }
+  settings {
+    publicFolder = {$theme.publicFolder}
+  }
+}

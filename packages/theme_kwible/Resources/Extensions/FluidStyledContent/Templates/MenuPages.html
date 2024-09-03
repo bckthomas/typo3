@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:asset.css identifier="menu-category" href="EXT:theme_kwible/Resources/Public/Css/Components/menu-category/menu-category.css" />
+
+    <f:if condition="{menu}">
+      <div class="row justify-content-center">
+        <f:for each="{menu}" as="page">
+          <f:if condition="{page.files.0}">
+            <div class="col-lg-4 col-xl-3 col-6">
+              <div class="menu-category__card">
+                <a class="menu-category__link" href="{page.link}">
+                  <f:image image="{page.files.0.originalFile}" width="330c" height="330c" class="menu-category__image img-fluid"/>
+                  <h2 class="menu-category__title">
+                    {page.title}
+                  </h2>
+                </a>
+              </div>
+            </div>
+          </f:if>
+        </f:for>
+      </div>
+    </f:if>
+
+</f:section>
+</html>

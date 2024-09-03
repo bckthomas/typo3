@@ -1,0 +1,20 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+
+  <f:comment>
+    <f:asset.css identifier="title1" href="EXT:theme_kwible/Resources/Public/Css/Components/Title1/title1.css" />
+  </f:comment>
+	<f:alias map="{rightContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'2\'})}', leftContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'1\'})}', col0: '{colPos: \'0\'}', col1: '{colPos: \'1\'}', col2: '{colPos: \'2\'}', col3: '{colPos: \'3\'}'}">
+		<!--TYPO3SEARCH_begin-->
+		<f:if condition="{data.uid} != {homePageUid}">
+			<div class="container">
+      <f:cObject typoscriptObjectPath="lib.pageTitle" />
+    </f:if>
+		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col0}" />
+
+    <f:if condition="{data.uid} != {homePageUid}">
+      </div>
+    </f:if>
+		<!--TYPO3SEARCH_end-->
+	</f:alias>
+</f:section>

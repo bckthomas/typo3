@@ -1,0 +1,89 @@
+<f:asset.css identifier="DropdownCSS" href="{packageComponentsFolder}/Css/Components/Dropdown/dropdown.css" />
+<f:asset.css identifier="CollapseCSS" href="{packageComponentsFolder}/Css/Components/Collapse/collapse.css" />
+
+<f:comment>
+  <f:asset.script identifier="burger" src="{publicFolder}/JavaScript/header.min.js" />
+</f:comment>
+
+<a href="#mainContent" class="skiptocontent">{f:translate(key: '{languageFolder}:skipToContent')}</a>
+
+<div class="container">
+
+  <nav class="navbar-expand-lg">
+    <div class="container header__container">
+      <div class="header__brand">
+        <f:if condition="{homePageUid} == {data.uid}">
+          <f:then>
+            <h1 class="navbar-brand">
+              <svg aria-hidden="true" role="img" class="header__logo">
+                <title>Kwible</title>
+                <use xlink:href="{f:uri.resource(path: '{publicFolder}/Svg/icon-sprite.svg#logo', extensionName: 'theme_kwible')}"></use>
+              </svg>
+            </h1>
+          </f:then>
+          <f:else>
+            <f:link.page pageUid="{homePageUid}" class="navbar-brand d-block">
+              <svg aria-hidden="true" role="img" class="header__logo">
+                <title>Retour à l'accueil du site</title>
+                <use xlink:href="{f:uri.resource(path: '{publicFolder}/Svg/icon-sprite.svg#logo', extensionName: 'theme_kwible')}"></use>
+              </svg>
+            </f:link.page>
+          </f:else>
+        </f:if>
+        Kwible
+      </div>
+      <button class="burger-button navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-mainNavigation" aria-controls="js-mainNavigation" aria-expanded="false" aria-label="{f:translate(key: '{languageFolder}:toogleMenu')}">
+        <div class="burger-button__box">
+          <div class="burger-button__inner"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="js-mainNavigation">
+        <ul class="main-navigation">
+          <f:for each="{mainNavigation}" as="mainNavigationItem">
+            <f:if condition="{mainNavigationItem.children}">
+              <f:then>
+                <li class="main-navigation__item dropdown">
+                  <a class="main-navigation__link dropdown-toggle {f:if(condition: mainNavigationItem.active, then: 'main-navigation__link--active')}"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >
+                    {mainNavigationItem.title}
+                  </a>
+                  <f:render section="menuNextLevel" arguments="{menu: mainNavigationItem.children}" />
+                </li>
+              </f:then>
+              <f:else>
+                <li class="main-navigation__item">
+                  <a class="main-navigation__link {f:if(condition: mainNavigationItem.active, then: 'main-navigation__link--active')}"
+                      href="{mainNavigationItem.link}"
+                      >
+                      {mainNavigationItem.title}
+                  </a>
+                </li>
+              </f:else>
+            </f:if>
+          </f:for>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<f:section name="menuNextLevel">
+	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<f:for each="{menu}" as="page" iteration="iterator">
+			<li>
+				<a  href="{page.link}"
+            class="dropdown-item {f:if(condition: page.active, then: 'active')}"
+            >
+					{page.title}
+				</a>
+			</li>
+		</f:for>
+	</ul>
+</f:section>
+
+

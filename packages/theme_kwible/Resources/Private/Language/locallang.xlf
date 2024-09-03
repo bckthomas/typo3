@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2022-01-11T09:37:34Z" product-name="theme_package">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.title_size" xml:space="preserve" approved="yes">
+                <source>Title line</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

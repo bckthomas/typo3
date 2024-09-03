@@ -1,0 +1,83 @@
+@use "../Base/base" as theme;
+
+.menu-category {
+
+    $root: &;
+
+    &__card {
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    &__link {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 2rem solid theme.$color-white;
+        background-color: theme.$color-white;
+
+        &::before {
+            transition: theme.$transition-base;
+            height: 0;
+            background-color: #000;
+            opacity: 0.7;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%);
+            top: 0;
+            z-index: 1;
+        }
+
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+
+            #{$root}__title {
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                bottom: auto;
+            }
+        }
+    }
+
+    &__title {
+        position: absolute;
+        width: 80%;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 2;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: .2rem;
+            left: 50%;
+            top: 120%;
+            bottom: -20rem;
+            background-color: #fff;
+            transform: translateX(-50%);
+            transition: all .3s ease;
+        }
+    }
+}

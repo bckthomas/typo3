@@ -63,8 +63,8 @@ page {
     viewport = width=device-width, initial-scale=1.0, user-scalable=1
   }
 	includeCSS {
-    layout = {$theme.publicFolder}/Css/Components/Layout/layout.css
     bootstrap = {$theme.publicFolder}/Css/Vendors/Bootstrap/bootstrap.css
+    layout = {$theme.publicFolder}/Css/Components/Layout/layout.css
   }
   bodyTag = {$theme.bodyTag}
   includeJSFooterlibs {

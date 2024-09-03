@@ -47,3 +47,7 @@ editor:
       - PasteFromWord
       - Anchor
       - HorizontalRule
+    style:
+      definitions:
+        - { name: "Liste de liens", element: "ul", classes: ['list-links'] }
+

@@ -90,6 +90,23 @@ defined('TYPO3') or die();
     ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-7525.svg')
 );
 
+\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)-> configureContainer(
+    (
+    new \B13\Container\Tca\ContainerConfiguration(
+        'container-6633',
+        'LLL:EXT:theme_package/Resources/Private/Language/locallang.xlf:container.6633.label',
+        'LLL:EXT:theme_package/Resources/Private/Language/locallang.xlf:container.6633.description',
+        [
+            [
+                ['name' => 'Column', 'colPos' => 101],
+                ['name' => 'Column', 'colPos' => 102]
+            ]
+        ]
+    )
+    )
+        ->setIcon('typo3conf/ext/theme_package/Resources/Private/Icons/container-6633.svg')
+);
+
 $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'] = str_replace(
     'header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,',
     'header;Title (shown in special cases only),header_layout,
@@ -101,6 +118,7 @@ $GLOBALS['TCA']['tt_content']['types']['container-333333']['showitem'] = $GLOBAL
 $GLOBALS['TCA']['tt_content']['types']['container-25252525']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'];
 $GLOBALS['TCA']['tt_content']['types']['container-2575']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'];
 $GLOBALS['TCA']['tt_content']['types']['container-7525']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'];
+$GLOBALS['TCA']['tt_content']['types']['container-6633']['showitem'] = $GLOBALS['TCA']['tt_content']['types']['container-5050']['showitem'];
 
 // Add some fields to tt_content table to show TCA fields definitions
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content',

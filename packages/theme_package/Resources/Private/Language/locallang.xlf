@@ -57,6 +57,18 @@
             <trans-unit id="container.7525.description" xml:space="preserve" approved="yes">
                 <source>Dividing the content area into two columns (75% - 25%)</source>
             </trans-unit>
+            <trans-unit id="container.6633.label" xml:space="preserve" approved="yes">
+                <source>2 columns 66% - 33%</source>
+            </trans-unit>
+            <trans-unit id="container.6633.description" xml:space="preserve" approved="yes">
+                <source>Dividing the content area into two columns (66% - 33%)</source>
+            </trans-unit>
+            <trans-unit id="imageManipulation.mobile" xml:space="preserve" approved="yes">
+                <source>Mobile</source>
+            </trans-unit>
+            <trans-unit id="imageManipulation.desktop" xml:space="preserve" approved="yes">
+                <source>Desktop</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
