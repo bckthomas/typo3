@@ -82,7 +82,14 @@ if(isset($_SERVER['HTTP_HOST'])) {
               'loginLogo' => 'EXT:theme_educcanine/Resources/Public/Images/logo.png',
               'loginHighlightColor' => '#df046f',
           ];
-          break;
+      break;
+      case 'kwible.fr':
+          $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
+              //'loginBackgroundImage' => 'fileadmin/educcanine/education-canine__accueil.jpg',
+              'loginLogo' => 'EXT:theme_kwible/Resources/Public/Images/logo.png',
+              'loginHighlightColor' => '#550f60',
+          ];
+      break;
   }
 }
 
