@@ -4,3 +4,11 @@ TCAdefaults {
         space_after_class = mb-3
     }
 }
+
+TCEFORM {
+    tt_content{
+        layout {
+            addItems.30 = No background
+        }
+    }
+}

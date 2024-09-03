@@ -6,13 +6,12 @@
     padding: 2rem;
     margin-bottom: 3rem;
     position: relative;
-}
 
-.frame-type-menu_pages,
-.frame-type-news_pi1 {
-    padding: 0;
-    box-shadow: none;
-    background-color: initial;
+    &--no-background {
+        padding: 0;
+        box-shadow: none;
+        background-color: initial;
+    }
 }
 
 .list-links {
