@@ -3,6 +3,7 @@
 @import "title";
 @import "image";
 @import "header";
+@import "breadcrumb";
 @include theme.font-face(Overpass, "../../../Fonts/overpass");
 
 a:hover {

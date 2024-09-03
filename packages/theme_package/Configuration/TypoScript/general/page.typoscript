@@ -46,6 +46,19 @@ page {
         levels = 1
         as = footerNavigation
       }
+      30 < .10
+      30 {
+        special = rootline
+        special.range = 0|-1
+        includeNotInMenu = 0
+        as = breadcrumb
+      }
+      40 = files
+      40 {
+          as = mediaimages
+          references.fieldName = media
+          references.table = pages
+      }
     }
   }
   meta {

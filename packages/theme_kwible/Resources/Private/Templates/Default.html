@@ -7,14 +7,38 @@
 	<f:alias map="{rightContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'2\'})}', leftContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'1\'})}', col0: '{colPos: \'0\'}', col1: '{colPos: \'1\'}', col2: '{colPos: \'2\'}', col3: '{colPos: \'3\'}'}">
 		<!--TYPO3SEARCH_begin-->
 		<f:if condition="{data.uid} != {homePageUid}">
-			<div class="container">
-      <f:cObject typoscriptObjectPath="lib.pageTitle" />
+      <div class="frame-default">
+        <div class="frame-default--header-page">
+          <h1 class="page-title">{data.title}</h1>
+          <f:if condition="{breadcrumb}">
+            <div class="breadcrumb__container">
+              <ol class="breadcrumb">
+                <f:for each="{breadcrumb}" as="item">
+                  <li class="breadcrumb__item{f:if(condition: item.current, then: ' breadcrumb__item--active')}" >
+                    <f:if condition="{item.current}">
+                      <f:then>
+                        {item.title}
+                      </f:then>
+                      <f:else>
+                        <a class="breadcrumb__link" href="{item.link}" title="{item.title}">
+                          {item.title}
+                        </a>
+                      </f:else>
+                    </f:if>
+                  </li>
+                </f:for>
+              </ol>
+            </div>
+          </f:if>
+          <f:if condition="{mediaimages.1}">
+            <f:image image='{mediaimages.1}' class="img-fluid frame-default--header-page__image" maxWidth="1024"/>
+          </f:if>
+        </div>
+
+      </div>
     </f:if>
 		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col0}" />
 
-    <f:if condition="{data.uid} != {homePageUid}">
-      </div>
-    </f:if>
 		<!--TYPO3SEARCH_end-->
 	</f:alias>
 </f:section>
