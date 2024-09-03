@@ -5,11 +5,11 @@ defined('TYPO3') or die();
 
 call_user_func(function(){
 
-$extensionKey = 'theme_thomasbeck';
+$extensionKey = 'theme_kwible';
 
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     $extensionKey,
     'Configuration/TypoScript',
-    'Thomas Beck theme configuration'
+    'Kwible theme configuration'
   );
 });
