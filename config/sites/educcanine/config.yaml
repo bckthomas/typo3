@@ -38,4 +38,4 @@ routes:
     route: robots.txt
     type: staticText
     content: "User-agent: *\r\nDisallow:\r\nSitemap : https://www.educ-canine.com/?type=1533906435"
-websiteTitle: 'Guuinic Amandine - Education canine dans le Morbihan'
+websiteTitle: 'Guuinic Amandine - Education et médiation animale dans le Morbihan'
