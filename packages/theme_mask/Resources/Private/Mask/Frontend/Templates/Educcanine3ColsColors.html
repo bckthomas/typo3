@@ -29,11 +29,11 @@
     </div>
     <div class="col-md-4 js-animation-scroll animation-scroll slide-in-right">
 
-      <div class="background__color background__color--{data.tx_mask_color_col}">
-        <f:if condition="{data.tx_mask_text3}">
-          {data.tx_mask_text3 -> f:format.html()}
-        </f:if>
-      </div>
+      <f:if condition="{data.tx_mask_text3}">
+        <div class="background__color background__color--{data.tx_mask_color_col}">
+            {data.tx_mask_text3 -> f:format.html()}
+        </div>
+      </f:if>
 
       <f:if condition="{data.tx_mask_image_col}">
         <f:image image="{data.tx_mask_image_col.0}" alt="{data.tx_mask_image_col.0.alternative}" class="img-fluid" />
