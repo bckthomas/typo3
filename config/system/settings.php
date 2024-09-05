@@ -38,6 +38,11 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'form_crshield' => [
+            'additionalPageExpirationTime' => '3600',
+            'crJavaScriptDelay' => '3',
+            'minimumPageExpirationTime' => '900',
+        ],
         'mask' => [
             'backend' => 'EXT:theme_mask/Resources/Private/Mask/Backend/Templates',
             'backend_layouts_folder' => 'EXT:theme_mask/Configuration/Mask/BackendLayouts',
