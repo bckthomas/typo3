@@ -71,7 +71,6 @@ var
 public/typo3conf/ext/*
 
 .env
-composer.lock
 .cache/
 
 Icons/output/*.svg
