@@ -9,7 +9,16 @@
 		<f:if condition="{data.uid} != {homePageUid}">
       <div class="frame-default">
         <div class="frame-default--header-page">
-          <h1 class="page-title">{data.title}</h1>
+          <div class="page-title">
+
+            <f:if condition="{mediaimages.0}">
+              <f:image image='{mediaimages.0}' class="img-fluid page-title__img" maxWidth="150"/>
+            </f:if>
+
+            <h1 class="page-title__title">
+              {data.title}
+            </h1>
+          </div>
           <f:if condition="{breadcrumb}">
             <div class="breadcrumb__container">
               <ol class="breadcrumb">
