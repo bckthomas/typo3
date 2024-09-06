@@ -1,0 +1,48 @@
+@use "../Base/base" as theme;
+
+.collapse {
+    &__button {
+        background-color: initial;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        &__arrow {
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-top: .3rem solid #000;
+            border-left: .3rem solid #000;
+            transform: rotate(180deg);
+            transition: theme.$transition-base;
+
+            &::after {
+                content: "";
+                display: block;
+                width: .3rem;
+                height: 2.5rem;
+                background-color: black;
+                transform: rotate(-45deg) translate(.8rem);
+            }
+        }
+
+        &[aria-expanded="true"] {
+            .collapse__button__arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    &__content {
+        margin-top: 1.5rem;
+    }
+}

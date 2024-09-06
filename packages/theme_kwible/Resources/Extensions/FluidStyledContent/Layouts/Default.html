@@ -2,17 +2,45 @@
     <f:if condition="{data.frame_class} != none">
         <f:then>
 
-            <div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: '{data.layout} === 30', then: ' frame-default--no-background')}">
+            <div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}
+            {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}
+            {f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}
+            {f:if(condition: '{data.layout} === 30', then: ' frame-default--no-background')}">
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>
                 </f:if>
                 <f:render section="Before" optional="true">
                     <f:render partial="DropIn/Before/All" arguments="{_all}" />
                 </f:render>
-                <f:render section="Header" optional="true">
+
+                <f:if condition="{data.layout} === 40">
+                  <f:then>
+                    <f:asset.css identifier="collapse" href="{publicFolder}/Css/Components/Collapse/collapse.css" />
+                    <button class="collapse__button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{data.uid}" aria-expanded="false" aria-controls="collapse{data.uid}">
+                      <f:render section="Header" optional="true" arguments="{_all}">
+                        <f:render partial="Header/All" arguments="{_all}" />
+                      </f:render>
+                      <span class="collapse__button__arrow"></span>
+                    </button>
+                  </f:then>
+                  <f:else>
+                    <f:render section="Header" optional="true" arguments="{_all}">
                     <f:render partial="Header/All" arguments="{_all}" />
-                </f:render>
-                <f:render section="Main" optional="true" />
+                  </f:render>
+                  </f:else>
+                </f:if>
+
+                <f:if condition="{data.layout} === 40">
+                  <f:then>
+                    <div class="collapse collapse__content" id="collapse{data.uid}">
+                      <f:render section="Main" optional="true" />
+                    </div>
+                  </f:then>
+                  <f:else>
+                    <f:render section="Main" optional="true" />
+                  </f:else>
+                </f:if>
+
                 <f:render section="Footer" optional="true">
                     <f:render partial="Footer/All" arguments="{_all}" />
                 </f:render>

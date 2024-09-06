@@ -9,6 +9,7 @@ TCEFORM {
     tt_content{
         layout {
             addItems.30 = No background
+            addItems.40 = Accordéon
         }
     }
 }
