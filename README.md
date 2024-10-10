@@ -4,7 +4,7 @@ Get going quickly with TYPO3 CMS.
 
 ## Prerequisites
 
-[ddev](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/)
+[ddev](https://ddev.readthedocs.io/en/stable/users/install/ddev-installation/#windows)
 
 ## Quickstart
 
