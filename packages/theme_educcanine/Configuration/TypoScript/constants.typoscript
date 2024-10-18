@@ -1,6 +1,6 @@
 theme {
 	privateFolder = EXT:theme_educcanine/Resources/Private
-	publicFolder = typo3conf/ext/theme_educcanine/Resources/Public
+	publicFolder = EXT:theme_educcanine/Resources/Public
 	extFolder = EXT:theme_educcanine/Resources/Extensions
 	// containerFolder = EXT:theme_educcanine/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public

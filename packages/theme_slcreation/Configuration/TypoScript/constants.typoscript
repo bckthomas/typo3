@@ -1,6 +1,6 @@
 theme {
 	privateFolder = EXT:theme_slcreation/Resources/Private
-	publicFolder = typo3conf/ext/theme_slcreation/Resources/Public
+	publicFolder = EXT:theme_slcreation/Resources/Public
 	extFolder = EXT:theme_slcreation/Resources/Extensions
 	// containerFolder = EXT:theme_slcreation/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public

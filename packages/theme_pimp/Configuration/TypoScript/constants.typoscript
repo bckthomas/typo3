@@ -1,6 +1,6 @@
 theme {
 	privateFolder = EXT:theme_pimp/Resources/Private
-	publicFolder = typo3conf/ext/theme_pimp/Resources/Public
+	publicFolder = EXT:theme_pimp/Resources/Public
 	extFolder = EXT:theme_pimp/Resources/Extensions
 	// containerFolder = EXT:theme_pimp/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public

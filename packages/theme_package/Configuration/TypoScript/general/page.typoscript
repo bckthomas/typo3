@@ -81,8 +81,8 @@ page {
   }
   bodyTag = {$theme.bodyTag}
   includeJSFooterlibs {
-    popper = typo3conf/ext/theme_package/node_modules/@popperjs/core/dist/umd/popper.min.js
-    bootstrap = typo3conf/ext/theme_package/node_modules/bootstrap/dist/js/bootstrap.min.js
+    popper = EXT:theme_package/Resources/Public/JavaScript/popper.min.js
+    bootstrap = EXT:theme_package/Resources/Public/JavaScript/bootstrap.min.js
   }
 
 }

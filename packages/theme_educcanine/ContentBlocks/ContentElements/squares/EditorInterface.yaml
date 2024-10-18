@@ -1,0 +1,18 @@
+name: thbck/squares
+typeName: thbck_squares
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: tabs_item
+    type: Collection
+    foreign_table: tt_content
+    overrideChildTca:
+      columns:
+        CType:
+          config:
+            default: example_text

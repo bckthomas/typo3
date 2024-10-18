@@ -1,0 +1,31 @@
+<cb:asset.css identifier="content-block-css-thbck-thbck/rounded-images" file="Frontend.css"/>
+<f:if condition="{data._raw.tx_content_animation}">
+  <f:asset.css identifier="AnimationCSS" href="{packageComponentsFolder}/Css/Components/Animations/animations.css" />
+  <f:asset.script identifier="AnimationJS" src="{packageComponentsFolder}/JavaScript/animations.min.js" />
+</f:if>
+
+<div class="mb-3 {f:if(condition: data._raw.tx_content_animation, then: 'js-animation-scroll animation-scroll {data._raw.tx_content_animation}')}">
+  <div class="row d-flex align-items-center">
+    <div class="col-12 col-lg-6 mx-auto mb-4 mb-lg-0">
+      <f:if condition="{data.header_link}">
+        <f:then>
+          <f:link.typolink parameter="{data.header_link}">
+            <f:image image="{data.image.0}" width="300c" height="300c" alt="Lire la suite sur la page {data.header -> f:format.stripTags()}" class="mx-auto d-block img-fluid shadow rounded-circle" fileExtension="webp" />
+          </f:link.typolink>
+        </f:then>
+        <f:else>
+          <f:image image="{data.image.0}" width="300c" height="300c" class="mx-auto d-block img-fluid shadow rounded-circle" fileExtension="webp" />
+        </f:else>
+      </f:if>
+    </div>
+    <div class="col-12 col-lg-6 text-center text-lg-start">
+      <h2>{data.header -> f:format.raw()}</h2>
+      {data.bodytext -> f:format.raw()}
+      <f:if condition="{data.header_link}">
+        <f:link.typolink parameter="{data.header_link}" title="Lire la suite sur la page {data.header -> f:format.stripTags()}" class="link-more">
+          Lire la suite
+        </f:link.typolink>
+      </f:if>
+    </div>
+  </div>
+</div>

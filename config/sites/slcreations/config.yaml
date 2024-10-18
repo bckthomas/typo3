@@ -4,7 +4,7 @@ baseVariants:
     base: 'https://www.sl-creations.net'
     condition: 'applicationContext == "Production"'
   -
-    base: 'https://kwible.ddev.site:8443'
+    base: 'https://kwible.ddev.site'
     condition: 'getenv("IS_DDEV_PROJECT") == "true"'
 disableStaticFileCache: false
 errorHandling:
@@ -26,7 +26,7 @@ languages:
     direction: ltr
     flag: fr
 matomoWidgetsActiveWidgets: 'actionsPerDay,actionsPerMonth,annotations,createAnnotation,bounceRate,browserPlugins,browsers,campaigns,contentNames,contentPieces,countries,javaScriptErrors,linkMatomo,osFamilies,pagesNotFound,siteSearchKeywords,siteSearchNoResultKeywords,visitsPerDay,visitsPerMonth'
-matomoWidgetsIdSite: 1
+matomoWidgetsIdSite: '1'
 matomoWidgetsPagesNotFoundTemplate: '404/URL = {path}/From = {referrer}'
 matomoWidgetsTitle: 'SL Créations'
 matomoWidgetsTokenAuth: '%env(MATOMO_TOKEN)%'
