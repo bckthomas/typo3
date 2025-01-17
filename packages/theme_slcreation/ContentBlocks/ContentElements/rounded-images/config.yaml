@@ -1,8 +1,4 @@
 name: thbck/rounded-images
-typeName: thbck_roundedimages
-group: default
-prefixFields: true
-prefixType: full
 fields:
   -
     identifier: header
