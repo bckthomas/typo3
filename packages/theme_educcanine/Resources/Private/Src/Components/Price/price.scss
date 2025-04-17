@@ -1,43 +1,42 @@
-@use "../Base/base" as theme;
-@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+@use "../../Base/mixins" as *;
 
 .component-price {
-  &__container {
-    margin-bottom: 2rem;
+    &__container {
+        margin-bottom: 2rem;
 
-    @include bootstrap.media-breakpoint-up(md) {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  @include bootstrap.media-breakpoint-down(md) {
-    &__item {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &__price {
-    text-align: center;
-
-    &__value {
-      font-weight: theme.$font-weight-bold;
-
-      @include bootstrap.font-size(3.5rem);
+        @include media-breakpoint-up(md) {
+            display: flex;
+            align-items: center;
+        }
     }
 
-    &__information {
-      font-style: italic;
+    @include media-breakpoint-down(md) {
+        &__item {
+            margin-bottom: 1.5rem;
+        }
     }
-  }
 
-  &__service {
-    margin-bottom: 1.5rem;
-    font-weight: theme.$font-weight-bold;
-    font-family: theme.$font-family-secondary;
-    text-align: center;
-    text-transform: uppercase;
+    &__price {
+        text-align: center;
 
-    @include bootstrap.font-size(2rem);
-  }
+        &__value {
+            font-weight: var(--font-weight-bold);
+
+            // @include font-size(3.5rem);
+        }
+
+        &__information {
+            font-style: italic;
+        }
+    }
+
+    &__service {
+        margin-bottom: 1.5rem;
+        font-family: var(--font-family-secondary);
+        font-weight: var(--font-weight-bold);
+        text-align: center;
+        text-transform: uppercase;
+
+        // @include font-size(2rem);
+    }
 }

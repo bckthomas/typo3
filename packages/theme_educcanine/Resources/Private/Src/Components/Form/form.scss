@@ -1,97 +1,94 @@
-@use "../Base/base" as theme;
+@use "../../Base/mixins" as *;
 @use "sass:color";
 
-// Bootstrap
-@import "../../Vendors/Bootstrap/utilities";
-@import "../../../../../../theme_package/node_modules/bootstrap/scss/forms";
-
 label {
-  position: absolute;
-  top: 2rem;
-  left: 1.2rem;
-  color: theme.$primary-dark;
-  font-weight: theme.$font-weight-bold;
-  font-size: 1.6rem;
-  transform: translate3d(0, 0, 0);
-  transform-origin: 0 0;
-  transition: all 0.2s ease;
-  pointer-events: none;
+    position: absolute;
+    top: 2rem;
+    left: 1.2rem;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+    color: var(--primary-dark);
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-bold);
+    pointer-events: none;
 }
 
 .form-group {
-  position: relative;
-  margin-bottom: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 .form-control {
-  width: 100%;
-  padding: 2.5rem 1.2rem 1.5rem;
-  border: 0.1rem solid theme.$primary-dark;
-  font-weight: 400;
-  font-size: 1.6rem;
-  font-family: inherit;
-  transition: all 0.15s ease;
-  appearance: none;
-
-  &::placeholder {
-    opacity: 0;
-    transition: theme.$transition-base;
-  }
-
-  &:hover {
-    background: color.adjust(theme.$primary-dark, $lightness: 80%, $alpha: -0.4);
-  }
-
-  &:not(:placeholder-shown) {
-    & + .control-label {
-      color: theme.$primary-dark;
-      font-weight: theme.$font-weight-normal;
-      transform: translate3d(0, -1.2rem, 0) scale(0.75);
-    }
-  }
-
-  &:focus {
-    border-color: theme.$primary-dark;
-    background: color.adjust(theme.$primary-dark, $lightness: 80%, $alpha: -0.4);
-    outline: 0;
-    box-shadow: none;
+    width: 100%;
+    padding: 2.5rem 1.2rem 1.5rem;
+    transition: all 0.15s ease;
+    border: 0.1rem solid var(--primary-dark);
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+    appearance: none;
 
     &::placeholder {
-      opacity: 1;
+        transition: var(--transition-base);
+        opacity: 0;
     }
 
-    & + .control-label {
-      font-weight: theme.$font-weight-normal;
-      transform: translate3d(0, -1.2rem, 0) scale(0.75);
+    // &:hover {
+    //   background: color.adjust(var(--primary-dark), $lightness: 80%, $alpha: -0.4);
+    // }
+
+    &:not(:placeholder-shown) {
+        & + .control-label {
+            transform: translate3d(0, -1.2rem, 0) scale(0.75);
+            color: var(--primary-dark);
+            font-weight: var(--font-weight-normal);
+        }
     }
-  }
+
+    &:focus {
+        border-color: var(--primary-dark);
+
+        // background: color.adjust(var(--primary-dark), $lightness: 80%, $alpha: -0.4);
+        outline: 0;
+        box-shadow: none;
+
+        &::placeholder {
+            opacity: 1;
+        }
+
+        & + .control-label {
+            transform: translate3d(0, -1.2rem, 0) scale(0.75);
+            font-weight: var(--font-weight-normal);
+        }
+    }
 }
 
 .has-error {
-  .form-control {
-    border: 0.1rem solid red;
+    .form-control {
+        border: 0.1rem solid red;
 
-    label {
-      color: red;
+        label {
+            color: red;
+        }
     }
-  }
 }
 
 .error.help-block {
-  color: red;
+    color: red;
 }
 
 .btn-primary {
-  @include theme.button-revert;
+    @include button-revert;
 
-  display: block;
-  margin: auto;
-  font-size: 2rem;
+    display: block;
+    margin: auto;
+    font-size: 2rem;
 }
 
 .contact-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5rem;
 }

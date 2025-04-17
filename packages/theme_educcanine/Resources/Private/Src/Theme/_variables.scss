@@ -1,0 +1,34 @@
+$variables: (
+    transition-base: all 0.4s ease-in-out,
+
+    // Colors
+    color-theme: #bc9ec1,
+    primary-dark: #111,
+    primary-orange: #41a9ce,
+    primary-pink: #002442,
+    link-color: #087e96,
+    color-white: #fff,
+
+    // Typography
+    font-family-primary: (
+            "Opensans",
+            sans-serif,
+        ),
+    font-family-secondary: (
+        "Montserrat",
+        sans-serif,
+    ),
+    // Font weights
+    font-weight-thin: 200,
+    font-weight-light: 300,
+    font-weight-normal: 400,
+    font-weight-medium: 500,
+    font-weight-semibold: 600,
+    font-weight-bold: 700,
+    font-weight-bolder: 700,
+    font-weight-extra-bold: 800,
+    font-weight-black: 900,
+
+    // Container
+    gutter: 0.75rem,
+);

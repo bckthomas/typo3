@@ -1,16 +1,15 @@
-@use "../Base/base" as theme;
-@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+@use "../../Base/mixins" as *;
 
 h2 {
-  @include bootstrap.font-size(3.6rem);
+    // @include font-size(3.6rem);
 
-  margin-bottom: 2rem;
-  color: theme.$primary-dark;
-  font-family: theme.$font-family-secondary;
+    margin-bottom: 2rem;
+    color: var(--primary-dark);
+    font-family: var(--font-family-secondary);
 
-  &.picto {
-    margin: 1.5rem 0 0.8rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
+    &.picto {
+        margin: 1.5rem 0 0.8rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
 }

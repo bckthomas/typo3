@@ -1,24 +1,24 @@
-@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+@use "../../Base/mixins" as *;
 
 .cols-couleurs {
-  &__container {
-    display: flex;
-    align-items: center;
-  }
-
-  &__first {
-    img {
-      margin-bottom: 1.5rem;
-    }
-  }
-
-  &__text {
-    @include bootstrap.media-breakpoint-down(md) {
-      margin: 1.5rem 0;
+    &__container {
+        display: flex;
+        align-items: center;
     }
 
-    @include bootstrap.media-breakpoint-up(md) {
-      text-align: center;
+    &__first {
+        img {
+            margin-bottom: 1.5rem;
+        }
     }
-  }
+
+    &__text {
+        @include media-breakpoint-down(md) {
+            margin: 1.5rem 0;
+        }
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+    }
 }

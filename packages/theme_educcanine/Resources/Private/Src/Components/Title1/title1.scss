@@ -1,20 +1,21 @@
-@use "../Base/base" as theme;
-@use "../../Vendors/Bootstrap/utilities" as bootstrap;
+@use "../../Base/mixins" as *;
 
 h1 {
   margin: 2rem 0 4rem;
-  font-weight: theme.$font-weight-bold;
-  font-family: theme.$font-family-secondary;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-secondary);
   text-align: center;
+  padding: 0px;
+  margin: 0;
 
-  @include bootstrap.font-size(6rem);
+  // @include font-size(6rem);
 
   &::after {
     display: block;
     width: 30%;
     margin: auto;
     margin-top: 2rem;
-    border-bottom: 0.3rem solid theme.$primary-dark;
+    border-bottom: 0.3rem solid var(--primary-dark);
     content: "";
   }
 }

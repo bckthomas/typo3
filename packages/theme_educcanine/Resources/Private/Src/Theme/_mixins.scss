@@ -1,0 +1,57 @@
+// https://stackoverflow.com/questions/19612125/how-to-use-scss-sass-to-increase-animation-delay-for-concurrent-divs
+@mixin delay($number) {
+    @for $i from 1 to ($number + 1) {
+        &:nth-child(#{$i}) {
+            animation-delay: (#{$i * 0.2s});
+        }
+    }
+}
+
+@mixin button {
+    display: inline-block;
+    position: relative;
+    padding: 0.8rem 1rem;
+    transform: perspective(1px) translateZ(0);
+    transition-property: color;
+    transition-duration: 0.5s;
+    border: 0.1rem solid var(--color-white);
+    background: none;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+        background: var(--color-white);
+    }
+
+    &:hover {
+        color: var(--color-theme);
+
+        &::before {
+            transform: scaleX(1);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+}
+
+@mixin button-revert {
+    @include button;
+
+    border: 0.1rem solid var(--primary-pink);
+    color: var(--primary-pink);
+
+    &::before {
+        background: var(--primary-pink);
+    }
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
