@@ -1,2 +1,29 @@
-Frontend template for Content Block: thbck/squares<br>
-Header: {data.header}
+<f:asset.css identifier="title2" href="EXT:theme_educcanine/Resources/Public/css/title2.min.css" />
+<f:asset.css identifier="squares" href="EXT:theme_educcanine/Resources/Public/css/squares.min.css" />
+<f:asset.css identifier="background" href="EXT:theme_educcanine/Resources/Public/css/background.min.css" />
+
+<div class="container component-squares">
+  <f:if condition="{data.header}">
+    <h2 class="js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
+  </f:if>
+  <div class="component-squares__container">
+    <f:for each="{data.squares}" as="item" iteration="iterator">
+      <f:if condition="{iterator.isOdd}">
+        <div class="component-squares__col js-animation-scroll animation-scroll fade-in-bottom">
+      </f:if>
+      <div class="component-squares__item background__color background__color--{item.Couleur}">
+        <f:if condition="{item.Icone}">
+          <div class="component-squares__item__icon">
+            <f:image image="{item.Icone.0}" alt="{item.Icone.0.alternative}" class="component-squares__item__icon__svg"/>
+          </div>
+        </f:if>
+        <f:if condition="{item.bodytext}">
+          <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{item.bodytext}</f:format.html>
+        </f:if>
+      </div>
+      <f:if condition="{iterator.isEven} || {iterator.isLast}">
+        </div>
+      </f:if>
+  </f:for>
+</div>
+</div>

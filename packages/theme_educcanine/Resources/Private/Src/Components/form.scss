@@ -1,0 +1,94 @@
+@use "../Base/mixins" as *;
+@use "sass:color";
+
+label {
+    position: absolute;
+    top: 1.25rem;
+    left: 0.75rem;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+    color: var(--primary-dark);
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    pointer-events: none;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1.5rem 0.75rem 1rem;
+    transition: all 0.15s ease;
+    border: 0.0625rem solid var(--primary-dark);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    appearance: none;
+
+    &::placeholder {
+        transition: var(--transition-base);
+        opacity: 0;
+    }
+
+    // &:hover {
+    //   background: color.adjust(var(--primary-dark), $lightness: 80%, $alpha: -0.4);
+    // }
+
+    &:not(:placeholder-shown) {
+        & + .control-label {
+            transform: translate3d(0, -0.75rem, 0) scale(0.75);
+            color: var(--primary-dark);
+            font-weight: var(--font-weight-normal);
+        }
+    }
+
+    &:focus {
+        border-color: var(--primary-dark);
+
+        // background: color.adjust(var(--primary-dark), $lightness: 80%, $alpha: -0.4);
+        outline: 0;
+        box-shadow: none;
+
+        &::placeholder {
+            opacity: 1;
+        }
+
+        & + .control-label {
+            transform: translate3d(0, -0.75rem, 0) scale(0.75);
+            font-weight: var(--font-weight-normal);
+        }
+    }
+}
+
+.has-error {
+    .form-control {
+        border: 0.0625rem solid red;
+
+        label {
+            color: red;
+        }
+    }
+}
+
+.error.help-block {
+    color: red;
+}
+
+.btn-primary {
+    @include button-revert;
+
+    display: block;
+    margin: auto;
+    font-size: 1.125rem;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-property-sort-order-smacss"
+  ],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "comment-empty-line-before": null,
+    "declaration-block-no-duplicate-properties": true,
+    "selector-class-pattern": null,
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        "ignoreMediaFeatureNames": [
+          "prefers-reduced-motion",
+          "min--moz-device-pixel-ratio"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "no-unknown-animations": null,
+    "shorthand-property-no-redundant-values": true,
+    "unit-allowed-list": [
+      "deg",
+      "em",
+      "ex",
+      "ms",
+      "rem",
+      "%",
+      "s",
+      "px",
+      "vw",
+      "vh",
+      "fr"
+    ],
+    "prettier/prettier": [true, {"doubleQuote": true}]
+  }
+}

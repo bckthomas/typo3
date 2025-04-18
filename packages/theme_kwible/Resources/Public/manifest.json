@@ -1,0 +1,51 @@
+{
+  "Components/Collapse/collapse.scss": {
+    "file": "css/collapse.min.css",
+    "src": "Components/Collapse/collapse.scss",
+    "isEntry": true
+  },
+  "Components/Fancybox/image.scss": {
+    "file": "css/image.min.css",
+    "src": "Components/Fancybox/image.scss",
+    "isEntry": true
+  },
+  "Components/Form/form.scss": {
+    "file": "css/form.min.css",
+    "src": "Components/Form/form.scss",
+    "isEntry": true
+  },
+  "Components/Frame/frame.scss": {
+    "file": "css/frame.min.css",
+    "src": "Components/Frame/frame.scss",
+    "isEntry": true
+  },
+  "Components/Layout/layout.scss": {
+    "file": "css/layout.min.css",
+    "src": "Components/Layout/layout.scss",
+    "isEntry": true
+  },
+  "Components/News/list.scss": {
+    "file": "css/list.min.css",
+    "src": "Components/News/list.scss",
+    "isEntry": true
+  },
+  "Components/Title2/title2.scss": {
+    "file": "css/title2.min.css",
+    "src": "Components/Title2/title2.scss",
+    "isEntry": true
+  },
+  "Components/menu-category/menu-category.scss": {
+    "file": "css/menu-category.min.css",
+    "src": "Components/menu-category/menu-category.scss",
+    "isEntry": true
+  },
+  "Vendors/Bootstrap/bootstrap.scss": {
+    "file": "css/bootstrap.min.css",
+    "src": "Vendors/Bootstrap/bootstrap.scss",
+    "isEntry": true
+  },
+  "spritemap.svg": {
+    "file": "assets/Icons/sprite.svg",
+    "src": "spritemap.svg"
+  }
+}

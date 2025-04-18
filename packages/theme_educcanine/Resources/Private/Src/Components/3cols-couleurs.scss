@@ -1,0 +1,24 @@
+@use "../Base/mixins" as *;
+
+.cols-couleurs {
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__first {
+        img {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__text {
+        @include media-breakpoint-down(md) {
+            margin: 1rem 0;
+        }
+
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+    }
+}

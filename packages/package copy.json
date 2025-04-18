@@ -1,0 +1,39 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "NPM scripts for themes",
+  "main": "index.js",
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "isexe": "^2.0.0",
+    "path-key": "^3.1.1",
+    "shebang-command": "^2.0.0",
+    "shebang-regex": "^3.0.0",
+    "which": "^2.0.2"
+  },
+  "scripts": {
+    "build": "cross-env SITE=$npm_config_site vite build",
+    "watch": "cross-env SITE=$npm_config_site vite build --watch",
+    "clean": "del-cli theme_$npm_config_site/Resources/Public/*"
+  },
+  "author": "Thomas Beck",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "del-cli": "^6.0.0",
+    "glob": "^11.0.1",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "sass": "^1.86.3",
+    "stylelint": "^16.18.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-prettier": "^5.0.3",
+    "vite": "^6.3.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-stylelint": "^6.0.0",
+    "vite-plugin-svg-sprite": "^0.6.2",
+    "vite-plugin-svgo": "^1.6.2"
+  }
+}

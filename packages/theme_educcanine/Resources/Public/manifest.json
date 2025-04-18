@@ -1,0 +1,67 @@
+{
+  "Base/normalize.scss": {
+    "file": "css/normalize.min.css",
+    "src": "Base/normalize.scss",
+    "isEntry": true
+  },
+  "Components/3cols-couleurs.scss": {
+    "file": "css/3cols-couleurs.min.css",
+    "src": "Components/3cols-couleurs.scss",
+    "isEntry": true
+  },
+  "Components/3cols.scss": {
+    "file": "css/3cols.min.css",
+    "src": "Components/3cols.scss",
+    "isEntry": true
+  },
+  "Components/background.scss": {
+    "file": "css/background.min.css",
+    "src": "Components/background.scss",
+    "isEntry": true
+  },
+  "Components/form.scss": {
+    "file": "css/form.min.css",
+    "src": "Components/form.scss",
+    "isEntry": true
+  },
+  "Components/formes.scss": {
+    "file": "css/formes.min.css",
+    "src": "Components/formes.scss",
+    "isEntry": true
+  },
+  "Components/price.scss": {
+    "file": "css/price.min.css",
+    "src": "Components/price.scss",
+    "isEntry": true
+  },
+  "Components/squares.scss": {
+    "file": "css/squares.min.css",
+    "src": "Components/squares.scss",
+    "isEntry": true
+  },
+  "Components/title1.scss": {
+    "file": "css/title1.min.css",
+    "src": "Components/title1.scss",
+    "isEntry": true
+  },
+  "Components/title2.scss": {
+    "file": "css/title2.min.css",
+    "src": "Components/title2.scss",
+    "isEntry": true
+  },
+  "Layout/header.js": {
+    "file": "js/header.min.js",
+    "name": "header.js",
+    "src": "Layout/header.js",
+    "isEntry": true
+  },
+  "Layout/layout.scss": {
+    "file": "css/layout.min.css",
+    "src": "Layout/layout.scss",
+    "isEntry": true
+  },
+  "spritemap.svg": {
+    "file": "assets/Icons/sprite.svg",
+    "src": "spritemap.svg"
+  }
+}

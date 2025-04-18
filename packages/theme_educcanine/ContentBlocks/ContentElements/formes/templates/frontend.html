@@ -1,10 +1,10 @@
-<f:asset.css identifier="cbAccordionCssBackend" href="{cb:assetPath()}/Frontend.css" />
-<f:asset.css identifier="title2" href="EXT:theme_educcanine/Resources/Public/Css/Components/Title2/title2.css" />
+<f:asset.css identifier="title2" href="EXT:theme_educcanine/Resources/Public/css/title2.min.css" />
+<f:asset.css identifier="formes" href="EXT:theme_educcanine/Resources/Public/css/formes.min.css" />
 
 <div class="container component-geometry">
 
   <f:if condition="{data.image}">
-    <f:image image="{data.image.0}" alt="{data.image.0.alternative}" class="img-fluid js-animation-scroll animation-scroll slide-in-left" width="580c" height="650c"  fileExtension="webp"/>
+    <f:image image="{data.image.0}" alt="{data.image.0.alternative}" class="img-fluid js-animation-scroll animation-scroll slide-in-left" width="580c" height="650c" fileExtension="webp"/>
   </f:if>
   <f:if condition="{data.media}">
     <f:for each="{data.media}" as="file">

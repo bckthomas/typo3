@@ -8,11 +8,26 @@ fields:
     identifier: header
     useExistingField: true
   -
-    identifier: tabs_item
+    identifier: squares
     type: Collection
-    foreign_table: tt_content
-    overrideChildTca:
-      columns:
-        CType:
-          config:
-            default: example_text
+    labelField: title
+    fields:
+      - identifier: title
+        type: Text
+      - identifier: Icone
+        type: File
+        maxitems: 1
+      - identifier: bodytext
+        type: Textarea
+        useExistingField: true
+        enableRichtext: true
+      - identifier: Couleur
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Rose'
+            value: pink
+          - label: 'Violet'
+            value: purple
+          - label: 'Orange'
+            value: orange

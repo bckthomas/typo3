@@ -2,7 +2,7 @@
 
 .header {
     position: relative;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 
     &__container {
         display: flex;
@@ -18,8 +18,8 @@
     }
 
     &__logo {
-        width: 12.5rem;
-        height: 10.2rem;
+        width: 7.8rem;
+        height: 6.375rem;
     }
 }
 
@@ -27,7 +27,7 @@
     $root: &;
 
     display: block;
-    height: 3rem;
+    height: 1.875rem;
     border: 0;
     background: none;
 
@@ -38,9 +38,9 @@
     &__icon {
         display: block;
         position: relative;
-        width: 4rem;
-        height: 0.4rem;
-        border-radius: 0.4rem;
+        width: 2.5rem;
+        height: 0.25rem;
+        border-radius: 0.25rem;
         background-color: var(--primary-pink);
 
         &::before,
@@ -48,19 +48,19 @@
             content: "";
             position: absolute;
             left: 0;
-            width: 4rem;
-            height: 0.4rem;
-            border-radius: 0.4rem;
+            width: 2.5rem;
+            height: 0.25rem;
+            border-radius: 0.25rem;
             background-color: var(--primary-pink);
         }
 
         &::before {
-            top: -1rem;
+            top: -0.625rem;
             transition: opacity 0.125s ease 0.275s;
         }
 
         &::after {
-            top: 1rem;
+            top: .625rem;
             transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
     }
@@ -87,7 +87,7 @@
     @include media-breakpoint-down(lg) {
         position: absolute;
         z-index: 99;
-        top: 12rem;
+        top: 7.5rem;
         left: 0;
         width: 100%;
         background-color: var(--color-white);
@@ -111,7 +111,7 @@
     &__link {
         display: block;
         position: relative;
-        padding: 1.5rem;
+        padding: 1rem;
         text-decoration: none;
         text-transform: uppercase;
 
@@ -126,7 +126,7 @@
             right: 51%;
             bottom: 0;
             left: 51%;
-            height: 0.4rem;
+            height: 0.25rem;
             transition-property: left, right;
             transition-duration: 0.3s;
             transition-timing-function: ease-out;
@@ -159,18 +159,18 @@
         }
 
         @include media-breakpoint-up(lg) {
-            box-shadow: 0.5rem 0.5rem 2rem 0 rgb(0 0 0 / 40%);
+            box-shadow: 0.3rem 0.3rem 1.25rem 0 rgb(0 0 0 / 40%);
         }
 
         .dropdown-item {
             position: relative;
-            padding: 1rem 1.5rem;
+            padding: 0.625 0.625;
             transform: perspective(0.1rem) translateZ(0);
             transition: var(--transition-base);
             border-bottom: 0.1rem solid var(--color-white);
             background-color: var(--color-white);
             color: var(--primary-pink);
-            font-size: 1.4rem;
+            font-size: .875rem;
 
             &::before {
                 content: "";
