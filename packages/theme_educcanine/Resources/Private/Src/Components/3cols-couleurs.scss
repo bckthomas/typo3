@@ -2,8 +2,17 @@
 
 .cols-couleurs {
     &__container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
         align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__item {
+        grid-column: span 12;
+        @include media-breakpoint-up(md) {
+            grid-column: span 4;
+        }
     }
 
     &__first {

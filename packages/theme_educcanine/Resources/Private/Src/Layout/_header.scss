@@ -164,7 +164,7 @@
 
         .dropdown-item {
             position: relative;
-            padding: 0.625 0.625;
+            padding: 0.625rem;
             transform: perspective(0.1rem) translateZ(0);
             transition: var(--transition-base);
             border-bottom: 0.1rem solid var(--color-white);
@@ -194,5 +194,12 @@
                 }
             }
         }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
     }
 }

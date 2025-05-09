@@ -1,0 +1,31 @@
+name: thbck/price
+typeName: thbck_price
+group: educcanine
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: price
+    type: Collection
+    labelField: service
+    fields:
+      - identifier: service
+        type: Text
+      - identifier: price
+        type: Text
+      - identifier: information
+        type: Text
+      - identifier: Couleur
+        type: Select
+        renderType: selectSingle
+        useExistingField: true
+        items:
+          - label: 'Rose'
+            value: pink
+          - label: 'Violet'
+            value: purple
+          - label: 'Orange'
+            value: orange

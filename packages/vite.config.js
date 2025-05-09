@@ -52,6 +52,11 @@ export default defineConfig(({ mode }) => {
         cache: true,
         fix: true,
         include: [`${srcRoot}/**/*.js`],
+        resolve: {
+          alias: {
+            '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+          }
+        },
         exclude: [`${srcRoot}/svgs.js`]
       }),
       stylelint({

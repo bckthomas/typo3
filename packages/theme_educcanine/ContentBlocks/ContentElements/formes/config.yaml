@@ -1,6 +1,6 @@
 name: thbck/formes
 typeName: thbck_formes
-group: default
+group: educcanine
 prefixFields: true
 prefixType: full
 fields:

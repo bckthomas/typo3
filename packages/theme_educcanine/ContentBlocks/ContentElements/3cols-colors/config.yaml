@@ -1,0 +1,53 @@
+name: thbck/3cols-colors
+typeName: thbck_3colscolors
+group: educcanine
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: Couleur
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Rose'
+        value: pink
+      - label: 'Violet'
+        value: purple
+      - label: 'Orange'
+        value: orange
+
+  -
+    identifier: image
+    type: File
+    useExistingField: true
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+    type: Textarea
+  -
+    identifier: bodytext2
+    type: Textarea
+    enableRichtext: true
+  -
+    identifier: bodytext3
+    type: Textarea
+    enableRichtext: true
+
+  - identifier: color2
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Violet'
+        value: purple
+      - label: 'Orange'
+        value: orange
+  -
+    identifier: bodytext4
+    type: Textarea
+    enableRichtext: true
+  -
+    identifier: image2
+    type: File

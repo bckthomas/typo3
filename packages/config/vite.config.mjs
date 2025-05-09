@@ -13,7 +13,7 @@ const publicRoot = `${themeRoot}/Resources/Public`
 
 
 const fontsSrc = path.resolve(srcRoot, 'Fonts')
-const fontsDest = 'assets/fonts'
+const fontsDest = 'fonts'
 
 console.log('🛠️ Config static copy:')
 console.log('📁 Source:', fontsSrc)
@@ -25,7 +25,6 @@ if (!fs.existsSync(fontsSrc)) {
   const fontFiles = fs.readdirSync(fontsSrc)
   console.log(`✅ ${fontFiles.length} fichier(s) détecté(s) dans Fonts :`, fontFiles)
 }
-
 
 function getFrontFiles(dir, extensions = [".scss", ".js"]) {
   const files = {};
@@ -100,12 +99,16 @@ export default defineConfig({
         {
           src: path.resolve(srcRoot, 'Fonts/**/*'),
           dest: 'assets/fonts',
+        },
+        {
+          src: path.resolve(srcRoot, 'Images/**/*'),
+          dest: 'assets/images',
         }
       ],
     }),
     VitePluginSvgSpritemap(`${srcRoot}/Icons/**/*.svg`, {
       output: {
-        filename: '/Icons/sprite.svg',
+        filename: 'icons/sprite.svg',
         use: false,
         view: false,
       },

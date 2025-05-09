@@ -6,14 +6,19 @@
         margin-bottom: 1.25rem;
 
         @include media-breakpoint-up(md) {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
             align-items: center;
+            gap: 1rem;
         }
     }
 
-    @include media-breakpoint-down(md) {
-        &__item {
+    &__item {
+        @include media-breakpoint-down(md) {
             margin-bottom: 1rem;
+        }
+        @include media-breakpoint-up(md) {
+            grid-column: span 4;
         }
     }
 

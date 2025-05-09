@@ -19,6 +19,34 @@
     "src": "Components/background.scss",
     "isEntry": true
   },
+  "Components/collapse/collapse.js": {
+    "file": "js/collapse.min.js",
+    "name": "collapse.js",
+    "src": "Components/collapse/collapse.js",
+    "isEntry": true,
+    "imports": [
+      "_selector-engine-B0uiXFlu.js"
+    ]
+  },
+  "Components/collapse/collapse.scss": {
+    "file": "css/collapse.min.css",
+    "src": "Components/collapse/collapse.scss",
+    "isEntry": true
+  },
+  "Components/dropdown/dropdown.js": {
+    "file": "js/dropdown.min.js",
+    "name": "dropdown.js",
+    "src": "Components/dropdown/dropdown.js",
+    "isEntry": true,
+    "imports": [
+      "_selector-engine-B0uiXFlu.js"
+    ]
+  },
+  "Components/dropdown/dropdown.scss": {
+    "file": "css/dropdown.min.css",
+    "src": "Components/dropdown/dropdown.scss",
+    "isEntry": true
+  },
   "Components/form.scss": {
     "file": "css/form.min.css",
     "src": "Components/form.scss",
@@ -60,8 +88,12 @@
     "src": "Layout/layout.scss",
     "isEntry": true
   },
+  "_selector-engine-B0uiXFlu.js": {
+    "file": "assets/selector-engine-B0uiXFlu.js",
+    "name": "selector-engine"
+  },
   "spritemap.svg": {
-    "file": "assets/Icons/sprite.svg",
+    "file": "assets/icons/sprite.svg",
     "src": "spritemap.svg"
   }
 }

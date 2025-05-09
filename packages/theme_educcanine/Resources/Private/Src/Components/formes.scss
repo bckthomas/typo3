@@ -22,34 +22,34 @@
     &__circle {
         top: 0;
         right: 0;
-        width: 22rem;
-        height: 22rem;
+        width: 13.75rem;
+        height: 13.75rem;
         border-radius: 100%;
         background-color: var(--primary-orange);
     }
 
     &__rectangle {
-        bottom: -5rem;
+        bottom: -3.125rem;
         width: 100%;
-        height: 33rem;
+        height: 20rem;
         background-color: var(--color-theme);
 
         @include media-breakpoint-up(md) {
-            width: 66rem;
+            width: 41rem;
         }
     }
 
     &__text {
-        padding: 3rem 4rem 3rem 3.5rem;
+        padding: 1.875rem 2.5rem 1.875rem 2.25rem;
         background-color: var(--color-white);
 
         @include media-breakpoint-up(md) {
-            max-width: 40rem;
-            margin-left: -30rem;
+            max-width: 25rem;
+            margin-left: -18.75rem;
         }
 
         @include media-breakpoint-up(lg) {
-            margin-left: -5rem;
+            margin-left: -3.125rem;
         }
     }
 }
