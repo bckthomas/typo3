@@ -4,7 +4,7 @@ baseVariants:
     base: 'https://www.sl-creations.net'
     condition: 'applicationContext == "Production"'
   -
-    base: 'https://typo3.ddev.site'
+    base: 'https://typo3.ddev.site:44334'
     condition: 'getenv("IS_DDEV_PROJECT") == "true"'
 disableStaticFileCache: false
 errorHandling:

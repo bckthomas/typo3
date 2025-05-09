@@ -20,6 +20,13 @@
     &__logo {
         width: 7.8rem;
         height: 6.375rem;
+        display: block;
+    }
+    &__logo-container {
+        margin: 0;
+        &::after {
+            display: none;
+        }
     }
 }
 
@@ -76,7 +83,7 @@
             }
 
             &::after {
-                transform: translate3d(0, -1rem, 0) rotate(-270deg);
+                transform: translate3d(0, -0.625rem, 0) rotate(-270deg);
                 transition-delay: 75ms;
             }
         }

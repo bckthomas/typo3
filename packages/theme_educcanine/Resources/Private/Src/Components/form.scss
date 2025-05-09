@@ -1,6 +1,21 @@
 @use "../Base/mixins" as *;
 @use "sass:color";
 
+.contact-container {
+    @include media-breakpoint-up(md) {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(12, 1fr);
+
+        &__info {
+            grid-column: span 4;
+        }
+        &__form {
+            grid-column: span 8;
+        }
+    }
+}
+
 label {
     position: absolute;
     top: 1.25rem;
@@ -82,7 +97,7 @@ label {
     @include button-revert;
 
     display: block;
-    margin: auto;
+    margin: 0 auto 1.5rem;
     font-size: 1.125rem;
 }
 
