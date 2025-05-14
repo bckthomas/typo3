@@ -11,6 +11,7 @@ Get going quickly with TYPO3 CMS.
 * `ddev config`
 * Give a name and select typo3 project
 * `ddev composer install`
+
 * In .ddev/config.yaml set line 3 `docroot: "public"` and set web environement to develop : 
   `web_environment:
     - TYPO3_CONTEXT=Development`
