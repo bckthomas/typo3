@@ -18,9 +18,9 @@ body {
     font-weight: 400;
     line-height: 1.2;
     overflow-x: hidden;
-        display: grid;
-        height: 100vh;
-        grid-template-rows: auto 1fr auto;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 .main {

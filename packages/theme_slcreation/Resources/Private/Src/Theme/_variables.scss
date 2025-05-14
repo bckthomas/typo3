@@ -1,0 +1,28 @@
+$variables: (
+    transition-base: all 0.4s ease-in-out,
+    link-color: #087e96,
+    primary: #0dcaf0,
+    dark: #092331,
+
+    color-white: #fff,
+
+    // Typography
+    font-family-primary: (
+            "Sora",
+            sans-serif,
+        ),
+
+    // Font weights
+    font-weight-thin: 200,
+    font-weight-light: 300,
+    font-weight-normal: 400,
+    font-weight-medium: 500,
+    font-weight-semibold: 600,
+    font-weight-bold: 700,
+    font-weight-bolder: 700,
+    font-weight-extra-bold: 800,
+    font-weight-black: 900,
+
+    // Container
+    gutter: 0.75rem,
+);

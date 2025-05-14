@@ -79,8 +79,6 @@ page {
     layout = {$theme.publicFolder}/css/layout.min.css
     normalize = {$theme.publicFolder}/css/normalize.min.css
   }
-  bodyTag = {$theme.bodyTag}
-
 }
 
 [{$theme.matomoSiteId} > 0 && applicationContext == 'Production']
