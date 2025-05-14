@@ -1,0 +1,8 @@
+<f:asset.css identifier="content-block-thbck/formes-be" href="{cb:assetPath()}/EditorPreview.css" />
+
+<div>
+    {data.bodytext -> f:format.raw()}
+</div>
+<f:if condition="{data.image}">
+  <f:media file="{data.image.0}" alt="" height="50c" width="50c" fileExtension="webp" />
+</f:if>

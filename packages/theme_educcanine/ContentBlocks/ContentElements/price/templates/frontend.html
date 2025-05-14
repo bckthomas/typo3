@@ -1,0 +1,33 @@
+<f:asset.css identifier="title2" href="{publicFolder}/css/title2.min.css" />
+<f:asset.css identifier="price" href="{publicFolder}/css/price.min.css" />
+<f:asset.css identifier="background" href="{publicFolder}/css/background.min.css" />
+
+<f:if condition="{data.header}">
+  <h2 class="js-animation-scroll animation-scroll fade-in-bottom">{data.header}</h2>
+</f:if>
+
+<f:if condition="{data.price}">
+  <div class="component-price__container">
+    <f:for each="{data.price}" as="item">
+      <div class="component-price__item js-animation-scroll animation-scroll fade-in-bottom">
+        <div class="background__color background__color--{item.Couleur}">
+          <f:if condition="{item.service}">
+            <div class="component-price__service">
+              {item.service}
+            </div>
+          </f:if>
+          <f:if condition="{item.price}">
+            <div class="component-price__price">
+                <span class="component-price__price__value">
+                  {item.price}
+                </span>
+              <f:if condition="{item.info_price}">
+                <span class="component-price__price__information">({item.info_price})</span>
+              </f:if>
+            </div>
+          </f:if>
+        </div>
+      </div>
+    </f:for>
+  </div>
+</f:if>

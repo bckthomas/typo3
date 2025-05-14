@@ -1,0 +1,7 @@
+@use "../../Theme/variables" as *;
+
+@mixin generate-vars() {
+    @each $name, $item in $variables {
+        --#{"" + $name}: #{$item};
+    }
+}

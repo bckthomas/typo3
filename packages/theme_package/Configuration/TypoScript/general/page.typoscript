@@ -1,7 +1,7 @@
 page = PAGE
 page {
   typeNum = 0
-  shortcutIcon = {$theme.publicFolder}/Images/favicon.ico
+  shortcutIcon = {$theme.publicFolder}/assets/images/favicon.ico
   10 = FLUIDTEMPLATE
   10 {
     templateName = TEXT
@@ -76,15 +76,9 @@ page {
     viewport = width=device-width, initial-scale=1.0, user-scalable=1
   }
 	includeCSS {
-    bootstrap = {$theme.publicFolder}/Css/Vendors/Bootstrap/bootstrap.css
-    layout = {$theme.publicFolder}/Css/Components/Layout/layout.css
+    layout = {$theme.publicFolder}/css/layout.min.css
+    normalize = {$theme.publicFolder}/css/normalize.min.css
   }
-  bodyTag = {$theme.bodyTag}
-  includeJSFooterlibs {
-    popper = typo3conf/ext/theme_package/node_modules/@popperjs/core/dist/umd/popper.min.js
-    bootstrap = typo3conf/ext/theme_package/node_modules/bootstrap/dist/js/bootstrap.min.js
-  }
-
 }
 
 [{$theme.matomoSiteId} > 0 && applicationContext == 'Production']

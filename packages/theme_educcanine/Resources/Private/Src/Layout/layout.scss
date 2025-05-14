@@ -1,0 +1,30 @@
+@use "../Base/mixins" as *;
+@use "../Base/functions" as *;
+@use "../Base/helpers" as *;
+@forward "container";
+@forward "skiptocontent";
+@forward "header";
+@forward "footer";
+@include font-face(Montserrat, "../assets/fonts/montserrat.bold", 400, normal);
+@include font-face(Opensans, "../assets/fonts/opensans-light", 400, normal);
+
+:root {
+    @include generate-vars;
+}
+
+body {
+    color: black;
+    font-family: Opensans, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    overflow-x: hidden;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.main {
+    &--margin {
+        margin-bottom: 1.5rem;
+    }
+}

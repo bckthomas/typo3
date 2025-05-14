@@ -1,13 +1,13 @@
-<a href="#mainContent" class="skiptocontent">{f:translate(key: '{languageFolder}:skipToContent')}</a>
+<a href="#mainContent" class="skiptocontent visually-hidden-focusable">{f:translate(key: '{languageFolder}:skipToContent')}</a>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light" role="navigation">
   <div class="container">
 		<f:if condition="{homePageUid} == {data.uid}">
 			<f:then>
 				<h1 class="navbar-brand">
           <svg aria-hidden="true" role="img" class="navbar-brand__logo">
             <title>SL Création accueil</title>
-            <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+            <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
           </svg>
 				</h1>
 			</f:then>
@@ -15,7 +15,7 @@
 				<f:link.page pageUid="{homePageUid}" class="navbar-brand">
           <svg aria-hidden="true" role="img" class="navbar-brand__logo">
             <title>Retour à l'accueil</title>
-            <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+            <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
           </svg>
 				</f:link.page>
 			</f:else>

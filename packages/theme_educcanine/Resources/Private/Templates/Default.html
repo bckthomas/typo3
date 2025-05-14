@@ -1,7 +1,7 @@
 <f:layout name="Default"/>
 <f:section name="Main">
 
-  <f:asset.css identifier="title1" href="EXT:theme_educcanine/Resources/Public/Css/Components/Title1/title1.css" />
+  <f:asset.css identifier="title1" href="{publicFolder}/css/title1.min.css" />
 	<f:alias map="{rightContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'2\'})}', leftContent: '{f:cObject(typoscriptObjectPath: \'lib.countContent\', data: {colPos: \'1\'})}', col0: '{colPos: \'0\'}', col1: '{colPos: \'1\'}', col2: '{colPos: \'2\'}', col3: '{colPos: \'3\'}'}">
 		<!--TYPO3SEARCH_begin-->
 		<f:if condition="{data.uid} != {homePageUid}">

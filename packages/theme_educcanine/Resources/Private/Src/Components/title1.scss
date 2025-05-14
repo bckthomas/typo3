@@ -1,0 +1,20 @@
+@use "../Base/mixins" as *;
+@use "../../../../../node_modules/rfs/scss" as *;
+
+h1 {
+  margin: 1.25rem 0 2.5rem;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-secondary);
+  text-align: center;
+
+  @include font-size(3.75rem);
+
+  &::after {
+    display: block;
+    width: 30%;
+    margin: auto;
+    margin-top: 1.25rem;
+    border-bottom: 0.3rem solid var(--primary-dark);
+    content: "";
+  }
+}

@@ -65,28 +65,28 @@ if(isset($_SERVER['HTTP_HOST'])) {
     case 'sl-creations.net':
       $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
         'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
-        'loginLogo' => 'EXT:theme_slcreation/Resources/Public/Images/logo.png',
+        'loginLogo' => 'EXT:theme_slcreation/Resources/Public/assets/images/logo.png',
         'loginHighlightColor' => '#66c6de',
       ];
       break;
     case 'dev.pimpebenisterie.fr':
       $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
         'loginBackgroundImage' => 'fileadmin/pimp/image_home.png',
-        'loginLogo' => 'EXT:theme_pimp/Resources/Public/Images/logo.png',
+        'loginLogo' => 'EXT:theme_pimp/Resources/Public/assets/images/logo.png',
         'loginHighlightColor' => '#76b82a',
       ];
       break;
       case 'educ-canine.com':
           $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
               'loginBackgroundImage' => 'fileadmin/educcanine/education-canine__accueil.jpg',
-              'loginLogo' => 'EXT:theme_educcanine/Resources/Public/Images/logo.png',
+              'loginLogo' => 'EXT:theme_educcanine/Resources/Public/assets/images/logo.png',
               'loginHighlightColor' => '#df046f',
           ];
       break;
       case 'kwible.fr':
           $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
               //'loginBackgroundImage' => 'fileadmin/educcanine/education-canine__accueil.jpg',
-              'loginLogo' => 'EXT:theme_kwible/Resources/Public/Images/logo.png',
+              'loginLogo' => 'EXT:theme_kwible/Resources/Public/assets/images/logo.png',
               'loginHighlightColor' => '#550f60',
           ];
       break;

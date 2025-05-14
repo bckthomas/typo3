@@ -1,0 +1,99 @@
+{
+  "Base/normalize.scss": {
+    "file": "css/normalize.min.css",
+    "src": "Base/normalize.scss",
+    "isEntry": true
+  },
+  "Components/3cols-couleurs.scss": {
+    "file": "css/3cols-couleurs.min.css",
+    "src": "Components/3cols-couleurs.scss",
+    "isEntry": true
+  },
+  "Components/3cols.scss": {
+    "file": "css/3cols.min.css",
+    "src": "Components/3cols.scss",
+    "isEntry": true
+  },
+  "Components/background.scss": {
+    "file": "css/background.min.css",
+    "src": "Components/background.scss",
+    "isEntry": true
+  },
+  "Components/collapse/collapse.js": {
+    "file": "js/collapse.min.js",
+    "name": "collapse.js",
+    "src": "Components/collapse/collapse.js",
+    "isEntry": true,
+    "imports": [
+      "_selector-engine-B0uiXFlu.js"
+    ]
+  },
+  "Components/collapse/collapse.scss": {
+    "file": "css/collapse.min.css",
+    "src": "Components/collapse/collapse.scss",
+    "isEntry": true
+  },
+  "Components/dropdown/dropdown.js": {
+    "file": "js/dropdown.min.js",
+    "name": "dropdown.js",
+    "src": "Components/dropdown/dropdown.js",
+    "isEntry": true,
+    "imports": [
+      "_selector-engine-B0uiXFlu.js"
+    ]
+  },
+  "Components/dropdown/dropdown.scss": {
+    "file": "css/dropdown.min.css",
+    "src": "Components/dropdown/dropdown.scss",
+    "isEntry": true
+  },
+  "Components/form.scss": {
+    "file": "css/form.min.css",
+    "src": "Components/form.scss",
+    "isEntry": true
+  },
+  "Components/formes.scss": {
+    "file": "css/formes.min.css",
+    "src": "Components/formes.scss",
+    "isEntry": true
+  },
+  "Components/price.scss": {
+    "file": "css/price.min.css",
+    "src": "Components/price.scss",
+    "isEntry": true
+  },
+  "Components/squares.scss": {
+    "file": "css/squares.min.css",
+    "src": "Components/squares.scss",
+    "isEntry": true
+  },
+  "Components/title1.scss": {
+    "file": "css/title1.min.css",
+    "src": "Components/title1.scss",
+    "isEntry": true
+  },
+  "Components/title2.scss": {
+    "file": "css/title2.min.css",
+    "src": "Components/title2.scss",
+    "isEntry": true
+  },
+  "Layout/header.js": {
+    "file": "js/header.min.js",
+    "name": "header.js",
+    "src": "Layout/header.js",
+    "isEntry": true
+  },
+  "Layout/layout.scss": {
+    "file": "css/layout.min.css",
+    "src": "Layout/layout.scss",
+    "isEntry": true
+  },
+  "_selector-engine-B0uiXFlu.js": {
+    "file": "assets/selector-engine-B0uiXFlu.js",
+    "name": "selector-engine"
+  },
+  "spritemap.svg": {
+    "file": "assets/icons/sprite.svg",
+    "src": "spritemap.svg"
+  }
+}

@@ -1,6 +1,6 @@
 theme {
 	privateFolder = EXT:theme_pimp/Resources/Private
-	publicFolder = typo3conf/ext/theme_pimp/Resources/Public
+	publicFolder = EXT:theme_pimp/Resources/Public
 	extFolder = EXT:theme_pimp/Resources/Extensions
 	// containerFolder = EXT:theme_pimp/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public
@@ -14,10 +14,6 @@ theme {
 	footerMenuPid = 16
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
 	infoFooter =
-	# cat=Configuration du thème; type=string; label= Body class
-	bodyTag = <body class="d-flex flex-column h-100">
-	# cat=Configuration du thème; type=string; label= Html tag class
-	htmlTag_class = h-100
 	# cat=Configuration du site; type=int+; label= Id Matomo
 	matomoSiteId = 2
 }

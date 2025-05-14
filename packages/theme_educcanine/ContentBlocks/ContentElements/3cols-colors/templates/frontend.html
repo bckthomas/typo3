@@ -1,0 +1,44 @@
+<f:asset.css identifier="title2" href="{publicFolder}/css/title2.min.css" />
+<f:asset.css identifier="3colscouleurs" href="{publicFolder}/css/3cols-couleurs.min.css" />
+<f:asset.css identifier="background" href="{publicFolder}/css/background.min.css" />
+
+<div class="container">
+  <div class="cols-couleurs__container">
+    <div class="cols-couleurs__item cols-couleurs__first">
+      <div class="background__color background__color--{data.Couleur} js-animation-scroll animation-scroll slide-in-left">
+        <f:image image="{data.image.0}" alt="{data.image.0.alternative}" class="img-fluid" />
+
+        <f:if condition="{data.header}">
+          <h2>{data.header}</h2>
+        </f:if>
+        <f:if condition="{data.bodytext}">
+          {data.bodytext -> f:format.html()}
+        </f:if>
+      </div>
+    </div>
+    <div class="cols-couleurs__item cols-couleurs__text js-animation-scroll animation-scroll fade-in-bottom">
+      <f:if condition="{data.bodytext2}">
+        {data.bodytext2 -> f:format.html()}
+      </f:if>
+      <div class="mt-5">
+        <f:if condition="{data.bodytext3}">
+          {data.bodytext3 -> f:format.html()}
+        </f:if>
+      </div>
+
+    </div>
+    <div class="cols-couleurs__item js-animation-scroll animation-scroll slide-in-right">
+
+      <f:if condition="{data.bodytext4}">
+        <div class="background__color background__color--{data.color2}">
+            {data.bodytext4 -> f:format.html()}
+        </div>
+      </f:if>
+
+      <f:if condition="{data.image2}">
+        <f:image image="{data.image2.0}" alt="{data.image2.0.alternative}" class="img-fluid" />
+      </f:if>
+
+    </div>
+  </div>
+</div>

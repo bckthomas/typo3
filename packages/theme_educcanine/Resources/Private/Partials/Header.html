@@ -1,8 +1,12 @@
-<f:asset.css identifier="DropdownCSS" href="{packageComponentsFolder}/Css/Components/Dropdown/dropdown.css" />
-<f:asset.css identifier="CollapseCSS" href="{packageComponentsFolder}/Css/Components/Collapse/collapse.css" />
-<f:asset.script identifier="burger" src="{publicFolder}/JavaScript/header.min.js" />
+<f:asset.script identifier="burger" src="{publicFolder}/js/header.min.js" />
+<f:asset.script identifier="dropdownJS" src="{publicFolder}/js/dropdown.min.js" type="module"/>
+<f:asset.css identifier="dropdown" href="{publicFolder}/css/dropdown.min.css" />
+<f:asset.script identifier="collapseJS" src="{publicFolder}/js/collapse.min.js"  type="module"/>
+<f:asset.css identifier="collapse" href="{publicFolder}/css/collapse.min.css" />
+<f:comment>
+</f:comment>
 
-<a href="#mainContent" class="skiptocontent">{f:translate(key: '{languageFolder}:skipToContent')}</a>
+<a href="#mainContent" class="visually-hidden-focusable">{f:translate(key: '{languageFolder}:skipToContent')}</a>
 
 <div class="container">
 
@@ -10,10 +14,10 @@
     <div class="container header__container">
       <f:if condition="{homePageUid} == {data.uid}">
         <f:then>
-          <h1 class="navbar-brand">
+          <h1 class="header__logo-container">
             <svg aria-hidden="true" role="img" class="header__logo">
               <title>Educ canine Accueil</title>
-              <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+              <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
             </svg>
           </h1>
         </f:then>
@@ -21,7 +25,7 @@
           <f:link.page pageUid="{homePageUid}" class="navbar-brand">
             <svg aria-hidden="true" role="img" class="header__logo">
               <title>Retour à l'accueil du site</title>
-              <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+              <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
             </svg>
           </f:link.page>
         </f:else>

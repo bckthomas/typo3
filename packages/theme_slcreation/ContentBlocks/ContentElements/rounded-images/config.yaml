@@ -1,0 +1,16 @@
+name: thbck/rounded-images
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
+    identifier: image
+    type: Image
+    useExistingField: true
+  -
+    identifier: header_link
+    useExistingField: true

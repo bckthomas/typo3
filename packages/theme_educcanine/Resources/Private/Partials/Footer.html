@@ -4,13 +4,13 @@
       <f:link.page pageUid="{homePageUid}">
         <svg aria-hidden="true" role="img" class="footer__logo">
           <title>Educ-canine accueil</title>
-          <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#logo"></use>
+          <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
         </svg>
       </f:link.page>
     </div>
 
     <div class="footer__menu">
-      <ul class="list-unstyled list-inline mb-0">
+      <ul class="footer__menu__list list-unstyled list-inline mb-0">
         <f:for each="{footerNavigation}" as="footerNavigationItem">
           <li class="list-inline-item">
             <a class="footer__menu__link {f:if(condition: footerNavigationItem.active, then: 'active')}"
@@ -26,7 +26,7 @@
     <div>
         <a class="rs__link" target="_blank" title="Page Facebook Educ canine ({f:translate(key: '{languageFolder}:newTab')})" href="https://www.facebook.com/GuuinicAmandine/">
           <svg aria-hidden="true" role="img" class="rs__link__icon">
-            <use xlink:href="{publicFolder}/Svg/icon-sprite.svg#facebook"></use>
+            <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#facebook')}"></use>
           </svg>
         </a>
       <div class="footer__copyright">

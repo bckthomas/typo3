@@ -1,0 +1,38 @@
+.navbar {
+  border-bottom: 0.0625rem solid #e6e9ea;
+}
+
+.nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar-submenu {
+  padding: 0;
+  background-color: #032830;
+
+  &_link {
+    padding: 0.625rem;
+    color: var(--color-white);
+    font-size: 0.625rem;
+    text-transform: none;
+    transition: var(--transition-base);
+
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}
+
+.navbar-brand {
+  &__logo {
+    width: 10rem;
+    height: 4.625rem;
+
+    &--footer {
+      width: 8rem;
+      height: 4rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+name: thbck/3cols
+typeName: thbck_3cols
+group: educcanine
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
+    identifier: image
+    type: Image
+    useExistingField: true

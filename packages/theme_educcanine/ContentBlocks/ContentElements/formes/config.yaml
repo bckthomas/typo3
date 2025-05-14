@@ -1,0 +1,22 @@
+name: thbck/formes
+typeName: thbck_formes
+group: educcanine
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
+    identifier: image
+    type: Image
+    useExistingField: true
+  -
+    identifier: media
+    type: Vidéo
+    useExistingField: true
+

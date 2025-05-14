@@ -1,0 +1,23 @@
+.background {
+    &__color {
+        padding: 1.25rem;
+        color: var(--color-white);
+
+        h2,
+        a {
+            color: var(--color-white);
+        }
+
+        &--orange {
+            background-color: var(--primary-orange);
+        }
+
+        &--pink {
+            background-color: var(--primary-pink);
+        }
+
+        &--purple {
+            background-color: var(--color-theme);
+        }
+    }
+}

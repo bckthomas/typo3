@@ -1,0 +1,1 @@
+:root{--bs-body-font-family:"Sora",sans-serif}.link-more{position:relative;text-decoration:none}.link-more:before{background-color:#0dcaf0;border-radius:4px;bottom:0;content:"";height:4px;left:0;position:absolute;transform:scaleX(1);transform-origin:left;transition:transform .3s ease-in-out;width:100%}.link-more:hover:before{transform:scaleX(0);transform-origin:right}

@@ -1,0 +1,32 @@
+{
+  "Base/normalize.scss": {
+    "file": "css/normalize.min.css",
+    "src": "Base/normalize.scss",
+    "isEntry": true
+  },
+  "Components/Form/form.scss": {
+    "file": "css/form.min.css",
+    "src": "Components/Form/form.scss",
+    "isEntry": true
+  },
+  "Layout/bootstrap.js": {
+    "file": "js/bootstrap.min.js",
+    "name": "bootstrap.js",
+    "src": "Layout/bootstrap.js",
+    "isEntry": true
+  },
+  "Layout/layout.scss": {
+    "file": "css/layout.min.css",
+    "src": "Layout/layout.scss",
+    "isEntry": true
+  },
+  "Layout/navbar.scss": {
+    "file": "css/navbar.min.css",
+    "src": "Layout/navbar.scss",
+    "isEntry": true
+  },
+  "spritemap.svg": {
+    "file": "assets/icons/sprite.svg",
+    "src": "spritemap.svg"
+  }
+}
