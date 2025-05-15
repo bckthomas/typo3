@@ -3,11 +3,11 @@ return [
     'BE' => [
         'compressionLevel' => '5',
         'debug' => true,
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$Q3dPLjFMTFAxeUkxaWZGRg$Tnf81QRAwHSCLVUdxxd6rsVEH+sSgAOhRb3fyStMBQc',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
         ],
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$Q3dPLjFMTFAxeUkxaWZGRg$Tnf81QRAwHSCLVUdxxd6rsVEH+sSgAOhRb3fyStMBQc',
     ],
     'DB' => [
         'Connections' => [
@@ -29,10 +29,10 @@ return [
         'backend' => [
             'backendFavicon' => '',
             'backendLogo' => '',
-            'loginBackgroundImage' => 'fileadmin/slcreation/accueil1.jpg',
+            'loginBackgroundImage' => '',
             'loginFootnote' => '',
-            'loginHighlightColor' => '#66c6de',
-            'loginLogo' => 'EXT:theme_slcreation/Resources/Public/Images/logo.png',
+            'loginHighlightColor' => '',
+            'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
         'extensionmanager' => [
