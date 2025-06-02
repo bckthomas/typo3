@@ -1,0 +1,13 @@
+name: thbck/record
+typeName: thbck_record
+group: slcreation
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true

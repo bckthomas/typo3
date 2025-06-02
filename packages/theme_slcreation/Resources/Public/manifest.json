@@ -4,25 +4,44 @@
     "src": "Base/normalize.scss",
     "isEntry": true
   },
-  "Components/Form/form.scss": {
-    "file": "css/form.min.css",
-    "src": "Components/Form/form.scss",
+  "Components/block-blue.scss": {
+    "file": "css/block-blue.min.css",
+    "src": "Components/block-blue.scss",
     "isEntry": true
   },
-  "Layout/bootstrap.js": {
-    "file": "js/bootstrap.min.js",
-    "name": "bootstrap.js",
-    "src": "Layout/bootstrap.js",
+  "Components/card.scss": {
+    "file": "css/card.min.css",
+    "src": "Components/card.scss",
+    "isEntry": true
+  },
+  "Components/image.scss": {
+    "file": "css/image.min.css",
+    "src": "Components/image.scss",
+    "isEntry": true
+  },
+  "Components/page-header.scss": {
+    "file": "css/page-header.min.css",
+    "src": "Components/page-header.scss",
+    "isEntry": true
+  },
+  "Components/record.scss": {
+    "file": "css/record.min.css",
+    "src": "Components/record.scss",
+    "isEntry": true
+  },
+  "Components/title1.scss": {
+    "file": "css/title1.min.css",
+    "src": "Components/title1.scss",
+    "isEntry": true
+  },
+  "Components/title2.scss": {
+    "file": "css/title2.min.css",
+    "src": "Components/title2.scss",
     "isEntry": true
   },
   "Layout/layout.scss": {
     "file": "css/layout.min.css",
     "src": "Layout/layout.scss",
-    "isEntry": true
-  },
-  "Layout/navbar.scss": {
-    "file": "css/navbar.min.css",
-    "src": "Layout/navbar.scss",
     "isEntry": true
   },
   "spritemap.svg": {

@@ -50,4 +50,5 @@ editor:
     style:
       definitions:
         - { name: "Liste de liens", element: "ul", classes: ['list-links'] }
+        - { name: "Sous titre", element: "p", classes: ['subtitle'] }
 

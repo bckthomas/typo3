@@ -1,16 +1,19 @@
-<f:asset.css identifier="DropdownCSS" href="{packageComponentsFolder}/Css/Components/Dropdown/dropdown.css" />
-<f:asset.css identifier="Collapse" href="{packageComponentsFolder}/Css/Components/Collapse/collapse.css" />
-<f:asset.css identifier="Navbar" href="{publicFolder}/css/navbar.min.css" />
-
 <header role="banner">
 	<f:render partial="Header" arguments="{_all}" />
 </header>
+
+<f:if condition="{homePageUid} != {data.uid}">
+	<div class="page">
+</f:if>
 
 <main id="mainContent" role="main">
 	<article>
 		<f:render section="Main" />
 	</article>
 </main>
+<f:if condition="{homePageUid} != {data.uid}">
+	</div>
+</f:if>
 
 <footer role="contentinfo">
 	<div class="container footer">

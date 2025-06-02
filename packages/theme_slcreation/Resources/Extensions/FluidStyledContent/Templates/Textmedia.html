@@ -1,6 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
 <f:section name="Header">
+    <f:asset.css identifier="image" href="{publicFolder}/css/image.min.css" />
 
     <f:if condition="{gallery.position.noWrap} != 1 && {data.imageorient} != '69'">
         <f:render partial="Header/All" arguments="{_all}" />
@@ -82,7 +84,7 @@
                 </div>
             </f:if>
         </f:case>
-        
+
         <f:case value="center">
             <f:if condition="{gallery.position.horizontal} == '' && {gallery.position.vertical} == 'above'">
                 <div class="d-flex justify-content-center">

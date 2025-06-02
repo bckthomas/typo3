@@ -1,6 +1,9 @@
 RTE.default.preset = default
-TCAdefaults {
-    tt_content {
-        space_after_class = mb-3
+
+TCEFORM {
+    pages{
+        layout {
+            addItems.30 = No title
+        }
     }
 }

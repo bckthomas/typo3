@@ -1,0 +1,21 @@
+.page-header {
+  position: relative;
+
+  &__title {
+    margin-top: 0;
+  }
+  &__texts {
+    max-width: 50%;
+    position: absolute;
+    top: -6.5rem;
+  }
+
+  &__img {
+    max-height: 20rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    img {
+      width: 100%;
+    }
+  }
+}

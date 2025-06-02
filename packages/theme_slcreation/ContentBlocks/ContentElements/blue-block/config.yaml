@@ -1,0 +1,17 @@
+name: tbhck/blue-block
+typeName: tbhck_blueblock
+group: slcreation
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
+    identifier: image
+    type: Image
+    useExistingField: true

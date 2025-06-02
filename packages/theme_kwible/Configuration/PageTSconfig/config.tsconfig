@@ -1,9 +1,4 @@
 RTE.default.preset = default
-TCAdefaults {
-    tt_content {
-        space_after_class = mb-3
-    }
-}
 
 TCEFORM {
     tt_content{

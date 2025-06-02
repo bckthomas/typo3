@@ -22,24 +22,6 @@ TCEFORM {
             addItems.10 = Full width
             addItems.20 = Container
         }
-        space_before_class {
-            removeItems = extra-small, small, medium, large, extra-large
-            addItems.mt-0 = Marge 0
-            addItems.mt-1 = Marge .25
-            addItems.mt-2 = Marge .5
-            addItems.mt-3 = Marge par défaut
-            addItems.mt-4 = Marge 1.25
-            addItems.mt-5 = Marge 1.5
-        }
-        space_after_class {
-            removeItems = extra-small, small, medium, large, extra-large
-            addItems.mb-0 = Marge 0
-            addItems.mb-1 = Marge .25
-            addItems.mb-2 = Marge .5
-            addItems.mb-3 = Marge par défaut
-            addItems.mb-4 = Marge 1.25
-            addItems.mb-5 = Marge 1.5
-        }
 
         header_position {
             removeItems = center, right, left

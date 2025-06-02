@@ -1,19 +1,19 @@
 
 <div class="footer__logo">
-  <f:link.page pageUid="{homePageUid}" class="navbar-brand">
-    <svg aria-hidden="true" role="img" class="navbar-brand__logo--footer">
+  <f:link.page pageUid="{homePageUid}">
+    <svg aria-hidden="true" role="img" class="footer__logo__icon">
       <title>Retour à l'accueil</title>
       <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
     </svg>
   </f:link.page>
-  <span class="text-muted">© {f:format.date(date: 'now', format: 'Y')} SL Creations - Villefranche-sur-Saône</span>
+  <span class="footer__logo__text">© {f:format.date(date: 'now', format: 'Y')} SL Creations - Villefranche-sur-Saône</span>
 </div>
 
 <div>
   <ul class="footer__nav">
     <f:for each="{footerNavigation}" as="footerNavigationItem">
-      <li class="list-inline-item">
-        <a class="{f:if(condition: footerNavigationItem.active, then: 'active')}"
+      <li>
+        <a class="footer__nav__link {f:if(condition: footerNavigationItem.active, then: 'footer__nav__link--active')}"
         href="{footerNavigationItem.link}"
         >
           {footerNavigationItem.title}

@@ -1,0 +1,21 @@
+<f:asset.css identifier="title1" href="{publicFolder}/css/title1.min.css" />
+<f:asset.css identifier="page-header" href="{publicFolder}/css/page-header.min.css" />
+<f:asset.css identifier="record" href="{publicFolder}/css/record.min.css" />
+<f:asset.css identifier="AnimationCSS" href="{packageComponentsFolder}/Css/Components/Animations/animations.css" />
+<f:asset.script identifier="AnimationJS" src="{packageComponentsFolder}/JavaScript/animations.min.js" />
+
+<div class="page-header">
+  <div class="container">
+    <div class="page-header__texts record js-animation-scroll animation-scroll slide-in-left">
+      <h1 class="title-h1 page-header__title">{data.header}</h1>
+      <f:if condition="{data.bodytext}">
+        {data.bodytext -> f:format.html()}
+      </f:if>
+    </div>
+  </div>
+  <div class="page-header__img">
+    <f:if condition="{data.image}">
+      <f:image image="{data.image.0}" alt="{data.image.0.alternative}" class="img-fluid" fileExtension="webp" />
+    </f:if>
+  </div>
+</div>

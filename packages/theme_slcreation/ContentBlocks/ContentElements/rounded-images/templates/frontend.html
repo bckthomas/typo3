@@ -1,31 +1,20 @@
-<f:asset.css identifier="content-block-css-thbck/rounded-images-be" href="{cb:assetPath()}/Frontend.css" />
 <f:if condition="{data.rawRecord.tx_content_animation}">
   <f:asset.css identifier="AnimationCSS" href="{packageComponentsFolder}/Css/Components/Animations/animations.css" />
   <f:asset.script identifier="AnimationJS" src="{packageComponentsFolder}/JavaScript/animations.min.js" />
 </f:if>
+<f:asset.css identifier="card" href="{publicFolder}/css/card.min.css" />
 
-<div class="mb-3 {f:if(condition: data.rawRecord.tx_content_animation, then: 'js-animation-scroll animation-scroll {data.rawRecord.tx_content_animation}')}">
-  <div class="row d-flex align-items-center">
-    <div class="col-12 col-lg-6 mx-auto mb-4 mb-lg-0">
+<div class="card stretched-link {f:if(condition: data.rawRecord.tx_content_animation, then: 'js-animation-scroll animation-scroll {data.rawRecord.tx_content_animation}')}">
+
+      <f:image image="{data.image.0}" width="300c" height="300c" fileExtension="webp" alt="" />
       <f:if condition="{data.header_link}">
-        <f:then>
-          <f:link.typolink parameter="{data.header_link}">
-            <f:image image="{data.image.0}" width="300c" height="300c" alt="Lire la suite sur la page {data.header -> f:format.stripTags()}" class="mx-auto d-block img-fluid shadow rounded-circle" fileExtension="webp" />
-          </f:link.typolink>
-        </f:then>
-        <f:else>
-          <f:image image="{data.image.0}" width="300c" height="300c" class="mx-auto d-block img-fluid shadow rounded-circle" fileExtension="webp" />
-        </f:else>
-      </f:if>
-    </div>
-    <div class="col-12 col-lg-6 text-center text-lg-start">
-      <h2>{data.header -> f:format.raw()}</h2>
-      {data.bodytext -> f:format.raw()}
-      <f:if condition="{data.header_link}">
-        <f:link.typolink parameter="{data.header_link}" title="Lire la suite sur la page {data.header -> f:format.stripTags()}" class="link-more">
-          Lire la suite
+        <f:link.typolink parameter="{data.header_link}">
+          <span class="visually-hidden">Lire la suite sur la page {data.header -> f:format.stripTags()}</span>
         </f:link.typolink>
       </f:if>
-    </div>
-  </div>
+      <div class="card__text">
+        <h2 class="card__text__title">{data.header -> f:format.raw()}</h2>
+      </div>
+
+
 </div>

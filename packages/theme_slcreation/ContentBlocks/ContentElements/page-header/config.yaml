@@ -1,0 +1,17 @@
+name: thbck/page-header
+typeName: thbck_pageheader
+group: slcreation
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
+    identifier: image
+    type: Image
+    useExistingField: true

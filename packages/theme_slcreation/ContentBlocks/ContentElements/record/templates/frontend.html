@@ -1,0 +1,14 @@
+<f:asset.css identifier="title2" href="{publicFolder}/css/title2.min.css" />
+<f:asset.css identifier="record" href="{publicFolder}/css/record.min.css" />
+<f:asset.css identifier="AnimationCSS" href="{packageComponentsFolder}/Css/Components/Animations/animations.css" />
+<f:asset.script identifier="AnimationJS" src="{packageComponentsFolder}/JavaScript/animations.min.js" />
+
+
+<div class="record record--small js-animation-scroll animation-scroll fade-in-bottom">
+  <f:if condition="{data.header}">
+    <h2 class="title-h2 record__title">{data.header}</h2>
+  </f:if>
+  <f:if condition="{data.bodytext}">
+    {data.bodytext -> f:format.html()}
+  </f:if>
+</div>

@@ -60,7 +60,7 @@ export default defineConfig(({ mode }) => {
         exclude: [`${srcRoot}/svgs.js`]
       }),
       stylelint({
-        configFile: path.resolve(__dirname, 'config', '.stylelintrc.json'), // Assure-toi que le fichier de config de Stylelint est bien spécifié
+        configFile: path.resolve(__dirname, 'config', '.stylelintrc.json'),
         cache: true,
         fix: true,
         include: [`${srcRoot}/**/*.scss`, `${themeRoot}/ContentBlocks/**/*.scss`],

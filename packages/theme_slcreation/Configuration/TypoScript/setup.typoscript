@@ -6,5 +6,3 @@ plugin.tx_form {
   }
  }
 }
-
-page.includeJSFooterlibs.bootstrap = {$theme.publicFolder}/js/bootstrap.min.js

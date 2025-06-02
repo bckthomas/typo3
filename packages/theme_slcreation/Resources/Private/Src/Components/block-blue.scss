@@ -1,0 +1,17 @@
+.block-blue {
+  background-color: var(--color-calypso);
+  color: var(--color-white);
+  padding: 3rem 2rem;
+
+  &__title {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
