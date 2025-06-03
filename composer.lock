@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43413c288c99a7a7ed84edebc5e3f580",
+    "content-hash": "93d52f0b55db947ccfb8bac53a288896",
     "packages": [
         {
             "name": "b13/container",
@@ -5585,43 +5585,6 @@
             }
         },
         {
-            "name": "thbck/theme-mask",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./packages/theme_mask",
-                "reference": "145e93a9a82032cf086df5d0a3ff798c8f36ff6a"
-            },
-            "require": {
-                "typo3/cms-core": "^13.0.0"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "theme_mask"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Thbck\\Mask\\": "Classes/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Beck",
-                    "role": "Developer",
-                    "homepage": "https://www.thomas-beck.fr"
-                }
-            ],
-            "description": "Mask content for websites",
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "thbck/theme-package",
             "version": "dev-master",
             "dist": {
@@ -7129,6 +7092,74 @@
             "time": "2025-05-20T09:39:53+00:00"
         },
         {
+            "name": "typo3/cms-redirects",
+            "version": "v13.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/redirects.git",
+                "reference": "9f79138a5bd368d16c749ba5434c3baba12bc19a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/redirects/zipball/9f79138a5bd368d16c749ba5434c3baba12bc19a",
+                "reference": "9f79138a5bd368d16c749ba5434c3baba12bc19a",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^4.2.1",
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/log": "^3.0.1",
+                "symfony/console": "^7.2",
+                "typo3/cms-backend": "13.4.12",
+                "typo3/cms-core": "13.4.12",
+                "typo3fluid/fluid": "^4.1.2"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-reports": "Get reports of redirects",
+                "typo3/cms-scheduler": "Execute commands to update redirect status"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "redirects"
+                },
+                "branch-alias": {
+                    "dev-main": "13.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Redirects\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Redirects - Create manual redirects, list existing redirects and automatically createredirects on slug changes.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-redirects/main/en-us/",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-05-20T09:39:53+00:00"
+        },
+        {
             "name": "typo3/cms-rte-ckeditor",
             "version": "v13.4.12",
             "source": {
@@ -7867,7 +7898,6 @@
         "b13/container": 20,
         "thbck/theme-educcanine": 20,
         "thbck/theme-kwible": 20,
-        "thbck/theme-mask": 20,
         "thbck/theme-package": 20,
         "thbck/theme-pimp": 20,
         "thbck/theme-slcreation": 20

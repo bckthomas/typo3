@@ -1,0 +1,21 @@
+name: thbck/gallery
+typeName: thbck_gallery
+group: slcreation
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: thumbs
+    type: Collection
+    labelField: title
+    appearance:
+      collapseAll: true
+      levelLinksPosition: both
+    fields:
+      - identifier: image
+        type: File
+      - identifier: title
+        type: Text
