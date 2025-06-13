@@ -1,8 +1,13 @@
+@use "../Base/mixins" as *;
+
 .record {
   background-color: var(--color-white);
   box-shadow: var(--shadow);
   border-radius: 1.5rem;
-  padding: 3rem;
+  padding: 1.5rem;
+  @include media-breakpoint-up(lg) {
+    padding: 3rem;
+  }
 
   &--small {
     padding: 1.5rem;

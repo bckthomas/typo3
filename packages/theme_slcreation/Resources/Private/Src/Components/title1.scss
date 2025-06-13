@@ -1,4 +1,9 @@
+@use "../Base/mixins" as *;
+
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 3rem;
+  }
   font-family: var(--font-family-title);
 }
