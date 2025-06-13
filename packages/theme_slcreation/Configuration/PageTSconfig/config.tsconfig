@@ -6,4 +6,9 @@ TCEFORM {
             addItems.30 = No title
         }
     }
+    tt_content {
+        frame_class {
+            addItems.record = Card
+        }
+    }
 }

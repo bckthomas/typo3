@@ -39,7 +39,19 @@
     }
   }
 
-  &--col2 {
+  &--col7525 {
+    @include media-breakpoint-up(md) {
+        .col {
+            grid-column: span 4;
+        }
+        > .col:first-child {
+            grid-column: span 8;
+
+        }
+    }
+  }
+
+  &--col5050 {
     @include media-breakpoint-up(md) {
         .col {
             grid-column: span 6;

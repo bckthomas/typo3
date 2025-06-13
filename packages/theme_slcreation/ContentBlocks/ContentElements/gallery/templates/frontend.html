@@ -1,14 +1,20 @@
 <f:asset.css identifier="gallery" href="{publicFolder}/css/gallery.min.css" />
 <f:asset.css identifier="AnimationCSS" href="{packageComponentsFolder}/Css/Components/Animations/animations.css" />
+<f:asset.css identifier="FancyboxCSS" href="{publicFolder}/css/fancybox.min.css" />
 <f:asset.script identifier="AnimationJS" src="{packageComponentsFolder}/JavaScript/animations.min.js" />
+<f:asset.script identifier="FancyboxJS" src="{publicFolder}/js/fancybox.min.js" />
 
 <div class="container component">
-    <f:if condition="{data.thumbs.0.title}">
-      <h2 class="title2">{data.thumbs.0.title}</h2>
-    </f:if>
-    <f:if condition="{data.thumbs}">
+  <f:if condition="{data.header}">
+    <h2 class="title2 js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
+  </f:if>
+  <f:if condition="{data.thumbs}">
+    <div class="gallery">
       <f:for each="{data.thumbs.0.image}" as="image">
-        <f:image image="{image}" alt="{image.alternative}" class="js-animation-scroll animation-scroll slide-in-left" fileExtension="webp" height="210c" width="210c" />
+        <a data-fancybox="gallery" href="{image.publicUrl}" aria-label="Agrandir l'image" class="gallery__item">
+          <f:image image="{image}" alt="{image.alternative}" class="js-animation-scroll animation-scroll slide-in-left gallery__img" fileExtension="webp" height="250c" width="250c" />
+        </a>
       </f:for>
-    </f:if>
+    </div>
+  </f:if>
 </div>

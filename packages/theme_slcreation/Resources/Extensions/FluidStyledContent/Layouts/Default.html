@@ -6,7 +6,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:if condition="{data.frame_class} != none">
         <f:then>
-            <div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} {f:if(condition: '{data.layout} === 10 && {data.tx_container_parent} === 0', then: 'container-fluid p-0')} {f:if(condition: '{data.tx_container_parent} === 0 && {data.layout} != 10', then: 'container')}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: data.tx_content_animation, then: 'js-animation-scroll animation-scroll {data.tx_content_animation}')}">
+            <div id="c{data.uid}" class="frame frame-{data.frame_class} {data.frame_class} frame-type-{data.CType} {f:if(condition: '{data.layout} === 10 && {data.tx_container_parent} === 0', then: 'container-fluid p-0')} {f:if(condition: '{data.tx_container_parent} === 0 && {data.layout} != 10', then: 'container')}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition: data.tx_content_animation, then: 'js-animation-scroll animation-scroll {data.tx_content_animation}')}">
 
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>

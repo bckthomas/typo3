@@ -4,6 +4,28 @@
     "src": "Base/normalize.scss",
     "isEntry": true
   },
+  "Components/Collapse/collapse.js": {
+    "file": "js/collapse.min.js",
+    "name": "collapse.js",
+    "src": "Components/Collapse/collapse.js",
+    "isEntry": true
+  },
+  "Components/Collapse/collapse.scss": {
+    "file": "css/collapse.min.css",
+    "src": "Components/Collapse/collapse.scss",
+    "isEntry": true
+  },
+  "Components/Fancybox/fancybox.js": {
+    "file": "js/fancybox.min.js",
+    "name": "fancybox.js",
+    "src": "Components/Fancybox/fancybox.js",
+    "isEntry": true
+  },
+  "Components/Fancybox/fancybox.scss": {
+    "file": "css/fancybox.min.css",
+    "src": "Components/Fancybox/fancybox.scss",
+    "isEntry": true
+  },
   "Components/block-blue.scss": {
     "file": "css/block-blue.min.css",
     "src": "Components/block-blue.scss",
@@ -12,6 +34,16 @@
   "Components/card.scss": {
     "file": "css/card.min.css",
     "src": "Components/card.scss",
+    "isEntry": true
+  },
+  "Components/form.scss": {
+    "file": "css/form.min.css",
+    "src": "Components/form.scss",
+    "isEntry": true
+  },
+  "Components/gallery.scss": {
+    "file": "css/gallery.min.css",
+    "src": "Components/gallery.scss",
     "isEntry": true
   },
   "Components/image.scss": {
@@ -37,6 +69,12 @@
   "Components/title2.scss": {
     "file": "css/title2.min.css",
     "src": "Components/title2.scss",
+    "isEntry": true
+  },
+  "Layout/header.js": {
+    "file": "js/header.min.js",
+    "name": "header.js",
+    "src": "Layout/header.js",
     "isEntry": true
   },
   "Layout/layout.scss": {

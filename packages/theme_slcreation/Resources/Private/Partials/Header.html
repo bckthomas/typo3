@@ -1,61 +1,61 @@
+<f:asset.script identifier="HeaderJs" src="{publicFolder}/js/header.min.js" />
+<f:asset.script identifier="collapseJS" src="{publicFolder}/js/collapse.min.js"  type="module"/>
+<f:asset.css identifier="collapse" href="{publicFolder}/css/collapse.min.css" />
+
 <a href="#mainContent" class="skiptocontent visually-hidden-focusable">{f:translate(key: '{languageFolder}:skipToContent')}</a>
 
-<nav role="navigation">
-  <div class="header container">
-		<f:if condition="{homePageUid} == {data.uid}">
-			<f:then>
-				<h1 class="header__logo">
-          <svg aria-hidden="true" role="img" class="header__logo__icon">
-            <title>SL Création accueil</title>
-            <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
-          </svg>
-				</h1>
-			</f:then>
-			<f:else>
-				<f:link.page pageUid="{homePageUid}" class="header__logo">
-          <svg aria-hidden="true" role="img" class="header__logo__icon">
-            <title>Retour à l'accueil</title>
-            <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
-          </svg>
-				</f:link.page>
-			</f:else>
-		</f:if>
-    <button class="header__burger" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="{f:translate(key: '{languageFolder}:toogleMenu')}">
-      <span class="header__burger-icon"></span>
-    </button>
-    <div class="collapse header__nav" id="mainNavigation">
-      <ul class="header__nav__list">
-        <f:for each="{mainNavigation}" as="mainNavigationItem">
-          <f:if condition="{mainNavigationItem.children}">
-            <f:then>
-              <li class="dropdown header__nav__list__item">
-                <a class="dropdown-toggle header__nav__list__link {f:if(condition: mainNavigationItem.active, then: 'header__nav__list__link--active')}"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+<div class="header container js-header">
+  <f:if condition="{homePageUid} == {data.uid}">
+    <f:then>
+      <h1 class="header__logo">
+        <svg aria-hidden="true" role="img" class="header__logo__icon" aria-label="SL Création accueil">
+          <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
+        </svg>
+      </h1>
+    </f:then>
+    <f:else>
+      <f:link.page pageUid="{homePageUid}" class="header__logo" aria-label="Retour à l'accueil">
+        <svg aria-hidden="true" role="img" class="header__logo__icon">
+          <use xlink:href="{f:uri.resource(path: '{publicFolder}/assets/icons/sprite.svg#logo')}"></use>
+        </svg>
+      </f:link.page>
+    </f:else>
+  </f:if>
+  <button class="header__burger" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="{f:translate(key: '{languageFolder}:toogleMenu')}">
+    <span class="header__burger__icon"></span>
+  </button>
+  <nav class="collapse header__nav" id="mainNavigation">
+    <ul class="header__nav__list">
+      <f:for each="{mainNavigation}" as="mainNavigationItem">
+        <f:if condition="{mainNavigationItem.children}">
+          <f:then>
+            <li class="dropdown header__nav__list__item">
+              <a class="dropdown-toggle header__nav__list__link {f:if(condition: mainNavigationItem.active, then: 'header__nav__list__link--active')}"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >
+                {mainNavigationItem.title}
+              </a>
+              <f:render section="menuNextLevel" arguments="{menu: mainNavigationItem.children}" />
+            </li>
+          </f:then>
+          <f:else>
+            <li class="header__nav__list__item">
+              <a class="header__nav__list__link {f:if(condition: mainNavigationItem.active, then: 'header__nav__list__link--active')}"
+                  href="{mainNavigationItem.link}"
                   >
                   {mainNavigationItem.title}
-                </a>
-                <f:render section="menuNextLevel" arguments="{menu: mainNavigationItem.children}" />
-              </li>
-            </f:then>
-            <f:else>
-              <li class="header__nav__list__item">
-                <a class="header__nav__list__link {f:if(condition: mainNavigationItem.active, then: 'header__nav__list__link--active')}"
-                    href="{mainNavigationItem.link}"
-                    >
-                    {mainNavigationItem.title}
-                </a>
-              </li>
-            </f:else>
-          </f:if>
-        </f:for>
-      </ul>
-    </div>
-  </div>
-</nav>
+              </a>
+            </li>
+          </f:else>
+        </f:if>
+      </f:for>
+    </ul>
+  </nav>
+</div>
 
 <f:section name="menuNextLevel">
 	<ul class="dropdown-menu" aria-labelledby="navbarDropdown">

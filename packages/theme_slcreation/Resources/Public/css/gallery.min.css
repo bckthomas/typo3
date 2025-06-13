@@ -1,0 +1,1 @@
+.gallery{display:grid;gap:var(--gutter);grid-template-columns:repeat(12,1fr)}.gallery__item{grid-column:span 6}@media (min-width:768px){.gallery__item{grid-column:span 4}}@media (min-width:992px){.gallery__item{grid-column:span 2}}.gallery__img{height:auto;width:100%}
