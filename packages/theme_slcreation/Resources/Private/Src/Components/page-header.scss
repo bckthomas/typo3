@@ -7,10 +7,10 @@
     margin-top: 0;
   }
   &__texts {
-    max-width: 75%;
-    position: absolute;
-    top: -6.5rem;
+    margin: -6.5rem 0 1.5rem;
     @include media-breakpoint-up(md) {
+      position: absolute;
+      top: -6.5rem;
       max-width: 50%;
     }
   }

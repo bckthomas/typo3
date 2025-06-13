@@ -110,7 +110,7 @@
 
     @include media-breakpoint-down(lg) {
       position: absolute;
-      right: -3rem;
+      right: 0;
       top: 7.5rem;
     }
     @include media-breakpoint-up(lg) {
@@ -155,6 +155,7 @@
         height: 100%;
         transition: var(--transition);
         padding: .5rem 1rem;
+        color: currentColor;
 
         @include media-breakpoint-up(lg) {
           padding: 0 1rem;
