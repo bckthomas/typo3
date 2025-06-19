@@ -1,0 +1,18 @@
+<f:asset.css identifier="resume" href="{publicFolder}/css/resume.min.css" />
+<f:asset.css identifier="title-h1" href="{publicFolder}/css/title-h1.min.css" />
+
+<div class="resume">
+  <div class="container">
+    <div class="grid grid--col2575 grid--center">
+      <div class="col">
+        <f:if condition="{data.image}">
+          <f:image image="{data.image.0}" alt="{data.image.0.alternative}" width="300c" class="resume__image" fileExtension="webp" />
+        </f:if>
+      </div>
+      <div class="col">
+        <h1 class="title-h1"><f:format.raw>{data.header}</f:format.raw></h1>
+        <p class="resume__subtitle">{data.thbck_resume_subtitle}</p>
+      </div>
+    </div>
+  </div>
+</div>

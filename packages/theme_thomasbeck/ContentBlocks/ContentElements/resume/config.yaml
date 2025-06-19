@@ -1,0 +1,16 @@
+name: thbck/resume
+typeName: thbck_resume
+group: thomasbeck
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+
+  - identifier: subtitle
+    type: Text
+  -
+    identifier: image
+    type: Image
+    useExistingField: true

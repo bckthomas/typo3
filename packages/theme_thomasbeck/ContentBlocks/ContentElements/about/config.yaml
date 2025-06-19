@@ -1,0 +1,35 @@
+name: thbck/about
+typeName: thbck_about
+group: thomasbeck
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+
+  -
+    identifier: bodytext
+    type: Textarea
+    useExistingField: true
+    enableRichtext: true
+
+  -
+    identifier: skill
+    type: Collection
+    labelField: title
+    fields:
+      - identifier: title
+        type: Text
+      - identifier: percent
+        type: Text
+
+  -
+    identifier: software
+    type: Collection
+    labelField: title
+    fields:
+      - identifier: title
+        type: Text
+      - identifier: Icone
+        type: File

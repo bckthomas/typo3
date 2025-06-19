@@ -1,0 +1,40 @@
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:asset.css identifier="references" href="{publicFolder}/css/references.min.css" />
+    <f:asset.css identifier="title-h2" href="{publicFolder}/css/title-h2.min.css" />
+    <f:asset.css identifier="title-h3" href="{publicFolder}/css/title-h3.min.css" />
+    <f:asset.css identifier="link" href="{publicFolder}/css/link.min.css" />
+
+    <f:if condition="{menu}">
+        <div class="container">
+            <ul class="references grid grid--col333333">
+                <f:for each="{menu}" as="page" iteration="fooIterator">
+                    <f:if condition="{fooIterator.cycle} < 4">
+                        <li class="col">
+                            <div class="stretched-link references__item">
+                                <f:if condition="{page.files}">
+                                    <f:image image="{page.files.0}" treatIdAsReference="1" class="references__image" width="355c" height="185c" ></f:image>
+                                </f:if>
+                                <div class="references__data">
+                                    <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} class=" references__link">
+                                        <span class="title-h3">{page.title}</span>
+                                    </a>
+                                    <f:if condition="{page.data.abstract}">
+                                        <p class="references__description">{page.data.abstract}</p>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </li>
+                    </f:if>
+                </f:for>
+            </ul>
+            <div class="text-center">
+                <f:link.page pageUid="84" class="link-btn" aria-label="Voir plus de réalisations">Voir plus</f:link.page>
+            </div>
+        </div>
+    </f:if>
+
+</f:section>
+</html>

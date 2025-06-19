@@ -1,0 +1,20 @@
+<f:asset.css identifier="expertises" href="{publicFolder}/css/expertises.min.css" />
+<f:asset.css identifier="title-h2" href="{publicFolder}/css/title-h2.min.css" />
+<f:asset.css identifier="title-h3" href="{publicFolder}/css/title-h3.min.css" />
+
+<div class="container component expertises">
+  <h2 class="title-h2">{data.header}</h2>
+  <div class="grid grid--col5050">
+    <f:for each="{data.thbck_expertises_expertise}" as="item" iteration="iterator">
+      <div class="col">
+        <f:if condition="{item.Icone}">
+          <f:image image="{item.Icone.0}" alt="{item.Icone.0.alternative}" class="expertises__icon"/>
+        </f:if>
+        <h3 class="title-h3">{item.title}</h3>
+        <f:if condition="{item.bodytext}">
+          <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{item.bodytext}</f:format.html>
+        </f:if>
+      </div>
+    </f:for>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<header role="banner">
+	<f:render partial="Header" arguments="{_all}" />
+</header>
+
+<f:if condition="{homePageUid} != {data.uid}">
+	<div class="page">
+</f:if>
+
+<main id="mainContent" role="main">
+	<article>
+		<f:render section="Main" />
+	</article>
+</main>
+<f:if condition="{homePageUid} != {data.uid}">
+	</div>
+</f:if>
+
+<footer role="contentinfo">
+	<div class="container footer">
+		<f:render partial="Footer" arguments="{_all}" />
+	</div>
+</footer>

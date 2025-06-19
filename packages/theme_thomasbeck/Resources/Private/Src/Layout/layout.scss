@@ -1,0 +1,96 @@
+@use "../Base/mixins" as *;
+@use "../Base/functions" as *;
+@use "../Base/helpers" as *;
+@forward "container";
+@forward "typo3";
+@forward "header";
+@forward "footer";
+@include font-face(DM, "../assets/fonts/dm-sans-v16-latin-regular", 400, normal);
+@include font-face(Roboto, "../assets/fonts/roboto-condensed-v30-latin-regular", 400, normal);
+
+:root {
+  @include generate-vars;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+  line-height: 1.4;
+  color: var(--color-dark);
+  background-color: #FFFBF9;
+}
+
+.component {
+  margin-top: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+
+  .col {
+    grid-column: span 12;
+  }
+
+  &--center {
+    align-items: center;
+  }
+
+  &--col333333 {
+    @include media-breakpoint-up(md) {
+        .col {
+            grid-column: span 4;
+        }
+    }
+  }
+
+  &--col4 {
+    @include media-breakpoint-up(md) {
+        .col {
+            grid-column: span 6;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .col {
+            grid-column: span 3;
+        }
+    }
+  }
+
+  &--col7525 {
+    @include media-breakpoint-up(md) {
+        .col {
+            grid-column: span 4;
+        }
+        > .col:first-child {
+            grid-column: span 8;
+
+        }
+    }
+  }
+
+  &--col2575 {
+    @include media-breakpoint-up(md) {
+        .col {
+            grid-column: span 8;
+        }
+        > .col:first-child {
+            grid-column: span 4;
+
+        }
+    }
+  }
+
+  &--col5050 {
+    @include media-breakpoint-up(md) {
+        .col {
+            grid-column: span 6;
+        }
+    }
+  }
+}

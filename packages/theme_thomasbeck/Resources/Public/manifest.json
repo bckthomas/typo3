@@ -1,0 +1,68 @@
+{
+  "Base/normalize.scss": {
+    "file": "css/normalize.min.css",
+    "src": "Base/normalize.scss",
+    "isEntry": true
+  },
+  "Components/about.js": {
+    "file": "js/about.min.js",
+    "name": "about.js",
+    "src": "Components/about.js",
+    "isEntry": true
+  },
+  "Components/about.scss": {
+    "file": "css/about.min.css",
+    "src": "Components/about.scss",
+    "isEntry": true
+  },
+  "Components/expertises.scss": {
+    "file": "css/expertises.min.css",
+    "src": "Components/expertises.scss",
+    "isEntry": true
+  },
+  "Components/link.scss": {
+    "file": "css/link.min.css",
+    "src": "Components/link.scss",
+    "isEntry": true
+  },
+  "Components/references.scss": {
+    "file": "css/references.min.css",
+    "src": "Components/references.scss",
+    "isEntry": true
+  },
+  "Components/resume.scss": {
+    "file": "css/resume.min.css",
+    "src": "Components/resume.scss",
+    "isEntry": true
+  },
+  "Components/title-h1.scss": {
+    "file": "css/title-h1.min.css",
+    "src": "Components/title-h1.scss",
+    "isEntry": true
+  },
+  "Components/title-h2.scss": {
+    "file": "css/title-h2.min.css",
+    "src": "Components/title-h2.scss",
+    "isEntry": true
+  },
+  "Components/title-h3.scss": {
+    "file": "css/title-h3.min.css",
+    "src": "Components/title-h3.scss",
+    "isEntry": true
+  },
+  "Layout/header.js": {
+    "file": "js/header.min.js",
+    "name": "header.js",
+    "src": "Layout/header.js",
+    "isEntry": true
+  },
+  "Layout/layout.scss": {
+    "file": "css/layout.min.css",
+    "src": "Layout/layout.scss",
+    "isEntry": true
+  },
+  "spritemap.svg": {
+    "file": "assets/icons/sprite.svg",
+    "src": "spritemap.svg"
+  }
+}

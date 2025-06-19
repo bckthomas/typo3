@@ -1,0 +1,45 @@
+// SPACES
+.frame-space {
+  &-before {
+    &-extra-small {
+      margin-top: .5rem;
+    }
+    &-small {
+      margin-top: 1rem;
+    }
+    &-medium {
+      margin-top: 1.5rem;
+    }
+    &-large {
+      margin-top: 2rem;
+    }
+    &-extra-large {
+      margin-top: 2.5rem;
+    }
+  }
+  &-after {
+    &-extra-small {
+      margin-bottom: .5rem;
+    }
+    &-small {
+      margin-bottom: 1rem;
+    }
+    &-medium {
+      margin-bottom: 1.5rem;
+    }
+    &-large {
+      margin-bottom: 2rem;
+    }
+    &-extra-large {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+// CKEDITOR
+.text-end {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}

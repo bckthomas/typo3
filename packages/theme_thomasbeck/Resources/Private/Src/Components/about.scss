@@ -1,0 +1,56 @@
+.about {
+  padding: 1.5rem 0;
+
+  &__skill {
+    margin-bottom: 1.5rem;
+    &__data {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__percent {
+      color: var(--color-primary);
+    }
+    &__name {
+      font-weight: 700;
+      margin-bottom: 0.625rem;
+    }
+    &__progress {
+      height: 0.25rem;
+      border-radius: 0;
+      background: #FFE7DE;
+      border-radius: 0.25rem;
+      position: relative;
+      &__percent {
+        display: block;
+        height: 0.25rem;
+        width: var(--dynamic-width);
+        background-color: var(--color-primary);
+      }
+    }
+  }
+  &__software {
+    display: flex;
+    &__item {
+      background-color: var(--color-white);
+      text-align: center;
+      box-shadow: var(--shadow-light);
+      margin: 0 1.5rem;
+      padding: 1rem;
+      border-radius: 1.5rem;
+      min-width: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    &__name {
+      display: block;
+      margin-top: auto;
+      font-weight: 700;
+    }
+    &__icon {
+      max-height: 3.75rem;
+    }
+  }
+}

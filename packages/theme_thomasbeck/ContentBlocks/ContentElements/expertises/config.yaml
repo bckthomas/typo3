@@ -1,0 +1,23 @@
+name: thbck/expertises
+typeName: thbck_expertises
+group: thomasbeck
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: expertise
+    type: Collection
+    labelField: title
+    fields:
+      - identifier: title
+        type: Text
+      - identifier: Icone
+        type: File
+        maxitems: 1
+      - identifier: bodytext
+        type: Textarea
+        useExistingField: true
+        enableRichtext: true

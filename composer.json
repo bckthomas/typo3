@@ -15,7 +15,7 @@
 	},
 	"require": {
 		"b13/container": "dev-master",
-		"brotkrueml/typo3-matomo-widgets": "^3",
+		"brotkrueml/typo3-matomo-widgets": "3.1.2",
 		"causal/image_autoresize": "^2.4",
 		"friendsoftypo3/content-blocks": "^1.1",
 		"georgringer/news": "^12.2",
@@ -24,6 +24,7 @@
 		"thbck/theme-package": "@dev",
 		"thbck/theme-pimp": "@dev",
 		"thbck/theme-slcreation": "@dev",
+		"thbck/theme-thomasbeck": "@dev",
 		"typo3/cms-backend": "^13.3",
 		"typo3/cms-belog": "^13.3",
 		"typo3/cms-beuser": "^13.3",

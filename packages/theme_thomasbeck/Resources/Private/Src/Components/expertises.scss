@@ -1,0 +1,30 @@
+@use "../Base/mixins" as *;
+
+.expertises {
+  &__icon {
+    width: 3rem;
+  }
+
+  .grid {
+    gap: 0;
+  }
+  .col {
+    padding: 1.5rem;
+    border-bottom: 1px solid #EFEFEF;
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      margin: 0;
+      border-bottom: 0;
+      &:first-child {
+        border-right: 1px solid #EFEFEF;
+        border-bottom: 1px solid #EFEFEF;
+      }
+      &:last-child {
+        border-top: 1px solid #EFEFEF;
+        border-left: 1px solid #EFEFEF;
+      }
+    }
+
+  }
+}

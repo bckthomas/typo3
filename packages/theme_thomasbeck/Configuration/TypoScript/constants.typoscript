@@ -1,0 +1,26 @@
+theme {
+	privateFolder = EXT:theme_thomasbeck/Resources/Private
+	publicFolder = EXT:theme_thomasbeck/Resources/Public
+	extFolder = EXT:theme_thomasbeck/Resources/Extensions
+	// containerFolder = EXT:theme_thomasbeck/Resources/Container
+	// packagePublicFolder =  EXT:theme_package/Resources/Public
+	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
+	homePageUid = 83
+	# cat=Mise en page; type=int+; label= Niveau du menu
+	mainNavigation.levels = 2
+	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
+	sender.email = noreply@site.fr
+	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
+	footerMenuPid = 11
+	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
+	infoFooter =
+	# cat=Configuration du site; type=int+; label= Id Matomo
+	matomoSiteId = 1
+}
+
+#Meta
+page.meta {
+	description = Une piscine pour cet été, une terrasse confortable ou une allée propre et pratique ? Laissez vos envies devenir réalité avec un professionnel expérimenté !
+	author = Thomas Beck
+	keywords = piscine, dallage, pavage, spa, maçonnerie, escalier, clôture, portail, terrasse, Villefranche sur Saône, Beaujolais
+}

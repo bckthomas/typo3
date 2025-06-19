@@ -1,0 +1,5 @@
+@use "../Base/mixins" as *;
+
+header {
+  background-color: var(--color-primary);
+}

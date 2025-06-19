@@ -1,0 +1,21 @@
+.references {
+  list-style: none;
+  padding: 0;
+  &__item {
+    box-shadow: var(--shadow-light);
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    background-color: var(--color-white);
+  }
+  &__data {
+    padding: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__description {
+    margin-bottom: 0;
+  }
+}
