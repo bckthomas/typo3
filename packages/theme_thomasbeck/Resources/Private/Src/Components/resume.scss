@@ -1,21 +1,23 @@
 .resume {
-  background-color: var(--color-primary);
+  display: flex;
+  height: 100vh;
   padding: 4rem 0;
+  background: url("../assets/images/background.webp");
+  background-size: cover;
+
+  &__title {
+    font-size: 4.375rem;
+  }
 
   &__image {
-    border-radius: 100%;
     border: 1px solid white;
+    border-radius: 100%;
     outline: 3px solid white;
-    outline-offset: .5rem;
+    outline-offset: 0.5rem;
   }
 
   &__subtitle {
-    font-size: 2rem;
     margin: 0;
-  }
-
-  &__contact {
-    margin-top: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }

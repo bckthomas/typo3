@@ -3,10 +3,11 @@
 </header>
 
 <f:if condition="{homePageUid} != {data.uid}">
+	<f:asset.css identifier="title-h1" href="{publicFolder}/css/title-h1.min.css" />
 	<div class="page">
 </f:if>
 
-<main id="mainContent" role="main">
+<main id="mainContent" role="main" tabindex="-1">
 	<article>
 		<f:render section="Main" />
 	</article>
@@ -15,8 +16,8 @@
 	</div>
 </f:if>
 
-<footer role="contentinfo">
-	<div class="container footer">
+<footer role="contentinfo" class="footer">
+	<div class="container">
 		<f:render partial="Footer" arguments="{_all}" />
 	</div>
 </footer>

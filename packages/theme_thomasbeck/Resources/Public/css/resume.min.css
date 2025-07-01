@@ -1,1 +1,1 @@
-.resume{background-color:var(--color-primary);padding:4rem 0}.resume__image{border:1px solid #fff;border-radius:100%;outline:3px solid #fff;outline-offset:.5rem}.resume__subtitle{font-size:2rem;margin:0}.resume__contact{font-size:1.5rem;margin-top:auto}
+.resume{display:flex;height:100vh;padding:4rem 0;background:url(../assets/images/background.webp);background-size:cover}.resume__title{font-size:4.375rem}.resume__image{border:1px solid white;border-radius:100%;outline:3px solid white;outline-offset:.5rem}.resume__subtitle{margin:0;font-size:2rem}

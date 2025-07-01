@@ -3,21 +3,32 @@
 .footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center;
-  @include media-breakpoint-up(md) {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+
+  &__content {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
     display: flex;
     align-items: center;
     gap: 1rem;
-    &__icon {
-      height: 4rem;
-      width: 8rem;
+
+    &__link {
+      display: flex;
     }
+
+    &__icon {
+      width: 8rem;
+      height: 2rem;
+      fill: var(--color-white);
+    }
+
     &__text {
       font-size: 0.8rem;
     }
@@ -31,17 +42,16 @@
   }
 
   &__nav {
-
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
     list-style: none;
     gap: 1rem;
-    padding: 0;
-    @include media-breakpoint-up(md) {
-    }
 
     &__link {
       transition: var(--transition);
+
       &:hover,
       &:focus,
       &--active {

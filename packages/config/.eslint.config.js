@@ -1,36 +1,29 @@
-import globals from "globals";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
-import stylistic from "@stylistic/eslint-plugin";
+import globals from 'globals';
+import stylistic from '@stylistic/eslint-plugin';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-});
-
-export default [...compat.extends('eslint:recommended', 'plugin:@stylistic/recommended-extends'), {
+export default [
+  {
     languageOptions: {
-        globals: {
-            ...globals.browser,
-        },
-
-        ecmaVersion: 2015,
-        sourceType: 'module',
+      ecmaVersion: 2018,
+      sourceType: 'module',
+      globals: {
+        ...globals.browser,
+      },
     },
 
     plugins: {
-      '@stylistic': stylistic
+      '@stylistic': stylistic,
     },
 
     rules: {
+      // Style rules
       '@stylistic/indent': ['error', 2],
-      "@stylistic/quotes": ['error', 'single', { avoidEscape: true } ],
+      '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
       '@stylistic/semi': ['error', 'always'],
+
+      // Logic rules
       'no-undef': 'off',
+      'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     },
-}];
+  },
+];

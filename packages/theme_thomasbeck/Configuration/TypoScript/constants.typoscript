@@ -5,9 +5,9 @@ theme {
 	// containerFolder = EXT:theme_thomasbeck/Resources/Container
 	// packagePublicFolder =  EXT:theme_package/Resources/Public
 	# cat=Mise en page; type=int+; label= Uid de la page d'accueil
-	homePageUid = 83
+	homePageUid = 85
 	# cat=Mise en page; type=int+; label= Niveau du menu
-	mainNavigation.levels = 2
+	mainNavigation.levels = 1
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@site.fr
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
@@ -15,7 +15,7 @@ theme {
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
 	infoFooter =
 	# cat=Configuration du site; type=int+; label= Id Matomo
-	matomoSiteId = 1
+	matomoSiteId = 9
 }
 
 #Meta

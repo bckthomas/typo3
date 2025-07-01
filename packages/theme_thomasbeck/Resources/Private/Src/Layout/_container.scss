@@ -3,15 +3,15 @@
 @use "../Theme/container" as *;
 
 @each $breakpoint, $container-max-width in $container-max-widths {
-    @include media-breakpoint-up($breakpoint) {
-        .container {
-            max-width: $container-max-width;
-        }
+  @include media-breakpoint-up($breakpoint) {
+    .container {
+      max-width: $container-max-width;
     }
+  }
 }
 
 .container {
-    margin: auto;
-    padding-right: var(--gutter);
-    padding-left: var(--gutter);
+  margin: auto;
+  padding-right: var(--gutter);
+  padding-left: var(--gutter);
 }

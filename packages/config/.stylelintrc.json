@@ -1,5 +1,5 @@
 {
-  "extends": [
+  "extends" : [
     "stylelint-config-standard-scss",
     "stylelint-config-property-sort-order-smacss"
   ],
@@ -24,18 +24,8 @@
     "no-unknown-animations": null,
     "shorthand-property-no-redundant-values": true,
     "unit-allowed-list": [
-      "deg",
-      "em",
-      "ex",
-      "ms",
-      "rem",
-      "%",
-      "s",
-      "px",
-      "vw",
-      "vh",
-      "fr"
+      "deg", "em", "ex", "ms", "rem", "%", "s", "px", "vw", "vh", "fr", "ch"
     ],
-    "prettier/prettier": [true, {"doubleQuote": true}]
+    "prettier/prettier": [true, {"doubleQuote": true, "tabWidth": 2}]
   }
 }

@@ -9,13 +9,7 @@
 				<f:cObject typoscriptObjectPath="lib.pageTitle" />
 			</div>
 		</f:if>
-		<f:if condition="{data.layout} == '30'">
-			<div class="page">
-		</f:if>
 		<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{col0}" />
-		<f:if condition="{data.layout} == '30'">
-			</div>
-		</f:if>
 		<!--TYPO3SEARCH_end-->
 	</f:alias>
 </f:section>

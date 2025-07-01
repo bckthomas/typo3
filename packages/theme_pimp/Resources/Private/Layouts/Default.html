@@ -7,7 +7,7 @@
 	<f:render partial="Header" arguments="{_all}" />
 </header>
 
-<main id="mainContent" class="flex-shrink-0 {f:if(condition: '{homePageUid} != {data.uid}', then: 'main--margin')}" role="main">
+<main id="mainContent" class="flex-shrink-0 {f:if(condition: '{homePageUid} != {data.uid}', then: 'main--margin')}" role="main" tabindex="-1">
 	<article>
 		<f:render section="Main" />
 	</article>

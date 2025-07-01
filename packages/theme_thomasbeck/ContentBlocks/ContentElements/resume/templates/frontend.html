@@ -1,7 +1,7 @@
-<f:asset.css identifier="resume" href="{publicFolder}/css/resume.min.css" />
 <f:asset.css identifier="title-h1" href="{publicFolder}/css/title-h1.min.css" />
+<f:asset.css identifier="resume" href="{publicFolder}/css/resume.min.css" />
 
-<div class="resume">
+<div class="resume js-resume">
   <div class="container">
     <div class="grid grid--col2575 grid--center">
       <div class="col">
@@ -10,8 +10,8 @@
         </f:if>
       </div>
       <div class="col">
-        <h1 class="title-h1"><f:format.raw>{data.header}</f:format.raw></h1>
-        <p class="resume__subtitle">{data.thbck_resume_subtitle}</p>
+        <h2 class="title-h1 resume__title"><f:format.raw>{data.header}</f:format.raw></h2>
+        <p class="resume__subtitle"><f:format.raw>{data.thbck_resume_subtitle}</f:format.raw></p>
       </div>
     </div>
   </div>

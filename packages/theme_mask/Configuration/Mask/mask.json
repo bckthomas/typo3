@@ -3,35 +3,6 @@
     "tables": {
         "tt_content": {
             "elements": {
-                "images_arrondies": {
-                    "color": "#000000",
-                    "colorOverlay": "#000000",
-                    "columns": [
-                        "tx_mask_title",
-                        "bodytext",
-                        "image",
-                        "tx_mask_link"
-                    ],
-                    "description": "",
-                    "descriptions": [
-                        "",
-                        "",
-                        "",
-                        ""
-                    ],
-                    "icon": "",
-                    "iconOverlay": "",
-                    "key": "images_arrondies",
-                    "label": "Images arrondies",
-                    "labels": [
-                        "Titre",
-                        "",
-                        "",
-                        "Lien"
-                    ],
-                    "shortLabel": "",
-                    "sorting": 0
-                },
                 "pimp_full_screen_image": {
                     "color": "#000000",
                     "colorOverlay": "#000000",

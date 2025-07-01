@@ -1,28 +1,29 @@
 $variables: (
+  // Font family
+  font-family-primary: ("DM", sans-serif),
+  font-family-title: ("Roboto", sans-serif),
+  // Font weights
+  font-weight-thin: 200,
+  font-weight-light: 300,
+  font-weight-normal: 400,
+  font-weight-medium: 500,
+  font-weight-semibold: 600,
+  font-weight-bold: 700,
+  font-weight-extra-bold: 800,
+  font-weight-black: 900,
 
-    // Font family
-    font-family-primary: ("DM", sans-serif),
-    font-family-title: ("Roboto", sans-serif),
+  // Container
+  gutter: 0.75rem,
+  menu-height: 5rem,
 
-    // Font weights
-    font-weight-thin: 200,
-    font-weight-light: 300,
-    font-weight-normal: 400,
-    font-weight-medium: 500,
-    font-weight-semibold: 600,
-    font-weight-bold: 700,
-    font-weight-extra-bold: 800,
-    font-weight-black: 900,
+  // Colors
+  color-primary: #ff8c5c,
+  color-dark: #493a3a,
+  color-white: #fff,
+  color-light: #fffbf9,
+  color-a11y: #bf5436,
 
-    // Container
-    gutter: 0.75rem,
-
-    // Colors
-    color-primary: #FF8C5C,
-    color-dark: #493A3A,
-    color-white: #fff,
-
-    shadow: 0.5rem 0.5rem 0.625rem 0 rgba(0,0,0,0.1),
-    shadow-light: 0 0.625rem 1.25rem 0 rgba(221, 221, 221, 0.3),
-    transition: all .5s ease-in-out,
+  shadow: 0.5rem 0.5rem 0.625rem 0 rgba(0, 0, 0, 0.1),
+  shadow-light: 0 0.625rem 1.25rem 0 rgba(221, 221, 221, 0.3),
+  transition: all 0.5s ease-in-out
 );

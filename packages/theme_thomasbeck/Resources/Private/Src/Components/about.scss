@@ -3,52 +3,60 @@
 
   &__skill {
     margin-bottom: 1.5rem;
+
     &__data {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
+
     &__percent {
-      color: var(--color-primary);
+      color: var(--color-a11y);
     }
+
     &__name {
-      font-weight: 700;
       margin-bottom: 0.625rem;
+      font-weight: 700;
     }
+
     &__progress {
-      height: 0.25rem;
-      border-radius: 0;
-      background: #FFE7DE;
-      border-radius: 0.25rem;
       position: relative;
+      height: 0.25rem;
+      border-radius: 0.25rem;
+      background: #ffe7de;
+
       &__percent {
         display: block;
-        height: 0.25rem;
         width: var(--dynamic-width);
+        height: 0.25rem;
         background-color: var(--color-primary);
       }
     }
   }
+
   &__software {
     display: flex;
+    gap: 1.5rem;
+
     &__item {
-      background-color: var(--color-white);
-      text-align: center;
-      box-shadow: var(--shadow-light);
-      margin: 0 1.5rem;
-      padding: 1rem;
-      border-radius: 1.5rem;
-      min-width: 8rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-width: 8rem;
+      padding: 1rem;
+      border-radius: 1.5rem;
+      background-color: var(--color-white);
+      box-shadow: var(--shadow-light);
+      text-align: center;
       gap: 1rem;
     }
+
     &__name {
       display: block;
       margin-top: auto;
       font-weight: 700;
     }
+
     &__icon {
       max-height: 3.75rem;
     }

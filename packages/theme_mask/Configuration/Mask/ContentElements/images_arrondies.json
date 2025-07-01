@@ -3,61 +3,6 @@
     "restructuringDone": false,
     "tables": {
         "tt_content": {
-            "elements": {
-                "images_arrondies": {
-                    "color": "#000000",
-                    "colorOverlay": "#000000",
-                    "columns": [
-                        "tx_mask_title",
-                        "tx_mask_text",
-                        "image",
-                        "tx_mask_link"
-                    ],
-                    "columnsOverride": {
-                        "image": {
-                            "config": {
-                                "appearance": {
-                                    "elementBrowserEnabled": 1,
-                                    "enabledControls": {
-                                        "delete": 1,
-                                        "dragdrop": 1,
-                                        "hide": 1,
-                                        "info": 1,
-                                        "localize": 1,
-                                        "sort": 0
-                                    },
-                                    "fileUploadAllowed": 1,
-                                    "useSortable": 1
-                                },
-                                "minitems": ""
-                            },
-                            "fullKey": "image",
-                            "imageoverlayPalette": 1,
-                            "key": "image",
-                            "type": "file"
-                        }
-                    },
-                    "description": "",
-                    "descriptions": [
-                        "",
-                        "",
-                        "",
-                        ""
-                    ],
-                    "icon": "",
-                    "iconOverlay": "",
-                    "key": "images_arrondies",
-                    "label": "SL Cr\u00e9ations - Images arrondies",
-                    "labels": [
-                        "",
-                        "",
-                        "",
-                        "Lien"
-                    ],
-                    "shortLabel": "",
-                    "sorting": 0
-                }
-            },
             "sql": {
                 "tx_mask_link": {
                     "tt_content": {
