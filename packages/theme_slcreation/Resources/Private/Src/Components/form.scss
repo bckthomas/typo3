@@ -1,30 +1,34 @@
 .form {
   &__element {
     margin: 1.5rem 0 1rem;
+
     .col .grid & {
       margin: 0;
     }
   }
+
   &__label {
     display: block;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   &__submit {
-    background-color: var(--color-calypso);
-    border: 0;
-    padding: .75rem 1rem;
-    color: var(--color-white);
+    padding: 0.75rem 1rem;
     transition: var(--transition);
+    border: 0;
+    background-color: var(--color-calypso);
+    color: var(--color-white);
+
     &:hover {
       box-shadow: var(--shadow);
     }
   }
+
   &-control {
-    border-radius: 0.625rem;
+    width: 100%;
     padding: 1rem 1.5rem;
     border: 0.0625rem solid var(--color-calypso);
-    width: 100%;
+    border-radius: 0.625rem;
   }
 }
 

@@ -3,6 +3,8 @@ typeName: tbhck_blueblock
 group: slcreation
 prefixFields: true
 prefixType: full
+basics:
+    - TYPO3/Appearance
 fields:
   -
     identifier: header
@@ -15,3 +17,16 @@ fields:
     identifier: image
     type: Image
     useExistingField: true
+
+  - identifier: Couleur
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Piscine'
+        value: blue
+      - label: 'Etanchéité'
+        value: red
+      - label: 'Equipement'
+        value: gray
+      - label: 'Aménagement'
+        value: brown

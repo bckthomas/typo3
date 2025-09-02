@@ -12,12 +12,12 @@
 }
 
 body {
-  font-family: var(--font-family-primary);
   display: grid;
-  height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--color-desert);
+  height: 100vh;
   overflow-x: hidden;
+  background-color: var(--color-desert);
+  font-family: var(--font-family-primary);
   line-height: 1.5;
 }
 
@@ -26,9 +26,9 @@ body {
 }
 
 .subtitle {
+  max-width: 75%;
   font-size: 1.5rem;
   font-weight: 700;
-  max-width: 75%;
 }
 
 .component {
@@ -38,34 +38,43 @@ body {
 .frame-space {
   &-before {
     &-extra-small {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
     }
+
     &-small {
       margin-top: 1rem;
     }
+
     &-medium {
       margin-top: 1.5rem;
     }
+
     &-large {
       margin-top: 2rem;
     }
+
     &-extra-large {
       margin-top: 2.5rem;
     }
   }
+
   &-after {
     &-extra-small {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
+
     &-small {
       margin-bottom: 1rem;
     }
+
     &-medium {
       margin-bottom: 1.5rem;
     }
+
     &-large {
       margin-bottom: 2rem;
     }
+
     &-extra-large {
       margin-bottom: 2.5rem;
     }

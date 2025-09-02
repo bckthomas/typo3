@@ -8,6 +8,10 @@ fields:
     identifier: header
     useExistingField: true
   -
+    identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  -
     identifier: thumbs
     type: Collection
     labelField: title

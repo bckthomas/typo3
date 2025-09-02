@@ -1,11 +1,11 @@
 .block-blue {
+  padding: 3rem 2rem;
   background-color: var(--color-calypso);
   color: var(--color-white);
-  padding: 3rem 2rem;
 
   &__title {
-    text-align: center;
     margin-top: 0;
+    text-align: center;
   }
 
   &__images {
@@ -15,8 +15,8 @@
     margin-top: 2rem;
 
     &__item {
-      border-radius: 2rem;
       overflow: hidden;
+      border-radius: 2rem;
     }
   }
 }

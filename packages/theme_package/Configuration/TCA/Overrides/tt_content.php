@@ -123,35 +123,6 @@ $GLOBALS['TCA']['tt_content']['types']['container-6633']['showitem'] = $GLOBALS[
 // Add some fields to tt_content table to show TCA fields definitions
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content',
    [
-      'image_shadow' => [
-         'exclude' => 0,
-         'label' => 'LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.image_shadow',
-         'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'default' => '0',
-            'items' => [
-               [
-                  0 => '',
-                  1 => ''
-               ]
-            ],
-         ],
-      ],
-      'image_rounded' => [
-         'exclude' => 0,
-         'label' => 'LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.image_rounded',
-         'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'items' => [
-               [
-                  0 => '',
-                  1 => ''
-               ]
-            ],
-         ],
-      ],
       'tx_content_animation' => [
          'exclude' => true,
          'label' => 'LLL:EXT:theme_slcreation/Resources/Private/Language/locallang.xlf:tt_content.animations',
@@ -171,12 +142,6 @@ $GLOBALS['TCA']['tt_content']['types']['container-6633']['showitem'] = $GLOBALS[
          ],
      ],
    ],
-);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-   'tt_content',
-   'image_shadow, image_rounded',
-   '',
-   'after:image_zoom'
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
   'tt_content',

@@ -6,8 +6,19 @@
   &__title {
     margin-top: 0;
   }
+
+  &__subtitle {
+    display: block;
+    margin: -2rem 0 1rem;
+    font-family: var(--font-family-title);
+    font-style: italic;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+  }
+
   &__texts {
     margin: -6.5rem 0 1.5rem;
+
     @include media-breakpoint-up(md) {
       position: absolute;
       max-width: 60%;
@@ -16,8 +27,9 @@
 
   &__img {
     max-height: 20rem;
-    overflow: hidden;
     margin-bottom: 1.5rem;
+    overflow: hidden;
+
     img {
       width: 100%;
     }

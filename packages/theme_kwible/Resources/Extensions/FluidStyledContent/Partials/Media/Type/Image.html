@@ -8,18 +8,18 @@
     <f:if condition="{file.link}">
         <f:then>
             <f:link.typolink parameter="{file.link}" title="{file.title}">
-                <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings, shadow: data.image_shadow, rounded: data.image_rounded}" />
+                <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
             </f:link.typolink>
         </f:then>
         <f:else>
             <f:if condition="{data.image_zoom}">
                 <f:then>
                     <a data-fancybox="gallery" href="{file.publicUrl}">
-                        <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings, shadow: data.image_shadow, rounded: data.image_rounded}" />
+                        <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
                     </a>
                 </f:then>
                 <f:else>
-                    <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings, shadow: data.image_shadow, rounded: data.image_rounded}" />
+                    <f:render partial="Media/Rendering/Image" arguments="{file: file, dimensions: dimensions, settings: settings}" />
                 </f:else>
             </f:if>
         </f:else>

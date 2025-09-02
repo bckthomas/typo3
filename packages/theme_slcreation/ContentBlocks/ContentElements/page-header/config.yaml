@@ -8,6 +8,9 @@ fields:
     identifier: header
     useExistingField: true
   -
+    identifier: Subheader
+    type: Text
+  -
     identifier: bodytext
     useExistingField: true
     enableRichtext: true

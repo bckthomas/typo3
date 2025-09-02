@@ -3,17 +3,17 @@
 @use "../Theme/container" as *;
 
 @each $breakpoint, $container-max-width in $container-max-widths {
-    @include media-breakpoint-up($breakpoint) {
-        .container {
-            max-width: $container-max-width;
-        }
+  @include media-breakpoint-up($breakpoint) {
+    .container {
+      max-width: $container-max-width;
     }
+  }
 }
 
 .container {
-    margin: auto;
-    padding-right: var(--gutter);
-    padding-left: var(--gutter);
+  margin: auto;
+  padding-right: var(--gutter);
+  padding-left: var(--gutter);
 }
 
 .grid {
@@ -27,35 +27,35 @@
 
   &--col4 {
     @include media-breakpoint-up(md) {
-        .col {
-            grid-column: span 6;
-        }
+      .col {
+        grid-column: span 6;
+      }
     }
 
     @include media-breakpoint-up(lg) {
-        .col {
-            grid-column: span 3;
-        }
+      .col {
+        grid-column: span 3;
+      }
     }
   }
 
   &--col7525 {
     @include media-breakpoint-up(md) {
-        .col {
-            grid-column: span 4;
-        }
-        > .col:first-child {
-            grid-column: span 8;
+      .col {
+        grid-column: span 4;
+      }
 
-        }
+      > .col:first-child {
+        grid-column: span 8;
+      }
     }
   }
 
   &--col5050 {
     @include media-breakpoint-up(md) {
-        .col {
-            grid-column: span 6;
-        }
+      .col {
+        grid-column: span 6;
+      }
     }
   }
 }

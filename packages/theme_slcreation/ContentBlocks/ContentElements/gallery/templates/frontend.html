@@ -8,6 +8,11 @@
   <f:if condition="{data.header}">
     <h2 class="title2 js-animation-scroll animation-scroll slide-in-left">{data.header}</h2>
   </f:if>
+  <f:if condition="{data.bodytext}">
+    <div class="js-animation-scroll animation-scroll slide-in-left">
+      {data.bodytext -> f:format.html()}
+    </div>
+  </f:if>
   <f:if condition="{data.thumbs}">
     <div class="gallery">
       <f:for each="{data.thumbs.0.image}" as="image">

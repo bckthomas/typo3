@@ -61,6 +61,19 @@ page {
       }
     }
   }
+  headerData {
+    888 = TEXT
+    888 {
+      value (
+        <link rel="icon" type="image/png" href="{$theme.publicFolder}/assets/images/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="{$theme.publicFolder}/assets/images/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{$theme.publicFolder}/assets/images/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Thomas Beck" />
+        <link rel="manifest" href="{$theme.publicFolder}/assets/images/site.webmanifest" />
+      )
+      insertData = 1
+    }
+  }
   meta {
     description = {$page.meta.description}
     description.override.field = abstract

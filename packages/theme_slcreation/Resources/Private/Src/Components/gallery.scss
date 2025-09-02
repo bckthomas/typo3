@@ -7,9 +7,11 @@
 
   &__item {
     grid-column: span 6;
+
     @include media-breakpoint-up(md) {
       grid-column: span 4;
     }
+
     @include media-breakpoint-up(lg) {
       grid-column: span 2;
     }

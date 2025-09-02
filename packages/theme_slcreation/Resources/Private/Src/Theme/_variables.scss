@@ -1,28 +1,31 @@
 $variables: (
+  // Font family
+  font-family-primary: ("Roboto", sans-serif),
+  font-family-title: ("Suez", sans-serif),
+  // Font weights
+  font-weight-thin: 200,
+  font-weight-light: 300,
+  font-weight-normal: 400,
+  font-weight-medium: 500,
+  font-weight-semibold: 600,
+  font-weight-bold: 700,
+  font-weight-extra-bold: 800,
+  font-weight-black: 900,
 
-    // Font family
-    font-family-primary: ("Roboto", sans-serif),
-    font-family-title: ("Suez", sans-serif),
+  // Container
+  gutter: 0.75rem,
 
-    // Font weights
-    font-weight-thin: 200,
-    font-weight-light: 300,
-    font-weight-normal: 400,
-    font-weight-medium: 500,
-    font-weight-semibold: 600,
-    font-weight-bold: 700,
-    font-weight-extra-bold: 800,
-    font-weight-black: 900,
+  // Colors
+  color-viking: #66c6de,
+  color-white: #fff,
+  color-desert: #f6f4f0,
+  color-calypso: #347892,
 
-    // Container
-    gutter: 0.75rem,
+  color-piscine: #1ecae4,
+  color-etancheite: #ff3131,
+  color-equipement: #a6a6a6,
+  color-amenagement: #7a4900,
 
-    // Colors
-    color-viking: #66c6de,
-    color-white: #fff,
-    color-desert: #f6f4f0,
-    color-calypso: #347892,
-
-    shadow: 0.5rem 0.5rem 0.625rem 0 rgba(0,0,0,0.1),
-    transition: all .5s ease-in-out,
+  shadow: 0.5rem 0.5rem 0.625rem 0 rgba(0, 0, 0, 0.1),
+  transition: all 0.5s ease-in-out
 );

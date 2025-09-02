@@ -1,1 +1,1 @@
-.record{background-color:var(--color-white);border-radius:1.5rem;box-shadow:var(--shadow);padding:1.5rem}@media (min-width:992px){.record{padding:3rem}}.record--small{padding:1.5rem}.record__title{margin-top:0}.record p:last-child{margin-bottom:0}.col .record{height:100%}
+.record{padding:1.5rem;border-radius:1.5rem;background-color:var(--color-white);box-shadow:var(--shadow)}@media (min-width: 992px){.record{padding:3rem}}.record--small{padding:1.5rem}.record__title{margin-top:0}.record p:last-child{margin-bottom:0}.col .record{height:100%}

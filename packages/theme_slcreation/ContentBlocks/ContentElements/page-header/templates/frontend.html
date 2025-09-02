@@ -8,6 +8,9 @@
   <div class="container">
     <div class="page-header__texts record js-animation-scroll animation-scroll slide-in-left">
       <h1 class="title-h1 page-header__title">{data.header}</h1>
+      <f:if condition="{data.thbck_pageheader_subheader}">
+        <span class="page-header__subtitle">{data.thbck_pageheader_subheader}</span>
+      </f:if>
       <f:if condition="{data.bodytext}">
         {data.bodytext -> f:format.html()}
       </f:if>
