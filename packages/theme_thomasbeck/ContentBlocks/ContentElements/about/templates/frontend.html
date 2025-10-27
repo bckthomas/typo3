@@ -8,6 +8,16 @@
     <div class="grid grid--col5050">
       <div class="col">
         <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+        <div class="about__software">
+          <f:for each="{data.thbck_about_software}" as="software" iteration="i">
+            <div class="about__software__item">
+              <f:if condition="{software.Icone}">
+                <f:image image="{software.Icone.0}" alt="{software.Icone.0.alternative}" class="about__icon" width="30c" height="30c"/>
+              </f:if>
+              <span class="about__software__name">{software.title}</span>
+            </div>
+          </f:for>
+        </div>
       </div>
       <div class="col">
         <f:for each="{data.thbck_about_skill}" as="skill" iteration="i">
@@ -26,16 +36,6 @@
           </div>
         </f:for>
       </div>
-    </div>
-    <div class="about__software">
-      <f:for each="{data.thbck_about_software}" as="software" iteration="i">
-        <div class="about__software__item">
-          <f:if condition="{software.Icone}">
-            <f:image image="{software.Icone.0}" alt="{software.Icone.0.alternative}" class="about__icon" width="60c" height="60c"/>
-          </f:if>
-          <span class="about__software__name">{software.title}</span>
-        </div>
-      </f:for>
     </div>
   </div>
 </div>

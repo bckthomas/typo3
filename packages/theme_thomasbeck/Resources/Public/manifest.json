@@ -61,6 +61,12 @@
     "src": "Layout/layout.scss",
     "isEntry": true
   },
+  "Layout/navigation.js": {
+    "file": "js/navigation.min.js",
+    "name": "navigation.js",
+    "src": "Layout/navigation.js",
+    "isEntry": true
+  },
   "spritemap.svg": {
     "file": "assets/icons/sprite.svg",
     "src": "spritemap.svg"

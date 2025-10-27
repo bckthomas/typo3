@@ -1,12 +1,23 @@
+@use "../Base/mixins" as *;
+
 .resume {
   display: flex;
-  height: 100vh;
   padding: 4rem 0;
   background: url("../assets/images/background.webp");
   background-size: cover;
 
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+  }
+
   &__title {
-    font-size: 4.375rem;
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 4rem;
+    }
   }
 
   &__image {

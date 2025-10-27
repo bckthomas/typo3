@@ -31,6 +31,19 @@ body {
   color: var(--color-dark);
   font-family: var(--font-family-primary);
   line-height: 1.4;
+
+  [aria-hidden="true"] {
+    a[href],
+    area[href],
+    input:not([disabled]),
+    select:not([disabled]),
+    textarea:not([disabled]),
+    button:not([disabled]),
+    [tabindex]:not([disabled]),
+    [contenteditable="true"]:not([disabled]) {
+      visibility: hidden;
+    }
+  }
 }
 
 .page {
@@ -39,6 +52,7 @@ body {
 
 .component {
   margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -94,18 +108,6 @@ body {
     }
   }
 
-  &--col2575 {
-    @include media-breakpoint-up(md) {
-      .col {
-        grid-column: span 8;
-      }
-
-      > .col:first-child {
-        grid-column: span 4;
-      }
-    }
-  }
-
   &--col5050 {
     @include media-breakpoint-up(md) {
       > .col {
@@ -130,6 +132,23 @@ body {
 .frame-type-menu_section {
   position: sticky;
   top: 3.5rem;
+}
+
+/* summary */
+@property --n {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@keyframes slide {
+  from {
+    --n: 0;
+  }
+
+  to {
+    --n: 1;
+  }
 }
 
 .summary {
@@ -160,7 +179,6 @@ body {
 
 :visited,
 :active,
-:any-link,
 :any-link {
   color: currentcolor;
 }
