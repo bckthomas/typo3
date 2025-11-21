@@ -2,7 +2,11 @@
   "Base/normalize.scss": {
     "file": "css/normalize.min.css",
     "src": "Base/normalize.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "normalize.scss",
+    "names": [
+      "normalize.css"
+    ]
   },
   "Components/about.js": {
     "file": "js/about.min.js",
@@ -13,42 +17,74 @@
   "Components/about.scss": {
     "file": "css/about.min.css",
     "src": "Components/about.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "about.scss",
+    "names": [
+      "about.css"
+    ]
   },
   "Components/expertises.scss": {
     "file": "css/expertises.min.css",
     "src": "Components/expertises.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "expertises.scss",
+    "names": [
+      "expertises.css"
+    ]
   },
   "Components/link.scss": {
     "file": "css/link.min.css",
     "src": "Components/link.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "link.scss",
+    "names": [
+      "link.css"
+    ]
   },
   "Components/references.scss": {
     "file": "css/references.min.css",
     "src": "Components/references.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "references.scss",
+    "names": [
+      "references.css"
+    ]
   },
   "Components/resume.scss": {
     "file": "css/resume.min.css",
     "src": "Components/resume.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "resume.scss",
+    "names": [
+      "resume.css"
+    ]
   },
   "Components/title-h1.scss": {
     "file": "css/title-h1.min.css",
     "src": "Components/title-h1.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "title-h1.scss",
+    "names": [
+      "title-h1.css"
+    ]
   },
   "Components/title-h2.scss": {
     "file": "css/title-h2.min.css",
     "src": "Components/title-h2.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "title-h2.scss",
+    "names": [
+      "title-h2.css"
+    ]
   },
   "Components/title-h3.scss": {
     "file": "css/title-h3.min.css",
     "src": "Components/title-h3.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "title-h3.scss",
+    "names": [
+      "title-h3.css"
+    ]
   },
   "Layout/header.js": {
     "file": "js/header.min.js",
@@ -59,7 +95,11 @@
   "Layout/layout.scss": {
     "file": "css/layout.min.css",
     "src": "Layout/layout.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "layout.scss",
+    "names": [
+      "layout.css"
+    ]
   },
   "Layout/navigation.js": {
     "file": "js/navigation.min.js",
