@@ -11,7 +11,7 @@ theme {
 	# cat=Configuration du site; type=string; label= Adresse mail utilisée pour l'envoi
 	sender.email = noreply@site.fr
 	# cat=Configuration du site; type=int+; label= Id de la page où est stockée le menu footer
-	footerMenuPid = 97
+	footerMenuPid = 100
 	# cat=Configuration du site; type=int+; label= Id de la page où sont stockées les informations pour le footer
 	infoFooter =
 	# cat=Configuration du site; type=int+; label= Id Matomo

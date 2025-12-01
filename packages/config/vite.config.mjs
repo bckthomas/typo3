@@ -109,7 +109,7 @@ export default defineConfig({
         }
       ],
     }),
-    VitePluginSvgSpritemap(`${srcRoot}/Icons/**/*.svg`, {
+    VitePluginSvgSpritemap(`Icons/**/*.svg`, {
       output: {
         filename: 'icons/sprite.svg',
         use: false,

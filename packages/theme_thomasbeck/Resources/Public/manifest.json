@@ -32,6 +32,15 @@
       "expertises.css"
     ]
   },
+  "Components/form.scss": {
+    "file": "css/form.min.css",
+    "src": "Components/form.scss",
+    "isEntry": true,
+    "name": "form.scss",
+    "names": [
+      "form.css"
+    ]
+  },
   "Components/link.scss": {
     "file": "css/link.min.css",
     "src": "Components/link.scss",
@@ -40,6 +49,12 @@
     "names": [
       "link.css"
     ]
+  },
+  "Components/progress.js": {
+    "file": "js/progress.min.js",
+    "name": "progress.js",
+    "src": "Components/progress.js",
+    "isEntry": true
   },
   "Components/references.scss": {
     "file": "css/references.min.css",

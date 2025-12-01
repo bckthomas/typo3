@@ -1,6 +1,10 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
+  <f:comment>
+    <f:asset.script identifier="progress" src="{publicFolder}/js/progress.min.js" />
+  </f:comment>
+
 
   <f:if condition="{menu}">
     <f:for each="{menu}" as="page">
@@ -9,10 +13,13 @@
           <ul class="summary__list">
             <f:for each="{page.content}" as="element">
               <f:if condition="{element.data.header}">
-                <li class="summary__list__item">
+                <li class="summary__list__item js-summary-item" data-target="#c{element.data.uid}">
                   <a href="{page.link}#c{element.data.uid}" class="summary__list__item__link">
                     <span>{element.data.header}</span>
                   </a>
+                  <f:comment>
+                    <span class="scroll-progress js-scroll-progress" role="progressbar" aria-label="Progression de la section {element.data.header}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></span>
+                  </f:comment>
                 </li>
               </f:if>
             </f:for>

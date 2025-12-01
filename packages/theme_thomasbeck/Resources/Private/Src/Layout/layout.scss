@@ -5,6 +5,7 @@
 @forward "typo3";
 @forward "header";
 @forward "footer";
+@forward "../Components/form";
 @include font-face(
   DM,
   "../assets/fonts/dm-sans-v16-latin-regular",
@@ -117,7 +118,7 @@ body {
   }
 
   &--col2575 {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       > .col {
         grid-column: span 8;
 
@@ -161,6 +162,7 @@ body {
     list-style: none;
 
     &__item {
+      position: relative;
       border-bottom: 1px solid #f0e9ff;
 
       &:last-child {
@@ -172,9 +174,25 @@ body {
         padding: 0.75rem;
         transition: all 0.3s ease 0s;
         text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
+}
+
+.scroll-progress {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: width 0.2s ease-out;
+  border-radius: 2px;
+  background-color: #007bff;
 }
 
 :visited,

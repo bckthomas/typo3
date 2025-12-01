@@ -54,7 +54,9 @@
     @include media-breakpoint-down(lg) {
       position: fixed;
       top: calc(var(--menu-height) + 3rem);
+      padding: 1rem;
       padding-right: 2rem;
+      background-color: var(--color-primary);
 
       &[aria-hidden="false"] {
         right: 0;
@@ -123,7 +125,7 @@
     &__bar {
       display: block;
       position: relative;
-      width: 100%;
+      width: 1.5rem;
       height: 3px;
       transition: var(--transition);
       transition-duration: 0.25s;
