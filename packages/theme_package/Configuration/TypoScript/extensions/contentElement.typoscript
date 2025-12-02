@@ -12,6 +12,8 @@ lib.contentElement {
 		20 = {$theme.extFolder}/FluidStyledContent/Layouts/
 	}
 	variables {
+			homePageUid = TEXT
+			homePageUid.value = {$theme.homePageUid}
       publicFolder = TEXT
       publicFolder.value = {$theme.publicFolder}
       extensionName = TEXT

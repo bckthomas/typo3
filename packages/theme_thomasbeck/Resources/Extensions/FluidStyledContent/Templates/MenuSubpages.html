@@ -10,29 +10,46 @@
     <f:if condition="{menu}">
         <ul class="references grid grid--col4">
             <f:for each="{menu}" as="page" iteration="fooIterator">
-                <f:if condition="{fooIterator.cycle} < 5">
-                    <li class="col">
-                        <div class="stretched-link references__item">
-                            <f:if condition="{page.files}">
-                                <f:image image="{page.files.0}" treatIdAsReference="1" class="references__image" width="355c" height="200c" ></f:image>
-                            </f:if>
-                            <div class="references__data">
-                                <a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} class=" references__link">
-                                    <span>{page.title}</span>
-                                </a>
-                                <f:if condition="{page.data.abstract}">
-                                    <p class="references__description">{page.data.abstract}</p>
-                                </f:if>
-                            </div>
-                        </div>
-                    </li>
+                <f:if condition="{homePageUid} == {data.pid}">
+                    <f:then>
+                        <f:if condition="{fooIterator.cycle} < 5">
+                            <f:render section="ListItem" arguments="{page: page}" />
+                        </f:if>
+                    </f:then>
+                    <f:else>
+                        <f:render section="ListItem" arguments="{page: page}" />
+                    </f:else>
                 </f:if>
             </f:for>
         </ul>
-        <!-- <div class="text-center">
-            <f:link.page pageUid="84" class="link-btn" aria-label="Voir plus de réalisations">Voir plus</f:link.page>
-        </div> -->
+        <div class="text-center">
+            <f:link.page pageUid="88" class="link-btn" aria-label="Voir plus de réalisations">Voir plus</f:link.page>
+        </div>
     </f:if>
 
 </f:section>
+
+<f:section name="ListItem">
+    <li class="col">
+        <div class="stretched-link references__item">
+            <f:if condition="{page.files}">
+                <f:image image="{page.files.0}" treatIdAsReference="1"
+                         class="references__image" width="355c" height="200c" />
+            </f:if>
+
+            <div class="references__data">
+                <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"')}
+                   class="references__link">
+                    <span>{page.title}</span>
+                </a>
+
+                <f:if condition="{page.data.abstract}">
+                    <p class="references__description">{page.data.abstract}</p>
+                </f:if>
+            </div>
+        </div>
+    </li>
+</f:section>
+
+
 </html>
