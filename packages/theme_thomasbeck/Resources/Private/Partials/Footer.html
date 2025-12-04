@@ -15,7 +15,7 @@
       <f:for each="{footerNavigation}" as="footerNavigationItem">
         <li>
           <a class="footer__nav__link {f:if(condition: footerNavigationItem.active, then: 'footer__nav__link--active')}"
-          href="{footerNavigationItem.link}">
+          href="{footerNavigationItem.link}" aria-current="{f:if(condition: footerNavigationItem.active, then: 'page', else: null)}">
             {footerNavigationItem.title}
           </a>
         </li>
