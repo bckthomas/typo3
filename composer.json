@@ -49,7 +49,7 @@
 		"typo3/cms-seo": "^13.3",
 		"typo3/cms-setup": "^13.3",
 		"typo3/cms-sys-note": "^13.3",
-		"typo3/cms-tstemplate": "^13.3",
+		"typo3/cms-tstemplate": "^14.0",
 		"typo3/cms-viewpage": "^13.3",
 		"vlucas/phpdotenv": "^5.4",
 		"wsm/form-spamshield": "^2.1"
