@@ -2,9 +2,9 @@
 
 @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
   @font-face {
-    font-weight: $weight;
     font-family: string.quote($font-name);
     font-style: $style;
+    font-weight: $weight;
     src:
       url($path + ".woff") format("woff"),
       url($path + ".woff2") format("woff2");

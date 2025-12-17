@@ -3,14 +3,14 @@
 
 .skiptocontent {
   position: absolute;
-  top: -4rem;
   z-index: 1050;
+  top: -4rem;
   padding: 0.6rem;
+  transition: theme.$transition-base;
   border-right: 0.1rem solid white;
   border-bottom: 0.1rem solid white;
   border-bottom-right-radius: 0.8rem;
   background: bootstrap.$primary;
-  transition: theme.$transition-base;
 
   &:focus,
   &:active {

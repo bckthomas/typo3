@@ -2,50 +2,86 @@
   "Components/Collapse/collapse.scss": {
     "file": "css/collapse.min.css",
     "src": "Components/Collapse/collapse.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "collapse.scss",
+    "names": [
+      "collapse.css"
+    ]
   },
   "Components/Fancybox/image.scss": {
     "file": "css/image.min.css",
     "src": "Components/Fancybox/image.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "image.scss",
+    "names": [
+      "image.css"
+    ]
   },
   "Components/Form/form.scss": {
     "file": "css/form.min.css",
     "src": "Components/Form/form.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "form.scss",
+    "names": [
+      "form.css"
+    ]
   },
   "Components/Frame/frame.scss": {
     "file": "css/frame.min.css",
     "src": "Components/Frame/frame.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "frame.scss",
+    "names": [
+      "frame.css"
+    ]
   },
   "Components/Layout/layout.scss": {
     "file": "css/layout.min.css",
     "src": "Components/Layout/layout.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "layout.scss",
+    "names": [
+      "layout.css"
+    ]
   },
   "Components/News/list.scss": {
     "file": "css/list.min.css",
     "src": "Components/News/list.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "list.scss",
+    "names": [
+      "list.css"
+    ]
   },
   "Components/Title2/title2.scss": {
     "file": "css/title2.min.css",
     "src": "Components/Title2/title2.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "title2.scss",
+    "names": [
+      "title2.css"
+    ]
   },
   "Components/menu-category/menu-category.scss": {
     "file": "css/menu-category.min.css",
     "src": "Components/menu-category/menu-category.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "menu-category.scss",
+    "names": [
+      "menu-category.css"
+    ]
   },
   "Vendors/Bootstrap/bootstrap.scss": {
     "file": "css/bootstrap.min.css",
     "src": "Vendors/Bootstrap/bootstrap.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "bootstrap.scss",
+    "names": [
+      "bootstrap.css"
+    ]
   },
   "spritemap.svg": {
-    "file": "assets/Icons/sprite.svg",
+    "file": "assets/icons/sprite.svg",
     "src": "spritemap.svg"
   }
 }

@@ -1,71 +1,77 @@
 @use "../Base/base" as theme;
 
 .image-circle {
-    border-top-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }
 
 [data-fancybox] {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    background-color: theme.$color-dark;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: theme.$color-dark;
 
+  img {
+    transition:
+      opacity 0.35s,
+      transform 0.35s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    transform-origin: 50% 50%;
+    transition:
+      opacity 0.35s,
+      transform 0.35s;
+    border-top: 0.1rem solid theme.$color-white;
+    border-bottom: 0.1rem solid theme.$color-white;
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3rem;
+    height: 3rem;
+    transform: translate(-50%, -50%) scale3d(1, 1, 1);
+    transition:
+      opacity 0.35s,
+      transform 0.35s;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px 0;
+    opacity: 0;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 20 20' viewBox='0 0 20 20'%3E%3Cpath d='M10 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8m0-18C4.5 0 0 4.5 0 10s4.5 10 10 10h8c1.1 0 2-.9 2-2v-8c0-5.5-4.5-10-10-10m1 5H9v4H5v2h4v4h2v-4h4V9h-4V5z' style='fill:%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+    color: theme.$color-white;
+    text-transform: none;
+  }
+
+  &:hover {
     img {
-        transition: opacity 0.35s, transform 0.35s;
-    }
-
-    &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-top: .1rem solid theme.$color-white;
-        border-bottom: .1rem solid theme.$color-white;
-        content: '';
-        opacity: 0;
-        transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
-        transform-origin: 50% 50%;
-        transition: opacity 0.35s, transform 0.35s;
-        z-index: 1;
+      transform: scale3d(1.05, 1.05, 1);
+      opacity: 0.5;
     }
 
     &::before {
-        text-transform: none;
-        color: theme.$color-white;
-        width: 3rem;
-        height: 3rem;
-        display: inline-block;
-        border: 1px solid #f3f3f3;
-        border-radius: 5px 0 5px 0;
-        opacity: 0;
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%) scale3d(1, 1, 1);
-        transition: opacity 0.35s, transform 0.35s;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 20 20' viewBox='0 0 20 20'%3E%3Cpath d='M10 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8m0-18C4.5 0 0 4.5 0 10s4.5 10 10 10h8c1.1 0 2-.9 2-2v-8c0-5.5-4.5-10-10-10m1 5H9v4H5v2h4v4h2v-4h4V9h-4V5z' style='fill:%23fff'/%3E%3C/svg%3E");
-        background-size: 2rem;
-        background-repeat: no-repeat;
-        background-position: center;
+      transform: translate(-50%, -50%) scale3d(1, 1, 1);
+      opacity: 1;
     }
 
-    &:hover {
-        img {
-            opacity: 0.5;
-            transform: scale3d(1.05, 1.05, 1);
-        }
-
-        &::before {
-            opacity: 1;
-            transform: translate(-50%,-50%) scale3d(1, 1, 1);
-        }
-
-        &::after {
-            opacity: 1;
-            transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
-        }
+    &::after {
+      transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+      opacity: 1;
     }
+  }
 }

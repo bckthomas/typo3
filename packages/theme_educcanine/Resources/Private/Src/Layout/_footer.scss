@@ -1,84 +1,84 @@
 @use "../Base/mixins" as *;
 
 .footer {
-    padding: 1rem 0;
-    background-color: var(--primary-orange);
-    color: var(--color-white);
-    font-family: Bebas, sans-serif;
+  padding: 1rem 0;
+  background-color: var(--primary-orange);
+  color: var(--color-white);
+  font-family: Bebas, sans-serif;
 
-    &__container {
-        display: flex;
-        align-items: center;
+  &__container {
+    display: flex;
+    align-items: center;
 
-        @include media-breakpoint-down(md) {
-            flex-direction: column;
-        }
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__menu {
+    margin: 1.5rem auto;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 auto 0 2.5rem;
     }
 
-    &__menu {
-        margin: 1.5rem auto;
-
-        @include media-breakpoint-up(md) {
-            margin: 0 auto 0 2.5rem;
-        }
-
-        &__list {
-            margin: 0;
-            display: flex;
-            list-style: none;
-            gap: .5rem;
-        }
-
-        &__link {
-            padding-bottom: 0.125rem;
-            transition: var(--transition-base);
-            background-image: linear-gradient(currentcolor, currentcolor);
-            background-repeat: no-repeat;
-            background-position: 0 100%;
-            background-size: 0 0.2rem;
-            color: var(--color-white);
-            font-size: 1.125rem;
-            text-decoration: none;
-
-            &:hover {
-                background-size: 100% 0.125rem;
-                color: var(--primary-dark);
-            }
-        }
+    &__list {
+      display: flex;
+      margin: 0;
+      list-style: none;
+      gap: 0.5rem;
     }
 
-    &__logo {
-        display: block;
-        width: 4.375rem;
-        height: 5.625rem;
-        fill: var(--color-white);
-    }
+    &__link {
+      padding-bottom: 0.125rem;
+      transition: var(--transition-base);
+      background-image: linear-gradient(currentcolor, currentcolor);
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      background-size: 0 0.2rem;
+      color: var(--color-white);
+      font-size: 1.125rem;
+      text-decoration: none;
 
-    &__copyright {
-        margin: .625rem 0 0;
-        font-size: 1rem;
-        text-align: center;
+      &:hover {
+        background-size: 100% 0.125rem;
+        color: var(--primary-dark);
+      }
     }
+  }
+
+  &__logo {
+    display: block;
+    width: 4.375rem;
+    height: 5.625rem;
+    fill: var(--color-white);
+  }
+
+  &__copyright {
+    margin: 0.625rem 0 0;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 .rs {
-    &__link {
-        display: block;
-        transition: var(--transition-base);
-        text-align: center;
+  &__link {
+    display: block;
+    transition: var(--transition-base);
+    text-align: center;
 
-        &:nth-child(2) {
-            margin-left: 2rem;
-        }
-
-        &:hover {
-            transform: scale(1.1) rotate(4deg);
-        }
-
-        &__icon {
-            width: 3.125rem;
-            height: 3.125rem;
-            fill: var(--color-white);
-        }
+    &:nth-child(2) {
+      margin-left: 2rem;
     }
+
+    &:hover {
+      transform: scale(1.1) rotate(4deg);
+    }
+
+    &__icon {
+      width: 3.125rem;
+      height: 3.125rem;
+      fill: var(--color-white);
+    }
+  }
 }

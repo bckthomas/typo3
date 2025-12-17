@@ -2,7 +2,11 @@
   "Base/normalize.scss": {
     "file": "css/normalize.min.css",
     "src": "Base/normalize.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "normalize.scss",
+    "names": [
+      "normalize.css"
+    ]
   },
   "Components/Collapse/collapse.js": {
     "file": "js/collapse.min.js",
@@ -13,7 +17,11 @@
   "Components/Collapse/collapse.scss": {
     "file": "css/collapse.min.css",
     "src": "Components/Collapse/collapse.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "collapse.scss",
+    "names": [
+      "collapse.css"
+    ]
   },
   "Components/Fancybox/fancybox.js": {
     "file": "js/fancybox.min.js",
@@ -24,52 +32,92 @@
   "Components/Fancybox/fancybox.scss": {
     "file": "css/fancybox.min.css",
     "src": "Components/Fancybox/fancybox.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "fancybox.scss",
+    "names": [
+      "fancybox.css"
+    ]
   },
   "Components/block-blue.scss": {
     "file": "css/block-blue.min.css",
     "src": "Components/block-blue.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "block-blue.scss",
+    "names": [
+      "block-blue.css"
+    ]
   },
   "Components/card.scss": {
     "file": "css/card.min.css",
     "src": "Components/card.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "card.scss",
+    "names": [
+      "card.css"
+    ]
   },
   "Components/form.scss": {
     "file": "css/form.min.css",
     "src": "Components/form.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "form.scss",
+    "names": [
+      "form.css"
+    ]
   },
   "Components/gallery.scss": {
     "file": "css/gallery.min.css",
     "src": "Components/gallery.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "gallery.scss",
+    "names": [
+      "gallery.css"
+    ]
   },
   "Components/image.scss": {
     "file": "css/image.min.css",
     "src": "Components/image.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "image.scss",
+    "names": [
+      "image.css"
+    ]
   },
   "Components/page-header.scss": {
     "file": "css/page-header.min.css",
     "src": "Components/page-header.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "page-header.scss",
+    "names": [
+      "page-header.css"
+    ]
   },
   "Components/record.scss": {
     "file": "css/record.min.css",
     "src": "Components/record.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "record.scss",
+    "names": [
+      "record.css"
+    ]
   },
   "Components/title1.scss": {
     "file": "css/title1.min.css",
     "src": "Components/title1.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "title1.scss",
+    "names": [
+      "title1.css"
+    ]
   },
   "Components/title2.scss": {
     "file": "css/title2.min.css",
     "src": "Components/title2.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "title2.scss",
+    "names": [
+      "title2.css"
+    ]
   },
   "Layout/header.js": {
     "file": "js/header.min.js",
@@ -80,7 +128,11 @@
   "Layout/layout.scss": {
     "file": "css/layout.min.css",
     "src": "Layout/layout.scss",
-    "isEntry": true
+    "isEntry": true,
+    "name": "layout.scss",
+    "names": [
+      "layout.css"
+    ]
   },
   "spritemap.svg": {
     "file": "assets/icons/sprite.svg",

@@ -2,40 +2,39 @@
 @use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .page-title {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    color: theme.$color-white;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  @include bootstrap.media-breakpoint-up(md) {
+    padding-left: 2rem;
+    text-align: initial;
 
     &__title {
-        color: theme.$color-white;
-        font-size: 5rem;
-        font-weight: 600;
-        line-height: 1;
-        margin: 0;
+      margin: 0 0 0 1rem;
     }
 
     &__img {
-        display: none;
+      display: block;
     }
-
-    @include bootstrap.media-breakpoint-up(md) {
-        padding-left: 2rem;
-        text-align: initial;
-
-        &__title {
-            margin: 0 0 0 1rem;
-        }
-
-        &__img {
-            display: block;
-        }
-    }
-
+  }
 }
 
 h2 {

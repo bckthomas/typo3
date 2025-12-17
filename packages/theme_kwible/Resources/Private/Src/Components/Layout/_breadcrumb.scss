@@ -2,52 +2,51 @@
 @use "../../Vendors/Bootstrap/utilities" as bootstrap;
 
 .breadcrumb__container {
-    overflow-x: scroll;
-    position: absolute;
-    bottom: -.5rem;
-    left: 0;
-    z-index: 2;
-    width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  overflow-x: scroll;
 
-
-    @include bootstrap.media-breakpoint-up(md) {
-        left: -.5rem;
-        width: auto;
-    }
+  @include bootstrap.media-breakpoint-up(md) {
+    left: -0.5rem;
+    width: auto;
+  }
 }
 
 .breadcrumb {
-    background-color: theme.$color-white;
-    padding: 1rem 1rem 0 0;
-    list-style: none;
-    display: flex;
-    margin: 0;
-    min-width: max-content;
+  display: flex;
+  min-width: max-content;
+  margin: 0;
+  padding: 1rem 1rem 0 0;
+  background-color: theme.$color-white;
+  list-style: none;
 
-    &__link {
-        text-decoration: none;
+  &__link {
+    text-decoration: none;
+  }
+
+  &__item {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      transform: rotate(45deg);
+      border-width: 0.2rem 0.2rem 0 0;
+      border-style: solid;
     }
 
-    &__item {
-        padding-right: 5px;
-        padding-left: 5px;
+    &--active {
+      font-weight: theme.$font-weight-bold;
 
-        &::after {
-            content: "";
-            border-style: solid;
-            border-width: .2rem .2rem 0 0;
-            display: inline-block;
-            width: 1rem;
-            height: 1rem;
-            transform: rotate(45deg);
-        }
-
-        &--active {
-            font-weight: theme.$font-weight-bold;
-
-            &::after {
-                display: none;
-            }
-        }
+      &::after {
+        display: none;
+      }
     }
+  }
 }

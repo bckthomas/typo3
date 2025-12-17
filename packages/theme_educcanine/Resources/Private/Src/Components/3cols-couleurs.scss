@@ -1,33 +1,34 @@
 @use "../Base/mixins" as *;
 
 .cols-couleurs {
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        align-items: center;
-        gap: 1.5rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__item {
+    grid-column: span 12;
+
+    @include media-breakpoint-up(md) {
+      grid-column: span 4;
+    }
+  }
+
+  &__first {
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    @include media-breakpoint-down(md) {
+      margin: 1rem 0;
     }
 
-    &__item {
-        grid-column: span 12;
-        @include media-breakpoint-up(md) {
-            grid-column: span 4;
-        }
+    @include media-breakpoint-up(md) {
+      text-align: center;
     }
-
-    &__first {
-        img {
-            margin-bottom: 1rem;
-        }
-    }
-
-    &__text {
-        @include media-breakpoint-down(md) {
-            margin: 1rem 0;
-        }
-
-        @include media-breakpoint-up(md) {
-            text-align: center;
-        }
-    }
+  }
 }

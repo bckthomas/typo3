@@ -28,9 +28,9 @@ jobs:
         working-directory: packages
         run: npm run build --site=educcanine
 
-      - name: Build
-        working-directory: packages
-        run: npm run build --site=kwible
+      # - name: Build
+      #   working-directory: packages
+      #   run: npm run build --site=kwible
 
       - name: Build
         working-directory: packages

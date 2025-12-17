@@ -11,11 +11,11 @@ a:hover {
 }
 
 body {
-    background-color: theme.$color-grey-light;
+  background-color: theme.$color-grey-light;
 }
 
 footer {
-    color: theme.$color-footer;
-    background-color: theme.$background-footer;
-    padding: 2rem 0;
+  padding: 2rem 0;
+  background-color: theme.$background-footer;
+  color: theme.$color-footer;
 }

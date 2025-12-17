@@ -9,22 +9,22 @@
 @include font-face(Opensans, "../assets/fonts/opensans-light", 400, normal);
 
 :root {
-    @include generate-vars;
+  @include generate-vars;
 }
 
 body {
-    color: black;
-    font-family: Opensans, sans-serif;
-    font-weight: 400;
-    line-height: 1.2;
-    overflow-x: hidden;
-    display: grid;
-    height: 100vh;
-    grid-template-rows: auto 1fr auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  overflow-x: hidden;
+  color: black;
+  font-family: Opensans, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .main {
-    &--margin {
-        margin-bottom: 1.5rem;
-    }
+  &--margin {
+    margin-bottom: 1.5rem;
+  }
 }

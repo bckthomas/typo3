@@ -2,15 +2,15 @@
 @use "../Base/mixins" as *;
 
 h2 {
-    font-family: var(--font-family-secondary);
-    @include font-size(2.25rem);
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark);
+  font-family: var(--font-family-secondary);
 
-    margin-bottom: 0.75rem;
-    color: var(--primary-dark);
+  @include font-size(2.25rem);
 
-    &.picto {
-        margin: 1rem 0 0.5rem;
-        font-size: 1.25rem;
-        text-transform: uppercase;
-    }
+  &.picto {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
 }

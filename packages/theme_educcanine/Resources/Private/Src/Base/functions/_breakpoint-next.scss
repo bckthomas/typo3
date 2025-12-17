@@ -2,19 +2,19 @@
 @use "sass:list";
 
 @function breakpoint-next(
-    $name,
-    $breakpoints: $grid-breakpoints,
-    $breakpoint-names: map.keys($breakpoints)
+  $name,
+  $breakpoints: $grid-breakpoints,
+  $breakpoint-names: map.keys($breakpoints)
 ) {
-    $n: list.index($breakpoint-names, $name);
+  $n: list.index($breakpoint-names, $name);
 
-    @if not $n {
-        @error "breakpoint `#{$name}` not found in `#{$breakpoints}`";
-    }
+  @if not $n {
+    @error "breakpoint `#{$name}` not found in `#{$breakpoints}`";
+  }
 
-    @return if(
-        $n < list.length($breakpoint-names),
-        list.nth($breakpoint-names, $n + 1),
-        null
-    );
+  @if $n < list.length($breakpoint-names) {
+    @return list.nth($breakpoint-names, $n + 1);
+  } @else {
+    @return null;
+  }
 }

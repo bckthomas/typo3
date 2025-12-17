@@ -1,17 +1,17 @@
 .skiptocontent {
-    position: absolute;
-    z-index: 1050;
-    top: -4rem;
-    padding: 0.6rem;
-    transition: var(--transition-base);
-    border-right: 0.1rem solid white;
-    border-bottom: 0.1rem solid white;
-    border-bottom-right-radius: 0.8rem;
-    background: var(--color-theme);
+  position: absolute;
+  z-index: 1050;
+  top: -4rem;
+  padding: 0.6rem;
+  transition: var(--transition-base);
+  border-right: 0.1rem solid white;
+  border-bottom: 0.1rem solid white;
+  border-bottom-right-radius: 0.8rem;
+  background: var(--color-theme);
 
-    &:focus,
-    &:active {
-        top: 0;
-        outline-color: transparent;
-    }
+  &:focus,
+  &:active {
+    top: 0;
+    outline-color: transparent;
+  }
 }

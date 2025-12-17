@@ -2,48 +2,49 @@
 @use "../../../../../node_modules/rfs/scss" as *;
 
 .component-price {
-    &__container {
-        margin-bottom: 1.25rem;
+  &__container {
+    margin-bottom: 1.25rem;
 
-        @include media-breakpoint-up(md) {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            align-items: center;
-            gap: 1rem;
-        }
+    @include media-breakpoint-up(md) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__item {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
     }
 
-    &__item {
-        @include media-breakpoint-down(md) {
-            margin-bottom: 1rem;
-        }
-        @include media-breakpoint-up(md) {
-            grid-column: span 4;
-        }
+    @include media-breakpoint-up(md) {
+      grid-column: span 4;
+    }
+  }
+
+  &__price {
+    text-align: center;
+
+    &__value {
+      font-weight: var(--font-weight-bold);
+
+      @include font-size(2.25rem);
     }
 
-    &__price {
-        text-align: center;
-
-        &__value {
-            font-weight: var(--font-weight-bold);
-
-            @include font-size(2.25rem);
-        }
-
-        &__information {
-            font-style: italic;
-            display: block;
-        }
+    &__information {
+      display: block;
+      font-style: italic;
     }
+  }
 
-    &__service {
-        margin-bottom: 1rem;
-        font-family: var(--font-family-secondary);
-        font-weight: var(--font-weight-bold);
-        text-align: center;
-        text-transform: uppercase;
+  &__service {
+    margin-bottom: 1rem;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    text-transform: uppercase;
 
-        @include font-size(1.25rem);
-    }
+    @include font-size(1.25rem);
+  }
 }

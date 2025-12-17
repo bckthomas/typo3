@@ -1,57 +1,57 @@
 @use "../Base/base" as theme;
 
 .news {
-    &__image {
-        display: flex;
-        align-items: center;
+  &__image {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__category {
+    display: block;
+    color: theme.$color-secondary;
+    font-size: 1.5rem;
+    font-weight: theme.$font-weight-bold;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: theme.$font-weight-bolder;
+    line-height: 1.3;
+  }
+
+  &__link {
+    transition: theme.$transition-base;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
+    &:hover {
+      color: theme.$color-secondary;
     }
+  }
 
-    &__category {
-        font-size: 1.5rem;
-        color: theme.$color-secondary;
-        display: block;
-        font-weight: theme.$font-weight-bold;
-        text-transform: uppercase;
-    }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
 
-    &__title {
-        font-size: 2.4rem;
-        line-height: 1.3;
-        font-weight: theme.$font-weight-bolder;
-        margin-bottom: 1rem;
-    }
-
-    &__link {
-        text-decoration: none;
-        transition: theme.$transition-base;
-
-        &::after {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            content: "";
-        }
-
-        &:hover {
-            color: theme.$color-secondary;
-        }
-    }
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1.5rem;
-    }
-
-    &__date {
-        color: #888888;
-        font-size: 1.4rem;
-    }
+  &__date {
+    color: #888;
+    font-size: 1.4rem;
+  }
 }

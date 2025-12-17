@@ -2,13 +2,13 @@
 @use "../../Theme/breakpoints" as *;
 
 @mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
-    $max: breakpoint-max($name, $breakpoints);
+  $max: breakpoint-max($name, $breakpoints);
 
-    @if $max {
-        @media (max-width: $max) {
-            @content;
-        }
-    } @else {
-        @content;
+  @if $max {
+    @media (max-width: $max) {
+      @content;
     }
+  } @else {
+    @content;
+  }
 }
