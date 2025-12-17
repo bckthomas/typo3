@@ -1,0 +1,59 @@
+name: Build packages
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "packages/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: packages/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages
+        run: npm ci
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=educcanine
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=kwible
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=slcreation
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=thomasbeck
+
+      - name: Deploy to o2switch via SSH
+        uses: appleboy/ssh-action@v0.1.9
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "./"
+          target: ${{ secrets.DEPLOY_PATH }}
+          rm: true
+
+      # - name: Clear TYPO3 cache
+      #   run: |
+      #     ssh -i ~/.ssh/id_ed25519 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }} \
+      #     "cd ${{ secrets.DEPLOY_PATH }} && ./vendor/bin/typo3 cache:flush"
