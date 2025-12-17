@@ -1,0 +1,25 @@
+version: 2
+updates:
+  # PHP / Composer
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  # npm dans packages/
+  - package-ecosystem: "npm"
+    directory: "/packages"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "npm"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
