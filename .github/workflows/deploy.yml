@@ -24,7 +24,7 @@ jobs:
         working-directory: packages
         run: npm ci
 
-      - name: Build
+      - name: Build Educ Canine
         working-directory: packages
         run: npm run build --site=educcanine
 
@@ -32,24 +32,24 @@ jobs:
       #   working-directory: packages
       #   run: npm run build --site=kwible
 
-      - name: Build
+      - name: Build SL Création
         working-directory: packages
         run: npm run build --site=slcreation
 
-      - name: Build
+      - name: Build Thomas Beck
         working-directory: packages
         run: npm run build --site=thomasbeck
 
-      - name: Deploy to o2switch via SSH
-        uses: appleboy/ssh-action@v0.1.9
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          source: "./"
-          target: ${{ secrets.DEPLOY_PATH }}
-          rm: true
+      # - name: Deploy via SSH
+      #   uses: appleboy/ssh-action@v0.1.9
+      #   with:
+      #     host: ${{ secrets.SSH_HOST }}
+      #     username: ${{ secrets.SSH_USER }}
+      #     key: ${{ secrets.SSH_KEY }}
+      #     passphrase: ${{ secrets.SSH_PASSPHRASE }}
+      #     port: ${{ secrets.SSH_PORT }}
+      #     script: |
+      #       rsync -avz --delete ./ ${{ secrets.DEPLOY_PATH }}
 
       # - name: Clear TYPO3 cache
       #   run: |
