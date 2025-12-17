@@ -18,7 +18,7 @@
 		"brotkrueml/typo3-matomo-widgets": "3.1.2",
 		"causal/image_autoresize": "^2.4",
 		"friendsoftypo3/content-blocks": "^1.1",
-		"georgringer/news": "^12.2",
+		"georgringer/news": "^14.0",
 		"thbck/theme-educcanine": "@dev",
 		"thbck/theme-kwible": "@dev",
 		"thbck/theme-package": "@dev",
