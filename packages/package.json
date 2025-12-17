@@ -20,7 +20,6 @@
     "fast-glob": "^3.3.3",
     "postcss-inline-svg": "^6.0.0",
     "prettier": "^3.6.2",
-    "sass": "^1.94.2",
     "sass-embedded": "^1.93.3",
     "stylelint": "^16.25.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",

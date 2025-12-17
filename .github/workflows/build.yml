@@ -1,0 +1,54 @@
+name: Build packages
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "packages/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: packages/package-lock.json
+
+      - name: Install dependencies
+        working-directory: packages
+        run: npm ci
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=educcanine
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=kwible
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=slcreation
+
+      - name: Build
+        working-directory: packages
+        run: npm run build --site=thomasbeck
+
+      - name: Deploy to o2switch via SSH
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+          remote-user: ${{ secrets.SSH_USER }}
+          server-ip: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "./"
+          target: ${{ secrets.DEPLOY_PATH }}
+          exclude: ".git,.github,node_modules"
