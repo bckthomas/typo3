@@ -40,7 +40,7 @@
 		"typo3/cms-frontend": "^13.3",
 		"typo3/cms-impexp": "^13.3",
 		"typo3/cms-info": "^13.3",
-		"typo3/cms-install": "^13.3",
+		"typo3/cms-install": "^14.0",
 		"typo3/cms-lowlevel": "^13.3",
 		"typo3/cms-recycler": "^13.3",
 		"typo3/cms-redirects": "^13.4",
