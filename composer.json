@@ -30,7 +30,7 @@
 		"typo3/cms-beuser": "^13.3",
 		"typo3/cms-core": "^13.3",
 		"typo3/cms-dashboard": "^13.3",
-		"typo3/cms-extbase": "^13.3",
+		"typo3/cms-extbase": "^14.0",
 		"typo3/cms-extensionmanager": "^13.3",
 		"typo3/cms-felogin": "^13.3",
 		"typo3/cms-filelist": "^13.3",
