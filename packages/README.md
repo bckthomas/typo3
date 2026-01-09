@@ -16,8 +16,7 @@ Modifier RTE Presets
 
 Install new theme : composer require thbck/theme-thomasbeck:@dev
 
-
-npm run sass --site=thomasbeck
+npm run build --site=thomasbeck
 
 Ajouter au composer.json
 "repositories": [
