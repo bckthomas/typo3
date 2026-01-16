@@ -116,11 +116,10 @@ if(isset($_SERVER['HTTP_HOST'])) {
                 'loginHighlightColor' => '#df046f',
             ];
         break;
-        case 'kwible.fr':
+        case 'thomas-beck.fr':
             $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend'] = [
-                //'loginBackgroundImage' => 'fileadmin/educcanine/education-canine__accueil.jpg',
-                'loginLogo' => 'EXT:theme_kwible/Resources/Public/assets/images/logo.png',
-                'loginHighlightColor' => '#550f60',
+                'loginLogo' => 'EXT:theme_thomasbeck/Resources/Public/assets/images/logo.png',
+                'loginHighlightColor' => '#ff8c5c',
             ];
         break;
     }
